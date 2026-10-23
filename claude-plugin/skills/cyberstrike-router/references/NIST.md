@@ -1,0 +1,1610 @@
+# NIST
+
+1606 skills.
+
+- `ac-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] access control policy that: Procedures to facilitate the implemen
+- `ac-10-concurrent-session-control` — Limit the number of concurrent sessions for each [organization-defined] to [organization-defined].
+- `ac-11-1-pattern-hiding-displays` — Conceal, via the device lock, information previously visible on the display with a publicly viewable image.
+- `ac-11-device-lock` — Prevent further access to the system by [organization-defined] ;
+- `ac-12-1-user-initiated-logouts` — Provide a logout capability for user-initiated communications sessions whenever authentication is used to gain access to [organization-defined].
+- `ac-12-2-termination-message` — Display an explicit logout message to users indicating the termination of authenticated communications sessions.
+- `ac-12-3-timeout-warning-message` — Display an explicit message to users indicating that the session will end in [organization-defined].
+- `ac-12-session-termination` — Automatically terminate a user session after [organization-defined].
+- `ac-13-supervision-and-review-access-control` — Supervision and Review — Access Control
+- `ac-14-1-necessary-uses` — Necessary Uses
+- `ac-14-permitted-actions-without-identification-or-authentication` — Identify [organization-defined] that can be performed on the system without identification or authentication consistent with organizational mission...
+- `ac-15-automated-marking` — Automated Marking
+- `ac-16-1-dynamic-attribute-association` — Dynamically associate security and privacy attributes with [organization-defined] in accordance with the following security and privacy policies as in
+- `ac-16-10-attribute-configuration-by-authorized-individuals` — Provide authorized individuals the capability to define or change the type and value of security and privacy attributes available for association with
+- `ac-16-2-attribute-value-changes-by-authorized-individuals` — Provide authorized individuals (or processes acting on behalf of individuals) the capability to define or change the value of associated security and 
+- `ac-16-3-maintenance-of-attribute-associations-by-system` — Maintain the association and integrity of [organization-defined] to [organization-defined].
+- `ac-16-4-association-of-attributes-by-authorized-individuals` — Provide the capability to associate [organization-defined] with [organization-defined] by authorized individuals (or processes acting on behalf of ind
+- `ac-16-5-attribute-displays-on-objects-to-be-output` — Display security and privacy attributes in human-readable form on each object that the system transmits to output devices to identify [organization-de
+- `ac-16-6-maintenance-of-attribute-association` — Require personnel to associate and maintain the association of [organization-defined] with [organization-defined] in accordance with [organization-def
+- `ac-16-7-consistent-attribute-interpretation` — Provide a consistent interpretation of security and privacy attributes transmitted between distributed system components.
+- `ac-16-8-association-techniques-and-technologies` — Implement [organization-defined] in associating security and privacy attributes to information.
+- `ac-16-9-attribute-reassignment-regrading-mechanisms` — Change security and privacy attributes associated with information only via regrading mechanisms validated using [organization-defined].
+- `ac-16-security-and-privacy-attributes` — Provide the means to associate [organization-defined] with [organization-defined] for information in storage, in process, and/or in transmission;
+- `ac-17-1-monitoring-and-control` — Employ automated mechanisms to monitor and control remote access methods.
+- `ac-17-10-authenticate-remote-commands` — Implement [organization-defined] to authenticate [organization-defined].
+- `ac-17-2-protection-of-confidentiality-and-integrity-using-encryp` — Implement cryptographic mechanisms to protect the confidentiality and integrity of remote access sessions.
+- `ac-17-3-managed-access-control-points` — Route remote accesses through authorized and managed network access control points.
+- `ac-17-4-privileged-commands-and-access` — Authorize the execution of privileged commands and access to security-relevant information via remote access only in a format that provides assessa...
+- `ac-17-5-monitoring-for-unauthorized-connections` — Monitoring for Unauthorized Connections
+- `ac-17-6-protection-of-mechanism-information` — Protect information about remote access mechanisms from unauthorized use and disclosure.
+- `ac-17-7-additional-protection-for-security-function-access` — Additional Protection for Security Function Access
+- `ac-17-8-disable-nonsecure-network-protocols` — Disable Nonsecure Network Protocols
+- `ac-17-9-disconnect-or-disable-access` — Provide the capability to disconnect or disable remote access to the system within [organization-defined].
+- `ac-17-remote-access` — Establish and document usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed;
+- `ac-18-1-authentication-and-encryption` — Protect wireless access to the system using authentication of [organization-defined] and encryption.
+- `ac-18-2-monitoring-unauthorized-connections` — Monitoring Unauthorized Connections
+- `ac-18-3-disable-wireless-networking` — Disable, when not intended for use, wireless networking capabilities embedded within system components prior to issuance and deployment.
+- `ac-18-4-restrict-configurations-by-users` — Identify and explicitly authorize users allowed to independently configure wireless networking capabilities.
+- `ac-18-5-antennas-and-transmission-power-levels` — Select radio antennas and calibrate transmission power levels to reduce the probability that signals from wireless access points can be received outsi
+- `ac-18-wireless-access` — Establish configuration requirements, connection requirements, and implementation guidance for each type of wireless access;
+- `ac-19-1-use-of-writable-and-portable-storage-devices` — Use of Writable and Portable Storage Devices
+- `ac-19-2-use-of-personally-owned-portable-storage-devices` — Use of Personally Owned Portable Storage Devices
+- `ac-19-3-use-of-portable-storage-devices-with-no-identifiable-own` — Use of Portable Storage Devices with No Identifiable Owner
+- `ac-19-4-restrictions-for-classified-information` — Prohibit the use of unclassified mobile devices in facilities containing systems processing, storing, or transmitting classified information unless...
+- `ac-19-5-full-device-or-container-based-encryption` — Employ [organization-defined] to protect the confidentiality and integrity of information on [organization-defined].
+- `ac-19-access-control-for-mobile-devices` — Establish configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices, to include w...
+- `ac-2-1-automated-system-account-management` — Support the management of system accounts using [organization-defined].
+- `ac-2-10-shared-and-group-account-credential-change` — Shared and Group Account Credential Change
+- `ac-2-11-usage-conditions` — Enforce [organization-defined] for [organization-defined].
+- `ac-2-12-account-monitoring-for-atypical-usage` — Monitor system accounts for [organization-defined] ;
+- `ac-2-13-disable-accounts-for-high-risk-individuals` — Disable accounts of individuals within [organization-defined] of discovery of [organization-defined].
+- `ac-2-2-automated-temporary-and-emergency-account-management` — Automatically [organization-defined] temporary and emergency accounts after [organization-defined].
+- `ac-2-3-disable-accounts` — Disable accounts within [organization-defined] when the accounts: Have expired; Are no longer associated with a user or individual; Are in violation o
+- `ac-2-4-automated-audit-actions` — Automatically audit account creation, modification, enabling, disabling, and removal actions.
+- `ac-2-5-inactivity-logout` — Require that users log out when [organization-defined].
+- `ac-2-6-dynamic-privilege-management` — Implement [organization-defined].
+- `ac-2-7-privileged-user-accounts` — Establish and administer privileged user accounts in accordance with [organization-defined];
+- `ac-2-8-dynamic-account-management` — Create, activate, manage, and deactivate [organization-defined] dynamically.
+- `ac-2-9-restrictions-on-use-of-shared-and-group-accounts` — Only permit the use of shared and group accounts that meet [organization-defined].
+- `ac-2-account-management` — Define and document the types of accounts allowed and specifically prohibited for use within the system;
+- `ac-20-1-limits-on-authorized-use` — Permit authorized individuals to use an external system to access the system or to process, store, or transmit organization-controlled information onl
+- `ac-20-2-portable-storage-devices-restricted-use` — Restrict the use of organization-controlled portable storage devices by authorized individuals on external systems using [organization-defined].
+- `ac-20-3-non-organizationally-owned-systems-restricted-use` — Restrict the use of non-organizationally owned systems or system components to process, store, or transmit organizational information using [organizat
+- `ac-20-4-network-accessible-storage-devices-prohibited-use` — Prohibit the use of [organization-defined] in external systems.
+- `ac-20-5-portable-storage-devices-prohibited-use` — Prohibit the use of organization-controlled portable storage devices by authorized individuals on external systems.
+- `ac-20-use-of-external-systems` — [organization-defined] , consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external s
+- `ac-21-1-automated-decision-support` — Employ [organization-defined] to enforce information-sharing decisions by authorized users based on access authorizations of sharing partners and acce
+- `ac-21-2-information-search-and-retrieval` — Implement information search and retrieval services that enforce [organization-defined].
+- `ac-21-information-sharing` — Enable authorized users to determine whether access authorizations assigned to a sharing partner match the information’s access and use restriction...
+- `ac-22-publicly-accessible-content` — Designate individuals authorized to make information publicly accessible;
+- `ac-23-data-mining-protection` — Employ [organization-defined] for [organization-defined] to detect and protect against unauthorized data mining.
+- `ac-24-1-transmit-access-authorization-information` — Transmit [organization-defined] using [organization-defined] to [organization-defined] that enforce access control decisions.
+- `ac-24-2-no-user-or-process-identity` — Enforce access control decisions based on [organization-defined] that do not include the identity of the user or process acting on behalf of the user.
+- `ac-24-access-control-decisions` — [organization-defined] to ensure [organization-defined] are applied to each access request prior to access enforcement.
+- `ac-25-reference-monitor` — Implement a reference monitor for [organization-defined] that is tamperproof, always invoked, and small enough to be subject to analysis and testing, 
+- `ac-3-1-restricted-access-to-privileged-functions` — Restricted Access to Privileged Functions
+- `ac-3-10-audited-override-of-access-control-mechanisms` — Employ an audited override of automated access control mechanisms under [organization-defined] by [organization-defined].
+- `ac-3-11-restrict-access-to-specific-information-types` — Restrict access to data repositories containing [organization-defined].
+- `ac-3-12-assert-and-enforce-application-access` — Require applications to assert, as part of the installation process, the access needed to the following system applications and functions: [organiz...
+- `ac-3-13-attribute-based-access-control` — Enforce attribute-based access control policy over defined subjects and objects and control access based upon [organization-defined].
+- `ac-3-14-individual-access` — Provide [organization-defined] to enable individuals to have access to the following elements of their personally identifiable information: [organizat
+- `ac-3-15-discretionary-and-mandatory-access-control` — Enforce [organization-defined] over the set of covered subjects and objects specified in the policy;
+- `ac-3-2-dual-authorization` — Enforce dual authorization for [organization-defined].
+- `ac-3-3-mandatory-access-control` — Enforce [organization-defined] over the set of covered subjects and objects specified in the policy, and where the policy: Is uniformly enforced acros
+- `ac-3-4-discretionary-access-control` — Enforce [organization-defined] over the set of covered subjects and objects specified in the policy, and where the policy specifies that a subject tha
+- `ac-3-5-security-relevant-information` — Prevent access to [organization-defined] except during secure, non-operable system states.
+- `ac-3-6-protection-of-user-and-system-information` — Protection of User and System Information
+- `ac-3-7-role-based-access-control` — Enforce a role-based access control policy over defined subjects and objects and control access based upon [organization-defined].
+- `ac-3-8-revocation-of-access-authorizations` — Enforce the revocation of access authorizations resulting from changes to the security attributes of subjects and objects based on [organization-defin
+- `ac-3-9-controlled-release` — Release information outside of the system only if: The receiving [organization-defined] provides [organization-defined] ; and [organization-defined] a
+- `ac-3-access-enforcement` — Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
+- `ac-4-1-object-security-and-privacy-attributes` — Use [organization-defined] associated with [organization-defined] to enforce [organization-defined] as a basis for flow control decisions.
+- `ac-4-10-enable-and-disable-security-or-privacy-policy-filters` — Provide the capability for privileged administrators to enable and disable [organization-defined] under the following conditions: [organization-define
+- `ac-4-11-configuration-of-security-or-privacy-policy-filters` — Provide the capability for privileged administrators to configure [organization-defined] to support different security or privacy policies.
+- `ac-4-12-data-type-identifiers` — When transferring information between different security domains, use [organization-defined] to validate data essential for information flow decisions
+- `ac-4-13-decomposition-into-policy-relevant-subcomponents` — When transferring information between different security domains, decompose information into [organization-defined] for submission to policy enforceme
+- `ac-4-14-security-or-privacy-policy-filter-constraints` — When transferring information between different security domains, implement [organization-defined] requiring fully enumerated formats that restrict da
+- `ac-4-15-detection-of-unsanctioned-information` — When transferring information between different security domains, examine the information for the presence of [organization-defined] and prohibit the 
+- `ac-4-16-information-transfers-on-interconnected-systems` — Information Transfers on Interconnected Systems
+- `ac-4-17-domain-authentication` — Uniquely identify and authenticate source and destination points by [organization-defined] for information transfer.
+- `ac-4-18-security-attribute-binding` — Security Attribute Binding
+- `ac-4-19-validation-of-metadata` — When transferring information between different security domains, implement [organization-defined] on metadata.
+- `ac-4-2-processing-domains` — Use protected processing domains to enforce [organization-defined] as a basis for flow control decisions.
+- `ac-4-20-approved-solutions` — Employ [organization-defined] to control the flow of [organization-defined] across security domains.
+- `ac-4-21-physical-or-logical-separation-of-information-flows` — Separate information flows logically or physically using [organization-defined] to accomplish [organization-defined].
+- `ac-4-22-access-only` — Provide access from a single device to computing platforms, applications, or data residing in multiple different security domains, while preventing in
+- `ac-4-23-modify-non-releasable-information` — When transferring information between different security domains, modify non-releasable information by implementing [organization-defined].
+- `ac-4-24-internal-normalized-format` — When transferring information between different security domains, parse incoming data into an internal normalized format and regenerate the data to be
+- `ac-4-25-data-sanitization` — When transferring information between different security domains, sanitize data to minimize [organization-defined] in accordance with [organization-de
+- `ac-4-26-audit-filtering-actions` — When transferring information between different security domains, record and audit content filtering actions and results for the information being fil
+- `ac-4-27-redundantindependent-filtering-mechanisms` — When transferring information between different security domains, implement content filtering solutions that provide redundant and independent filteri
+- `ac-4-28-linear-filter-pipelines` — When transferring information between different security domains, implement a linear content filter pipeline that is enforced with discretionary and m
+- `ac-4-29-filter-orchestration-engines` — When transferring information between different security domains, employ content filter orchestration engines to ensure that: Content filtering mechan
+- `ac-4-3-dynamic-information-flow-control` — Enforce [organization-defined].
+- `ac-4-30-filter-mechanisms-using-multiple-processes` — When transferring information between different security domains, implement content filtering mechanisms using multiple processes.
+- `ac-4-31-failed-content-transfer-prevention` — When transferring information between different security domains, prevent the transfer of failed content to the receiving domain.
+- `ac-4-32-process-requirements-for-information-transfer` — When transferring information between different security domains, the process that transfers information between filter pipelines: Does not filter mes
+- `ac-4-4-flow-control-of-encrypted-information` — Prevent encrypted information from bypassing [organization-defined] by [organization-defined].
+- `ac-4-5-embedded-data-types` — Enforce [organization-defined] on embedding data types within other data types.
+- `ac-4-6-metadata` — Enforce information flow control based on [organization-defined].
+- `ac-4-7-one-way-flow-mechanisms` — Enforce one-way information flows through hardware-based flow control mechanisms.
+- `ac-4-8-security-and-privacy-policy-filters` — Enforce information flow control using [organization-defined] as a basis for flow control decisions for [organization-defined] ;
+- `ac-4-9-human-reviews` — Enforce the use of human reviews for [organization-defined] under the following conditions: [organization-defined].
+- `ac-4-information-flow-enforcement` — Enforce approved authorizations for controlling the flow of information within the system and between connected systems based on [organization-defined
+- `ac-5-separation-of-duties` — Identify and document [organization-defined] ;
+- `ac-6-1-authorize-access-to-security-functions` — Authorize access for [organization-defined] to: [organization-defined] ; and [organization-defined].
+- `ac-6-10-prohibit-non-privileged-users-from-executing-privileged` — Prevent non-privileged users from executing privileged functions.
+- `ac-6-2-non-privileged-access-for-nonsecurity-functions` — Require that users of system accounts (or roles) with access to [organization-defined] use non-privileged accounts or roles, when accessing nonsecurit
+- `ac-6-3-network-access-to-privileged-commands` — Authorize network access to [organization-defined] only for [organization-defined] and document the rationale for such access in the security plan for
+- `ac-6-4-separate-processing-domains` — Provide separate processing domains to enable finer-grained allocation of user privileges.
+- `ac-6-5-privileged-accounts` — Restrict privileged accounts on the system to [organization-defined].
+- `ac-6-6-privileged-access-by-non-organizational-users` — Prohibit privileged access to the system by non-organizational users.
+- `ac-6-7-review-of-user-privileges` — Review [organization-defined] the privileges assigned to [organization-defined] to validate the need for such privileges;
+- `ac-6-8-privilege-levels-for-code-execution` — Prevent the following software from executing at higher privilege levels than users executing the software: [organization-defined].
+- `ac-6-9-log-use-of-privileged-functions` — Log the execution of privileged functions.
+- `ac-6-least-privilege` — Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to ac
+- `ac-7-1-automatic-account-lock` — Automatic Account Lock
+- `ac-7-2-purge-or-wipe-mobile-device` — Purge or wipe information from [organization-defined] based on [organization-defined] after [organization-defined] consecutive, unsuccessful device lo
+- `ac-7-3-biometric-attempt-limiting` — Limit the number of unsuccessful biometric logon attempts to [organization-defined].
+- `ac-7-4-use-of-alternate-authentication-factor` — Allow the use of [organization-defined] that are different from the primary authentication factors after the number of organization-defined consecu...
+- `ac-7-unsuccessful-logon-attempts` — Enforce a limit of [organization-defined] consecutive invalid logon attempts by a user during a [organization-defined] ;
+- `ac-8-system-use-notification` — Display [organization-defined] to users before granting access to the system that provides privacy and security notices consistent with applicable law
+- `ac-9-1-unsuccessful-logons` — Notify the user, upon successful logon, of the number of unsuccessful logon attempts since the last successful logon.
+- `ac-9-2-successful-and-unsuccessful-logons` — Notify the user, upon successful logon, of the number of [organization-defined] during [organization-defined].
+- `ac-9-3-notification-of-account-changes` — Notify the user, upon successful logon, of changes to [organization-defined] during [organization-defined].
+- `ac-9-4-additional-logon-information` — Notify the user, upon successful logon, of the following additional information: [organization-defined].
+- `ac-9-previous-logon-notification` — Notify the user, upon successful logon to the system, of the date and time of the last logon.
+- `access-control-for-mobile-devices-03-01-18-access-control-for-mo` — Establish usage restrictions, configuration requirements, and connection requirements for mobile devices.
+- `access-control-for-transmission-03-10-08-access-control-for-tran` — Access Control for Transmission
+- `access-enforcement-03-01-02-access-enforcement` — Access Enforcement
+- `access-restrictions-for-change-03-04-05-access-restrictions-for` — Access Restrictions for Change
+- `account-management-03-01-01-account-management` — Define the types of system accounts allowed and prohibited.
+- `acquisition-strategies-tools-and-methods-03-17-02-acquisition-st` — Acquisition Strategies, Tools, and Methods
+- `adverse-event-analysis-de-ae-adverse-event-analysis` — Anomalies, indicators of compromise, and other potentially adverse events are analyzed to characterize the events and detect cybersecurity incidents
+- `alternate-work-site-03-10-06-alternate-work-site` — Determine alternate work sites allowed for use by employees.
+- `analyze-vulnerabilities-to-identify-their-root-causes-rv-3-analy` — Help reduce the frequency of vulnerabilities in the future.
+- `archive-and-protect-each-software-release-ps-3-archive-and-prote` — Preserve software releases in order to help identify, analyze, and eliminate vulnerabilities discovered in the software after release.
+- `assess-prioritize-and-remediate-vulnerabilities-rv-2-assess-prio` — Help ensure that vulnerabilities are remediated in accordance with risk to reduce the window of opportunity for attackers.
+- `asset-management-id-am-asset-management` — Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identifie
+- `at-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] awareness and training policy that: Procedures to facilitate the 
+- `at-2-1-practical-exercises` — Provide practical exercises in literacy training that simulate events and incidents.
+- `at-2-2-insider-threat` — Provide literacy training on recognizing and reporting potential indicators of insider threat.
+- `at-2-3-social-engineering-and-mining` — Provide literacy training on recognizing and reporting potential and actual instances of social engineering and social mining.
+- `at-2-4-suspicious-communications-and-anomalous-system-behavior` — Provide literacy training on recognizing suspicious communications and anomalous behavior in organizational systems using [organization-defined].
+- `at-2-5-advanced-persistent-threat` — Provide literacy training on the advanced persistent threat.
+- `at-2-6-cyber-threat-environment` — Provide literacy training on the cyber threat environment;
+- `at-2-literacy-training-and-awareness` — Provide security and privacy literacy training to system users (including managers, senior executives, and contractors): As part of initial training f
+- `at-3-1-environmental-controls` — Provide [organization-defined] with initial and [organization-defined] training in the employment and operation of environmental controls.
+- `at-3-2-physical-security-controls` — Provide [organization-defined] with initial and [organization-defined] training in the employment and operation of physical security controls.
+- `at-3-3-practical-exercises` — Provide practical exercises in security and privacy training that reinforce training objectives.
+- `at-3-4-suspicious-communications-and-anomalous-system-behavior` — Suspicious Communications and Anomalous System Behavior
+- `at-3-5-processing-personally-identifiable-information` — Provide [organization-defined] with initial and [organization-defined] training in the employment and operation of personally identifiable information
+- `at-3-role-based-training` — Provide role-based security and privacy training to personnel with the following roles and responsibilities: [organization-defined]: Before authorizin
+- `at-4-training-records` — Document and monitor information security and privacy training activities, including security and privacy awareness training and specific role-base...
+- `at-5-contacts-with-security-groups-and-associations` — Contacts with Security Groups and Associations
+- `at-6-training-feedback` — Provide feedback on organizational training results to the following personnel [organization-defined]: [organization-defined].
+- `au-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] audit and accountability policy that: Procedures to facilitate th
+- `au-10-1-association-of-identities` — Bind the identity of the information producer with the information to [organization-defined] ;
+- `au-10-2-validate-binding-of-information-producer-identity` — Validate the binding of the information producer identity to the information at [organization-defined] ;
+- `au-10-3-chain-of-custody` — Maintain reviewer or releaser credentials within the established chain of custody for information reviewed or released.
+- `au-10-4-validate-binding-of-information-reviewer-identity` — Validate the binding of the information reviewer identity to the information at the transfer or release points prior to release or transfer between...
+- `au-10-5-digital-signatures` — Digital Signatures
+- `au-10-non-repudiation` — Provide irrefutable evidence that an individual (or process acting on behalf of an individual) has performed [organization-defined].
+- `au-11-1-long-term-retrieval-capability` — Employ [organization-defined] to ensure that long-term audit records generated by the system can be retrieved.
+- `au-11-audit-record-retention` — Retain audit records for [organization-defined] to provide support for after-the-fact investigations of incidents and to meet regulatory and organizat
+- `au-12-1-system-wide-and-time-correlated-audit-trail` — Compile audit records from [organization-defined] into a system-wide (logical or physical) audit trail that is time-correlated to within [organization
+- `au-12-2-standardized-formats` — Produce a system-wide (logical or physical) audit trail composed of audit records in a standardized format.
+- `au-12-3-changes-by-authorized-individuals` — Provide and implement the capability for [organization-defined] to change the logging to be performed on [organization-defined] based on [organization
+- `au-12-4-query-parameter-audits-of-personally-identifiable-inform` — Provide and implement the capability for auditing the parameters of user query events for data sets containing personally identifiable information.
+- `au-12-audit-record-generation` — Provide audit record generation capability for the event types the system is capable of auditing as defined in [AU-2a](#au-2_smt.a) on [organizatio...
+- `au-13-1-use-of-automated-tools` — Monitor open-source information and information sites using [organization-defined].
+- `au-13-2-review-of-monitored-sites` — Review the list of open-source information sites being monitored [organization-defined].
+- `au-13-3-unauthorized-replication-of-information` — Employ discovery techniques, processes, and tools to determine if external entities are replicating organizational information in an unauthorized mann
+- `au-13-monitoring-for-information-disclosure` — Monitor [organization-defined] [organization-defined] for evidence of unauthorized disclosure of organizational information;
+- `au-14-1-system-start-up` — Initiate session audits automatically at system start-up.
+- `au-14-2-capture-and-record-content` — Capture and Record Content
+- `au-14-3-remote-viewing-and-listening` — Provide and implement the capability for authorized users to remotely view and hear content related to an established user session in real time.
+- `au-14-session-audit` — Provide and implement the capability for [organization-defined] to [organization-defined] the content of a user session under [organization-defined] ;
+- `au-15-alternate-audit-logging-capability` — Alternate Audit Logging Capability
+- `au-16-1-identity-preservation` — Preserve the identity of individuals in cross-organizational audit trails.
+- `au-16-2-sharing-of-audit-information` — Provide cross-organizational audit information to [organization-defined] based on [organization-defined].
+- `au-16-3-disassociability` — Implement [organization-defined] to disassociate individuals from audit information transmitted across organizational boundaries.
+- `au-16-cross-organizational-audit-logging` — Employ [organization-defined] for coordinating [organization-defined] among external organizations when audit information is transmitted across organi
+- `au-2-1-compilation-of-audit-records-from-multiple-sources` — Compilation of Audit Records from Multiple Sources
+- `au-2-2-selection-of-audit-events-by-component` — Selection of Audit Events by Component
+- `au-2-3-reviews-and-updates` — Reviews and Updates
+- `au-2-4-privileged-functions` — Privileged Functions
+- `au-2-event-logging` — Identify the types of events that the system is capable of logging in support of the audit function: [organization-defined];
+- `au-3-1-additional-audit-information` — Generate audit records containing the following additional information: [organization-defined].
+- `au-3-2-centralized-management-of-planned-audit-record-content` — Centralized Management of Planned Audit Record Content
+- `au-3-3-limit-personally-identifiable-information-elements` — Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment: [organizatio
+- `au-3-content-of-audit-records` — Ensure that audit records contain information that establishes the following: What type of event occurred; When the event occurred; Where the event oc
+- `au-4-1-transfer-to-alternate-storage` — Transfer audit logs [organization-defined] to a different system, system component, or media other than the system or system component conducting the 
+- `au-4-audit-log-storage-capacity` — Allocate audit log storage capacity to accommodate [organization-defined].
+- `au-5-1-storage-capacity-warning` — Provide a warning to [organization-defined] within [organization-defined] when allocated audit log storage volume reaches [organization-defined] of re
+- `au-5-2-real-time-alerts` — Provide an alert within [organization-defined] to [organization-defined] when the following audit failure events occur: [organization-defined].
+- `au-5-3-configurable-traffic-volume-thresholds` — Enforce configurable network communications traffic volume thresholds reflecting limits on audit log storage capacity and [organization-defined] netwo
+- `au-5-4-shutdown-on-failure` — Invoke a [organization-defined] in the event of [organization-defined] , unless an alternate audit logging capability exists.
+- `au-5-5-alternate-audit-logging-capability` — Provide an alternate audit logging capability in the event of a failure in primary audit logging capability that implements [organization-defined].
+- `au-5-response-to-audit-logging-process-failures` — Alert [organization-defined] within [organization-defined] in the event of an audit logging process failure;
+- `au-6-1-automated-process-integration` — Integrate audit record review, analysis, and reporting processes using [organization-defined].
+- `au-6-10-audit-level-adjustment` — Audit Level Adjustment
+- `au-6-2-automated-security-alerts` — Automated Security Alerts
+- `au-6-3-correlate-audit-record-repositories` — Analyze and correlate audit records across different repositories to gain organization-wide situational awareness.
+- `au-6-4-central-review-and-analysis` — Provide and implement the capability to centrally review and analyze audit records from multiple components within the system.
+- `au-6-5-integrated-analysis-of-audit-records` — Integrate analysis of audit records with analysis of [organization-defined] to further enhance the ability to identify inappropriate or unusual activi
+- `au-6-6-correlation-with-physical-monitoring` — Correlate information from audit records with information obtained from monitoring physical access to further enhance the ability to identify suspicio
+- `au-6-7-permitted-actions` — Specify the permitted actions for each [organization-defined] associated with the review, analysis, and reporting of audit record information.
+- `au-6-8-full-text-analysis-of-privileged-commands` — Perform a full text analysis of logged privileged commands in a physically distinct component or subsystem of the system, or other system that is dedi
+- `au-6-9-correlation-with-information-from-nontechnical-sources` — Correlate information from nontechnical sources with audit record information to enhance organization-wide situational awareness.
+- `au-6-audit-record-review-analysis-and-reporting` — Review and analyze system audit records [organization-defined] for indications of [organization-defined] and the potential impact of the inappropri...
+- `au-7-1-automatic-processing` — Provide and implement the capability to process, sort, and search audit records for events of interest based on the following content: [organization-d
+- `au-7-2-automatic-sort-and-search` — Automatic Sort and Search
+- `au-7-audit-record-reduction-and-report-generation` — Provide and implement an audit record reduction and report generation capability that: Supports on-demand audit record review, analysis, and reporting
+- `au-8-1-synchronization-with-authoritative-time-source` — Synchronization with Authoritative Time Source
+- `au-8-2-secondary-authoritative-time-source` — Secondary Authoritative Time Source
+- `au-8-time-stamps` — Use internal system clocks to generate time stamps for audit records;
+- `au-9-1-hardware-write-once-media` — Write audit trails to hardware-enforced, write-once media.
+- `au-9-2-store-on-separate-physical-systems-or-components` — Store audit records [organization-defined] in a repository that is part of a physically different system or system component than the system or compon
+- `au-9-3-cryptographic-protection` — Implement cryptographic mechanisms to protect the integrity of audit information and audit tools.
+- `au-9-4-access-by-subset-of-privileged-users` — Authorize access to management of audit logging functionality to only [organization-defined].
+- `au-9-5-dual-authorization` — Enforce dual authorization for [organization-defined] of [organization-defined].
+- `au-9-6-read-only-access` — Authorize read-only access to audit information to [organization-defined].
+- `au-9-7-store-on-component-with-different-operating-system` — Store audit information on a component running a different operating system than the system or component being audited.
+- `au-9-protection-of-audit-information` — Protect audit information and audit logging tools from unauthorized access, modification, and deletion;
+- `audit-record-content-03-03-02-audit-record-content` — Include the following content in audit records: What type of event occurred When the event occurred Where the event occurred Source of the event Outco
+- `audit-record-generation-03-03-03-audit-record-generation` — Generate audit records for the selected event types and audit record content specified in 03.03.01 and 03.03.02.
+- `audit-record-reduction-and-report-generation-03-03-06-audit-reco` — Implement an audit record reduction and report generation capability that supports audit record review, analysis, reporting requirements, and after...
+- `audit-record-review-analysis-and-reporting-03-03-05-audit-record` — Review and analyze system audit records [organization-defined] for indications and the potential impact of inappropriate or unusual activity.
+- `authentication-feedback-03-05-11-authentication-feedback` — Authentication Feedback
+- `authenticator-management-03-05-12-authenticator-management` — Verify the identity of the individual, group, role, service, or device receiving the authenticator as part of the initial authenticator distribution.
+- `authorized-software-allow-by-exception-03-04-08-authorized-softw` — Identify software programs authorized to execute on the system.
+- `awareness-and-training-pr-at-awareness-and-training` — The organization's personnel are provided with cybersecurity awareness and training so that they can perform their cybersecurity-related tasks
+- `baseline-configuration-03-04-01-baseline-configuration` — Develop and maintain under configuration control, a current baseline configuration of the system.
+- `boundary-protection-03-13-01-boundary-protection` — Monitor and control communications at external managed interfaces to the system and key internal managed interfaces within the system.
+- `business-environment-id-be-business-environment` — Business Environment
+- `ca-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] assessment, authorization, and monitoring policy that: Procedures
+- `ca-2-1-independent-assessors` — Employ independent assessors or assessment teams to conduct control assessments.
+- `ca-2-2-specialized-assessments` — Include as part of control assessments, [organization-defined], [organization-defined], [organization-defined].
+- `ca-2-3-leveraging-results-from-external-organizations` — Leverage the results of control assessments performed by [organization-defined] on [organization-defined] when the assessment meets [organization-defi
+- `ca-2-control-assessments` — Select the appropriate assessor or assessment team for the type of assessment to be conducted;
+- `ca-3-1-unclassified-national-security-system-connections` — Unclassified National Security System Connections
+- `ca-3-2-classified-national-security-system-connections` — Classified National Security System Connections
+- `ca-3-3-unclassified-non-national-security-system-connections` — Unclassified Non-national Security System Connections
+- `ca-3-4-connections-to-public-networks` — Connections to Public Networks
+- `ca-3-5-restrictions-on-external-system-connections` — Restrictions on External System Connections
+- `ca-3-6-transfer-authorizations` — Verify that individuals or systems transferring data between interconnecting systems have the requisite authorizations (i.e., write permissions or pri
+- `ca-3-7-transitive-information-exchanges` — Identify transitive (downstream) information exchanges with other systems through the systems identified in [CA-3a](#ca-3_smt.a) ;
+- `ca-3-information-exchange` — Approve and manage the exchange of information between the system and other systems using [organization-defined];
+- `ca-4-security-certification` — Security Certification
+- `ca-5-1-automation-support-for-accuracy-and-currency` — Ensure the accuracy, currency, and availability of the plan of action and milestones for the system using [organization-defined].
+- `ca-5-plan-of-action-and-milestones` — Develop a plan of action and milestones for the system to document the planned remediation actions of the organization to correct weaknesses or def...
+- `ca-6-1-joint-authorization-intra-organization` — Employ a joint authorization process for the system that includes multiple authorizing officials from the same organization conducting the authorizati
+- `ca-6-2-joint-authorization-inter-organization` — Employ a joint authorization process for the system that includes multiple authorizing officials with at least one authorizing official from an organi
+- `ca-6-authorization` — Assign a senior official as the authorizing official for the system;
+- `ca-7-1-independent-assessment` — Employ independent assessors or assessment teams to monitor the controls in the system on an ongoing basis.
+- `ca-7-2-types-of-assessments` — Types of Assessments
+- `ca-7-3-trend-analyses` — Employ trend analyses to determine if control implementations, the frequency of continuous monitoring activities, and the types of activities used in 
+- `ca-7-4-risk-monitoring` — Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes the following: Effectiveness monitoring; Compliance mon
+- `ca-7-5-consistency-analysis` — Employ the following actions to validate that policies are established and implemented controls are operating in a consistent manner: [organization-de
+- `ca-7-6-automation-support-for-monitoring` — Ensure the accuracy, currency, and availability of monitoring results for the system using [organization-defined].
+- `ca-7-continuous-monitoring` — Develop a system-level continuous monitoring strategy and implement continuous monitoring in accordance with the organization-level continuous monitor
+- `ca-8-1-independent-penetration-testing-agent-or-team` — Employ an independent penetration testing agent or team to perform penetration testing on the system or system components.
+- `ca-8-2-red-team-exercises` — Employ the following red-team exercises to simulate attempts by adversaries to compromise organizational systems in accordance with applicable rules o
+- `ca-8-3-facility-penetration-testing` — Employ a penetration testing process that includes [organization-defined] [organization-defined] attempts to bypass or circumvent controls associated 
+- `ca-8-penetration-testing` — Conduct penetration testing [organization-defined] on [organization-defined].
+- `ca-9-1-compliance-checks` — Perform security and privacy compliance checks on constituent system components prior to the establishment of the internal connection.
+- `ca-9-internal-system-connections` — Authorize internal connections of [organization-defined] to the system;
+- `cm-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] configuration management policy that: Procedures to facilitate th
+- `cm-10-1-open-source-software` — Establish the following restrictions on the use of open-source software: [organization-defined].
+- `cm-10-software-usage-restrictions` — Use software and associated documentation in accordance with contract agreements and copyright laws;
+- `cm-11-1-alerts-for-unauthorized-installations` — Alerts for Unauthorized Installations
+- `cm-11-2-software-installation-with-privileged-status` — Allow user installation of software only with explicit privileged status.
+- `cm-11-3-automated-enforcement-and-monitoring` — Enforce and monitor compliance with software installation policies using [organization-defined].
+- `cm-11-user-installed-software` — Establish [organization-defined] governing the installation of software by users;
+- `cm-12-1-automated-tools-to-support-information-location` — Use automated tools to identify [organization-defined] on [organization-defined] to ensure controls are in place to protect organizational information
+- `cm-12-information-location` — Identify and document the location of [organization-defined] and the specific system components on which the information is processed and stored;
+- `cm-13-data-action-mapping` — Develop and document a map of system data actions.
+- `cm-14-signed-components` — Prevent the installation of [organization-defined] without verification that the component has been digitally signed using a certificate that is recog
+- `cm-2-1-reviews-and-updates` — Reviews and Updates
+- `cm-2-2-automation-support-for-accuracy-and-currency` — Maintain the currency, completeness, accuracy, and availability of the baseline configuration of the system using [organization-defined].
+- `cm-2-3-retention-of-previous-configurations` — Retain [organization-defined] of previous versions of baseline configurations of the system to support rollback.
+- `cm-2-4-unauthorized-software` — Unauthorized Software
+- `cm-2-5-authorized-software` — Authorized Software
+- `cm-2-6-development-and-test-environments` — Maintain a baseline configuration for system development and test environments that is managed separately from the operational baseline configuration.
+- `cm-2-7-configure-systems-and-components-for-high-risk-areas` — Issue [organization-defined] with [organization-defined] to individuals traveling to locations that the organization deems to be of significant risk;
+- `cm-2-baseline-configuration` — Develop, document, and maintain under configuration control, a current baseline configuration of the system;
+- `cm-3-1-automated-documentation-notification-and-prohibition-of-c` — Use [organization-defined] to: Document proposed changes to the system; Notify [organization-defined] of proposed changes to the system and request ch
+- `cm-3-2-testing-validation-and-documentation-of-changes` — Test, validate, and document changes to the system before finalizing the implementation of the changes.
+- `cm-3-3-automated-change-implementation` — Implement changes to the current system baseline and deploy the updated baseline across the installed base using [organization-defined].
+- `cm-3-4-security-and-privacy-representatives` — Require [organization-defined] to be members of the [organization-defined].
+- `cm-3-5-automated-security-response` — Implement the following security responses automatically if baseline configurations are changed in an unauthorized manner: [organization-defined].
+- `cm-3-6-cryptography-management` — Ensure that cryptographic mechanisms used to provide the following controls are under configuration management: [organization-defined].
+- `cm-3-7-review-system-changes` — Review changes to the system [organization-defined] or when [organization-defined] to determine whether unauthorized changes have occurred.
+- `cm-3-8-prevent-or-restrict-configuration-changes` — Prevent or restrict changes to the configuration of the system under the following circumstances: [organization-defined].
+- `cm-3-configuration-change-control` — Determine and document the types of changes to the system that are configuration-controlled;
+- `cm-4-1-separate-test-environments` — Analyze changes to the system in a separate test environment before implementation in an operational environment, looking for security and privacy imp
+- `cm-4-2-verification-of-controls` — After system changes, verify that the impacted controls are implemented correctly, operating as intended, and producing the desired outcome with regar
+- `cm-4-impact-analyses` — Analyze changes to the system to determine potential security and privacy impacts prior to change implementation.
+- `cm-5-1-automated-access-enforcement-and-audit-records` — Enforce access restrictions using [organization-defined] ;
+- `cm-5-2-review-system-changes` — Review System Changes
+- `cm-5-3-signed-components` — Signed Components
+- `cm-5-4-dual-authorization` — Enforce dual authorization for implementing changes to [organization-defined].
+- `cm-5-5-privilege-limitation-for-production-and-operation` — Limit privileges to change system components and system-related information within a production or operational environment;
+- `cm-5-6-limit-library-privileges` — Limit privileges to change software resident within software libraries.
+- `cm-5-7-automatic-implementation-of-security-safeguards` — Automatic Implementation of Security Safeguards
+- `cm-5-access-restrictions-for-change` — Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.
+- `cm-6-1-automated-management-application-and-verification` — Manage, apply, and verify configuration settings for [organization-defined] using [organization-defined].
+- `cm-6-2-respond-to-unauthorized-changes` — Take the following actions in response to unauthorized changes to [organization-defined]: [organization-defined].
+- `cm-6-3-unauthorized-change-detection` — Unauthorized Change Detection
+- `cm-6-4-conformance-demonstration` — Conformance Demonstration
+- `cm-6-configuration-settings` — Establish and document configuration settings for components employed within the system that reflect the most restrictive mode consistent with oper...
+- `cm-7-1-periodic-review` — Review the system [organization-defined] to identify unnecessary and/or nonsecure functions, ports, protocols, software, and services;
+- `cm-7-2-prevent-program-execution` — Prevent program execution in accordance with [organization-defined].
+- `cm-7-3-registration-compliance` — Ensure compliance with [organization-defined].
+- `cm-7-4-unauthorized-software-deny-by-exception` — Identify [organization-defined];
+- `cm-7-5-authorized-software-allow-by-exception` — Identify [organization-defined];
+- `cm-7-6-confined-environments-with-limited-privileges` — Require that the following user-installed software execute in a confined physical or virtual machine environment with limited privileges: [organizatio
+- `cm-7-7-code-execution-in-protected-environments` — Allow execution of binary or machine-executable code only in confined physical or virtual machine environments and with the explicit approval of [orga
+- `cm-7-8-binary-or-machine-executable-code` — Prohibit the use of binary or machine-executable code from sources with limited or no warranty or without the provision of source code;
+- `cm-7-9-prohibiting-the-use-of-unauthorized-hardware` — Identify [organization-defined];
+- `cm-7-least-functionality` — Configure the system to provide only [organization-defined] ;
+- `cm-8-1-updates-during-installation-and-removal` — Update the inventory of system components as part of component installations, removals, and system updates.
+- `cm-8-2-automated-maintenance` — Maintain the currency, completeness, accuracy, and availability of the inventory of system components using [organization-defined].
+- `cm-8-3-automated-unauthorized-component-detection` — Detect the presence of unauthorized hardware, software, and firmware components within the system using [organization-defined] [organization-define...
+- `cm-8-4-accountability-information` — Include in the system component inventory information, a means for identifying by [organization-defined] , individuals responsible and accountable for
+- `cm-8-5-no-duplicate-accounting-of-components` — No Duplicate Accounting of Components
+- `cm-8-6-assessed-configurations-and-approved-deviations` — Include assessed component configurations and any approved deviations to current deployed configurations in the system component inventory.
+- `cm-8-7-centralized-repository` — Provide a centralized repository for the inventory of system components.
+- `cm-8-8-automated-location-tracking` — Support the tracking of system components by geographic location using [organization-defined].
+- `cm-8-9-assignment-of-components-to-systems` — Assign system components to a system;
+- `cm-8-system-component-inventory` — Develop and document an inventory of system components that: Accurately reflects the system; Includes all components within the system; Does not inclu
+- `cm-9-1-assignment-of-responsibility` — Assign responsibility for developing the configuration management process to organizational personnel that are not directly involved in system develop
+- `cm-9-configuration-management-plan` — Develop, document, and implement a configuration management plan for the system that: Addresses roles, responsibilities, and configuration management 
+- `collaborative-computing-devices-and-applications-03-13-12-collab` — Prohibit the remote activation of collaborative computing devices and applications with the following exceptions: [organization-defined].
+- `configuration-change-control-03-04-03-configuration-change-contr` — Define the types of changes to the system that are configuration-controlled.
+- `configuration-settings-03-04-02-configuration-settings` — Establish, document, and implement the following configuration settings for the system that reflect the most restrictive mode consistent with opera...
+- `configure-software-to-have-secure-settings-by-default-pw-9-confi` — Help improve the security of the software at the time of installation to reduce the likelihood of the software being deployed with weak security setti
+- `configure-the-compilation-interpreter-and-build-processes-to-imp` — Decrease the number of security vulnerabilities in the software and reduce costs by eliminating vulnerabilities before testing occurs.
+- `continuous-monitoring-03-12-03-continuous-monitoring` — Continuous Monitoring
+- `continuous-monitoring-de-cm-continuous-monitoring` — Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events
+- `cp-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] contingency planning policy that: Procedures to facilitate the im
+- `cp-10-1-contingency-plan-testing` — Contingency Plan Testing
+- `cp-10-2-transaction-recovery` — Implement transaction recovery for systems that are transaction-based.
+- `cp-10-3-compensating-security-controls` — Addressed through tailoring.
+- `cp-10-4-restore-within-time-period` — Provide the capability to restore system components within [organization-defined] from configuration-controlled and integrity-protected information re
+- `cp-10-5-failover-capability` — Failover Capability
+- `cp-10-6-component-protection` — Protect system components used for recovery and reconstitution.
+- `cp-10-system-recovery-and-reconstitution` — Provide for the recovery and reconstitution of the system to a known state within [organization-defined] after a disruption, compromise, or failure.
+- `cp-11-alternate-communications-protocols` — Provide the capability to employ [organization-defined] in support of maintaining continuity of operations.
+- `cp-12-safe-mode` — When [organization-defined] are detected, enter a safe mode of operation with [organization-defined].
+- `cp-13-alternative-security-mechanisms` — Employ [organization-defined] for satisfying [organization-defined] when the primary means of implementing the security function is unavailable or com
+- `cp-2-1-coordinate-with-related-plans` — Coordinate contingency plan development with organizational elements responsible for related plans.
+- `cp-2-2-capacity-planning` — Conduct capacity planning so that necessary capacity for information processing, telecommunications, and environmental support exists during contingen
+- `cp-2-3-resume-mission-and-business-functions` — Plan for the resumption of [organization-defined] mission and business functions within [organization-defined] of contingency plan activation.
+- `cp-2-4-resume-all-mission-and-business-functions` — Resume All Mission and Business Functions
+- `cp-2-5-continue-mission-and-business-functions` — Plan for the continuance of [organization-defined] mission and business functions with minimal or no loss of operational continuity and sustains that 
+- `cp-2-6-alternate-processing-and-storage-sites` — Plan for the transfer of [organization-defined] mission and business functions to alternate processing and/or storage sites with minimal or no loss of
+- `cp-2-7-coordinate-with-external-service-providers` — Coordinate the contingency plan with the contingency plans of external service providers to ensure that contingency requirements can be satisfied.
+- `cp-2-8-identify-critical-assets` — Identify critical system assets supporting [organization-defined] mission and business functions.
+- `cp-2-contingency-plan` — Develop a contingency plan for the system that: Identifies essential mission and business functions and associated contingency requirements; Provides 
+- `cp-3-1-simulated-events` — Incorporate simulated events into contingency training to facilitate effective response by personnel in crisis situations.
+- `cp-3-2-mechanisms-used-in-training-environments` — Employ mechanisms used in operations to provide a more thorough and realistic contingency training environment.
+- `cp-3-contingency-training` — Provide contingency training to system users consistent with assigned roles and responsibilities: Within [organization-defined] of assuming a continge
+- `cp-4-1-coordinate-with-related-plans` — Coordinate contingency plan testing with organizational elements responsible for related plans.
+- `cp-4-2-alternate-processing-site` — Test the contingency plan at the alternate processing site: To familiarize contingency personnel with the facility and available resources; and To eva
+- `cp-4-3-automated-testing` — Test the contingency plan using [organization-defined].
+- `cp-4-4-full-recovery-and-reconstitution` — Include a full recovery and reconstitution of the system to a known state as part of contingency plan testing.
+- `cp-4-5-self-challenge` — Employ [organization-defined] to [organization-defined] to disrupt and adversely affect the system or system component.
+- `cp-4-contingency-plan-testing` — Test the contingency plan for the system [organization-defined] using the following tests to determine the effectiveness of the plan and the readin...
+- `cp-5-contingency-plan-update` — Contingency Plan Update
+- `cp-6-1-separation-from-primary-site` — Identify an alternate storage site that is sufficiently separated from the primary storage site to reduce susceptibility to the same threats.
+- `cp-6-2-recovery-time-and-recovery-point-objectives` — Configure the alternate storage site to facilitate recovery operations in accordance with recovery time and recovery point objectives.
+- `cp-6-3-accessibility` — Identify potential accessibility problems to the alternate storage site in the event of an area-wide disruption or disaster and outline explicit mitig
+- `cp-6-alternate-storage-site` — Establish an alternate storage site, including necessary agreements to permit the storage and retrieval of system backup information;
+- `cp-7-1-separation-from-primary-site` — Identify an alternate processing site that is sufficiently separated from the primary processing site to reduce susceptibility to the same threats.
+- `cp-7-2-accessibility` — Identify potential accessibility problems to alternate processing sites in the event of an area-wide disruption or disaster and outlines explicit miti
+- `cp-7-3-priority-of-service` — Develop alternate processing site agreements that contain priority-of-service provisions in accordance with availability requirements (including recov
+- `cp-7-4-preparation-for-use` — Prepare the alternate processing site so that the site can serve as the operational site supporting essential mission and business functions.
+- `cp-7-5-equivalent-information-security-safeguards` — Equivalent Information Security Safeguards
+- `cp-7-6-inability-to-return-to-primary-site` — Plan and prepare for circumstances that preclude returning to the primary processing site.
+- `cp-7-alternate-processing-site` — Establish an alternate processing site, including necessary agreements to permit the transfer and resumption of [organization-defined] for essentia...
+- `cp-8-1-priority-of-service-provisions` — Develop primary and alternate telecommunications service agreements that contain priority-of-service provisions in accordance with availability req...
+- `cp-8-2-single-points-of-failure` — Obtain alternate telecommunications services to reduce the likelihood of sharing a single point of failure with primary telecommunications services.
+- `cp-8-3-separation-of-primary-and-alternate-providers` — Obtain alternate telecommunications services from providers that are separated from primary service providers to reduce susceptibility to the same thr
+- `cp-8-4-provider-contingency-plan` — Require primary and alternate telecommunications service providers to have contingency plans;
+- `cp-8-5-alternate-telecommunication-service-testing` — Test alternate telecommunication services [organization-defined].
+- `cp-8-telecommunications-services` — Establish alternate telecommunications services, including necessary agreements to permit the resumption of [organization-defined] for essential missi
+- `cp-9-1-testing-for-reliability-and-integrity` — Test backup information [organization-defined] to verify media reliability and information integrity.
+- `cp-9-2-test-restoration-using-sampling` — Use a sample of backup information in the restoration of selected system functions as part of contingency plan testing.
+- `cp-9-3-separate-storage-for-critical-information` — Store backup copies of [organization-defined] in a separate facility or in a fire rated container that is not collocated with the operational system.
+- `cp-9-4-protection-from-unauthorized-modification` — Protection from Unauthorized Modification
+- `cp-9-5-transfer-to-alternate-storage-site` — Transfer system backup information to the alternate storage site [organization-defined].
+- `cp-9-6-redundant-secondary-system` — Conduct system backup by maintaining a redundant secondary system that is not collocated with the primary system and that can be activated without los
+- `cp-9-7-dual-authorization-for-deletion-or-destruction` — Enforce dual authorization for the deletion or destruction of [organization-defined].
+- `cp-9-8-cryptographic-protection` — Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of [organization-defined].
+- `cp-9-system-backup` — Conduct backups of user-level information contained in [organization-defined] [organization-defined];
+- `create-source-code-by-adhering-to-secure-coding-practices-pw-5-c` — Decrease the number of security vulnerabilities in the software, and reduce costs by minimizing vulnerabilities introduced during source code creation
+- `cryptographic-key-establishment-and-management-03-13-10-cryptogr` — Cryptographic Key Establishment and Management
+- `cryptographic-protection-03-13-11-cryptographic-protection` — Cryptographic Protection
+- `cybersecurity-supply-chain-risk-management-gv-sc-cybersecurity-s` — Cyber supply chain risk management processes are identified, established, managed, monitored, and improved by organizational stakeholders
+- `data-security-pr-ds-data-security` — Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information
+- `de-ae-01-deae-01` — A baseline of network operations and expected data flows for users and systems is established and managed
+- `de-ae-02-deae-02` — Potentially adverse events are analyzed to better understand associated activities
+- `de-ae-03-deae-03` — Information is correlated from multiple sources
+- `de-ae-04-deae-04` — The estimated impact and scope of adverse events are understood
+- `de-ae-05-deae-05` — Incident alert thresholds are established
+- `de-ae-06-deae-06` — Information on adverse events is provided to authorized staff and tools
+- `de-ae-07-deae-07` — Cyber threat intelligence and other contextual information are integrated into the analysis
+- `de-ae-08-deae-08` — Incidents are declared when adverse events meet the defined incident criteria
+- `de-cm-01-decm-01` — Networks and network services are monitored to find potentially adverse events
+- `de-cm-02-decm-02` — The physical environment is monitored to find potentially adverse events
+- `de-cm-03-decm-03` — Personnel activity and technology usage are monitored to find potentially adverse events
+- `de-cm-04-decm-04` — Malicious code is detected
+- `de-cm-05-decm-05` — Unauthorized mobile code is detected
+- `de-cm-06-decm-06` — External service provider activities and services are monitored to find potentially adverse events
+- `de-cm-07-decm-07` — Monitoring for unauthorized personnel, connections, devices, and software is performed
+- `de-cm-08-decm-08` — Vulnerability scans are performed
+- `de-cm-09-decm-09` — Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events
+- `de-dp-01-dedp-01` — Roles and responsibilities for detection are well defined to ensure accountability
+- `de-dp-02-dedp-02` — Detection activities comply with all applicable requirements
+- `de-dp-03-dedp-03` — Detection processes are tested
+- `de-dp-04-dedp-04` — Event detection information is communicated
+- `de-dp-05-dedp-05` — Detection processes are continuously improved
+- `define-and-use-criteria-for-software-security-checks-po-4-define` — Help ensure that the software resulting from the SDLC meets the organization’s expectations by defining and using criteria for checking the software’s
+- `define-security-requirements-for-software-development-po-1-defin` — Ensure that security requirements for software development are known at all times so that they can be taken into account throughout the SDLC and du...
+- `design-software-to-meet-security-requirements-and-mitigate-secur` — Identify and evaluate the security requirements for the software;
+- `detection-processes-de-dp-detection-processes` — Detection Processes
+- `device-identification-and-authentication-03-05-02-device-identif` — Device Identification and Authentication
+- `device-lock-03-01-10-device-lock` — Prevent access to the system by [organization-defined].
+- `event-logging-03-03-01-event-logging` — Specify the following event types selected for logging within the system: [organization-defined].
+- `external-system-services-03-16-03-external-system-services` — Require the providers of external system services used for the processing, storage, or transmission of CUI to comply with the following security re...
+- `flaw-remediation-03-14-01-flaw-remediation` — Identify, report, and correct system flaws.
+- `governance-id-gv-governance` — Governance
+- `gv-oc-01-gvoc-01` — The organizational mission is understood and informs cybersecurity risk management
+- `gv-oc-02-gvoc-02` — Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and conside
+- `gv-oc-03-gvoc-03` — Legal, regulatory, and contractual requirements regarding cybersecurity - including privacy and civil liberties obligations - are understood and manag
+- `gv-oc-04-gvoc-04` — Critical objectives, capabilities, and services that external stakeholders depend on or expect from the organization are understood and communicated
+- `gv-oc-05-gvoc-05` — Outcomes, capabilities, and services that the organization depends on are understood and communicated
+- `gv-ov-01-gvov-01` — Cybersecurity risk management strategy outcomes are reviewed to inform and adjust strategy and direction
+- `gv-ov-02-gvov-02` — The cybersecurity risk management strategy is reviewed and adjusted to ensure coverage of organizational requirements and risks
+- `gv-ov-03-gvov-03` — Organizational cybersecurity risk management performance is evaluated and reviewed for adjustments needed
+- `gv-po-01-gvpo-01` — Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and
+- `gv-po-02-gvpo-02` — Policy for managing cybersecurity risks is reviewed, updated, communicated, and enforced to reflect changes in requirements, threats, technology, and 
+- `gv-rm-01-gvrm-01` — Risk management objectives are established and agreed to by organizational stakeholders
+- `gv-rm-02-gvrm-02` — Risk appetite and risk tolerance statements are established, communicated, and maintained
+- `gv-rm-03-gvrm-03` — Cybersecurity risk management activities and outcomes are included in enterprise risk management processes
+- `gv-rm-04-gvrm-04` — Strategic direction that describes appropriate risk response options is established and communicated
+- `gv-rm-05-gvrm-05` — Lines of communication across the organization are established for cybersecurity risks, including risks from suppliers and other third parties
+- `gv-rm-06-gvrm-06` — A standardized method for calculating, documenting, categorizing, and prioritizing cybersecurity risks is established and communicated
+- `gv-rm-07-gvrm-07` — Strategic opportunities (i.e., positive risks) are characterized and are included in organizational cybersecurity risk discussions
+- `gv-rr-01-gvrr-01` — Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually imp
+- `gv-rr-02-gvrr-02` — Roles, responsibilities, and authorities related to cybersecurity risk management are established, communicated, understood, and enforced
+- `gv-rr-03-gvrr-03` — Adequate resources are allocated commensurate with the cybersecurity risk strategy, roles, responsibilities, and policies
+- `gv-rr-04-gvrr-04` — Cybersecurity is included in human resources practices
+- `gv-sc-01-gvsc-01` — A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational st
+- `gv-sc-02-gvsc-02` — Cybersecurity roles and responsibilities for suppliers, customers, and partners are established, communicated, and coordinated internally and external
+- `gv-sc-03-gvsc-03` — Cybersecurity supply chain risk management is integrated into cybersecurity and enterprise risk management, risk assessment, and improvement processes
+- `gv-sc-04-gvsc-04` — Suppliers are known and prioritized by criticality
+- `gv-sc-05-gvsc-05` — Requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements
+- `gv-sc-06-gvsc-06` — Planning and due diligence are performed to reduce risks before entering into formal supplier or other third-party relationships
+- `gv-sc-07-gvsc-07` — The risks posed by a supplier, their products and services, and other third parties are understood, recorded, prioritized, assessed, responded to, and
+- `gv-sc-08-gvsc-08` — Relevant suppliers and other third parties are included in incident planning, response, and recovery activities
+- `gv-sc-09-gvsc-09` — Supply chain security practices are integrated into cybersecurity and enterprise risk management programs, and their performance is monitored througho
+- `gv-sc-10-gvsc-10` — Cybersecurity supply chain risk management plans include provisions for activities that occur after the conclusion of a partnership or service agreeme
+- `ia-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] identification and authentication policy that: Procedures to faci
+- `ia-10-adaptive-authentication` — Require individuals accessing the system to employ [organization-defined] under specific [organization-defined].
+- `ia-11-re-authentication` — Require users to re-authenticate when [organization-defined].
+- `ia-12-1-supervisor-authorization` — Require that the registration process to receive an account for logical access includes supervisor or sponsor authorization.
+- `ia-12-2-identity-evidence` — Require evidence of individual identification be presented to the registration authority.
+- `ia-12-3-identity-evidence-validation-and-verification` — Require that the presented identity evidence be validated and verified through [organization-defined].
+- `ia-12-4-in-person-validation-and-verification` — Require that the validation and verification of identity evidence be conducted in person before a designated registration authority.
+- `ia-12-5-address-confirmation` — Require that a [organization-defined] be delivered through an out-of-band channel to verify the users address (physical or digital) of record.
+- `ia-12-6-accept-externally-proofed-identities` — Accept externally-proofed identities at [organization-defined].
+- `ia-12-identity-proofing` — Identity proof users that require accounts for logical access to systems based on appropriate identity assurance level requirements as specified in...
+- `ia-13-1-protection-of-cryptographic-keys` — Cryptographic keys that protect access tokens are generated, managed, and protected from disclosure and misuse.
+- `ia-13-2-verification-of-identity-assertions-and-access-tokens` — The source and integrity of identity assertions and access tokens are verified before granting access to system and information resources.
+- `ia-13-3-token-management` — In accordance with [organization-defined], assertions and access tokens are: generated; issued; refreshed; revoked; time-restricted; and audience-rest
+- `ia-13-identity-providers-and-authorization-servers` — Employ identity providers and authorization servers to manage user, device, and non-person entity (NPE) identities, attributes, and access rights supp
+- `ia-2-1-multi-factor-authentication-to-privileged-accounts` — Implement multi-factor authentication for access to privileged accounts.
+- `ia-2-10-single-sign-on` — Provide a single sign-on capability for [organization-defined].
+- `ia-2-11-remote-access-separate-device` — Remote Access — Separate Device
+- `ia-2-12-acceptance-of-piv-credentials` — Accept and electronically verify Personal Identity Verification-compliant credentials.
+- `ia-2-13-out-of-band-authentication` — Implement the following out-of-band authentication mechanisms under [organization-defined]: [organization-defined].
+- `ia-2-2-multi-factor-authentication-to-non-privileged-accounts` — Implement multi-factor authentication for access to non-privileged accounts.
+- `ia-2-3-local-access-to-privileged-accounts` — Local Access to Privileged Accounts
+- `ia-2-4-local-access-to-non-privileged-accounts` — Local Access to Non-privileged Accounts
+- `ia-2-5-individual-authentication-with-group-authentication` — When shared accounts or authenticators are employed, require users to be individually authenticated before granting access to the shared accounts or r
+- `ia-2-6-access-to-accounts-separate-device` — Implement multi-factor authentication for [organization-defined] access to [organization-defined] such that: One of the factors is provided by a devic
+- `ia-2-7-network-access-to-non-privileged-accounts-separate-device` — Network Access to Non-privileged Accounts — Separate Device
+- `ia-2-8-access-to-accounts-replay-resistant` — Implement replay-resistant authentication mechanisms for access to [organization-defined].
+- `ia-2-9-network-access-to-non-privileged-accounts-replay-resistan` — Network Access to Non-privileged Accounts — Replay Resistant
+- `ia-2-identification-and-authentication-organizational-users` — Uniquely identify and authenticate organizational users and associate that unique identification with processes acting on behalf of those users.
+- `ia-3-1-cryptographic-bidirectional-authentication` — Authenticate [organization-defined] before establishing [organization-defined] connection using bidirectional authentication that is cryptographically
+- `ia-3-2-cryptographic-bidirectional-network-authentication` — Cryptographic Bidirectional Network Authentication
+- `ia-3-3-dynamic-address-allocation` — Where addresses are allocated dynamically, standardize dynamic address allocation lease information and the lease duration assigned to devices in a...
+- `ia-3-4-device-attestation` — Handle device identification and authentication based on attestation by [organization-defined].
+- `ia-3-device-identification-and-authentication` — Uniquely identify and authenticate [organization-defined] before establishing a [organization-defined] connection.
+- `ia-4-1-prohibit-account-identifiers-as-public-identifiers` — Prohibit the use of system account identifiers that are the same as public identifiers for individual accounts.
+- `ia-4-2-supervisor-authorization` — Supervisor Authorization
+- `ia-4-3-multiple-forms-of-certification` — Multiple Forms of Certification
+- `ia-4-4-identify-user-status` — Manage individual identifiers by uniquely identifying each individual as [organization-defined].
+- `ia-4-5-dynamic-management` — Manage individual identifiers dynamically in accordance with [organization-defined].
+- `ia-4-6-cross-organization-management` — Coordinate with the following external organizations for cross-organization management of identifiers: [organization-defined].
+- `ia-4-7-in-person-registration` — In-person Registration
+- `ia-4-8-pairwise-pseudonymous-identifiers` — Generate pairwise pseudonymous identifiers.
+- `ia-4-9-attribute-maintenance-and-protection` — Maintain the attributes for each uniquely identified individual, device, or service in [organization-defined].
+- `ia-4-identifier-management` — Manage system identifiers by: Receiving authorization from [organization-defined] to assign an individual, group, role, service, or device identifier;
+- `ia-5-1-password-based-authentication` — For password-based authentication: Maintain a list of commonly-used, expected, or compromised passwords and update the list [organization-defined] and
+- `ia-5-10-dynamic-credential-binding` — Bind identities and authenticators dynamically using the following rules: [organization-defined].
+- `ia-5-11-hardware-token-based-authentication` — Hardware Token-based Authentication
+- `ia-5-12-biometric-authentication-performance` — For biometric-based authentication, employ mechanisms that satisfy the following biometric quality requirements [organization-defined].
+- `ia-5-13-expiration-of-cached-authenticators` — Prohibit the use of cached authenticators after [organization-defined].
+- `ia-5-14-managing-content-of-pki-trust-stores` — For PKI-based authentication, employ an organization-wide methodology for managing the content of PKI trust stores installed across all platforms, inc
+- `ia-5-15-gsa-approved-products-and-services` — Use only General Services Administration-approved products and services for identity, credential, and access management.
+- `ia-5-16-in-person-or-trusted-external-party-authenticator-issuan` — Require that the issuance of [organization-defined] be conducted [organization-defined] before [organization-defined] with authorization by [organizat
+- `ia-5-17-presentation-attack-detection-for-biometric-authenticato` — Employ presentation attack detection mechanisms for biometric-based authentication.
+- `ia-5-18-password-managers` — Employ [organization-defined] to generate and manage passwords;
+- `ia-5-2-public-key-based-authentication` — For public key-based authentication: Enforce authorized access to the corresponding private key; and Map the authenticated identity to the account of 
+- `ia-5-3-in-person-or-trusted-external-party-registration` — In-person or Trusted External Party Registration
+- `ia-5-4-automated-support-for-password-strength-determination` — Automated Support for Password Strength Determination
+- `ia-5-5-change-authenticators-prior-to-delivery` — Require developers and installers of system components to provide unique authenticators or change default authenticators prior to delivery and install
+- `ia-5-6-protection-of-authenticators` — Protect authenticators commensurate with the security category of the information to which use of the authenticator permits access.
+- `ia-5-7-no-embedded-unencrypted-static-authenticators` — Ensure that unencrypted static authenticators are not embedded in applications or other forms of static storage.
+- `ia-5-8-multiple-system-accounts` — Implement [organization-defined] to manage the risk of compromise due to individuals having accounts on multiple systems.
+- `ia-5-9-federated-credential-management` — Use the following external organizations to federate credentials: [organization-defined].
+- `ia-5-authenticator-management` — Manage system authenticators by: Verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, service, o
+- `ia-6-authentication-feedback` — Obscure feedback of authentication information during the authentication process to protect the information from possible exploitation and use by unau
+- `ia-7-cryptographic-module-authentication` — Implement mechanisms for authentication to a cryptographic module that meet the requirements of applicable laws, executive orders, directives, policie
+- `ia-8-1-acceptance-of-piv-credentials-from-other-agencies` — Accept and electronically verify Personal Identity Verification-compliant credentials from other federal agencies.
+- `ia-8-2-acceptance-of-external-authenticators` — Accept only external authenticators that are NIST-compliant;
+- `ia-8-3-use-of-ficam-approved-products` — Use of FICAM-approved Products
+- `ia-8-4-use-of-defined-profiles` — Conform to the following profiles for identity management [organization-defined].
+- `ia-8-5-acceptance-of-piv-i-credentials` — Accept and verify federated or PKI credentials that meet [organization-defined].
+- `ia-8-6-disassociability` — Implement the following measures to disassociate user attributes or identifier assertion relationships among individuals, credential service providers
+- `ia-8-identification-and-authentication-non-organizational-users` — Uniquely identify and authenticate non-organizational users or processes acting on behalf of non-organizational users.
+- `ia-9-1-information-exchange` — Information Exchange
+- `ia-9-2-transmission-of-decisions` — Transmission of Decisions
+- `ia-9-service-identification-and-authentication` — Uniquely identify and authenticate [organization-defined] before establishing communications with devices, users, or other services or applications.
+- `id-am-01-idam-01` — Inventories of hardware managed by the organization are maintained
+- `id-am-02-idam-02` — Inventories of software, services, and systems managed by the organization are maintained
+- `id-am-03-idam-03` — Representations of the organization's authorized network communication and internal and external network data flows are maintained
+- `id-am-04-idam-04` — Inventories of services provided by suppliers are maintained
+- `id-am-05-idam-05` — Assets are prioritized based on classification, criticality, resources, and impact on the mission
+- `id-am-06-idam-06` — Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders (e.g., suppliers, customers, partners) are established
+- `id-am-07-idam-07` — Inventories of data and corresponding metadata for designated data types are maintained
+- `id-am-08-idam-08` — Systems, hardware, software, services, and data are managed throughout their life cycles
+- `id-be-01-idbe-01` — The organization’s role in the supply chain is identified and communicated
+- `id-be-02-idbe-02` — The organization’s place in critical infrastructure and its industry sector is identified and communicated
+- `id-be-03-idbe-03` — Priorities for organizational mission, objectives, and activities are established and communicated
+- `id-be-04-idbe-04` — Dependencies and critical functions for delivery of critical services are established
+- `id-be-05-idbe-05` — Resilience requirements to support delivery of critical services are established for all operating states (e.g.
+- `id-gv-01-idgv-01` — Organizational cybersecurity policy is established and communicated
+- `id-gv-02-idgv-02` — Cybersecurity roles and responsibilities are coordinated and aligned with internal roles and external partners
+- `id-gv-03-idgv-03` — Legal and regulatory requirements regarding cybersecurity, including privacy and civil liberties obligations, are understood and managed
+- `id-gv-04-idgv-04` — Governance and risk management processes address cybersecurity risks
+- `id-im-01-idim-01` — Improvements are identified from evaluations
+- `id-im-02-idim-02` — Improvements are identified from security tests and exercises, including those done in coordination with suppliers and relevant third parties
+- `id-im-03-idim-03` — Improvements are identified from execution of operational processes, procedures, and activities
+- `id-im-04-idim-04` — Incident response plans and other cybersecurity plans that affect operations are established, communicated, maintained, and improved
+- `id-ra-01-idra-01` — Vulnerabilities in assets are identified, validated, and recorded
+- `id-ra-02-idra-02` — Cyber threat intelligence is received from information sharing forums and sources
+- `id-ra-03-idra-03` — Internal and external threats to the organization are identified and recorded
+- `id-ra-04-idra-04` — Potential impacts and likelihoods of threats exploiting vulnerabilities are identified and recorded
+- `id-ra-05-idra-05` — Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and inform risk response prioritization
+- `id-ra-06-idra-06` — Risk responses are chosen, prioritized, planned, tracked, and communicated
+- `id-ra-07-idra-07` — Changes and exceptions are managed, assessed for risk impact, recorded, and tracked
+- `id-ra-08-idra-08` — Processes for receiving, analyzing, and responding to vulnerability disclosures are established
+- `id-ra-09-idra-09` — The authenticity and integrity of hardware and software are assessed prior to acquisition and use
+- `id-ra-10-idra-10` — Critical suppliers are assessed prior to acquisition
+- `id-rm-01-idrm-01` — Risk management processes are established, managed, and agreed to by organizational stakeholders
+- `id-rm-02-idrm-02` — Organizational risk tolerance is determined and clearly expressed
+- `id-rm-03-idrm-03` — The organization’s determination of risk tolerance is informed by its role in critical infrastructure and sector specific risk analysis
+- `id-sc-01-idsc-01` — Cyber supply chain risk management processes are identified, established, assessed, managed, and agreed to by organizational stakeholders
+- `id-sc-02-idsc-02` — Suppliers and third party partners of information systems, components, and services are identified, prioritized, and assessed using a cyber supply cha
+- `id-sc-03-idsc-03` — Contracts with suppliers and third-party partners are used to implement appropriate measures designed to meet the objectives of an organization’s cybe
+- `id-sc-04-idsc-04` — Suppliers and third-party partners are routinely assessed using audits, test results, or other forms of evaluations to confirm they are meeting their 
+- `id-sc-05-idsc-05` — Response and recovery planning and testing are conducted with suppliers and third-party providers
+- `identifier-management-03-05-05-identifier-management` — Receive authorization from organizational personnel or roles to assign an individual, group, role, service, or device identifier.
+- `identify-and-confirm-vulnerabilities-on-an-ongoing-basis-rv-1-id` — Help ensure that vulnerabilities are identified more quickly so that they can be remediated more quickly in accordance with risk, reducing the window 
+- `identity-management-authentication-and-access-control-pr-aa-iden` — Access to physical and logical assets is limited to authorized users, services, and hardware and managed commensurate with the assessed risk of unauth
+- `identity-management-authentication-and-access-control-pr-ac-iden` — Identity Management, Authentication and Access Control
+- `impact-analyses-03-04-04-impact-analyses` — Analyze changes to the system to determine potential security impacts prior to change implementation.
+- `implement-and-maintain-secure-environments-for-software-developm` — Ensure that all components of the environments for software development are strongly protected from internal and external threats to prevent compro...
+- `implement-roles-and-responsibilities-po-2-implement-roles-and-re` — Ensure that everyone inside and outside of the organization involved in the SDLC is prepared to perform their SDLC-related roles and responsibilities 
+- `implement-supporting-toolchains-po-3-implement-supporting-toolch` — Use automation to reduce human effort and improve the accuracy, reproducibility, usability, and comprehensiveness of security practices throughout ...
+- `improvement-id-im-improvement` — Improvements to organizational cybersecurity risk management processes, procedures and activities are identified across all CSF Functions
+- `improvements-rc-im-improvements` — Improvements
+- `improvements-rs-im-improvements` — Improvements
+- `incident-analysis-rs-an-incident-analysis` — Investigations are conducted to ensure effective response and support forensics and recovery activities
+- `incident-handling-03-06-01-incident-handling` — Incident Handling
+- `incident-management-rs-ma-incident-management` — Responses to detected cybersecurity incidents are managed
+- `incident-mitigation-rs-mi-incident-mitigation` — Activities are performed to prevent expansion of an event and mitigate its effects
+- `incident-monitoring-reporting-and-response-assistance-03-06-02-i` — Track and document system security incidents.
+- `incident-recovery-communication-rc-co-incident-recovery-communic` — Restoration activities are coordinated with internal and external parties
+- `incident-recovery-plan-execution-rc-rp-incident-recovery-plan-ex` — Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents
+- `incident-response-plan-03-06-05-incident-response-plan` — Develop an incident response plan that: Provides the organization with a roadmap for implementing its incident response capability, Describes the stru
+- `incident-response-reporting-and-communication-rs-co-incident-res` — Response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies
+- `incident-response-testing-03-06-03-incident-response-testing` — Incident Response Testing
+- `incident-response-training-03-06-04-incident-response-training` — Provide incident response training to system users consistent with assigned roles and responsibilities: Within [organization-defined] of assuming an i
+- `information-exchange-03-12-05-information-exchange` — Approve and manage the exchange of CUI between the system and other systems using [organization-defined].
+- `information-flow-enforcement-03-01-03-information-flow-enforceme` — Information Flow Enforcement
+- `information-in-shared-system-resources-03-13-04-information-in-s` — Information in Shared System Resources
+- `information-location-03-04-11-information-location` — Identify and document the location of CUI and the system components on which the information is processed and stored.
+- `information-management-and-retention-03-14-08-information-manage` — Information Management and Retention
+- `information-protection-processes-and-procedures-pr-ip-informatio` — Information Protection Processes and Procedures
+- `ir-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] incident response policy that: Procedures to facilitate the imple
+- `ir-10-integrated-information-security-analysis-team` — Integrated Information Security Analysis Team
+- `ir-2-1-simulated-events` — Incorporate simulated events into incident response training to facilitate the required response by personnel in crisis situations.
+- `ir-2-2-automated-training-environments` — Provide an incident response training environment using [organization-defined].
+- `ir-2-3-breach` — Provide incident response training on how to identify and respond to a breach, including the organization’s process for reporting a breach.
+- `ir-2-incident-response-training` — Provide incident response training to system users consistent with assigned roles and responsibilities: Within [organization-defined] of assuming an i
+- `ir-3-1-automated-testing` — Test the incident response capability using [organization-defined].
+- `ir-3-2-coordination-with-related-plans` — Coordinate incident response testing with organizational elements responsible for related plans.
+- `ir-3-3-continuous-improvement` — Use qualitative and quantitative data from testing to: Determine the effectiveness of incident response processes; Continuously improve incident respo
+- `ir-3-incident-response-testing` — Test the effectiveness of the incident response capability for the system [organization-defined] using the following tests: [organization-defined].
+- `ir-4-1-automated-incident-handling-processes` — Support the incident handling process using [organization-defined].
+- `ir-4-10-supply-chain-coordination` — Coordinate incident handling activities involving supply chain events with other organizations involved in the supply chain.
+- `ir-4-11-integrated-incident-response-team` — Establish and maintain an integrated incident response team that can be deployed to any location identified by the organization in [organization-defin
+- `ir-4-12-malicious-code-and-forensic-analysis` — Analyze malicious code and/or other residual artifacts remaining in the system after the incident.
+- `ir-4-13-behavior-analysis` — Analyze anomalous or suspected adversarial behavior in or related to [organization-defined].
+- `ir-4-14-security-operations-center` — Establish and maintain a security operations center.
+- `ir-4-15-public-relations-and-reputation-repair` — Manage public relations associated with an incident;
+- `ir-4-2-dynamic-reconfiguration` — Include the following types of dynamic reconfiguration for [organization-defined] as part of the incident response capability: [organization-defined].
+- `ir-4-3-continuity-of-operations` — Identify [organization-defined] and take the following actions in response to those incidents to ensure continuation of organizational mission and bus
+- `ir-4-4-information-correlation` — Correlate incident information and individual incident responses to achieve an organization-wide perspective on incident awareness and response.
+- `ir-4-5-automatic-disabling-of-system` — Implement a configurable capability to automatically disable the system if [organization-defined] are detected.
+- `ir-4-6-insider-threats` — Implement an incident handling capability for incidents involving insider threats.
+- `ir-4-7-insider-threats-intra-organization-coordination` — Coordinate an incident handling capability for insider threats that includes the following organizational entities [organization-defined].
+- `ir-4-8-correlation-with-external-organizations` — Coordinate with [organization-defined] to correlate and share [organization-defined] to achieve a cross-organization perspective on incident awareness
+- `ir-4-9-dynamic-response-capability` — Employ [organization-defined] to respond to incidents.
+- `ir-4-incident-handling` — Implement an incident handling capability for incidents that is consistent with the incident response plan and includes preparation, detection and ...
+- `ir-5-1-automated-tracking-data-collection-and-analysis` — Track incidents and collect and analyze incident information using [organization-defined].
+- `ir-5-incident-monitoring` — Track and document incidents.
+- `ir-6-1-automated-reporting` — Report incidents using [organization-defined].
+- `ir-6-2-vulnerabilities-related-to-incidents` — Report system vulnerabilities associated with reported incidents to [organization-defined].
+- `ir-6-3-supply-chain-coordination` — Provide incident information to the provider of the product or service and other organizations involved in the supply chain or supply chain governance
+- `ir-6-incident-reporting` — Require personnel to report suspected incidents to the organizational incident response capability within [organization-defined] ;
+- `ir-7-1-automation-support-for-availability-of-information-and-su` — Increase the availability of incident response information and support using [organization-defined].
+- `ir-7-2-coordination-with-external-providers` — Establish a direct, cooperative relationship between its incident response capability and external providers of system protection capability;
+- `ir-7-incident-response-assistance` — Provide an incident response support resource, integral to the organizational incident response capability, that offers advice and assistance to users
+- `ir-8-1-breaches` — Include the following in the Incident Response Plan for breaches involving personally identifiable information: A process to determine if notice to in
+- `ir-8-incident-response-plan` — Develop an incident response plan that: Provides the organization with a roadmap for implementing its incident response capability; Describes the stru
+- `ir-9-1-responsible-personnel` — Responsible Personnel
+- `ir-9-2-training` — Provide information spillage response training [organization-defined].
+- `ir-9-3-post-spill-operations` — Implement the following procedures to ensure that organizational personnel impacted by information spills can continue to carry out assigned tasks whi
+- `ir-9-4-exposure-to-unauthorized-personnel` — Employ the following controls for personnel exposed to information not within assigned access authorizations: [organization-defined].
+- `ir-9-information-spillage-response` — Respond to information spills by: Assigning [organization-defined] with responsibility for responding to information spills; Identifying the specific 
+- `least-functionality-03-04-06-least-functionality` — Configure the system to provide only mission-essential capabilities.
+- `least-privilege-03-01-05-least-privilege` — Allow only authorized system access for users (or processes acting on behalf of users) that is necessary to accomplish assigned organizational tasks.
+- `least-privilege-privileged-accounts-03-01-06-least-privilege-pri` — Restrict privileged accounts on the system to [organization-defined]..
+- `least-privilege-privileged-functions-03-01-07-least-privilege-pr` — Prevent non-privileged users from executing privileged functions.
+- `literacy-training-and-awareness-03-02-01-literacy-training-and-a` — Provide security literacy training to system users: As part of initial training for new users and [organization-defined] thereafter, When required by 
+- `ma-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] maintenance policy that: Procedures to facilitate the implementat
+- `ma-2-1-record-content` — Record Content
+- `ma-2-2-automated-maintenance-activities` — Schedule, conduct, and document maintenance, repair, and replacement actions for the system using [organization-defined] ;
+- `ma-2-controlled-maintenance` — Schedule, document, and review records of maintenance, repair, and replacement on system components in accordance with manufacturer or vendor speci...
+- `ma-3-1-inspect-tools` — Inspect the maintenance tools used by maintenance personnel for improper or unauthorized modifications.
+- `ma-3-2-inspect-media` — Check media containing diagnostic and test programs for malicious code before the media are used in the system.
+- `ma-3-3-prevent-unauthorized-removal` — Prevent the removal of maintenance equipment containing organizational information by: Verifying that there is no organizational information contained
+- `ma-3-4-restricted-tool-use` — Restrict the use of maintenance tools to authorized personnel only.
+- `ma-3-5-execution-with-privilege` — Monitor the use of maintenance tools that execute with increased privilege.
+- `ma-3-6-software-updates-and-patches` — Inspect maintenance tools to ensure the latest software updates and patches are installed.
+- `ma-3-maintenance-tools` — Approve, control, and monitor the use of system maintenance tools;
+- `ma-4-1-logging-and-review` — Log [organization-defined] for nonlocal maintenance and diagnostic sessions;
+- `ma-4-2-document-nonlocal-maintenance` — Document Nonlocal Maintenance
+- `ma-4-3-comparable-security-and-sanitization` — Require that nonlocal maintenance and diagnostic services be performed from a system that implements a security capability comparable to the capabi...
+- `ma-4-4-authentication-and-separation-of-maintenance-sessions` — Protect nonlocal maintenance sessions by: Employing [organization-defined] ; and Separating the maintenance sessions from other network sessions with 
+- `ma-4-5-approvals-and-notifications` — Require the approval of each nonlocal maintenance session by [organization-defined] ;
+- `ma-4-6-cryptographic-protection` — Implement the following cryptographic mechanisms to protect the integrity and confidentiality of nonlocal maintenance and diagnostic communications: [
+- `ma-4-7-disconnect-verification` — Verify session and network connection termination after the completion of nonlocal maintenance and diagnostic sessions.
+- `ma-4-nonlocal-maintenance` — Approve and monitor nonlocal maintenance and diagnostic activities;
+- `ma-5-1-individuals-without-appropriate-access` — Implement procedures for the use of maintenance personnel that lack appropriate security clearances or are not U.S.
+- `ma-5-2-security-clearances-for-classified-systems` — Verify that personnel performing maintenance and diagnostic activities on a system processing, storing, or transmitting classified information possess
+- `ma-5-3-citizenship-requirements-for-classified-systems` — Verify that personnel performing maintenance and diagnostic activities on a system processing, storing, or transmitting classified information are ...
+- `ma-5-4-foreign-nationals` — Ensure that: Foreign nationals with appropriate security clearances are used to conduct maintenance and diagnostic activities on classified systems on
+- `ma-5-5-non-system-maintenance` — Ensure that non-escorted personnel performing maintenance activities not directly associated with the system but in the physical proximity of the syst
+- `ma-5-maintenance-personnel` — Establish a process for maintenance personnel authorization and maintain a list of authorized maintenance organizations or personnel;
+- `ma-6-1-preventive-maintenance` — Perform preventive maintenance on [organization-defined] at [organization-defined].
+- `ma-6-2-predictive-maintenance` — Perform predictive maintenance on [organization-defined] at [organization-defined].
+- `ma-6-3-automated-support-for-predictive-maintenance` — Transfer predictive maintenance data to a maintenance management system using [organization-defined].
+- `ma-6-timely-maintenance` — Obtain maintenance support and/or spare parts for [organization-defined] within [organization-defined] of failure.
+- `ma-7-field-maintenance` — Restrict or prohibit field maintenance on [organization-defined] to [organization-defined].
+- `maintenance-personnel-03-07-06-maintenance-personnel` — Establish a process for maintenance personnel authorization.
+- `maintenance-pr-ma-maintenance` — Maintenance
+- `maintenance-tools-03-07-04-maintenance-tools` — Approve, control, and monitor the use of system maintenance tools.
+- `malicious-code-protection-03-14-02-malicious-code-protection` — Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code.
+- `media-access-03-08-02-media-access` — Media Access
+- `media-marking-03-08-04-media-marking` — Media Marking
+- `media-sanitization-03-08-03-media-sanitization` — Media Sanitization
+- `media-storage-03-08-01-media-storage` — Media Storage
+- `media-transport-03-08-05-media-transport` — Protect and control system media that contain CUI during transport outside of controlled areas.
+- `media-use-03-08-07-media-use` — Restrict or prohibit the use of [organization-defined].
+- `mobile-code-03-13-13-mobile-code` — Define acceptable mobile code and mobile code technologies.
+- `monitoring-physical-access-03-10-02-monitoring-physical-access` — Monitor physical access to the facility where the system resides to detect and respond to physical security incidents.
+- `mp-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] media protection policy that: Procedures to facilitate the implem
+- `mp-2-1-automated-restricted-access` — Automated Restricted Access
+- `mp-2-2-cryptographic-protection` — Cryptographic Protection
+- `mp-2-media-access` — Restrict access to [organization-defined] to [organization-defined].
+- `mp-3-media-marking` — Mark system media indicating the distribution limitations, handling caveats, and applicable security markings (if any) of the information;
+- `mp-4-1-cryptographic-protection` — Cryptographic Protection
+- `mp-4-2-automated-restricted-access` — Restrict access to media storage areas and log access attempts and access granted using [organization-defined].
+- `mp-4-media-storage` — Physically control and securely store [organization-defined] within [organization-defined] ;
+- `mp-5-1-protection-outside-of-controlled-areas` — Protection Outside of Controlled Areas
+- `mp-5-2-documentation-of-activities` — Documentation of Activities
+- `mp-5-3-custodians` — Employ an identified custodian during transport of system media outside of controlled areas.
+- `mp-5-4-cryptographic-protection` — Cryptographic Protection
+- `mp-5-media-transport` — Protect and control [organization-defined] during transport outside of controlled areas using [organization-defined];
+- `mp-6-1-review-approve-track-document-and-verify` — Review, approve, track, document, and verify media sanitization and disposal actions.
+- `mp-6-2-equipment-testing` — Test sanitization equipment and procedures [organization-defined] to ensure that the intended sanitization is being achieved.
+- `mp-6-3-nondestructive-techniques` — Apply nondestructive sanitization techniques to portable storage devices prior to connecting such devices to the system under the following circumstan
+- `mp-6-4-controlled-unclassified-information` — Controlled Unclassified Information
+- `mp-6-5-classified-information` — Classified Information
+- `mp-6-6-media-destruction` — Media Destruction
+- `mp-6-7-dual-authorization` — Enforce dual authorization for the sanitization of [organization-defined].
+- `mp-6-8-remote-purging-or-wiping-of-information` — Provide the capability to purge or wipe information from [organization-defined] [organization-defined].
+- `mp-6-media-sanitization` — Sanitize [organization-defined] prior to disposal, release out of organizational control, or release for reuse using [organization-defined] ;
+- `mp-7-1-prohibit-use-without-owner` — Prohibit Use Without Owner
+- `mp-7-2-prohibit-use-of-sanitization-resistant-media` — Prohibit the use of sanitization-resistant media in organizational systems.
+- `mp-7-media-use` — [organization-defined] the use of [organization-defined] on [organization-defined] using [organization-defined] ;
+- `mp-8-1-documentation-of-process` — Document system media downgrading actions.
+- `mp-8-2-equipment-testing` — Test downgrading equipment and procedures [organization-defined] to ensure that downgrading actions are being achieved.
+- `mp-8-3-controlled-unclassified-information` — Downgrade system media containing controlled unclassified information prior to public release.
+- `mp-8-4-classified-information` — Downgrade system media containing classified information prior to release to individuals without required access authorizations.
+- `mp-8-media-downgrading` — Establish [organization-defined] that includes employing downgrading mechanisms with strength and integrity commensurate with the security category...
+- `multi-factor-authentication-03-05-03-multi-factor-authentication` — Multi-Factor Authentication
+- `network-communications-deny-by-default-allow-by-exception-03-13` — Network Communications – Deny by Default – Allow by Exception
+- `network-disconnect-03-13-09-network-disconnect` — Network Disconnect
+- `nonlocal-maintenance-03-07-05-nonlocal-maintenance` — Approve and monitor nonlocal maintenance and diagnostic activities.
+- `organizational-context-gv-oc-organizational-context` — The circumstances - mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements - surrounding the organizatio
+- `oversight-gv-ov-oversight` — Results of organization-wide cybersecurity risk management activities and performance are used to inform, improve, and adjust the risk management stra
+- `password-management-03-05-07-password-management` — Maintain a list of commonly-used, expected, or compromised passwords, and update the list [organization-defined] and when organizational passwords ...
+- `pe-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] physical and environmental protection policy that: Procedures to 
+- `pe-10-1-accidental-and-unauthorized-activation` — Accidental and Unauthorized Activation
+- `pe-10-emergency-shutoff` — Provide the capability of shutting off power to [organization-defined] in emergency situations;
+- `pe-11-1-alternate-power-supply-minimal-operational-capability` — Provide an alternate power supply for the system that is activated [organization-defined] and that can maintain minimally required operational capabil
+- `pe-11-2-alternate-power-supply-self-contained` — Provide an alternate power supply for the system that is activated [organization-defined] and that is: Self-contained; Not reliant on external power g
+- `pe-11-emergency-power` — Provide an uninterruptible power supply to facilitate [organization-defined] in the event of a primary power source loss.
+- `pe-12-1-essential-mission-and-business-functions` — Provide emergency lighting for all areas within the facility supporting essential mission and business functions.
+- `pe-12-emergency-lighting` — Employ and maintain automatic emergency lighting for the system that activates in the event of a power outage or disruption and that covers emergency 
+- `pe-13-1-detection-systems-automatic-activation-and-notification` — Employ fire detection systems that activate automatically and notify [organization-defined] and [organization-defined] in the event of a fire.
+- `pe-13-2-suppression-systems-automatic-activation-and-notificatio` — Employ fire suppression systems that activate automatically and notify [organization-defined] and [organization-defined] ;
+- `pe-13-3-automatic-fire-suppression` — Automatic Fire Suppression
+- `pe-13-4-inspections` — Ensure that the facility undergoes [organization-defined] fire protection inspections by authorized and qualified inspectors and identified deficienci
+- `pe-13-fire-protection` — Employ and maintain fire detection and suppression systems that are supported by an independent energy source.
+- `pe-14-1-automatic-controls` — Employ the following automatic environmental controls in the facility to prevent fluctuations potentially harmful to the system: [organization-defined
+- `pe-14-2-monitoring-with-alarms-and-notifications` — Employ environmental control monitoring that provides an alarm or notification of changes potentially harmful to personnel or equipment to [organizati
+- `pe-14-environmental-controls` — Maintain [organization-defined] levels within the facility where the system resides at [organization-defined] ;
+- `pe-15-1-automation-support` — Detect the presence of water near the system and alert [organization-defined] using [organization-defined].
+- `pe-15-water-damage-protection` — Protect the system from damage resulting from water leakage by providing master shutoff or isolation valves that are accessible, working properly, and
+- `pe-16-delivery-and-removal` — Authorize and control [organization-defined] entering and exiting the facility;
+- `pe-17-alternate-work-site` — Determine and document the [organization-defined] allowed for use by employees;
+- `pe-18-1-facility-site` — Facility Site
+- `pe-18-location-of-system-components` — Position system components within the facility to minimize potential damage from [organization-defined] and to minimize the opportunity for unauthoriz
+- `pe-19-1-national-emissions-policies-and-procedures` — Protect system components, associated data communications, and networks in accordance with national Emissions Security policies and procedures based o
+- `pe-19-information-leakage` — Protect the system from information leakage due to electromagnetic signals emanations.
+- `pe-2-1-access-by-position-or-role` — Authorize physical access to the facility where the system resides based on position or role.
+- `pe-2-2-two-forms-of-identification` — Require two forms of identification from the following forms of identification for visitor access to the facility where the system resides: [organizat
+- `pe-2-3-restrict-unescorted-access` — Restrict unescorted access to the facility where the system resides to personnel with [organization-defined].
+- `pe-2-physical-access-authorizations` — Develop, approve, and maintain a list of individuals with authorized access to the facility where the system resides;
+- `pe-20-asset-monitoring-and-tracking` — Employ [organization-defined] to track and monitor the location and movement of [organization-defined] within [organization-defined].
+- `pe-21-electromagnetic-pulse-protection` — Employ [organization-defined] against electromagnetic pulse damage for [organization-defined].
+- `pe-22-component-marking` — Mark [organization-defined] indicating the impact level or classification level of the information permitted to be processed, stored, or transmitted b
+- `pe-23-facility-location` — Plan the location or site of the facility where the system resides considering physical and environmental hazards;
+- `pe-3-1-system-access` — Enforce physical access authorizations to the system in addition to the physical access controls for the facility at [organization-defined].
+- `pe-3-2-facility-and-systems` — Perform security checks [organization-defined] at the physical perimeter of the facility or system for exfiltration of information or removal of syste
+- `pe-3-3-continuous-guards` — Employ guards to control [organization-defined] to the facility where the system resides 24 hours per day, 7 days per week.
+- `pe-3-4-lockable-casings` — Use lockable physical casings to protect [organization-defined] from unauthorized physical access.
+- `pe-3-5-tamper-protection` — Employ [organization-defined] to [organization-defined] physical tampering or alteration of [organization-defined] within the system.
+- `pe-3-6-facility-penetration-testing` — Facility Penetration Testing
+- `pe-3-7-physical-barriers` — Limit access using physical barriers.
+- `pe-3-8-access-control-vestibules` — Employ access control vestibules at [organization-defined].
+- `pe-3-physical-access-control` — Enforce physical access authorizations at [organization-defined] by: Verifying individual access authorizations before granting access to the facility
+- `pe-4-access-control-for-transmission` — Control physical access to [organization-defined] within organizational facilities using [organization-defined].
+- `pe-5-1-access-to-output-by-authorized-individuals` — Access to Output by Authorized Individuals
+- `pe-5-2-link-to-individual-identity` — Link individual identity to receipt of output from output devices.
+- `pe-5-3-marking-output-devices` — Marking Output Devices
+- `pe-5-access-control-for-output-devices` — Control physical access to output from [organization-defined] to prevent unauthorized individuals from obtaining the output.
+- `pe-6-1-intrusion-alarms-and-surveillance-equipment` — Monitor physical access to the facility where the system resides using physical intrusion alarms and surveillance equipment.
+- `pe-6-2-automated-intrusion-recognition-and-responses` — Recognize [organization-defined] and initiate [organization-defined] using [organization-defined].
+- `pe-6-3-video-surveillance` — Employ video surveillance of [organization-defined];
+- `pe-6-4-monitoring-physical-access-to-systems` — Monitor physical access to the system in addition to the physical access monitoring of the facility at [organization-defined].
+- `pe-6-monitoring-physical-access` — Monitor physical access to the facility where the system resides to detect and respond to physical security incidents;
+- `pe-7-visitor-control` — Visitor Control
+- `pe-8-1-automated-records-maintenance-and-review` — Maintain and review visitor access records using [organization-defined].
+- `pe-8-2-physical-access-records` — Physical Access Records
+- `pe-8-3-limit-personally-identifiable-information-elements` — Limit personally identifiable information contained in visitor access records to the following elements identified in the privacy risk assessment: [or
+- `pe-8-visitor-access-records` — Maintain visitor access records to the facility where the system resides for [organization-defined];
+- `pe-9-1-redundant-cabling` — Employ redundant power cabling paths that are physically separated by [organization-defined].
+- `pe-9-2-automatic-voltage-controls` — Employ automatic voltage controls for [organization-defined].
+- `pe-9-power-equipment-and-cabling` — Protect power equipment and power cabling for the system from damage and destruction.
+- `personnel-screening-03-09-01-personnel-screening` — Screen individuals prior to authorizing access to the system.
+- `personnel-termination-and-transfer-03-09-02-personnel-terminatio` — When individual employment is terminated: Disable system access within [organization-defined], Terminate or revoke authenticators and credentials asso
+- `physical-access-authorizations-03-10-01-physical-access-authoriz` — Develop, approve, and maintain a list of individuals with authorized access to the facility where the system resides.
+- `physical-access-control-03-10-07-physical-access-control` — Enforce physical access authorizations at entry and exit points to the facility where the system resides by: Verifying individual physical access auth
+- `pl-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] planning policy that: Procedures to facilitate the implementation
+- `pl-10-baseline-selection` — Select a control baseline for the system.
+- `pl-11-baseline-tailoring` — Tailor the selected control baseline by applying specified tailoring actions.
+- `pl-2-1-concept-of-operations` — Concept of Operations
+- `pl-2-2-functional-architecture` — Functional Architecture
+- `pl-2-3-plan-and-coordinate-with-other-organizational-entities` — Plan and Coordinate with Other Organizational Entities
+- `pl-2-system-security-and-privacy-plans` — Develop security and privacy plans for the system that: Are consistent with the organization’s enterprise architecture; Explicitly define the constitu
+- `pl-3-system-security-plan-update` — System Security Plan Update
+- `pl-4-1-social-media-and-external-siteapplication-usage-restricti` — Include in the rules of behavior, restrictions on: Use of social media, social networking sites, and external sites/applications; Posting organization
+- `pl-4-rules-of-behavior` — Establish and provide to individuals requiring access to the system, the rules that describe their responsibilities and expected behavior for infor...
+- `pl-5-privacy-impact-assessment` — Privacy Impact Assessment
+- `pl-6-security-related-activity-planning` — Security-related Activity Planning
+- `pl-7-concept-of-operations` — Develop a Concept of Operations (CONOPS) for the system describing how the organization intends to operate the system from the perspective of infor...
+- `pl-8-1-defense-in-depth` — Design the security and privacy architectures for the system using a defense-in-depth approach that: Allocates [organization-defined] to [organization
+- `pl-8-2-supplier-diversity` — Require that [organization-defined] allocated to [organization-defined] are obtained from different suppliers.
+- `pl-8-security-and-privacy-architectures` — Develop security and privacy architectures for the system that: Describe the requirements and approach to be taken for protecting the confidentiality,
+- `pl-9-central-management` — Centrally manage [organization-defined].
+- `plan-of-action-and-milestones-03-12-02-plan-of-action-and-milest` — Develop a plan of action and milestones for the system: To document the planned remediation actions to correct weaknesses or deficiencies noted during
+- `platform-security-pr-ps-platform-security` — The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with t
+- `pm-1-information-security-program-plan` — Develop and disseminate an organization-wide information security program plan that: Provides an overview of the requirements for the security program
+- `pm-10-authorization-process` — Manage the security and privacy state of organizational systems and the environments in which those systems operate through authorization processes;
+- `pm-11-mission-and-business-process-definition` — Define organizational mission and business processes with consideration for information security and privacy and the resulting risk to organization...
+- `pm-12-insider-threat-program` — Implement an insider threat program that includes a cross-discipline insider threat incident handling team.
+- `pm-13-security-and-privacy-workforce` — Establish a security and privacy workforce development and improvement program.
+- `pm-14-testing-training-and-monitoring` — Implement a process for ensuring that organizational plans for conducting security and privacy testing, training, and monitoring activities associated
+- `pm-15-security-and-privacy-groups-and-associations` — Establish and institutionalize contact with selected groups and associations within the security and privacy communities: To facilitate ongoing securi
+- `pm-16-1-automated-means-for-sharing-threat-intelligence` — Employ automated mechanisms to maximize the effectiveness of sharing threat intelligence information.
+- `pm-16-threat-awareness-program` — Implement a threat awareness program that includes a cross-organization information-sharing capability for threat intelligence.
+- `pm-17-protecting-controlled-unclassified-information-on-external` — Establish policy and procedures to ensure that requirements for the protection of controlled unclassified information that is processed, stored or ...
+- `pm-18-privacy-program-plan` — Develop and disseminate an organization-wide privacy program plan that provides an overview of the agency’s privacy program, and: Includes a descripti
+- `pm-19-privacy-program-leadership-role` — Appoint a senior agency official for privacy with the authority, mission, accountability, and resources to coordinate, develop, and implement, applica
+- `pm-2-information-security-program-leadership-role` — Appoint a senior agency information security officer with the mission and resources to coordinate, develop, implement, and maintain an organization-wi
+- `pm-20-1-privacy-policies-on-websites-applications-and-digital-se` — Develop and post privacy policies on all external-facing websites, mobile applications, and other digital services, that: Are written in plain languag
+- `pm-20-dissemination-of-privacy-program-information` — Maintain a central resource webpage on the organization’s principal public website that serves as a central source of information about the organizati
+- `pm-21-accounting-of-disclosures` — Develop and maintain an accurate accounting of disclosures of personally identifiable information, including: Date, nature, and purpose of each disclo
+- `pm-22-personally-identifiable-information-quality-management` — Develop and document organization-wide policies and procedures for: Reviewing for the accuracy, relevance, timeliness, and completeness of personally 
+- `pm-23-data-governance-body` — Establish a Data Governance Body consisting of [organization-defined] with [organization-defined].
+- `pm-24-data-integrity-board` — Establish a Data Integrity Board to: Review proposals to conduct or participate in a matching program; and Conduct an annual review of all matching pr
+- `pm-25-minimization-of-personally-identifiable-information-used-i` — Develop, document, and implement policies and procedures that address the use of personally identifiable information for internal testing, training...
+- `pm-26-complaint-management` — Implement a process for receiving and responding to complaints, concerns, or questions from individuals about the organizational security and privacy 
+- `pm-27-privacy-reporting` — Develop [organization-defined] and disseminate to: [organization-defined] to demonstrate accountability with statutory, regulatory, and policy privacy
+- `pm-28-risk-framing` — Identify and document: Assumptions affecting risk assessments, risk responses, and risk monitoring; Constraints affecting risk assessments, risk respo
+- `pm-29-risk-management-program-leadership-roles` — Appoint a Senior Accountable Official for Risk Management to align organizational information security and privacy management processes with strate...
+- `pm-3-information-security-and-privacy-resources` — Include the resources needed to implement the information security and privacy programs in capital planning and investment requests and document al...
+- `pm-30-1-suppliers-of-critical-or-mission-essential-items` — Identify, prioritize, and assess suppliers of critical or mission-essential technologies, products, and services.
+- `pm-30-supply-chain-risk-management-strategy` — Develop an organization-wide strategy for managing supply chain risks associated with the development, acquisition, maintenance, and disposal of sy...
+- `pm-31-continuous-monitoring-strategy` — Develop an organization-wide continuous monitoring strategy and implement continuous monitoring programs that include: Establishing the following orga
+- `pm-32-purposing` — Analyze [organization-defined] supporting mission essential services or functions to ensure that the information resources are being used consistent w
+- `pm-4-plan-of-action-and-milestones-process` — Implement a process to ensure that plans of action and milestones for the information security, privacy, and supply chain risk management programs and
+- `pm-5-1-inventory-of-personally-identifiable-information` — Establish, maintain, and update [organization-defined] an inventory of all systems, applications, and projects that process personally identifiable in
+- `pm-5-system-inventory` — Develop and update [organization-defined] an inventory of organizational systems.
+- `pm-6-measures-of-performance` — Develop, monitor, and report on the results of information security and privacy measures of performance.
+- `pm-7-1-offloading` — Offload [organization-defined] to other systems, system components, or an external provider.
+- `pm-7-enterprise-architecture` — Develop and maintain an enterprise architecture with consideration for information security, privacy, and the resulting risk to organizational operati
+- `pm-8-critical-infrastructure-plan` — Address information security and privacy issues in the development, documentation, and updating of a critical infrastructure and key resources protect
+- `pm-9-risk-management-strategy` — Develops a comprehensive strategy to manage: Security risk to organizational operations and assets, individuals, other organizations, and the Nation a
+- `po-1-1-po11` — Identify and document all security requirements for the organization’s software development infrastructures and processes, and maintain the requiremen
+- `po-1-2-po12` — Identify and document all security requirements for organization-developed software to meet, and maintain the requirements over time.
+- `po-1-3-po13` — Communicate requirements to all third parties who will provide commercial software components to the organization for reuse by the organization’s o...
+- `po-2-1-po21` — Create new roles and alter responsibilities for existing roles as needed to encompass all parts of the SDLC.
+- `po-2-2-po22` — Provide role-based training for all personnel with responsibilities that contribute to secure development.
+- `po-2-3-po23` — Obtain upper management or authorizing official commitment to secure development, and convey that commitment to all with development-related roles and
+- `po-3-1-po31` — Specify which tools or tool types must or should be included in each toolchain to mitigate identified risks, as well as how the toolchain components a
+- `po-3-2-po32` — Follow recommended security practices to deploy, operate, and maintain tools and toolchains.
+- `po-3-3-po33` — Configure tools to generate artifacts of their support of secure software development practices as defined by the organization.
+- `po-4-1-po41` — Define criteria for software security checks and track throughout the SDLC.
+- `po-4-2-po42` — Implement processes, mechanisms, etc.
+- `po-5-1-po51` — Separate and protect each environment involved in software development.
+- `po-5-2-po52` — Secure and harden development endpoints (i.e., endpoints for software designers, developers, testers, builders, etc.) to perform development-related t
+- `policy-and-procedures-03-15-01-policy-and-procedures` — Develop, document, and disseminate to organizational personnel or roles the policies and procedures needed to satisfy the security requirements for...
+- `policy-gv-po-policy` — Organizational cybersecurity policy is established, communicated, and enforced
+- `pr-aa-01-praa-01` — Identities and credentials for authorized users, services, and hardware are managed by the organization
+- `pr-aa-02-praa-02` — Identities are proofed and bound to credentials based on the context of interactions
+- `pr-aa-03-praa-03` — Users, services, and hardware are authenticated
+- `pr-aa-04-praa-04` — Identity assertions are protected, conveyed, and verified
+- `pr-aa-05-praa-05` — Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least
+- `pr-aa-06-praa-06` — Physical access to assets is managed, monitored, and enforced commensurate with risk
+- `pr-ac-01-prac-01` — Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes
+- `pr-ac-02-prac-02` — Physical access to assets is managed and protected
+- `pr-ac-03-prac-03` — Remote access is managed
+- `pr-ac-04-prac-04` — Access permissions and authorizations are managed, incorporating the principles of least privilege and separation of duties
+- `pr-ac-05-prac-05` — Network integrity is protected (e.g., network segregation, network segmentation)
+- `pr-ac-06-prac-06` — Identities are proofed and bound to credentials and asserted in interactions
+- `pr-ac-07-prac-07` — Users, devices, and other assets are authenticated (e.g., single-factor, multi-factor) commensurate with the risk of the transaction (e.g., individual
+- `pr-at-01-prat-01` — Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in 
+- `pr-at-02-prat-02` — Individuals in specialized roles are provided with awareness and training so that they possess the knowledge and skills to perform relevant tasks with
+- `pr-at-03-prat-03` — Third-party stakeholders (e.g., suppliers, customers, partners) understand their roles and responsibilities
+- `pr-at-04-prat-04` — Senior executives understand their roles and responsibilities
+- `pr-at-05-prat-05` — Physical and cybersecurity personnel understand their roles and responsibilities
+- `pr-ds-01-prds-01` — The confidentiality, integrity, and availability of data-at-rest are protected
+- `pr-ds-02-prds-02` — The confidentiality, integrity, and availability of data-in-transit are protected
+- `pr-ds-03-prds-03` — Assets are formally managed throughout removal, transfers, and disposition
+- `pr-ds-04-prds-04` — Adequate capacity to ensure availability is maintained
+- `pr-ds-05-prds-05` — Protections against data leaks are implemented
+- `pr-ds-06-prds-06` — Integrity checking mechanisms are used to verify software, firmware, and information integrity
+- `pr-ds-07-prds-07` — The development and testing environment(s) are separate from the production environment
+- `pr-ds-08-prds-08` — Integrity checking mechanisms are used to verify hardware integrity
+- `pr-ds-10-prds-10` — The confidentiality, integrity, and availability of data-in-use are protected
+- `pr-ds-11-prds-11` — Backups of data are created, protected, maintained, and tested
+- `pr-ip-01-prip-01` — A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g.
+- `pr-ip-02-prip-02` — A System Development Life Cycle to manage systems is implemented
+- `pr-ip-03-prip-03` — Configuration change control processes are in place
+- `pr-ip-04-prip-04` — Backups of information are conducted, maintained, and tested
+- `pr-ip-05-prip-05` — Policy and regulations regarding the physical operating environment for organizational assets are met
+- `pr-ip-06-prip-06` — Data is destroyed according to policy
+- `pr-ip-07-prip-07` — Protection processes are improved
+- `pr-ip-08-prip-08` — Effectiveness of protection technologies is shared
+- `pr-ip-09-prip-09` — Response plans (Incident Response and Business Continuity) and recovery plans (Incident Recovery and Disaster Recovery) are in place and managed
+- `pr-ip-10-prip-10` — Response and recovery plans are tested
+- `pr-ip-11-prip-11` — Cybersecurity is included in human resources practices (e.g., deprovisioning, personnel screening)
+- `pr-ip-12-prip-12` — A vulnerability management plan is developed and implemented
+- `pr-ir-01-prir-01` — Networks and environments are protected from unauthorized logical access and usage
+- `pr-ir-02-prir-02` — The organization's technology assets are protected from environmental threats
+- `pr-ir-03-prir-03` — Mechanisms are implemented to achieve resilience requirements in normal and adverse situations
+- `pr-ir-04-prir-04` — Adequate resource capacity to ensure availability is maintained
+- `pr-ma-01-prma-01` — Maintenance and repair of organizational assets are performed and logged, with approved and controlled tools
+- `pr-ma-02-prma-02` — Remote maintenance of organizational assets is approved, logged, and performed in a manner that prevents unauthorized access
+- `pr-ps-01-prps-01` — Configuration management practices are established and applied
+- `pr-ps-02-prps-02` — Software is maintained, replaced, and removed commensurate with risk
+- `pr-ps-03-prps-03` — Hardware is maintained, replaced, and removed commensurate with risk
+- `pr-ps-04-prps-04` — Log records are generated and made available for continuous monitoring
+- `pr-ps-05-prps-05` — Installation and execution of unauthorized software are prevented
+- `pr-ps-06-prps-06` — Secure software development practices are integrated, and their performance is monitored throughout the software development life cycle
+- `pr-pt-01-prpt-01` — Audit/log records are determined, documented, implemented, and reviewed in accordance with policy
+- `pr-pt-02-prpt-02` — Removable media is protected and its use restricted according to policy
+- `pr-pt-03-prpt-03` — The principle of least functionality is incorporated by configuring systems to provide only essential capabilities
+- `pr-pt-04-prpt-04` — Communications and control networks are protected
+- `pr-pt-05-prpt-05` — Mechanisms (e.g., failsafe, load balancing, hot swap) are implemented to achieve resilience requirements in normal and adverse situations
+- `protect-all-forms-of-code-from-unauthorized-access-and-tampering` — Help prevent unauthorized changes to code, both inadvertent and intentional, which could circumvent or negate the intended security characteristics...
+- `protection-of-audit-information-03-03-08-protection-of-audit-inf` — Protect audit information and audit logging tools from unauthorized access, modification, and deletion.
+- `protective-technology-pr-pt-protective-technology` — Protective Technology
+- `provide-a-mechanism-for-verifying-software-release-integrity-ps` — Help software acquirers ensure that the software they acquire is legitimate and has not been tampered with.
+- `ps-1-1-ps11` — Store all forms of code – including source code, executable code, and configuration-as-code – based on the principle of least privilege so that onl...
+- `ps-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] personnel security policy that: Procedures to facilitate the impl
+- `ps-2-1-ps21` — Make software integrity verification information available to software acquirers.
+- `ps-2-position-risk-designation` — Assign a risk designation to all organizational positions;
+- `ps-3-1-classified-information` — Verify that individuals accessing a system processing, storing, or transmitting classified information are cleared and indoctrinated to the highest cl
+- `ps-3-1-ps31` — Securely archive the necessary files and supporting data (e.g., integrity verification information, provenance data) to be retained for each software 
+- `ps-3-2-formal-indoctrination` — Verify that individuals accessing a system processing, storing, or transmitting types of classified information that require formal indoctrination, ar
+- `ps-3-2-ps32` — Collect, safeguard, maintain, and share provenance data for all components of each software release (e.g., in a software bill of materials .SBOM).
+- `ps-3-3-information-requiring-special-protective-measures` — Verify that individuals accessing a system processing, storing, or transmitting information requiring special protection: Have valid access authorizat
+- `ps-3-4-citizenship-requirements` — Verify that individuals accessing a system processing, storing, or transmitting [organization-defined] meet [organization-defined].
+- `ps-3-personnel-screening` — Screen individuals prior to authorizing access to the system;
+- `ps-4-1-post-employment-requirements` — Notify terminated individuals of applicable, legally binding post-employment requirements for the protection of organizational information;
+- `ps-4-2-automated-actions` — Use [organization-defined] to [organization-defined].
+- `ps-4-personnel-termination` — Upon termination of individual employment: Disable system access within [organization-defined]; Terminate or revoke any authenticators and credentials
+- `ps-5-personnel-transfer` — Review and confirm ongoing operational need for current logical and physical access authorizations to systems and facilities when individuals are r...
+- `ps-6-1-information-requiring-special-protection` — Information Requiring Special Protection
+- `ps-6-2-classified-information-requiring-special-protection` — Verify that access to classified information requiring special protection is granted only to individuals who: Have a valid access authorization that i
+- `ps-6-3-post-employment-requirements` — Notify individuals of applicable, legally binding post-employment requirements for protection of organizational information;
+- `ps-6-access-agreements` — Develop and document access agreements for organizational systems;
+- `ps-7-external-personnel-security` — Establish personnel security requirements, including security roles and responsibilities for external providers;
+- `ps-8-personnel-sanctions` — Employ a formal sanctions process for individuals failing to comply with established information security and privacy policies and procedures;
+- `ps-9-position-descriptions` — Incorporate security and privacy roles and responsibilities into organizational position descriptions.
+- `pt-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] personally identifiable information processing and transparency p
+- `pt-2-1-data-tagging` — Attach data tags containing [organization-defined] to [organization-defined].
+- `pt-2-2-automation` — Manage enforcement of the authorized processing of personally identifiable information using [organization-defined].
+- `pt-2-authority-to-process-personally-identifiable-information` — Determine and document the [organization-defined] that permits the [organization-defined] of personally identifiable information;
+- `pt-3-1-data-tagging` — Attach data tags containing the following purposes to [organization-defined]: [organization-defined].
+- `pt-3-2-automation` — Track processing purposes of personally identifiable information using [organization-defined].
+- `pt-3-personally-identifiable-information-processing-purposes` — Identify and document the [organization-defined] for processing personally identifiable information;
+- `pt-4-1-tailored-consent` — Provide [organization-defined] to allow individuals to tailor processing permissions to selected elements of personally identifiable information.
+- `pt-4-2-just-in-time-consent` — Present [organization-defined] to individuals at [organization-defined] and in conjunction with [organization-defined].
+- `pt-4-3-revocation` — Implement [organization-defined] for individuals to revoke consent to the processing of their personally identifiable information.
+- `pt-4-consent` — Implement [organization-defined] for individuals to consent to the processing of their personally identifiable information prior to its collection tha
+- `pt-5-1-just-in-time-notice` — Present notice of personally identifiable information processing to individuals at a time and location where the individual provides personally identi
+- `pt-5-2-privacy-act-statements` — Include Privacy Act statements on forms that collect information that will be maintained in a Privacy Act system of records, or provide Privacy Act st
+- `pt-5-privacy-notice` — Provide notice to individuals about the processing of personally identifiable information that: Is available to individuals upon first interacting wit
+- `pt-6-1-routine-uses` — Review all routine uses published in the system of records notice at [organization-defined] to ensure continued accuracy, and to ensure that routine u
+- `pt-6-2-exemption-rules` — Review all Privacy Act exemptions claimed for the system of records at [organization-defined] to ensure they remain appropriate and necessary in accor
+- `pt-6-system-of-records-notice` — For systems that process information that will be maintained in a Privacy Act system of records: Draft system of records notices in accordance with OM
+- `pt-7-1-social-security-numbers` — When a system processes Social Security numbers: Eliminate unnecessary collection, maintenance, and use of Social Security numbers, and explore altern
+- `pt-7-2-first-amendment-information` — Prohibit the processing of information describing how any individual exercises rights guaranteed by the First Amendment unless expressly authorized by
+- `pt-7-specific-categories-of-personally-identifiable-information` — Apply [organization-defined] for specific categories of personally identifiable information.
+- `pt-8-computer-matching-requirements` — When a system or organization processes information for the purpose of conducting a matching program: Obtain approval from the Data Integrity Board to
+- `publicly-accessible-content-03-01-22-publicly-accessible-content` — Train authorized individuals to ensure that publicly accessible information does not contain CUI.
+- `pw-1-1-pw11` — Use forms of risk modeling – such as threat modeling, attack modeling, or attack surface mapping – to help assess the security risk for the software.
+- `pw-1-2-pw12` — Track and maintain the software’s security requirements, risks, and design decisions.
+- `pw-1-3-pw13` — Where appropriate, build in support for using standardized security features and services (e.g., enabling software to integrate with existing log m...
+- `pw-2-1-pw21` — Have 1) a qualified person (or people) who were not involved with the design and/or 2) automated processes instantiated in the toolchain review the so
+- `pw-4-1-pw41` — Acquire and maintain well-secured software components (e.g., software libraries, modules, middleware, frameworks) from commercial, open-source, and ot
+- `pw-4-2-pw42` — Create and maintain well-secured software components in-house following SDLC processes to meet common internal software development needs that cannot 
+- `pw-4-4-pw44` — Verify that acquired commercial, open-source, and all other third-party software components comply with the requirements, as defined by the organizati
+- `pw-5-1-pw51` — Follow all secure coding practices that are appropriate to the development languages and environment to meet the organization’s requirements.
+- `pw-6-1-pw61` — Use compiler, interpreter, and build tools that offer features to improve executable security.
+- `pw-6-2-pw62` — Determine which compiler, interpreter, and build tool features should be used and how each should be configured, then implement and use the approved c
+- `pw-7-1-pw71` — Determine whether code review (a person looks directly at the code to find issues) and/or code analysis (tools are used to find issues in code, either
+- `pw-7-2-pw72` — Perform the code review and/or code analysis based on the organization’s secure coding standards, and record and triage all discovered issues and reco
+- `pw-8-1-pw81` — Determine whether executable code testing should be performed to find vulnerabilities not identified by previous reviews, analysis, or testing and, if
+- `pw-8-2-pw82` — Scope the testing, design the tests, perform the testing, and document the results, including recording and triaging all discovered issues and recomme
+- `pw-9-1-pw91` — Define a secure baseline by determining how to configure each setting that has an effect on security or a security-related setting so that the default
+- `pw-9-2-pw92` — Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.
+- `ra-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] risk assessment policy that: Procedures to facilitate the impleme
+- `ra-10-threat-hunting` — Establish and maintain a cyber threat hunting capability to: Search for indicators of compromise in organizational systems; and Detect, track, and dis
+- `ra-2-1-impact-level-prioritization` — Conduct an impact-level prioritization of organizational systems to obtain additional granularity on system impact levels.
+- `ra-2-security-categorization` — Categorize the system and information it processes, stores, and transmits;
+- `ra-3-1-supply-chain-risk-assessment` — Assess supply chain risks associated with [organization-defined] ;
+- `ra-3-2-use-of-all-source-intelligence` — Use all-source intelligence to assist in the analysis of risk.
+- `ra-3-3-dynamic-threat-awareness` — Determine the current cyber threat environment on an ongoing basis using [organization-defined].
+- `ra-3-4-predictive-cyber-analytics` — Employ the following advanced automation and analytics capabilities to predict and identify risks to [organization-defined]: [organization-defined].
+- `ra-3-risk-assessment` — Conduct a risk assessment, including: Identifying threats to and vulnerabilities in the system; Determining the likelihood and magnitude of harm from 
+- `ra-4-risk-assessment-update` — Risk Assessment Update
+- `ra-5-1-update-tool-capability` — Update Tool Capability
+- `ra-5-10-correlate-scanning-information` — Correlate the output from vulnerability scanning tools to determine the presence of multi-vulnerability and multi-hop attack vectors.
+- `ra-5-11-public-disclosure-program` — Establish a public reporting channel for receiving reports of vulnerabilities in organizational systems and system components.
+- `ra-5-2-update-vulnerabilities-to-be-scanned` — Update the system vulnerabilities to be scanned [organization-defined].
+- `ra-5-3-breadth-and-depth-of-coverage` — Define the breadth and depth of vulnerability scanning coverage.
+- `ra-5-4-discoverable-information` — Determine information about the system that is discoverable and take [organization-defined].
+- `ra-5-5-privileged-access` — Implement privileged access authorization to [organization-defined] for [organization-defined].
+- `ra-5-6-automated-trend-analyses` — Compare the results of multiple vulnerability scans using [organization-defined].
+- `ra-5-7-automated-detection-and-notification-of-unauthorized-comp` — Automated Detection and Notification of Unauthorized Components
+- `ra-5-8-review-historic-audit-logs` — Review historic audit logs to determine if a vulnerability identified in a [organization-defined] has been previously exploited within an [organizatio
+- `ra-5-9-penetration-testing-and-analyses` — Penetration Testing and Analyses
+- `ra-5-vulnerability-monitoring-and-scanning` — Monitor and scan for vulnerabilities in the system and hosted applications [organization-defined] and when new vulnerabilities potentially affectin...
+- `ra-6-technical-surveillance-countermeasures-survey` — Employ a technical surveillance countermeasures survey at [organization-defined] [organization-defined].
+- `ra-7-risk-response` — Respond to findings from security and privacy assessments, monitoring, and audits in accordance with organizational risk tolerance.
+- `ra-8-privacy-impact-assessments` — Conduct privacy impact assessments for systems, programs, or other activities before: Developing or procuring information technology that processes pe
+- `ra-9-criticality-analysis` — Identify critical system components and functions by performing a criticality analysis for [organization-defined] at [organization-defined].
+- `rc-co-01-rcco-01` — Public relations are managed
+- `rc-co-02-rcco-02` — Reputation is repaired after an incident
+- `rc-co-03-rcco-03` — Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders
+- `rc-co-04-rcco-04` — Public updates on incident recovery are shared using approved methods and messaging
+- `rc-im-01-rcim-01` — Recovery plans incorporate lessons learned
+- `rc-im-02-rcim-02` — Recovery strategies are updated
+- `rc-rp-01-rcrp-01` — The recovery portion of the incident response plan is executed once initiated from the incident response process
+- `rc-rp-02-rcrp-02` — Recovery actions are selected, scoped, prioritized, and performed
+- `rc-rp-03-rcrp-03` — The integrity of backups and other restoration assets is verified before using them for restoration
+- `rc-rp-04-rcrp-04` — Critical mission functions and cybersecurity risk management are considered to establish post-incident operational norms
+- `rc-rp-05-rcrp-05` — The integrity of restored assets is verified, systems and services are restored, and normal operating status is confirmed
+- `rc-rp-06-rcrp-06` — The end of incident recovery is declared based on criteria, and incident-related documentation is completed
+- `remote-access-03-01-12-remote-access` — Establish usage restrictions, configuration requirements, and connection requirements for each type of allowable remote system access.
+- `replay-resistant-authentication-03-05-04-replay-resistant-authen` — Replay-Resistant Authentication
+- `response-planning-rs-rp-response-planning` — Response Planning
+- `response-to-audit-logging-process-failures-03-03-04-response-to` — Alert organizational personnel or roles within [organization-defined] in the event of an audit logging process failure.
+- `reuse-existing-well-secured-software-when-feasible-instead-of-du` — Lower the costs of software development, expedite software development, and decrease the likelihood of introducing additional security vulnerabilit...
+- `review-and-or-analyze-human-readable-code-to-identify-vulnerabil` — Help identify vulnerabilities so that they can be corrected before the software is released to prevent exploitation.
+- `review-the-software-design-to-verify-compliance-with-security-re` — Help ensure that the software will meet the security requirements and satisfactorily address the identified risk information.
+- `risk-assessment-03-11-01-risk-assessment` — Assess the risk (including supply chain risk) of unauthorized disclosure resulting from the processing, storage, or transmission of CUI.
+- `risk-assessment-id-ra-risk-assessment` — The cybersecurity risk to the organization, assets, and individuals is understood by the organization
+- `risk-management-strategy-gv-rm-risk-management-strategy` — The organization's priorities, constraints, risk tolerance and appetite statements, and assumptions are established, communicated, and used to support
+- `risk-management-strategy-id-rm-risk-management-strategy` — Risk Management Strategy
+- `risk-response-03-11-04-risk-response` — Risk Response
+- `role-based-training-03-02-02-role-based-training` — Provide role-based security training to organizational personnel: Before authorizing access to the system or CUI, before performing assigned duties, a
+- `roles-responsibilities-and-authorities-gv-rr-roles-responsibilit` — Cybersecurity roles, responsibilities, and authorities to foster accountability, performance assessment, and continuous improvement are established an
+- `rs-an-01-rsan-01` — Notifications from detection systems are investigated
+- `rs-an-02-rsan-02` — The impact of the incident is understood
+- `rs-an-03-rsan-03` — Analysis is performed to establish what has taken place during an incident and the root cause of the incident
+- `rs-an-04-rsan-04` — Incidents are categorized consistent with response plans
+- `rs-an-05-rsan-05` — Processes are established to receive, analyze and respond to vulnerabilities disclosed to the organization from internal and external sources (e.g.
+- `rs-an-06-rsan-06` — Actions performed during an investigation are recorded, and the records' integrity and provenance are preserved
+- `rs-an-07-rsan-07` — Incident data and metadata are collected, and their integrity and provenance are preserved
+- `rs-an-08-rsan-08` — An incident's magnitude is estimated and validated
+- `rs-co-01-rsco-01` — Personnel know their roles and order of operations when a response is needed
+- `rs-co-02-rsco-02` — Internal and external stakeholders are notified of incidents
+- `rs-co-03-rsco-03` — Information is shared with designated internal and external stakeholders
+- `rs-co-04-rsco-04` — Coordination with stakeholders occurs consistent with response plans
+- `rs-co-05-rsco-05` — Voluntary information sharing occurs with external stakeholders to achieve broader cybersecurity situational awareness
+- `rs-im-01-rsim-01` — Response plans incorporate lessons learned
+- `rs-im-02-rsim-02` — Response strategies are updated
+- `rs-ma-01-rsma-01` — The incident response plan is executed in coordination with relevant third parties once an incident is declared
+- `rs-ma-02-rsma-02` — Incident reports are triaged and validated
+- `rs-ma-03-rsma-03` — Incidents are categorized and prioritized
+- `rs-ma-04-rsma-04` — Incidents are escalated or elevated as needed
+- `rs-ma-05-rsma-05` — The criteria for initiating incident recovery are applied
+- `rs-mi-01-rsmi-01` — Incidents are contained
+- `rs-mi-02-rsmi-02` — Incidents are eradicated
+- `rs-mi-03-rsmi-03` — Newly identified vulnerabilities are mitigated or documented as accepted risks
+- `rs-rp-01-rsrp-01` — Response plan is executed during or after an incident
+- `rules-of-behavior-03-15-03-rules-of-behavior` — Establish rules that describe the responsibilities and expected behavior for system usage and protecting CUI.
+- `rv-1-1-rv11` — Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software and third-party components that the
+- `rv-1-2-rv12` — Review, analyze, and/or test the software’s code to identify or confirm the presence of previously undetected vulnerabilities.
+- `rv-1-3-rv13` — Have a policy that addresses vulnerability disclosure and remediation, and implement the roles, responsibilities, and processes needed to support that
+- `rv-2-1-rv21` — Analyze each vulnerability to gather sufficient information about risk to plan its remediation or other risk response.
+- `rv-2-2-rv22` — Plan and implement risk responses for vulnerabilities.
+- `rv-3-1-rv31` — Analyze identified vulnerabilities to determine their root causes.
+- `rv-3-2-rv32` — Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.
+- `rv-3-3-rv33` — Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external rep
+- `rv-3-4-rv34` — Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or 
+- `sa-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] system and services acquisition policy that: Procedures to facili
+- `sa-10-1-software-and-firmware-integrity-verification` — Require the developer of the system, system component, or system service to enable integrity verification of software and firmware components.
+- `sa-10-2-alternative-configuration-management-processes` — Provide an alternate configuration management process using organizational personnel in the absence of a dedicated developer configuration management 
+- `sa-10-3-hardware-integrity-verification` — Require the developer of the system, system component, or system service to enable integrity verification of hardware components.
+- `sa-10-4-trusted-generation` — Require the developer of the system, system component, or system service to employ tools for comparing newly generated versions of security-relevant h
+- `sa-10-5-mapping-integrity-for-version-control` — Require the developer of the system, system component, or system service to maintain the integrity of the mapping between the master build data descri
+- `sa-10-6-trusted-distribution` — Require the developer of the system, system component, or system service to execute procedures for ensuring that security-relevant hardware, software,
+- `sa-10-7-security-and-privacy-representatives` — Require [organization-defined] to be included in the [organization-defined].
+- `sa-10-developer-configuration-management` — Require the developer of the system, system component, or system service to: Perform configuration management during system, component, or service [or
+- `sa-11-1-static-code-analysis` — Require the developer of the system, system component, or system service to employ static code analysis tools to identify common flaws and document th
+- `sa-11-2-threat-modeling-and-vulnerability-analyses` — Require the developer of the system, system component, or system service to perform threat modeling and vulnerability analyses during development and 
+- `sa-11-3-independent-verification-of-assessment-plans-and-evidenc` — Require an independent agent satisfying [organization-defined] to verify the correct implementation of the developer security and privacy assessmen...
+- `sa-11-4-manual-code-reviews` — Require the developer of the system, system component, or system service to perform a manual code review of [organization-defined] using the following
+- `sa-11-5-penetration-testing` — Require the developer of the system, system component, or system service to perform penetration testing: At the following level of rigor: [organizatio
+- `sa-11-6-attack-surface-reviews` — Require the developer of the system, system component, or system service to perform attack surface reviews.
+- `sa-11-7-verify-scope-of-testing-and-evaluation` — Require the developer of the system, system component, or system service to verify that the scope of testing and evaluation provides complete coverage
+- `sa-11-8-dynamic-code-analysis` — Require the developer of the system, system component, or system service to employ dynamic code analysis tools to identify common flaws and document t
+- `sa-11-9-interactive-application-security-testing` — Require the developer of the system, system component, or system service to employ interactive application security testing tools to identify flaws an
+- `sa-11-developer-testing-and-evaluation` — Require the developer of the system, system component, or system service, at all post-design stages of the system development life cycle, to: Develop 
+- `sa-12-1-acquisition-strategies-tools-methods` — Acquisition Strategies / Tools / Methods
+- `sa-12-10-validate-as-genuine-and-not-altered` — Validate as Genuine and Not Altered
+- `sa-12-11-penetration-testing-analysis-of-elements-processes-and` — Penetration Testing / Analysis of Elements, Processes, and Actors
+- `sa-12-12-inter-organizational-agreements` — Inter-organizational Agreements
+- `sa-12-13-critical-information-system-components` — Critical Information System Components
+- `sa-12-14-identity-and-traceability` — Identity and Traceability
+- `sa-12-15-processes-to-address-weaknesses-or-deficiencies` — Processes to Address Weaknesses or Deficiencies
+- `sa-12-2-supplier-reviews` — Supplier Reviews
+- `sa-12-3-trusted-shipping-and-warehousing` — Trusted Shipping and Warehousing
+- `sa-12-4-diversity-of-suppliers` — Diversity of Suppliers
+- `sa-12-5-limitation-of-harm` — Limitation of Harm
+- `sa-12-6-minimizing-procurement-time` — Minimizing Procurement Time
+- `sa-12-7-assessments-prior-to-selection-acceptance-update` — Assessments Prior to Selection / Acceptance / Update
+- `sa-12-8-use-of-all-source-intelligence` — Use of All-source Intelligence
+- `sa-12-9-operations-security` — Operations Security
+- `sa-12-supply-chain-protection` — Supply Chain Protection
+- `sa-13-trustworthiness` — Trustworthiness
+- `sa-14-1-critical-components-with-no-viable-alternative-sourcing` — Critical Components with No Viable Alternative Sourcing
+- `sa-14-criticality-analysis` — Criticality Analysis
+- `sa-15-1-quality-metrics` — Require the developer of the system, system component, or system service to: Define quality metrics at the beginning of the development process; and P
+- `sa-15-10-incident-response-plan` — Require the developer of the system, system component, or system service to provide, implement, and test an incident response plan.
+- `sa-15-11-archive-system-or-component` — Require the developer of the system or system component to archive the system or component to be released or delivered together with the corresponding
+- `sa-15-12-minimize-personally-identifiable-information` — Require the developer of the system or system component to minimize the use of personally identifiable information in development and test environment
+- `sa-15-13-logging-syntax` — Require the developer of the system or system component to minimize the use of personally identifiable information in development and test environment
+- `sa-15-2-security-and-privacy-tracking-tools` — Require the developer of the system, system component, or system service to select and employ security and privacy tracking tools for use during the d
+- `sa-15-3-criticality-analysis` — Require the developer of the system, system component, or system service to perform a criticality analysis: At the following decision points in the sy
+- `sa-15-4-threat-modeling-and-vulnerability-analysis` — Threat Modeling and Vulnerability Analysis
+- `sa-15-5-attack-surface-reduction` — Require the developer of the system, system component, or system service to reduce attack surfaces to [organization-defined].
+- `sa-15-6-continuous-improvement` — Require the developer of the system, system component, or system service to implement an explicit process to continuously improve the development proc
+- `sa-15-7-automated-vulnerability-analysis` — Require the developer of the system, system component, or system service [organization-defined] to: Perform an automated vulnerability analysis using 
+- `sa-15-8-reuse-of-threat-and-vulnerability-information` — Require the developer of the system, system component, or system service to use threat modeling and vulnerability analyses from similar systems, compo
+- `sa-15-9-use-of-live-data` — Use of Live Data
+- `sa-15-development-process-standards-and-tools` — Require the developer of the system, system component, or system service to follow a documented development process that: Explicitly addresses securit
+- `sa-16-developer-provided-training` — Require the developer of the system, system component, or system service to provide the following training on the correct use and operation of the imp
+- `sa-17-1-formal-policy-model` — Require the developer of the system, system component, or system service to: Produce, as an integral part of the development process, a formal policy 
+- `sa-17-2-security-relevant-components` — Require the developer of the system, system component, or system service to: Define security-relevant hardware, software, and firmware; and Provide a 
+- `sa-17-3-formal-correspondence` — Require the developer of the system, system component, or system service to: Produce, as an integral part of the development process, a formal top-lev
+- `sa-17-4-informal-correspondence` — Require the developer of the system, system component, or system service to: Produce, as an integral part of the development process, an informal desc
+- `sa-17-5-conceptually-simple-design` — Require the developer of the system, system component, or system service to: Design and structure the security-relevant hardware, software, and firmwa
+- `sa-17-6-structure-for-testing` — Require the developer of the system, system component, or system service to structure security-relevant hardware, software, and firmware to facilitate
+- `sa-17-7-structure-for-least-privilege` — Require the developer of the system, system component, or system service to structure security-relevant hardware, software, and firmware to facilitate
+- `sa-17-8-orchestration` — Design [organization-defined] with coordinated behavior to implement the following capabilities: [organization-defined].
+- `sa-17-9-design-diversity` — Use different designs for [organization-defined] to satisfy a common set of requirements or to provide equivalent functionality.
+- `sa-17-developer-security-and-privacy-architecture-and-design` — Require the developer of the system, system component, or system service to produce a design specification and security and privacy architecture that:
+- `sa-18-1-multiple-phases-of-system-development-life-cycle` — Multiple Phases of System Development Life Cycle
+- `sa-18-2-inspection-of-systems-or-components` — Inspection of Systems or Components
+- `sa-18-tamper-resistance-and-detection` — Tamper Resistance and Detection
+- `sa-19-1-anti-counterfeit-training` — Anti-counterfeit Training
+- `sa-19-2-configuration-control-for-component-service-and-repair` — Configuration Control for Component Service and Repair
+- `sa-19-3-component-disposal` — Component Disposal
+- `sa-19-4-anti-counterfeit-scanning` — Anti-counterfeit Scanning
+- `sa-19-component-authenticity` — Component Authenticity
+- `sa-2-allocation-of-resources` — Determine the high-level information security and privacy requirements for the system or system service in mission and business process planning;
+- `sa-20-customized-development-of-critical-components` — Reimplement or custom develop the following critical system components: [organization-defined].
+- `sa-21-1-validation-of-screening` — Validation of Screening
+- `sa-21-developer-screening` — Require that the developer of [organization-defined]: Has appropriate access authorizations as determined by assigned [organization-defined] ; and Sat
+- `sa-22-1-alternative-sources-for-continued-support` — Alternative Sources for Continued Support
+- `sa-22-unsupported-system-components` — Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer;
+- `sa-23-specialization` — Employ [organization-defined] on [organization-defined] supporting mission essential services or functions to increase the trustworthiness in those sy
+- `sa-24-design-for-cyber-resiliency` — Design organizational systems, system components, or system services to achieve cyber resiliency by: Defining the following cyber resiliency goals: [o
+- `sa-3-1-manage-preproduction-environment` — Protect system preproduction environments commensurate with risk throughout the system development life cycle for the system, system component, or sys
+- `sa-3-2-use-of-live-or-operational-data` — Approve, document, and control the use of live data in preproduction environments for the system, system component, or system service;
+- `sa-3-3-technology-refresh` — Plan for and implement a technology refresh schedule for the system throughout the system development life cycle.
+- `sa-3-system-development-life-cycle` — Acquire, develop, and manage the system using [organization-defined] that incorporates information security and privacy considerations;
+- `sa-4-1-functional-properties-of-controls` — Require the developer of the system, system component, or system service to provide a description of the functional properties of the controls to be i
+- `sa-4-10-use-of-approved-piv-products` — Employ only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented wit
+- `sa-4-11-system-of-records` — Include [organization-defined] in the acquisition contract for the operation of a system of records on behalf of an organization to accomplish an orga
+- `sa-4-12-data-ownership` — Include organizational data ownership requirements in the acquisition contract;
+- `sa-4-2-design-and-implementation-information-for-controls` — Require the developer of the system, system component, or system service to provide design and implementation information for the controls that includ
+- `sa-4-3-development-methods-techniques-and-practices` — Require the developer of the system, system component, or system service to demonstrate the use of a system development life cycle process that includ
+- `sa-4-4-assignment-of-components-to-systems` — Assignment of Components to Systems
+- `sa-4-5-system-component-and-service-configurations` — Require the developer of the system, system component, or system service to: Deliver the system, component, or service with [organization-defined] imp
+- `sa-4-6-use-of-information-assurance-products` — Employ only government off-the-shelf or commercial off-the-shelf information assurance and information assurance-enabled information technology pro...
+- `sa-4-7-niap-approved-protection-profiles` — Limit the use of commercially provided information assurance and information assurance-enabled information technology products to those products th...
+- `sa-4-8-continuous-monitoring-plan-for-controls` — Require the developer of the system, system component, or system service to produce a plan for continuous monitoring of control effectiveness that is 
+- `sa-4-9-functions-ports-protocols-and-services-in-use` — Require the developer of the system, system component, or system service to identify the functions, ports, protocols, and services intended for organi
+- `sa-4-acquisition-process` — Include the following requirements, descriptions, and criteria, explicitly or by reference, using [organization-defined] in the acquisition contract f
+- `sa-5-1-functional-properties-of-security-controls` — Functional Properties of Security Controls
+- `sa-5-2-security-relevant-external-system-interfaces` — Security-relevant External System Interfaces
+- `sa-5-3-high-level-design` — High-level Design
+- `sa-5-4-low-level-design` — Low-level Design
+- `sa-5-5-source-code` — Source Code
+- `sa-5-system-documentation` — Obtain or develop administrator documentation for the system, system component, or system service that describes: Secure configuration, installation, 
+- `sa-6-software-usage-restrictions` — Software Usage Restrictions
+- `sa-7-user-installed-software` — User-installed Software
+- `sa-8-1-clear-abstractions` — Implement the security design principle of clear abstractions.
+- `sa-8-10-hierarchical-trust` — Implement the security design principle of hierarchical trust in [organization-defined].
+- `sa-8-11-inverse-modification-threshold` — Implement the security design principle of inverse modification threshold in [organization-defined].
+- `sa-8-12-hierarchical-protection` — Implement the security design principle of hierarchical protection in [organization-defined].
+- `sa-8-13-minimized-security-elements` — Implement the security design principle of minimized security elements in [organization-defined].
+- `sa-8-14-least-privilege` — Implement the security design principle of least privilege in [organization-defined].
+- `sa-8-15-predicate-permission` — Implement the security design principle of predicate permission in [organization-defined].
+- `sa-8-16-self-reliant-trustworthiness` — Implement the security design principle of self-reliant trustworthiness in [organization-defined].
+- `sa-8-17-secure-distributed-composition` — Implement the security design principle of secure distributed composition in [organization-defined].
+- `sa-8-18-trusted-communications-channels` — Implement the security design principle of trusted communications channels in [organization-defined].
+- `sa-8-19-continuous-protection` — Implement the security design principle of continuous protection in [organization-defined].
+- `sa-8-2-least-common-mechanism` — Implement the security design principle of least common mechanism in [organization-defined].
+- `sa-8-20-secure-metadata-management` — Implement the security design principle of secure metadata management in [organization-defined].
+- `sa-8-21-self-analysis` — Implement the security design principle of self-analysis in [organization-defined].
+- `sa-8-22-accountability-and-traceability` — Implement the security design principle of accountability and traceability in [organization-defined].
+- `sa-8-23-secure-defaults` — Implement the security design principle of secure defaults in [organization-defined].
+- `sa-8-24-secure-failure-and-recovery` — Implement the security design principle of secure failure and recovery in [organization-defined].
+- `sa-8-25-economic-security` — Implement the security design principle of economic security in [organization-defined].
+- `sa-8-26-performance-security` — Implement the security design principle of performance security in [organization-defined].
+- `sa-8-27-human-factored-security` — Implement the security design principle of human factored security in [organization-defined].
+- `sa-8-28-acceptable-security` — Implement the security design principle of acceptable security in [organization-defined].
+- `sa-8-29-repeatable-and-documented-procedures` — Implement the security design principle of repeatable and documented procedures in [organization-defined].
+- `sa-8-3-modularity-and-layering` — Implement the security design principles of modularity and layering in [organization-defined].
+- `sa-8-30-procedural-rigor` — Implement the security design principle of procedural rigor in [organization-defined].
+- `sa-8-31-secure-system-modification` — Implement the security design principle of secure system modification in [organization-defined].
+- `sa-8-32-sufficient-documentation` — Implement the security design principle of sufficient documentation in [organization-defined].
+- `sa-8-33-minimization` — Implement the privacy principle of minimization using [organization-defined].
+- `sa-8-4-partially-ordered-dependencies` — Implement the security design principle of partially ordered dependencies in [organization-defined].
+- `sa-8-5-efficiently-mediated-access` — Implement the security design principle of efficiently mediated access in [organization-defined].
+- `sa-8-6-minimized-sharing` — Implement the security design principle of minimized sharing in [organization-defined].
+- `sa-8-7-reduced-complexity` — Implement the security design principle of reduced complexity in [organization-defined].
+- `sa-8-8-secure-evolvability` — Implement the security design principle of secure evolvability in [organization-defined].
+- `sa-8-9-trusted-components` — Implement the security design principle of trusted components in [organization-defined].
+- `sa-8-security-and-privacy-engineering-principles` — Apply the following systems security and privacy engineering principles in the specification, design, development, implementation, and modification of
+- `sa-9-1-risk-assessments-and-organizational-approvals` — Conduct an organizational assessment of risk prior to the acquisition or outsourcing of information security services;
+- `sa-9-2-identification-of-functions-ports-protocols-and-services` — Require providers of the following external system services to identify the functions, ports, protocols, and other services required for the use of su
+- `sa-9-3-establish-and-maintain-trust-relationship-with-providers` — Establish, document, and maintain trust relationships with external service providers based on the following requirements, properties, factors, or con
+- `sa-9-4-consistent-interests-of-consumers-and-providers` — Take the following actions to verify that the interests of [organization-defined] are consistent with and reflect organizational interests: [organizat
+- `sa-9-5-processing-storage-and-service-location` — Restrict the location of [organization-defined] to [organization-defined] based on [organization-defined].
+- `sa-9-6-organization-controlled-cryptographic-keys` — Maintain exclusive control of cryptographic keys for encrypted material stored or transmitted through an external system.
+- `sa-9-7-organization-controlled-integrity-checking` — Provide the capability to check the integrity of information while it resides in the external system.
+- `sa-9-8-processing-and-storage-location-us-jurisdiction` — Restrict the geographic location of information processing and data storage to facilities located within in the legal jurisdictional boundary of the U
+- `sa-9-external-system-services` — Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: ...
+- `sc-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] system and communications protection policy that: Procedures to f
+- `sc-10-network-disconnect` — Terminate the network connection associated with a communications session at the end of the session or after [organization-defined] of inactivity.
+- `sc-11-1-irrefutable-communications-path` — Provide a trusted communications path that is irrefutably distinguishable from other communications paths;
+- `sc-11-trusted-path` — Provide a [organization-defined] isolated trusted communications path for communications between the user and the trusted components of the system;
+- `sc-12-1-availability` — Maintain availability of information in the event of the loss of cryptographic keys by users.
+- `sc-12-2-symmetric-keys` — Produce, control, and distribute symmetric cryptographic keys using [organization-defined] key management technology and processes.
+- `sc-12-3-asymmetric-keys` — Produce, control, and distribute asymmetric cryptographic keys using [organization-defined].
+- `sc-12-4-pki-certificates` — PKI Certificates
+- `sc-12-5-pki-certificates-hardware-tokens` — PKI Certificates / Hardware Tokens
+- `sc-12-6-physical-control-of-keys` — Maintain physical control of cryptographic keys when stored information is encrypted by external service providers.
+- `sc-12-cryptographic-key-establishment-and-management` — Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: 
+- `sc-13-1-fips-validated-cryptography` — FIPS-validated Cryptography
+- `sc-13-2-nsa-approved-cryptography` — NSA-approved Cryptography
+- `sc-13-3-individuals-without-formal-access-approvals` — Individuals Without Formal Access Approvals
+- `sc-13-4-digital-signatures` — Digital Signatures
+- `sc-13-cryptographic-protection` — Determine the [organization-defined] ;
+- `sc-14-public-access-protections` — Public Access Protections
+- `sc-15-1-physical-or-logical-disconnect` — Provide [organization-defined] disconnect of collaborative computing devices in a manner that supports ease of use.
+- `sc-15-2-blocking-inbound-and-outbound-communications-traffic` — Blocking Inbound and Outbound Communications Traffic
+- `sc-15-3-disabling-and-removal-in-secure-work-areas` — Disable or remove collaborative computing devices and applications from [organization-defined] in [organization-defined].
+- `sc-15-4-explicitly-indicate-current-participants` — Provide an explicit indication of current participants in [organization-defined].
+- `sc-15-collaborative-computing-devices-and-applications` — Prohibit remote activation of collaborative computing devices and applications with the following exceptions: [organization-defined] ;
+- `sc-16-1-integrity-verification` — Verify the integrity of transmitted security and privacy attributes.
+- `sc-16-2-anti-spoofing-mechanisms` — Implement anti-spoofing mechanisms to prevent adversaries from falsifying the security attributes indicating the successful application of the securit
+- `sc-16-3-cryptographic-binding` — Implement [organization-defined] to bind security and privacy attributes to transmitted information.
+- `sc-16-transmission-of-security-and-privacy-attributes` — Associate [organization-defined] with information exchanged between systems and between system components.
+- `sc-17-public-key-infrastructure-certificates` — Issue public key certificates under an [organization-defined] or obtain public key certificates from an approved service provider;
+- `sc-18-1-identify-unacceptable-code-and-take-corrective-actions` — Identify [organization-defined] and take [organization-defined].
+- `sc-18-2-acquisition-development-and-use` — Verify that the acquisition, development, and use of mobile code to be deployed in the system meets [organization-defined].
+- `sc-18-3-prevent-downloading-and-execution` — Prevent the download and execution of [organization-defined].
+- `sc-18-4-prevent-automatic-execution` — Prevent the automatic execution of mobile code in [organization-defined] and enforce [organization-defined] prior to executing the code.
+- `sc-18-5-allow-execution-only-in-confined-environments` — Allow execution of permitted mobile code only in confined virtual machine environments.
+- `sc-18-mobile-code` — Define acceptable and unacceptable mobile code and mobile code technologies;
+- `sc-19-voice-over-internet-protocol` — Technology-specific;
+- `sc-2-1-interfaces-for-non-privileged-users` — Prevent the presentation of system management functionality at interfaces to non-privileged users.
+- `sc-2-2-disassociability` — Store state information from applications and software separately.
+- `sc-2-separation-of-system-and-user-functionality` — Separate user functionality, including user interface services, from system management functionality.
+- `sc-20-1-child-subspaces` — Child Subspaces
+- `sc-20-2-data-origin-and-integrity` — Provide data origin and integrity protection artifacts for internal name/address resolution queries.
+- `sc-20-secure-nameaddress-resolution-service-authoritative-source` — Provide additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system ret...
+- `sc-21-1-data-origin-and-integrity` — Data Origin and Integrity
+- `sc-21-secure-nameaddress-resolution-service-recursive-or-caching` — Request and perform data origin authentication and data integrity verification on the name/address resolution responses the system receives from autho
+- `sc-22-architecture-and-provisioning-for-nameaddress-resolution-s` — Ensure the systems that collectively provide name/address resolution service for an organization are fault-tolerant and implement internal and externa
+- `sc-23-1-invalidate-session-identifiers-at-logout` — Invalidate session identifiers upon user logout or other session termination.
+- `sc-23-2-user-initiated-logouts-and-message-displays` — User-initiated Logouts and Message Displays
+- `sc-23-3-unique-system-generated-session-identifiers` — Generate a unique session identifier for each session with [organization-defined] and recognize only session identifiers that are system-generated.
+- `sc-23-4-unique-session-identifiers-with-randomization` — Unique Session Identifiers with Randomization
+- `sc-23-5-allowed-certificate-authorities` — Only allow the use of [organization-defined] for verification of the establishment of protected sessions.
+- `sc-23-session-authenticity` — Protect the authenticity of communications sessions.
+- `sc-24-fail-in-known-state` — Fail to a [organization-defined] for the following failures on the indicated components while preserving [organization-defined] in failure: [organizat
+- `sc-25-thin-nodes` — Employ minimal functionality and information storage on the following system components: [organization-defined].
+- `sc-26-1-detection-of-malicious-code` — Detection of Malicious Code
+- `sc-26-decoys` — Include components within organizational systems specifically designed to be the target of malicious attacks for detecting, deflecting, and analyzing 
+- `sc-27-platform-independent-applications` — Include within organizational systems the following platform independent applications: [organization-defined].
+- `sc-28-1-cryptographic-protection` — Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on [organization-defined]:
+- `sc-28-2-offline-storage` — Remove the following information from online storage and store offline in a secure location: [organization-defined].
+- `sc-28-3-cryptographic-keys` — Provide protected storage for cryptographic keys [organization-defined].
+- `sc-28-protection-of-information-at-rest` — Protect the [organization-defined] of the following information at rest: [organization-defined].
+- `sc-29-1-virtualization-techniques` — Employ virtualization techniques to support the deployment of a diversity of operating systems and applications that are changed [organization-defined
+- `sc-29-heterogeneity` — Employ a diverse set of information technologies for the following system components in the implementation of the system: [organization-defined].
+- `sc-3-1-hardware-separation` — Employ hardware separation mechanisms to implement security function isolation.
+- `sc-3-2-access-and-flow-control-functions` — Isolate security functions enforcing access and information flow control from nonsecurity functions and from other security functions.
+- `sc-3-3-minimize-nonsecurity-functionality` — Minimize the number of nonsecurity functions included within the isolation boundary containing security functions.
+- `sc-3-4-module-coupling-and-cohesiveness` — Implement security functions as largely independent modules that maximize internal cohesiveness within modules and minimize coupling between modules.
+- `sc-3-5-layered-structures` — Implement security functions as a layered structure minimizing interactions between layers of the design and avoiding any dependence by lower layers o
+- `sc-3-security-function-isolation` — Isolate security functions from nonsecurity functions.
+- `sc-30-1-virtualization-techniques` — Virtualization Techniques
+- `sc-30-2-randomness` — Employ [organization-defined] to introduce randomness into organizational operations and assets.
+- `sc-30-3-change-processing-and-storage-locations` — Change the location of [organization-defined] [organization-defined]].
+- `sc-30-4-misleading-information` — Employ realistic, but misleading information in [organization-defined] about its security state or posture.
+- `sc-30-5-concealment-of-system-components` — Employ the following techniques to hide or conceal [organization-defined]: [organization-defined].
+- `sc-30-concealment-and-misdirection` — Employ the following concealment and misdirection techniques for [organization-defined] at [organization-defined] to confuse and mislead adversaries: 
+- `sc-31-1-test-covert-channels-for-exploitability` — Test a subset of the identified covert channels to determine the channels that are exploitable.
+- `sc-31-2-maximum-bandwidth` — Reduce the maximum bandwidth for identified covert [organization-defined] channels to [organization-defined].
+- `sc-31-3-measure-bandwidth-in-operational-environments` — Measure the bandwidth of [organization-defined] in the operational environment of the system.
+- `sc-31-covert-channel-analysis` — Perform a covert channel analysis to identify those aspects of communications within the system that are potential avenues for covert [organization...
+- `sc-32-1-separate-physical-domains-for-privileged-functions` — Partition privileged functions into separate physical domains.
+- `sc-32-system-partitioning` — Partition the system into [organization-defined] residing in separate [organization-defined] domains or environments based on [organization-defined].
+- `sc-33-transmission-preparation-integrity` — Transmission Preparation Integrity
+- `sc-34-1-no-writable-storage` — Employ [organization-defined] with no writeable storage that is persistent across component restart or power on/off.
+- `sc-34-2-integrity-protection-on-read-only-media` — Protect the integrity of information prior to storage on read-only media and control the media after such information has been recorded onto the media
+- `sc-34-3-hardware-based-protection` — Hardware-based Protection
+- `sc-34-non-modifiable-executable-programs` — For [organization-defined] , load and execute: The operating environment from hardware-enforced, read-only media; and The following applications from 
+- `sc-35-external-malicious-code-identification` — Include system components that proactively seek to identify network-based malicious code or malicious websites.
+- `sc-36-1-polling-techniques` — Employ polling techniques to identify potential faults, errors, or compromises to the following processing and storage components: [organization-de...
+- `sc-36-2-synchronization` — Synchronize the following duplicate systems or system components: [organization-defined].
+- `sc-36-distributed-processing-and-storage` — Distribute the following processing and storage components across multiple [organization-defined]: [organization-defined].
+- `sc-37-1-ensure-delivery-and-transmission` — Employ [organization-defined] to ensure that only [organization-defined] receive the following information, system components, or devices: [organizati
+- `sc-37-out-of-band-channels` — Employ the following out-of-band channels for the physical delivery or electronic transmission of [organization-defined] to [organization-defined]: [o
+- `sc-38-operations-security` — Employ the following operations security controls to protect key organizational information throughout the system development life cycle: [organizatio
+- `sc-39-1-hardware-separation` — Implement hardware separation mechanisms to facilitate process isolation.
+- `sc-39-2-separate-execution-domain-per-thread` — Maintain a separate execution domain for each thread in [organization-defined].
+- `sc-39-process-isolation` — Maintain a separate execution domain for each executing system process.
+- `sc-4-1-security-levels` — Security Levels
+- `sc-4-2-multilevel-or-periods-processing` — Prevent unauthorized information transfer via shared resources in accordance with [organization-defined] when system processing explicitly switches be
+- `sc-4-information-in-shared-system-resources` — Prevent unauthorized and unintended information transfer via shared system resources.
+- `sc-40-1-electromagnetic-interference` — Implement cryptographic mechanisms that achieve [organization-defined] against the effects of intentional electromagnetic interference.
+- `sc-40-2-reduce-detection-potential` — Implement cryptographic mechanisms to reduce the detection potential of wireless links to [organization-defined].
+- `sc-40-3-imitative-or-manipulative-communications-deception` — Implement cryptographic mechanisms to identify and reject wireless transmissions that are deliberate attempts to achieve imitative or manipulative com
+- `sc-40-4-signal-parameter-identification` — Implement cryptographic mechanisms to prevent the identification of [organization-defined] by using the transmitter signal parameters.
+- `sc-40-wireless-link-protection` — Protect external and internal [organization-defined] from the following signal parameter attacks: [organization-defined].
+- `sc-41-port-and-io-device-access` — [organization-defined] disable or remove [organization-defined] on the following systems or system components: [organization-defined].
+- `sc-42-1-reporting-to-authorized-individuals-or-roles` — Verify that the system is configured so that data or information collected by the [organization-defined] is only reported to authorized individuals or
+- `sc-42-2-authorized-use` — Employ the following measures so that data or information collected by [organization-defined] is only used for authorized purposes: [organization-defi
+- `sc-42-3-prohibit-use-of-devices` — Prohibit Use of Devices
+- `sc-42-4-notice-of-collection` — Employ the following measures to facilitate an individual’s awareness that personally identifiable information is being collected by [organization-def
+- `sc-42-5-collection-minimization` — Employ [organization-defined] that are configured to minimize the collection of information about individuals that is not needed.
+- `sc-42-sensor-capability-and-data` — Prohibit [organization-defined] ;
+- `sc-43-usage-restrictions` — Establish usage restrictions and implementation guidelines for the following system components: [organization-defined] ;
+- `sc-44-detonation-chambers` — Employ a detonation chamber capability within [organization-defined].
+- `sc-45-1-synchronization-with-authoritative-time-source` — Compare the internal system clocks [organization-defined] with [organization-defined] ;
+- `sc-45-2-secondary-authoritative-time-source` — Identify a secondary authoritative time source that is in a different geographic region than the primary authoritative time source;
+- `sc-45-system-time-synchronization` — Synchronize system clocks within and between systems and system components.
+- `sc-46-cross-domain-policy-enforcement` — Implement a policy enforcement mechanism [organization-defined] between the physical and/or network interfaces for the connecting security domains.
+- `sc-47-alternate-communications-paths` — Establish [organization-defined] for system operations organizational command and control.
+- `sc-48-1-dynamic-relocation-of-sensors-or-monitoring-capabilities` — Dynamically relocate [organization-defined] to [organization-defined] under the following conditions or circumstances: [organization-defined].
+- `sc-48-sensor-relocation` — Relocate [organization-defined] to [organization-defined] under the following conditions or circumstances: [organization-defined].
+- `sc-49-hardware-enforced-separation-and-policy-enforcement` — Implement hardware-enforced separation and policy enforcement mechanisms between [organization-defined].
+- `sc-5-1-restrict-ability-to-attack-other-systems` — Restrict the ability of individuals to launch the following denial-of-service attacks against other systems: [organization-defined].
+- `sc-5-2-capacity-bandwidth-and-redundancy` — Manage capacity, bandwidth, or other redundancy to limit the effects of information flooding denial-of-service attacks.
+- `sc-5-3-detection-and-monitoring` — Employ the following monitoring tools to detect indicators of denial-of-service attacks against, or launched from, the system: [organization-define...
+- `sc-5-denial-of-service-protection` — [organization-defined] the effects of the following types of denial-of-service events: [organization-defined] ;
+- `sc-50-software-enforced-separation-and-policy-enforcement` — Implement software-enforced separation and policy enforcement mechanisms between [organization-defined].
+- `sc-51-hardware-based-protection` — Employ hardware-based, write-protect for [organization-defined] ;
+- `sc-6-resource-availability` — Protect the availability of resources by allocating [organization-defined] by [organization-defined].
+- `sc-7-1-physically-separated-subnetworks` — Physically Separated Subnetworks
+- `sc-7-10-prevent-exfiltration` — Prevent the exfiltration of information;
+- `sc-7-11-restrict-incoming-communications-traffic` — Only allow incoming communications from [organization-defined] to be routed to [organization-defined].
+- `sc-7-12-host-based-protection` — Implement [organization-defined] at [organization-defined].
+- `sc-7-13-isolation-of-security-tools-mechanisms-and-support-compo` — Isolate [organization-defined] from other internal system components by implementing physically separate subnetworks with managed interfaces to other 
+- `sc-7-14-protect-against-unauthorized-physical-connections` — Protect against unauthorized physical connections at [organization-defined].
+- `sc-7-15-networked-privileged-accesses` — Route networked, privileged accesses through a dedicated, managed interface for purposes of access control and auditing.
+- `sc-7-16-prevent-discovery-of-system-components` — Prevent the discovery of specific system components that represent a managed interface.
+- `sc-7-17-automated-enforcement-of-protocol-formats` — Enforce adherence to protocol formats.
+- `sc-7-18-fail-secure` — Prevent systems from entering unsecure states in the event of an operational failure of a boundary protection device.
+- `sc-7-19-block-communication-from-non-organizationally-configured` — Block inbound and outbound communications traffic between [organization-defined] that are independently configured by end users and external service p
+- `sc-7-2-public-access` — Public Access
+- `sc-7-20-dynamic-isolation-and-segregation` — Provide the capability to dynamically isolate [organization-defined] from other system components.
+- `sc-7-21-isolation-of-system-components` — Employ boundary protection mechanisms to isolate [organization-defined] supporting [organization-defined].
+- `sc-7-22-separate-subnets-for-connecting-to-different-security-do` — Implement separate network addresses to connect to systems in different security domains.
+- `sc-7-23-disable-sender-feedback-on-protocol-validation-failure` — Disable feedback to senders on protocol format validation failure.
+- `sc-7-24-personally-identifiable-information` — For systems that process personally identifiable information: Apply the following processing rules to data elements of personally identifiable informa
+- `sc-7-25-unclassified-national-security-system-connections` — Prohibit the direct connection of [organization-defined] to an external network without the use of [organization-defined].
+- `sc-7-26-classified-national-security-system-connections` — Prohibit the direct connection of a classified national security system to an external network without the use of [organization-defined].
+- `sc-7-27-unclassified-non-national-security-system-connections` — Prohibit the direct connection of [organization-defined] to an external network without the use of [organization-defined].
+- `sc-7-28-connections-to-public-networks` — Prohibit the direct connection of [organization-defined] to a public network.
+- `sc-7-29-separate-subnets-to-isolate-functions` — Implement [organization-defined] separate subnetworks to isolate the following critical system components and functions: [organization-defined].
+- `sc-7-3-access-points` — Limit the number of external network connections to the system.
+- `sc-7-4-external-telecommunications-services` — Implement a managed interface for each external telecommunication service;
+- `sc-7-5-deny-by-default-allow-by-exception` — Deny network communications traffic by default and allow network communications traffic by exception [organization-defined].
+- `sc-7-6-response-to-recognized-failures` — Response to Recognized Failures
+- `sc-7-7-split-tunneling-for-remote-devices` — Prevent split tunneling for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using [organization-de
+- `sc-7-8-route-traffic-to-authenticated-proxy-servers` — Route [organization-defined] to [organization-defined] through authenticated proxy servers at managed interfaces.
+- `sc-7-9-restrict-threatening-outgoing-communications-traffic` — Detect and deny outgoing communications traffic posing a threat to external systems;
+- `sc-7-boundary-protection` — Monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces within the system;
+- `sc-8-1-cryptographic-protection` — Implement cryptographic mechanisms to [organization-defined] during transmission.
+- `sc-8-2-pre-and-post-transmission-handling` — Maintain the [organization-defined] of information during preparation for transmission and during reception.
+- `sc-8-3-cryptographic-protection-for-message-externals` — Implement cryptographic mechanisms to protect message externals unless otherwise protected by [organization-defined].
+- `sc-8-4-conceal-or-randomize-communications` — Implement cryptographic mechanisms to conceal or randomize communication patterns unless otherwise protected by [organization-defined].
+- `sc-8-5-protected-distribution-system` — Implement [organization-defined] to [organization-defined] during transmission.
+- `sc-8-transmission-confidentiality-and-integrity` — Protect the [organization-defined] of transmitted information.
+- `sc-9-transmission-confidentiality` — Transmission Confidentiality
+- `security-alerts-advisories-and-directives-03-14-03-security-aler` — Receive system security alerts, advisories, and directives from external organizations on an ongoing basis.
+- `security-assessment-03-12-01-security-assessment` — Security Assessment
+- `security-engineering-principles-03-16-01-security-engineering-pr` — Security Engineering Principles
+- `separation-of-duties-03-01-04-separation-of-duties` — Identify the duties of individuals requiring separation.
+- `session-authenticity-03-13-15-session-authenticity` — Session Authenticity
+- `session-termination-03-01-11-session-termination` — Session Termination
+- `si-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] system and information integrity policy that: Procedures to facil
+- `si-10-1-manual-override-capability` — Provide a manual override capability for input validation of the following information inputs: [organization-defined];
+- `si-10-2-review-and-resolve-errors` — Review and resolve input validation errors within [organization-defined].
+- `si-10-3-predictable-behavior` — Verify that the system behaves in a predictable and documented manner when invalid inputs are received.
+- `si-10-4-timing-interactions` — Account for timing interactions among system components in determining appropriate responses for invalid inputs.
+- `si-10-5-restrict-inputs-to-trusted-sources-and-approved-formats` — Restrict the use of information inputs to [organization-defined] and/or [organization-defined].
+- `si-10-6-injection-prevention` — Prevent untrusted data injections.
+- `si-10-information-input-validation` — Check the validity of the following information inputs: [organization-defined].
+- `si-11-error-handling` — Generate error messages that provide information necessary for corrective actions without revealing information that could be exploited;
+- `si-12-1-limit-personally-identifiable-information-elements` — Limit personally identifiable information being processed in the information life cycle to the following elements of personally identifiable informati
+- `si-12-2-minimize-personally-identifiable-information-in-testing` — Use the following techniques to minimize the use of personally identifiable information for research, testing, or training: [organization-defined].
+- `si-12-3-information-disposal` — Use the following techniques to dispose of, destroy, or erase information following the retention period: [organization-defined].
+- `si-12-information-management-and-retention` — Manage and retain information within the system and information output from the system in accordance with applicable laws, executive orders, directive
+- `si-13-1-transferring-component-responsibilities` — Take system components out of service by transferring component responsibilities to substitute components no later than [organization-defined] of mean
+- `si-13-2-time-limit-on-process-execution-without-supervision` — Time Limit on Process Execution Without Supervision
+- `si-13-3-manual-transfer-between-components` — Manually initiate transfers between active and standby system components when the use of the active component reaches [organization-defined] of the me
+- `si-13-4-standby-component-installation-and-notification` — If system component failures are detected: Ensure that the standby components are successfully and transparently installed within [organization-define
+- `si-13-5-failover-capability` — Provide [organization-defined] [organization-defined] for the system.
+- `si-13-predictable-failure-prevention` — Determine mean time to failure (MTTF) for the following system components in specific environments of operation: [organization-defined] ;
+- `si-14-1-refresh-from-trusted-sources` — Obtain software and data employed during system component and service refreshes from the following trusted sources: [organization-defined].
+- `si-14-2-non-persistent-information` — [organization-defined] ;
+- `si-14-3-non-persistent-connectivity` — Establish connections to the system on demand and terminate connections after [organization-defined].
+- `si-14-non-persistence` — Implement non-persistent [organization-defined] that are initiated in a known state and terminated [organization-defined].
+- `si-15-information-output-filtering` — Validate information output from the following software programs and/or applications to ensure that the information is consistent with the expected co
+- `si-16-memory-protection` — Implement the following controls to protect the system memory from unauthorized code execution: [organization-defined].
+- `si-17-fail-safe-procedures` — Implement the indicated fail-safe procedures when the indicated failures occur: [organization-defined].
+- `si-18-1-automation-support` — Correct or delete personally identifiable information that is inaccurate or outdated, incorrectly determined regarding impact, or incorrectly de-ident
+- `si-18-2-data-tags` — Employ data tags to automate the correction or deletion of personally identifiable information across the information life cycle within organizational
+- `si-18-3-collection` — Collect personally identifiable information directly from the individual.
+- `si-18-4-individual-requests` — Correct or delete personally identifiable information upon request by individuals or their designated representatives.
+- `si-18-5-notice-of-correction-or-deletion` — Notify [organization-defined] and individuals that the personally identifiable information has been corrected or deleted.
+- `si-18-personally-identifiable-information-quality-operations` — Check the accuracy, relevance, timeliness, and completeness of personally identifiable information across the information life cycle [organization-...
+- `si-19-1-collection` — De-identify the dataset upon collection by not collecting personally identifiable information.
+- `si-19-2-archiving` — Prohibit archiving of personally identifiable information elements if those elements in a dataset will not be needed after the dataset is archived.
+- `si-19-3-release` — Remove personally identifiable information elements from a dataset prior to its release if those elements in the dataset do not need to be part of the
+- `si-19-4-removal-masking-encryption-hashing-or-replacement-of-dir` — Remove, mask, encrypt, hash, or replace direct identifiers in a dataset.
+- `si-19-5-statistical-disclosure-control` — Manipulate numerical data, contingency tables, and statistical findings so that no individual or organization is identifiable in the results of the an
+- `si-19-6-differential-privacy` — Prevent disclosure of personally identifiable information by adding non-deterministic noise to the results of mathematical operations before the resul
+- `si-19-7-validated-algorithms-and-software` — Perform de-identification using validated algorithms and software that is validated to implement the algorithms.
+- `si-19-8-motivated-intruder` — Perform a motivated intruder test on the de-identified dataset to determine if the identified data remains or if the de-identified data can be re-iden
+- `si-19-de-identification` — Remove the following elements of personally identifiable information from datasets: [organization-defined] ;
+- `si-2-1-central-management` — Central Management
+- `si-2-2-automated-flaw-remediation-status` — Determine if system components have applicable security-relevant software and firmware updates installed using [organization-defined] [organization-de
+- `si-2-3-time-to-remediate-flaws-and-benchmarks-for-corrective-act` — Measure the time between flaw identification and flaw remediation;
+- `si-2-4-automated-patch-management-tools` — Employ automated patch management tools to facilitate flaw remediation to the following system components: [organization-defined].
+- `si-2-5-automatic-software-and-firmware-updates` — Install [organization-defined] automatically to [organization-defined].
+- `si-2-6-removal-of-previous-versions-of-software-and-firmware` — Remove previous versions of [organization-defined] after updated versions have been installed.
+- `si-2-7-root-cause-analysis` — Conduct root cause analysis to identify underlying causes of issues or failures.
+- `si-2-flaw-remediation` — Identify, report, and correct system flaws;
+- `si-20-tainting` — Embed data or capabilities in the following systems or system components to determine if organizational data has been exfiltrated or improperly remove
+- `si-21-information-refresh` — Refresh [organization-defined] at [organization-defined] or generate the information on demand and delete the information when no longer needed.
+- `si-22-information-diversity` — Identify the following alternative sources of information for [organization-defined]: [organization-defined] ;
+- `si-23-information-fragmentation` — Based on [organization-defined]: Fragment the following information: [organization-defined] ; and Distribute the fragmented information across the fol
+- `si-3-1-central-management` — Central Management
+- `si-3-10-malicious-code-analysis` — Employ the following tools and techniques to analyze the characteristics and behavior of malicious code: [organization-defined] ;
+- `si-3-2-automatic-updates` — Automatic Updates
+- `si-3-3-non-privileged-users` — Non-privileged Users
+- `si-3-4-updates-only-by-privileged-users` — Update malicious code protection mechanisms only when directed by a privileged user.
+- `si-3-5-portable-storage-devices` — Portable Storage Devices
+- `si-3-6-testing-and-verification` — Test malicious code protection mechanisms [organization-defined] by introducing known benign code into the system;
+- `si-3-7-nonsignature-based-detection` — Nonsignature-based Detection
+- `si-3-8-detect-unauthorized-commands` — Detect the following unauthorized operating system commands through the kernel application programming interface on [organization-defined]: [organi...
+- `si-3-9-authenticate-remote-commands` — Authenticate Remote Commands
+- `si-3-malicious-code-protection` — Implement [organization-defined] malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code;
+- `si-4-1-system-wide-intrusion-detection-system` — Connect and configure individual intrusion detection tools into a system-wide intrusion detection system.
+- `si-4-10-visibility-of-encrypted-communications` — Make provisions so that [organization-defined] is visible to [organization-defined].
+- `si-4-11-analyze-communications-traffic-anomalies` — Analyze outbound communications traffic at the external interfaces to the system and selected [organization-defined] to discover anomalies.
+- `si-4-12-automated-organization-generated-alerts` — Alert [organization-defined] using [organization-defined] when the following indications of inappropriate or unusual activities with security or priva
+- `si-4-13-analyze-traffic-and-event-patterns` — Analyze communications traffic and event patterns for the system;
+- `si-4-14-wireless-intrusion-detection` — Employ a wireless intrusion detection system to identify rogue wireless devices and to detect attack attempts and potential compromises or breaches to
+- `si-4-15-wireless-to-wireline-communications` — Employ an intrusion detection system to monitor wireless communications traffic as the traffic passes from wireless to wireline networks.
+- `si-4-16-correlate-monitoring-information` — Correlate information from monitoring tools and mechanisms employed throughout the system.
+- `si-4-17-integrated-situational-awareness` — Correlate information from monitoring physical, cyber, and supply chain activities to achieve integrated, organization-wide situational awareness.
+- `si-4-18-analyze-traffic-and-covert-exfiltration` — Analyze outbound communications traffic at external interfaces to the system and at the following interior points to detect covert exfiltration of inf
+- `si-4-19-risk-for-individuals` — Implement [organization-defined] of individuals who have been identified by [organization-defined] as posing an increased level of risk.
+- `si-4-2-automated-tools-and-mechanisms-for-real-time-analysis` — Employ automated tools and mechanisms to support near real-time analysis of events.
+- `si-4-20-privileged-users` — Implement the following additional monitoring of privileged users: [organization-defined].
+- `si-4-21-probationary-periods` — Implement the following additional monitoring of individuals during [organization-defined]: [organization-defined].
+- `si-4-22-unauthorized-network-services` — Detect network services that have not been authorized or approved by [organization-defined] ;
+- `si-4-23-host-based-devices` — Implement the following host-based monitoring mechanisms at [organization-defined]: [organization-defined].
+- `si-4-24-indicators-of-compromise` — Discover, collect, and distribute to [organization-defined] , indicators of compromise provided by [organization-defined].
+- `si-4-25-optimize-network-traffic-analysis` — Provide visibility into network traffic at external and key internal system interfaces to optimize the effectiveness of monitoring devices.
+- `si-4-3-automated-tool-and-mechanism-integration` — Employ automated tools and mechanisms to integrate intrusion detection tools and mechanisms into access control and flow control mechanisms.
+- `si-4-4-inbound-and-outbound-communications-traffic` — Determine criteria for unusual or unauthorized activities or conditions for inbound and outbound communications traffic;
+- `si-4-5-system-generated-alerts` — Alert [organization-defined] when the following system-generated indications of compromise or potential compromise occur: [organization-defined].
+- `si-4-6-restrict-non-privileged-users` — Restrict Non-privileged Users
+- `si-4-7-automated-response-to-suspicious-events` — Notify [organization-defined] of detected suspicious events;
+- `si-4-8-protection-of-monitoring-information` — Protection of Monitoring Information
+- `si-4-9-testing-of-monitoring-tools-and-mechanisms` — Test intrusion-monitoring tools and mechanisms [organization-defined].
+- `si-4-system-monitoring` — Monitor the system to detect: Attacks and indicators of potential attacks in accordance with the following monitoring objectives: [organization-define
+- `si-5-1-automated-alerts-and-advisories` — Broadcast security alert and advisory information throughout the organization using [organization-defined].
+- `si-5-security-alerts-advisories-and-directives` — Receive system security alerts, advisories, and directives from [organization-defined] on an ongoing basis;
+- `si-6-1-notification-of-failed-security-tests` — Notification of Failed Security Tests
+- `si-6-2-automation-support-for-distributed-testing` — Implement automated mechanisms to support the management of distributed security and privacy function testing.
+- `si-6-3-report-verification-results` — Report the results of security and privacy function verification to [organization-defined].
+- `si-6-security-and-privacy-function-verification` — Verify the correct operation of [organization-defined];
+- `si-7-1-integrity-checks` — Perform an integrity check of [organization-defined] [organization-defined].
+- `si-7-10-protection-of-boot-firmware` — Implement the following mechanisms to protect the integrity of boot firmware in [organization-defined]: [organization-defined].
+- `si-7-11-confined-environments-with-limited-privileges` — Confined Environments with Limited Privileges
+- `si-7-12-integrity-verification` — Require that the integrity of the following user-installed software be verified prior to execution: [organization-defined].
+- `si-7-13-code-execution-in-protected-environments` — Code Execution in Protected Environments
+- `si-7-14-binary-or-machine-executable-code` — Binary or Machine Executable Code
+- `si-7-15-code-authentication` — Implement cryptographic mechanisms to authenticate the following software or firmware components prior to installation: [organization-defined].
+- `si-7-16-time-limit-on-process-execution-without-supervision` — Prohibit processes from executing without supervision for more than [organization-defined].
+- `si-7-17-runtime-application-self-protection` — Implement [organization-defined] for application self-protection at runtime.
+- `si-7-2-automated-notifications-of-integrity-violations` — Employ automated tools that provide notification to [organization-defined] upon discovering discrepancies during integrity verification.
+- `si-7-3-centrally-managed-integrity-tools` — Employ centrally managed integrity verification tools.
+- `si-7-4-tamper-evident-packaging` — Tamper-evident Packaging
+- `si-7-5-automated-response-to-integrity-violations` — Automatically [organization-defined] when integrity violations are discovered.
+- `si-7-6-cryptographic-protection` — Implement cryptographic mechanisms to detect unauthorized changes to software, firmware, and information.
+- `si-7-7-integration-of-detection-and-response` — Incorporate the detection of the following unauthorized changes into the organizational incident response capability: [organization-defined].
+- `si-7-8-auditing-capability-for-significant-events` — Upon detection of a potential integrity violation, provide the capability to audit the event and initiate the following actions: [organization-defined
+- `si-7-9-verify-boot-process` — Verify the integrity of the boot process of the following system components: [organization-defined].
+- `si-7-software-firmware-and-information-integrity` — Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information: [organization-defined] ;
+- `si-8-1-central-management` — Central Management
+- `si-8-2-automatic-updates` — Automatically update spam protection mechanisms [organization-defined].
+- `si-8-3-continuous-learning-capability` — Implement spam protection mechanisms with a learning capability to more effectively identify legitimate communications traffic.
+- `si-8-spam-protection` — Employ spam protection mechanisms at system entry and exit points to detect and act on unsolicited messages;
+- `si-9-information-input-restrictions` — Information Input Restrictions
+- `sp-800-171-03-01-13-030113` — 03.01.13
+- `sp-800-171-03-01-14-030114` — 03.01.14
+- `sp-800-171-03-01-15-030115` — 03.01.15
+- `sp-800-171-03-01-17-030117` — 03.01.17
+- `sp-800-171-03-01-19-030119` — 03.01.19
+- `sp-800-171-03-01-21-030121` — 03.01.21
+- `sp-800-171-03-02-03-030203` — 03.02.03
+- `sp-800-171-03-03-09-030309` — 03.03.09
+- `sp-800-171-03-04-07-030407` — 03.04.07
+- `sp-800-171-03-04-09-030409` — 03.04.09
+- `sp-800-171-03-05-06-030506` — 03.05.06
+- `sp-800-171-03-05-08-030508` — 03.05.08
+- `sp-800-171-03-05-09-030509` — 03.05.09
+- `sp-800-171-03-05-10-030510` — 03.05.10
+- `sp-800-171-03-07-01-030701` — 03.07.01
+- `sp-800-171-03-07-02-030702` — 03.07.02
+- `sp-800-171-03-07-03-030703` — 03.07.03
+- `sp-800-171-03-08-06-030806` — 03.08.06
+- `sp-800-171-03-08-08-030808` — 03.08.08
+- `sp-800-171-03-10-03-031003` — 03.10.03
+- `sp-800-171-03-10-04-031004` — 03.10.04
+- `sp-800-171-03-10-05-031005` — 03.10.05
+- `sp-800-171-03-11-03-031103` — 03.11.03
+- `sp-800-171-03-12-04-031204` — 03.12.04
+- `sp-800-171-03-13-02-031302` — 03.13.02
+- `sp-800-171-03-13-03-031303` — 03.13.03
+- `sp-800-171-03-13-05-031305` — 03.13.05
+- `sp-800-171-03-13-07-031307` — 03.13.07
+- `sp-800-171-03-13-14-031314` — 03.13.14
+- `sp-800-171-03-13-16-031316` — 03.13.16
+- `sp-800-171-03-14-04-031404` — 03.14.04
+- `sp-800-171-03-14-05-031405` — 03.14.05
+- `sp-800-171-03-14-07-031407` — 03.14.07
+- `sr-1-policy-and-procedures` — Develop, document, and disseminate to [organization-defined]: [organization-defined] supply chain risk management policy that: Procedures to facilitat
+- `sr-10-inspection-of-systems-or-components` — Inspect the following systems or system components [organization-defined] to detect tampering: [organization-defined].
+- `sr-11-1-anti-counterfeit-training` — Train [organization-defined] to detect counterfeit system components (including hardware, software, and firmware).
+- `sr-11-2-configuration-control-for-component-service-and-repair` — Maintain configuration control over the following system components awaiting service or repair and serviced or repaired components awaiting return to 
+- `sr-11-3-anti-counterfeit-scanning` — Scan for counterfeit system components [organization-defined].
+- `sr-11-component-authenticity` — Develop and implement anti-counterfeit policy and procedures that include the means to detect and prevent counterfeit components from entering the ...
+- `sr-12-component-disposal` — Dispose of [organization-defined] using the following techniques and methods: [organization-defined].
+- `sr-2-1-establish-scrm-team` — Establish a supply chain risk management team consisting of [organization-defined] to lead and support the following SCRM activities: [organization-de
+- `sr-2-supply-chain-risk-management-plan` — Develop a plan for managing supply chain risks associated with the research and development, design, manufacturing, acquisition, delivery, integrat...
+- `sr-3-1-diverse-supply-base` — Employ a diverse set of sources for the following system components and services: [organization-defined].
+- `sr-3-2-limitation-of-harm` — Employ the following controls to limit harm from potential adversaries identifying and targeting the organizational supply chain: [organization-define
+- `sr-3-3-sub-tier-flow-down` — Ensure that the controls included in the contracts of prime contractors are also included in the contracts of subcontractors.
+- `sr-3-supply-chain-controls-and-processes` — Establish a process or processes to identify and address weaknesses or deficiencies in the supply chain elements and processes of [organization-def...
+- `sr-4-1-identity` — Establish and maintain unique identification of the following supply chain elements, processes, and personnel associated with the identified system an
+- `sr-4-2-track-and-trace` — Establish and maintain unique identification of the following systems and critical system components for tracking through the supply chain: [organizat
+- `sr-4-3-validate-as-genuine-and-not-altered` — Employ the following controls to validate that the system or system component received is genuine and has not been altered: [organization-defined].
+- `sr-4-4-supply-chain-integrity-pedigree` — Employ [organization-defined] and conduct [organization-defined] to ensure the integrity of the system and system components by validating the interna
+- `sr-4-provenance` — Document, monitor, and maintain valid provenance of the following systems, system components, and associated data: [organization-defined].
+- `sr-5-1-adequate-supply` — Employ the following controls to ensure an adequate supply of [organization-defined]: [organization-defined].
+- `sr-5-2-assessments-prior-to-selection-acceptance-modification-or` — Assess the system, system component, or system service prior to selection, acceptance, modification, or update.
+- `sr-5-acquisition-strategies-tools-and-methods` — Employ the following acquisition strategies, contract tools, and procurement methods to protect against, identify, and mitigate supply chain risks: [o
+- `sr-6-1-testing-and-analysis` — Employ [organization-defined] of the following supply chain elements, processes, and actors associated with the system, system component, or system se
+- `sr-6-supplier-assessments-and-reviews` — Assess and review the supply chain-related risks associated with suppliers or contractors and the system, system component, or system service they pro
+- `sr-7-supply-chain-operations-security` — Employ the following Operations Security (OPSEC) controls to protect supply chain-related information for the system, system component, or system serv
+- `sr-8-notification-agreements` — Establish agreements and procedures with entities involved in the supply chain for the system, system component, or system service for the [organizati
+- `sr-9-1-multiple-stages-of-system-development-life-cycle` — Employ anti-tamper technologies, tools, and techniques throughout the system development life cycle.
+- `sr-9-tamper-resistance-and-detection` — Implement a tamper protection program for the system, system component, or system service.
+- `supply-chain-requirements-and-processes-03-17-03-supply-chain-re` — Establish a process for identifying and addressing weaknesses or deficiencies in the supply chain elements and processes.
+- `supply-chain-risk-management-id-sc-supply-chain-risk-management` — Supply Chain Risk Management
+- `supply-chain-risk-management-plan-03-17-01-supply-chain-risk-man` — Develop a plan for managing supply chain risks associated with the research and development, design, manufacturing, acquisition, delivery, integrat...
+- `system-and-component-configuration-for-high-risk-areas-03-04-12` — Issue systems or system components with the following configurations to individuals traveling to high-risk locations: [organization-defined].
+- `system-backup-cryptographic-protection-03-08-09-system-backup-cr` — Protect the confidentiality of backup information.
+- `system-component-inventory-03-04-10-system-component-inventory` — Develop and document an inventory of system components.
+- `system-monitoring-03-14-06-system-monitoring` — Monitor the system to detect: Attacks and indicators of potential attacks and Unauthorized connections. Identify unauthorized use of the system. Monit
+- `system-security-plan-03-15-02-system-security-plan` — Develop a system security plan that: Defines the constituent system components; Identifies the information types processed, stored, and transmitted by
+- `system-use-notification-03-01-09-system-use-notification` — System Use Notification
+- `technology-infrastructure-resilience-pr-ir-technology-infrastruc` — Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizati
+- `test-executable-code-to-identify-vulnerabilities-and-verify-comp` — Help identify vulnerabilities so that they can be corrected before the software is released in order to prevent exploitation.
+- `time-stamps-03-03-07-time-stamps` — Use internal system clocks to generate time stamps for audit records.
+- `transmission-and-storage-confidentiality-03-13-08-transmission-a` — Transmission and Storage Confidentiality
+- `unsuccessful-logon-attempts-03-01-08-unsuccessful-logon-attempts` — Enforce a limit of [organization-defined] consecutive invalid logon attempts by a user during a [organization-defined].
+- `unsupported-system-components-03-16-02-unsupported-system-compon` — Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer.
+- `use-of-external-systems-03-01-20-use-of-external-systems` — Prohibit the use of external systems unless the systems are specifically authorized.
+- `user-identification-and-authentication-03-05-01-user-identificat` — Uniquely identify and authenticate system users, and associate that unique identification with processes acting on behalf of those users.
+- `vulnerability-monitoring-and-scanning-03-11-02-vulnerability-mon` — Monitor and scan the system for vulnerabilities [organization-defined] and when new vulnerabilities affecting the system are identified.
+- `wireless-access-03-01-16-wireless-access` — Establish usage restrictions, configuration requirements, and connection requirements for each type of wireless access to the system.

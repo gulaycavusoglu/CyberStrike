@@ -1,0 +1,17 @@
+{
+  "name": "cyberstrike",
+  "owner": {
+    "name": "CyberStrike",
+    "url": "https://github.com/CyberStrikeus/CyberStrike"
+  },
+  "metadata": {
+    "description": "Claude Code skills built from the CyberStrike offensive-security library."
+  },
+  "plugins": [
+    {
+      "name": "cyberstrike",
+      "source": "./claude-plugin",
+      "description": "7,600+ offensive-security methodology skills: OWASP WSTG, MITRE ATT&CK, NIST, CIS Benchmarks, attack playbooks, and post-exploitation guides."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+# mitre_attack_ics
+
+83 skills.
+
+- `t0800-activate-firmware-update-mode` — Adversaries may activate firmware update mode on devices to prevent expected response functions from engaging in reaction to an emergency or process malfunction.
+- `t0801-monitor-process-state` — Adversaries may gather information about the physical process state.
+- `t0802-automated-collection` — Adversaries may automate collection of industrial environment information using tools or scripts.
+- `t0803-block-command-message` — Adversaries may block a command message from reaching its intended target to prevent command execution.
+- `t0804-block-reporting-message` — Adversaries may block or prevent a reporting message from reaching its intended target.
+- `t0805-block-serial-com` — Adversaries may block access to serial COM to prevent instructions or configurations from reaching target devices.
+- `t0806-brute-force-io` — Adversaries may repetitively or successively change I/O point values to perform an action.
+- `t0807-command-line-interface` — Adversaries may utilize command-line interfaces (CLIs) to interact with systems and execute commands.
+- `t0809-data-destruction` — Adversaries may perform data destruction over the course of an operation.
+- `t0811-data-from-information-repositories` — Adversaries may target and collect data from information repositories.
+- `t0812-default-credentials` — Adversaries may leverage manufacturer or supplier set default credentials on control system devices.
+- `t0813-denial-of-control` — Adversaries may cause a denial of control to temporarily prevent operators and engineers from interacting with process controls.
+- `t0814-denial-of-service` — Adversaries may perform Denial-of-Service (DoS) attacks to disrupt expected device functionality.
+- `t0815-denial-of-view` — Adversaries may cause a denial of view in attempt to disrupt and prevent operator oversight on the status of an ICS environment.
+- `t0816-device-restartshutdown` — Adversaries may forcibly restart or shutdown a device in an ICS environment to disrupt and potentially negatively impact physical processes.
+- `t0817-drive-by-compromise` — Adversaries may gain access to a system during a drive-by compromise, when a user visits a website as part of a regular browsing session.
+- `t0819-exploit-public-facing-application` — Adversaries may leverage weaknesses to exploit internet-facing software for initial access into an industrial network.
+- `t0820-exploitation-for-evasion` — Adversaries may exploit a software vulnerability to take advantage of a programming error in a program, service, or within the operating system software or kernel itself to evade detection.
+- `t0821-modify-controller-tasking` — Adversaries may modify the tasking of a controller to allow for the execution of their own programs.
+- `t0822-external-remote-services` — Adversaries may leverage external remote services as a point of initial access into your network.
+- `t0823-graphical-user-interface` — Adversaries may attempt to gain access to a machine via a Graphical User Interface (GUI) to enhance execution capabilities.
+- `t0826-loss-of-availability` — Adversaries may attempt to disrupt essential components or systems to prevent owner and operator from delivering products or services.
+- `t0827-loss-of-control` — Adversaries may seek to achieve a sustained loss of control or a runaway condition in which operators cannot issue any commands even if the malicious interference has subsided.
+- `t0828-loss-of-productivity-and-revenue` — Adversaries may cause loss of productivity and revenue through disruption and even damage to the availability and integrity of control system operations, devices, and related processes.
+- `t0829-loss-of-view` — Adversaries may cause a sustained or permanent loss of view where the ICS equipment will require local, hands-on operator intervention; for instance, a restart or manual operation.
+- `t0830-adversary-in-the-middle` — Adversaries with privileged network access may seek to modify network traffic in real time using adversary-in-the-middle (AiTM) attacks.
+- `t0831-manipulation-of-control` — Adversaries may manipulate physical process control within the industrial environment.
+- `t0832-manipulation-of-view` — Adversaries may attempt to manipulate the information reported back to operators or controllers.
+- `t0834-native-api` — Adversaries may directly interact with the native OS application programming interface (API) to access system functions.
+- `t0835-manipulate-io-image` — Adversaries may manipulate the I/O image of PLCs through various means to prevent them from functioning as expected.
+- `t0836-modify-parameter` — Adversaries may modify parameters used to instruct industrial control system devices.
+- `t0837-loss-of-protection` — Adversaries may compromise protective system functions designed to prevent the effects of faults and abnormal conditions.
+- `t0838-modify-alarm-settings` — Adversaries may modify alarm settings to prevent alerts that may inform operators of their presence or to prevent responses to dangerous and unintended scenarios.
+- `t0839-module-firmware` — Adversaries may install malicious or vulnerable firmware onto modular hardware devices.
+- `t0840-network-connection-enumeration` — Adversaries may perform network connection enumeration to discover information about device communication patterns.
+- `t0842-network-sniffing` — Network sniffing is the practice of using a network interface on a computer system to monitor or capture information regardless of whether it is the specified destination for the information.
+- `t0843-program-download` — Adversaries may perform a program download to transfer a user program to a controller.
+- `t0845-program-upload` — Adversaries may attempt to upload a program from a PLC to gather information about an industrial process.
+- `t0846-remote-system-discovery` — Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for subsequent Lateral Movement or Discovery techniques.
+- `t0847-replication-through-removable-media` — Adversaries may move onto systems, such as those separated from the enterprise network, by copying malware to removable media which is inserted into the control systems environment.
+- `t0848-rogue-master` — Adversaries may setup a rogue master to leverage control server functions to communicate with outstations.
+- `t0849-masquerading` — Adversaries may use masquerading to disguise a malicious application or executable as another file, to avoid operator and engineer suspicion.
+- `t0851-rootkit` — Adversaries may deploy rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components.
+- `t0852-screen-capture` — Adversaries may attempt to perform screen capture of devices in the control system environment.
+- `t0853-scripting` — Adversaries may use scripting languages to execute arbitrary code in the form of a pre-written script or in the form of user-supplied code to an interpreter.
+- `t0855-unauthorized-command-message` — Adversaries may send unauthorized command messages to instruct control system assets to perform actions outside of their intended functionality, or without the logical preconditions to trigger thei...
+- `t0856-spoof-reporting-message` — Adversaries may spoof reporting messages in control system environments for evasion and to impair process control.
+- `t0857-system-firmware` — System firmware on modern assets is often designed with an update feature.
+- `t0858-change-operating-mode` — Adversaries may change the operating mode of a controller to gain additional access to engineering functions such as Program Download.
+- `t0859-valid-accounts` — Adversaries may steal the credentials of a specific user or service account using credential access techniques.
+- `t0860-wireless-compromise` — Adversaries may perform wireless compromise as a method of gaining communications and unauthorized access to a wireless network.
+- `t0861-point-tag-identification` — Adversaries may collect point and tag values to gain a more comprehensive understanding of the process environment.
+- `t0862-supply-chain-compromise` — Adversaries may perform supply chain compromise to gain control systems environment access by means of infected products, software, and workflows.
+- `t0863-user-execution` — Adversaries may rely on a targeted organizations user interaction for the execution of malicious code.
+- `t0864-transient-cyber-asset` — Adversaries may target devices that are transient across ICS networks and external networks.
+- `t0865-spearphishing-attachment` — Adversaries may use a spearphishing attachment, a variant of spearphishing, as a form of a social engineering attack against specific targets.
+- `t0866-exploitation-of-remote-services` — Adversaries may exploit a software vulnerability to take advantage of a programming error in a program, service, or within the operating system software or kernel itself to enable remote service ab...
+- `t0867-lateral-tool-transfer` — Adversaries may transfer tools or other files from one system to another to stage adversary tools or other files over the course of an operation.
+- `t0868-detect-operating-mode` — Adversaries may gather information about a PLCs or controllers current operating mode.
+- `t0869-standard-application-layer-protocol` — Adversaries may establish command and control capabilities over commonly used application layer protocols such as HTTP(S), OPC, RDP, telnet, DNP3, and modbus.
+- `t0871-execution-through-api` — Adversaries may attempt to leverage Application Program Interfaces (APIs) used for communication between control software and the hardware.
+- `t0872-indicator-removal-on-host` — Adversaries may attempt to remove indicators of their presence on a system in an effort to cover their tracks.
+- `t0873-project-file-infection` — Adversaries may attempt to infect project files with malicious code.
+- `t0874-hooking` — Adversaries may hook into application programming interface (API) functions used by processes to redirect calls for execution and privilege escalation means.
+- `t0877-io-image` — Adversaries may seek to capture process values related to the inputs and outputs of a PLC.
+- `t0878-alarm-suppression` — Adversaries may target protection function alarms to prevent them from notifying operators of critical conditions.
+- `t0879-damage-to-property` — Adversaries may cause damage and destruction of property to infrastructure, equipment, and the surrounding environment when attacking control systems.
+- `t0880-loss-of-safety` — Adversaries may compromise safety system functions designed to maintain safe operation of a process when unacceptable or dangerous conditions occur.
+- `t0881-service-stop` — Adversaries may stop or disable services on a system to render those services unavailable to legitimate users.
+- `t0882-theft-of-operational-information` — Adversaries may steal operational information on a production environment as a direct mission outcome for personal gain or to inform future operations.
+- `t0883-internet-accessible-device` — Adversaries may gain access into industrial environments through systems exposed directly to the internet for remote access rather than through External Remote Services.
+- `t0884-connection-proxy` — Adversaries may use a connection proxy to direct network traffic between systems or act as an intermediary for network communications.
+- `t0885-commonly-used-port` — Adversaries may communicate over a commonly used port to bypass firewalls or network detection systems and to blend in with normal network activity, to avoid more detailed inspection.
+- `t0886-remote-services` — Adversaries may leverage remote services to move between assets and network segments.
+- `t0887-wireless-sniffing` — Adversaries may seek to capture radio frequency (RF) communication used for remote control and reporting in distributed environments.
+- `t0888-remote-system-information-discovery` — An adversary may attempt to get detailed information about remote systems and their peripherals, such as make/model, role, and configuration.
+- `t0889-modify-program` — Adversaries may modify or add a program on a controller to affect how it interacts with the physical process, peripheral devices and other hosts on the network.
+- `t0890-exploitation-for-privilege-escalation` — Adversaries may exploit software vulnerabilities in an attempt to elevate privileges.
+- `t0891-hardcoded-credentials` — Adversaries may leverage credentials that are hardcoded in software or firmware to gain an unauthorized interactive user session to an asset.
+- `t0892-change-credential` — Adversaries may modify software and device credentials to prevent operator and responder access.
+- `t0893-data-from-local-system` — Adversaries may target and collect data from local system sources, such as file systems, configuration files, or local databases.
+- `t0894-system-binary-proxy-execution` — Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries.
+- `t0895-autorun-image` — Adversaries may leverage AutoRun functionality or scripts to execute malicious code.

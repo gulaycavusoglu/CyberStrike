@@ -1,0 +1,5004 @@
+# CIS_benchmarks
+
+5000 skills.
+
+- `cis-aks-v170-2-1-1` — Enable audit Logs (Manual)
+- `cis-aks-v170-3-1-1` — Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Automated)
+- `cis-aks-v170-3-1-2` — Ensure that the kubelet kubeconfig file ownership is set to root:root (Automated)
+- `cis-aks-v170-3-1-3` — Ensure that the azure.json file has permissions set to 644 or more restrictive (Automated)
+- `cis-aks-v170-3-1-4` — Ensure that the azure.json file ownership is set to root:root (Automated)
+- `cis-aks-v170-3-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-aks-v170-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-aks-v170-3-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-aks-v170-3-2-4` — Ensure that the --read-only-port is secured (Automated)
+- `cis-aks-v170-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-aks-v170-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-aks-v170-3-2-7` — Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-aks-v170-3-2-8` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-aks-v170-3-2-9` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-aks-v170-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-aks-v170-4-1-2` — Minimize access to secrets (Automated)
+- `cis-aks-v170-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-aks-v170-4-1-4` — Minimize access to create pods (Automated)
+- `cis-aks-v170-4-1-5` — Ensure that default service accounts are not actively used (Automated)
+- `cis-aks-v170-4-1-6` — Ensure Service Account Tokens are only mounted where necessary (Automated)
+- `cis-aks-v170-4-2-1` — Minimize the admission of privileged containers (Automated)
+- `cis-aks-v170-4-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- `cis-aks-v170-4-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- `cis-aks-v170-4-2-4` — Minimize the admission of containers wishing to share the host network namespace (Automated)
+- `cis-aks-v170-4-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- `cis-aks-v170-4-4-1` — Ensure latest CNI version is used (Manual)
+- `cis-aks-v170-4-4-2` — Ensure all Namespaces have Network Policies defined (Automated)
+- `cis-aks-v170-4-5-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-aks-v170-4-5-2` — Consider external secret storage (Manual)
+- `cis-aks-v170-4-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-aks-v170-4-6-2` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-aks-v170-4-6-3` — The default namespace should not be used (Automated)
+- `cis-aks-v170-5-1-1` — Ensure Image Vulnerability Scanning using Microsoft Defender for Cloud (MDC) image scanning or a third party provider (Automated)
+- `cis-aks-v170-5-1-2` — Minimize user access to Azure Container Registry (ACR) (Manual)
+- `cis-aks-v170-5-1-3` — Minimize cluster access to read-only for Azure Container Registry (ACR) (Manual)
+- `cis-aks-v170-5-1-4` — Minimize Container Registries to only those approved (Manual)
+- `cis-aks-v170-5-2-1` — Prefer using dedicated AKS Service Accounts (Manual)
+- `cis-aks-v170-5-3-1` — Ensure Kubernetes Secrets are encrypted (Manual)
+- `cis-aks-v170-5-4-1` — Restrict Access to the Control Plane Endpoint (Automated)
+- `cis-aks-v170-5-4-2` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-aks-v170-5-4-3` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-aks-v170-5-4-4` — Ensure Network Policy is Enabled and set as appropriate (Automated)
+- `cis-aks-v170-5-4-5` — Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- `cis-aks-v170-5-5-1` — Manage Kubernetes RBAC users with Azure AD (Manual)
+- `cis-aks-v170-5-5-2` — Use Azure RBAC for Kubernetes Authorization (Manual)
+- `cis-aks-v180-2-1-1` — Enable audit Logs (Manual)
+- `cis-aks-v180-3-1-1` — Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Automated)
+- `cis-aks-v180-3-1-2` — Ensure that the kubelet kubeconfig file ownership is set to root:root (Automated)
+- `cis-aks-v180-3-1-3` — Ensure that the azure.json file has permissions set to 644 or more restrictive (Automated)
+- `cis-aks-v180-3-1-4` — Ensure that the azure.json file ownership is set to root:root (Automated)
+- `cis-aks-v180-3-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-aks-v180-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-aks-v180-3-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-aks-v180-3-2-4` — Ensure that the --read-only-port is secured (Automated)
+- `cis-aks-v180-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-aks-v180-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-aks-v180-3-2-7` — Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-aks-v180-3-2-8` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-aks-v180-3-2-9` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-aks-v180-4-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-aks-v180-4-1-10` — Minimize access to the approval sub-resource of certificatesigningrequests objects (Manual)
+- `cis-aks-v180-4-1-11` — Minimize access to webhook configuration objects (Manual)
+- `cis-aks-v180-4-1-12` — Minimize access to the service account token creation (Manual)
+- `cis-aks-v180-4-1-2` — Minimize access to secrets (Manual)
+- `cis-aks-v180-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-aks-v180-4-1-4` — Minimize access to create pods (Manual)
+- `cis-aks-v180-4-1-5` — Ensure that default service accounts are not actively used (Manual)
+- `cis-aks-v180-4-1-6` — Ensure Service Account Tokens are only mounted where necessary (Manual)
+- `cis-aks-v180-4-1-7` — Limit use of Bind, Impersonate and Escalate permissions (Manual)
+- `cis-aks-v180-4-1-8` — Minimize access to create persistent volumes (Manual)
+- `cis-aks-v180-4-1-9` — Minimize access to the proxy sub-resource of nodes (Manual)
+- `cis-aks-v180-4-2-1` — Minimize the admission of privileged containers (Manual)
+- `cis-aks-v180-4-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Manual)
+- `cis-aks-v180-4-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Manual)
+- `cis-aks-v180-4-2-4` — Minimize the admission of containers wishing to share the host network namespace (Manual)
+- `cis-aks-v180-4-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-aks-v180-4-4-1` — Ensure latest CNI version is used (Manual)
+- `cis-aks-v180-4-4-2` — Ensure all Namespaces have Network Policies defined (Automated)
+- `cis-aks-v180-4-5-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-aks-v180-4-5-2` — Consider external secret storage (Manual)
+- `cis-aks-v180-4-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-aks-v180-4-6-2` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-aks-v180-4-6-3` — The default namespace should not be used (Automated)
+- `cis-aks-v180-5-1-1` — Ensure Image Vulnerability Scanning using Microsoft Defender for Cloud (MDC) image scanning or a third party provider (Automated)
+- `cis-aks-v180-5-1-2` — Minimize user access to Azure Container Registry (ACR) (Manual)
+- `cis-aks-v180-5-1-3` — Minimize cluster access to read-only for Azure Container Registry (ACR) (Manual)
+- `cis-aks-v180-5-1-4` — Minimize Container Registries to only those approved (Manual)
+- `cis-aks-v180-5-2-1` — Prefer using dedicated AKS Service Accounts (Manual)
+- `cis-aks-v180-5-3-1` — Ensure Kubernetes Secrets are encrypted (Manual)
+- `cis-aks-v180-5-4-1` — Restrict Access to the Control Plane Endpoint (Automated)
+- `cis-aks-v180-5-4-2` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-aks-v180-5-4-3` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-aks-v180-5-4-4` — Ensure Network Policy is Enabled and set as appropriate (Automated)
+- `cis-aks-v180-5-4-5` — Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- `cis-aks-v180-5-5-1` — Manage Kubernetes RBAC users with Azure AD (Manual)
+- `cis-aks-v180-5-5-2` — Use Azure RBAC for Kubernetes Authorization (Manual)
+- `cis-apache-1-1` — Ensure the Pre-Installation Planning Checklist Has Been Implemented
+- `cis-apache-1-2` — Ensure the Server Is Not a Multi-Use System
+- `cis-apache-1-3` — Ensure Apache Is Installed From the Appropriate Binaries
+- `cis-apache-10-1` — Ensure the LimitRequestLine directive is Set to 512 or less
+- `cis-apache-10-2` — Ensure the LimitRequestFields Directive is Set to 100 or Less
+- `cis-apache-10-3` — Ensure the LimitRequestFieldsize Directive is Set to 1024 or Less
+- `cis-apache-10-4` — Ensure the LimitRequestBody Directive is Set to 102400 or Less
+- `cis-apache-11-1` — Ensure SELinux Is Enabled in Enforcing Mode
+- `cis-apache-11-2` — Ensure Apache Processes Run in the httpd_t Confined Context
+- `cis-apache-11-3` — Ensure the httpd_t Type Is Not in Permissive Mode
+- `cis-apache-11-4` — Ensure Only the Necessary SELinux Booleans Are Enabled
+- `cis-apache-12-1` — Ensure the AppArmor Framework Is Enabled
+- `cis-apache-12-2` — Ensure the Apache AppArmor Profile Is Configured Properly
+- `cis-apache-12-3` — Ensure the Apache AppArmor Profile Is in Enforce Mode
+- `cis-apache-2-1` — Ensure Only Necessary Authentication and Authorization Modules Are Enabled
+- `cis-apache-2-2` — Ensure the Log Config Module Is Enabled
+- `cis-apache-2-3` — Ensure the WebDAV Modules Are Disabled
+- `cis-apache-2-4` — Ensure the Status Module Is Disabled
+- `cis-apache-2-5` — Ensure the Autoindex Module Is Disabled
+- `cis-apache-2-6` — Ensure the Proxy Modules Are Disabled
+- `cis-apache-2-7` — Ensure the User Directories Module Is Disabled
+- `cis-apache-2-8` — Ensure the Info Module Is Disabled
+- `cis-apache-2-9` — Ensure the Basic and Digest Authentication Modules are Disabled
+- `cis-apache-3-1` — Ensure the Apache Web Server Runs As a Non-Root User
+- `cis-apache-3-10` — Ensure the ScoreBoard File Is Secured
+- `cis-apache-3-11` — Ensure Group Write Access for the Apache Directories and Files Is Properly Restricted
+- `cis-apache-3-12` — Ensure Group Write Access for the Document Root Directories and Files Is Properly Restricted
+- `cis-apache-3-13` — Ensure Access to Special Purpose Application Writable Directories is Properly Restricted
+- `cis-apache-3-2` — Ensure the Apache User Account Has an Invalid Shell
+- `cis-apache-3-3` — Ensure the Apache User Account Is Locked
+- `cis-apache-3-4` — Ensure Apache Directories and Files Are Owned By Root
+- `cis-apache-3-5` — Ensure the Group Is Set Correctly on Apache Directories and Files
+- `cis-apache-3-6` — Ensure Other Write Access on Apache Directories and Files Is Restricted
+- `cis-apache-3-7` — Ensure the Core Dump Directory Is Secured
+- `cis-apache-3-8` — Ensure the Lock File Is Secured
+- `cis-apache-3-9` — Ensure the Pid File Is Secured
+- `cis-apache-4-1` — Ensure Access to OS Root Directory Is Denied By Default
+- `cis-apache-4-2` — Ensure Appropriate Access to Web Content Is Allowed
+- `cis-apache-4-3` — Ensure OverRide Is Disabled for the OS Root Directory
+- `cis-apache-4-4` — Ensure OverRide Is Disabled for All Directories
+- `cis-apache-5-1` — Ensure Options for the OS Root Directory Are Restricted
+- `cis-apache-5-10` — Ensure Access to .ht* Files Is Restricted
+- `cis-apache-5-11` — Ensure Access to Inappropriate File Extensions Is Restricted
+- `cis-apache-5-12` — Ensure IP Address Based Requests Are Disallowed
+- `cis-apache-5-13` — Ensure the IP Addresses for Listening for Requests Are Specified
+- `cis-apache-5-14` — Ensure Browser Framing Is Restricted
+- `cis-apache-5-2` — Ensure Options for the Web Root Directory Are Restricted
+- `cis-apache-5-3` — Ensure Options for Other Directories Are Minimized
+- `cis-apache-5-4` — Ensure Default HTML Content Is Removed
+- `cis-apache-5-5` — Ensure the Default CGI Content printenv Script Is Removed
+- `cis-apache-5-6` — Ensure the Default CGI Content test-cgi Script Is Removed
+- `cis-apache-5-7` — Ensure HTTP Request Methods Are Restricted
+- `cis-apache-5-8` — Ensure the HTTP TRACE Method Is Disabled
+- `cis-apache-5-9` — Ensure Old HTTP Protocol Versions Are Disallowed
+- `cis-apache-6-1` — Ensure the Error Log Filename and Severity Level Are Configured Correctly
+- `cis-apache-6-2` — Ensure a Syslog Facility Is Configured for Error Logging
+- `cis-apache-6-3` — Ensure the Server Access Log Is Configured Correctly
+- `cis-apache-6-4` — Ensure Log Storage and Rotation Is Configured Correctly
+- `cis-apache-6-5` — Ensure Applicable Patches Are Applied
+- `cis-apache-6-6` — Ensure ModSecurity Is Installed and Enabled
+- `cis-apache-6-7` — Ensure the OWASP ModSecurity Core Rule Set Is Installed and Enabled
+- `cis-apache-7-1` — Ensure mod_ssl and/or mod_nss Is Installed
+- `cis-apache-7-10` — Ensure the TLSv1.0 and TLSv1.1 Protocols are Disabled
+- `cis-apache-7-11` — Ensure HTTP Strict Transport Security Is Enabled
+- `cis-apache-7-12` — Ensure Only Cipher Suites That Provide Forward Secrecy Are Enabled
+- `cis-apache-7-2` — Ensure a Valid Trusted Certificate Is Installed
+- `cis-apache-7-3` — Ensure the Server's Private Key Is Protected
+- `cis-apache-7-4` — Ensure Weak SSL Protocols Are Disabled
+- `cis-apache-7-5` — Ensure Weak SSL/TLS Ciphers Are Disabled
+- `cis-apache-7-6` — Ensure Insecure SSL Renegotiation Is Not Enabled
+- `cis-apache-7-7` — Ensure SSL Compression is Not Enabled
+- `cis-apache-7-8` — Ensure Medium Strength SSL/TLS Ciphers Are Disabled
+- `cis-apache-7-9` — Ensure All Web Content is Accessed via HTTPS
+- `cis-apache-8-1` — Ensure ServerTokens is Set to 'Prod' or 'ProductOnly'
+- `cis-apache-8-2` — Ensure ServerSignature Is Not Enabled
+- `cis-apache-8-3` — Ensure All Default Apache Content Is Removed
+- `cis-apache-8-4` — Ensure ETag Response Header Fields Do Not Include Inodes
+- `cis-apache-9-1` — Ensure the TimeOut Is Set Properly
+- `cis-apache-9-2` — Ensure KeepAlive Is Enabled
+- `cis-apache-9-3` — Ensure MaxKeepAliveRequests Is Set Properly
+- `cis-apache-9-4` — Ensure the KeepAliveTimeout Is Set Properly
+- `cis-apache-9-5` — Ensure the Timeout Limits for Request Headers is Set to 40 or Less
+- `cis-apache-9-6` — Ensure Timeout Limits for the Request Body Are Set Properly
+- `cis-apache24-1-1` — Ensure the Pre-Installation Planning Checklist Has Been Implemented
+- `cis-apache24-1-2` — Ensure the Server Is Not a Multi-Use System
+- `cis-apache24-1-3` — Ensure Apache Is Installed From the Appropriate Binaries
+- `cis-apache24-10-1` — Ensure the LimitRequestLine directive is Set to 8190 or less but not 0 (Automated)
+- `cis-apache24-10-2` — Ensure the LimitRequestFields Directive is Set to 100 or Less but not 0 (Automated)
+- `cis-apache24-10-3` — Ensure the LimitRequestFieldsize Directive is Set to 8190 or Less (Automated)
+- `cis-apache24-10-4` — Ensure the LimitRequestBody Directive is Set to 102400 or Less but not 0 (Automated)
+- `cis-apache24-11-1` — Ensure SELinux Is Enabled in Enforcing Mode (Automated)
+- `cis-apache24-11-2` — Ensure Apache Processes Run in the httpd_t Confined Context (Manual)
+- `cis-apache24-11-3` — Ensure the httpd_t Type is Not in Permissive Mode (Automated)
+- `cis-apache24-11-4` — Ensure Only the Necessary SELinux Booleans are Enabled (Manual)
+- `cis-apache24-12-1` — Ensure the AppArmor Framework Is Enabled (Automated)
+- `cis-apache24-12-2` — Ensure the Apache AppArmor Profile Is Configured Properly (Manual)
+- `cis-apache24-12-3` — Ensure Apache AppArmor Profile is in Enforce Mode
+- `cis-apache24-2-1` — Ensure Only Necessary Authentication and Authorization Modules Are Enabled
+- `cis-apache24-2-2` — Ensure the Log Config Module Is Enabled
+- `cis-apache24-2-3` — Ensure the WebDAV Modules Are Disabled
+- `cis-apache24-2-4` — Ensure the Status Module Is Disabled
+- `cis-apache24-2-5` — Ensure the Autoindex Module Is Disabled
+- `cis-apache24-2-6` — Ensure the Proxy Modules Are Disabled if not in use
+- `cis-apache24-2-7` — Ensure the User Directories Module Is Disabled
+- `cis-apache24-2-8` — Ensure the Info Module Is Disabled
+- `cis-apache24-2-9` — Ensure the Basic and Digest Authentication Modules are Disabled
+- `cis-apache24-3-1` — Ensure the Apache Web Server Runs As a Non-Root User
+- `cis-apache24-3-10` — Ensure the ScoreBoard File Is Secured
+- `cis-apache24-3-11` — Ensure Group Write Access for the Apache Directories and Files Is Properly Restricted
+- `cis-apache24-3-12` — Ensure Group Write Access for the Document Root Directories and Files Is Properly Restricted
+- `cis-apache24-3-13` — Ensure Access to Special Purpose Application Writable Directories is Properly Restricted
+- `cis-apache24-3-2` — Ensure the Apache User Account Has an Invalid Shell
+- `cis-apache24-3-3` — Ensure the Apache User Account Is Locked
+- `cis-apache24-3-4` — Ensure Apache Directories and Files Are Owned By Root
+- `cis-apache24-3-5` — Ensure the Group Is Set Correctly on Apache Directories and Files
+- `cis-apache24-3-6` — Ensure Other Write Access on Apache Directories and Files Is Restricted
+- `cis-apache24-3-7` — Ensure the Core Dump Directory Is Secured
+- `cis-apache24-3-8` — Ensure the Lock File Is Secured
+- `cis-apache24-3-9` — Ensure the Pid File Is Secured
+- `cis-apache24-4-1` — Ensure Access to OS Root Directory Is Denied By Default
+- `cis-apache24-4-2` — Ensure Appropriate Access to Web Content Is Allowed
+- `cis-apache24-4-3` — Ensure OverRide Is Disabled for the OS Root Directory
+- `cis-apache24-4-4` — Ensure OverRide Is Disabled for All Directories
+- `cis-apache24-5-1` — Ensure Options for the OS Root Directory Are Restricted
+- `cis-apache24-5-10` — Ensure Access to .ht* Files Is Restricted
+- `cis-apache24-5-11` — Ensure Access to .git Files Is Restricted
+- `cis-apache24-5-12` — Ensure Access to .svn Files Is Restricted
+- `cis-apache24-5-13` — Ensure Access to Inappropriate File Extensions Is Restricted
+- `cis-apache24-5-14` — Ensure IP Address Based Requests Are Disallowed
+- `cis-apache24-5-15` — Ensure the IP Addresses for Listening for Requests Are Specified
+- `cis-apache24-5-16` — Ensure Browser Framing Is Restricted
+- `cis-apache24-5-17` — Ensure HTTP Header Referrer-Policy is set appropriately
+- `cis-apache24-5-18` — Ensure HTTP Header Permissions-Policy is set appropriately
+- `cis-apache24-5-2` — Ensure Options for the Web Root Directory Are Restricted
+- `cis-apache24-5-3` — Ensure Options for Other Directories Are Minimized
+- `cis-apache24-5-4` — Ensure Default HTML Content Is Removed
+- `cis-apache24-5-5` — Ensure the Default CGI Content printenv Script Is Removed
+- `cis-apache24-5-6` — Ensure the Default CGI Content test-cgi Script Is Removed
+- `cis-apache24-5-7` — Ensure HTTP Request Methods Are Restricted
+- `cis-apache24-5-8` — Ensure the HTTP TRACE Method Is Disabled
+- `cis-apache24-5-9` — Ensure Old HTTP Protocol Versions Are Disallowed
+- `cis-apache24-6-1` — Ensure the Error Log Filename and Severity Level Are Configured Correctly
+- `cis-apache24-6-2` — Ensure a Syslog Facility Is Configured for Error Logging
+- `cis-apache24-6-3` — Ensure the Server Access Log Is Configured Correctly
+- `cis-apache24-6-4` — Ensure Log Storage and Rotation Is Configured Correctly
+- `cis-apache24-6-5` — Ensure Applicable Patches Are Applied
+- `cis-apache24-6-6` — Ensure ModSecurity Is Installed and Enabled
+- `cis-apache24-6-7` — Ensure the OWASP ModSecurity Core Rule Set Is Installed and Enabled
+- `cis-apache24-7-1` — Ensure mod_ssl and/or mod_nss Is Installed
+- `cis-apache24-7-10` — Ensure OCSP Stapling Is Enabled (Manual)
+- `cis-apache24-7-11` — Ensure HTTP Strict Transport Security Is Enabled (Manual)
+- `cis-apache24-7-12` — Ensure Only Cipher Suites That Provide Forward Secrecy Are Enabled (Manual)
+- `cis-apache24-7-2` — Ensure a Valid Trusted Certificate Is Installed
+- `cis-apache24-7-3` — Ensure the Server's Private Key Is Protected
+- `cis-apache24-7-4` — Ensure the TLSv1.0 and TLSv1.1 Protocols are Disabled
+- `cis-apache24-7-5` — Ensure Weak SSL/TLS Ciphers Are Disabled
+- `cis-apache24-7-6` — Ensure Insecure SSL Renegotiation Is Not Enabled (Manual)
+- `cis-apache24-7-7` — Ensure SSL Compression is not Enabled (Manual)
+- `cis-apache24-7-8` — Ensure Medium Strength SSL/TLS Ciphers Are Disabled (Manual)
+- `cis-apache24-7-9` — Ensure All Web Content is Accessed via HTTPS (Manual)
+- `cis-apache24-8-1` — Ensure ServerTokens is Set to 'Prod' or 'ProductOnly' (Automated)
+- `cis-apache24-8-2` — Ensure ServerSignature Is Not Enabled (Automated)
+- `cis-apache24-8-3` — Ensure All Default Apache Content Is Removed (Manual)
+- `cis-apache24-8-4` — Ensure ETag Response Header Fields Do Not Include Inodes (Automated)
+- `cis-apache24-9-1` — Ensure the TimeOut Is Set to 10 or Less (Automated)
+- `cis-apache24-9-2` — Ensure KeepAlive Is Enabled (Automated)
+- `cis-apache24-9-3` — Ensure MaxKeepAliveRequests is Set to a Value of 100 or Greater (Automated)
+- `cis-apache24-9-4` — Ensure KeepAliveTimeout is Set to a Value of 15 or Less (Automated)
+- `cis-apache24-9-5` — Ensure the Timeout Limits for Request Headers is Set to 40 or Less (Manual)
+- `cis-apache24-9-6` — Ensure Timeout Limits for the Request Body is Set to 20 or Less (Manual)
+- `cis-aws-compute-10-1` — Ensure Managed Platform updates is configured
+- `cis-aws-compute-10-2` — Ensure Persistent logs is setup and configured to S3
+- `cis-aws-compute-10-3` — Ensure access logs are enabled
+- `cis-aws-compute-10-4` — Ensure that HTTPS is enabled on load balancer
+- `cis-aws-compute-11-1` — Ensure customer-managed keys are used to encrypt AWS Fargate ephemeral storage data for Amazon ECS
+- `cis-aws-compute-12-1` — Ensure AWS Config is Enabled for Lambda and Serverless
+- `cis-aws-compute-12-10` — Ensure Lambda functions do not allow unknown cross account access via permission policies
+- `cis-aws-compute-12-11` — Ensure that the runtime environment versions used for your Lambda functions do not have end of support dates
+- `cis-aws-compute-12-12` — Ensure encryption in transit is enabled for Lambda environment variables
+- `cis-aws-compute-12-2` — Ensure Cloudwatch Lambda insights is enabled
+- `cis-aws-compute-12-3` — Ensure AWS Secrets manager is configured and being used by Lambda for databases
+- `cis-aws-compute-12-4` — Ensure least privilege is used with Lambda function access
+- `cis-aws-compute-12-5` — Ensure every Lambda function has its own IAM Role
+- `cis-aws-compute-12-6` — Ensure Lambda functions are not exposed to everyone
+- `cis-aws-compute-12-7` — Ensure Lambda functions are referencing active execution roles
+- `cis-aws-compute-12-8` — Ensure that Code Signing is enabled for Lambda functions
+- `cis-aws-compute-12-9` — Ensure there are no Lambda functions with admin privileges within your AWS account
+- `cis-aws-compute-16-1` — Ensure communications between your applications and clients is encrypted
+- `cis-aws-compute-2-1-1` — Ensure Consistent Naming Convention is used for Organizational AMI
+- `cis-aws-compute-2-1-2` — Ensure Amazon Machine Images (AMIs) are encrypted
+- `cis-aws-compute-2-1-3` — Ensure Only Approved Amazon Machine Images (AMIs) are Used
+- `cis-aws-compute-2-1-4` — Ensure Images (AMI) are not older than 90 days
+- `cis-aws-compute-2-1-5` — Ensure Images are not Publicly Available
+- `cis-aws-compute-2-10` — Ensure unused ENIs are removed
+- `cis-aws-compute-2-11` — Ensure instances stopped for over 90 days are removed
+- `cis-aws-compute-2-12` — Ensure EBS volumes attached to an EC2 instance are marked for deletion upon instance termination
+- `cis-aws-compute-2-13` — Ensure Secrets and Sensitive Data are not stored directly in EC2 User Data
+- `cis-aws-compute-2-14` — Ensure EC2 Auto Scaling Groups Propagate Tags to EC2 Instances that it launches
+- `cis-aws-compute-2-2-1` — Ensure EBS volume encryption is enabled
+- `cis-aws-compute-2-2-2` — Ensure Public Access to EBS Snapshots is Disabled
+- `cis-aws-compute-2-2-3` — Ensure EBS volume snapshots are encrypted
+- `cis-aws-compute-2-2-4` — Ensure unused EBS volumes are removed
+- `cis-aws-compute-2-3` — Ensure Tag Policies are Enabled
+- `cis-aws-compute-2-4` — Ensure an Organizational EC2 Tag Policy has been Created
+- `cis-aws-compute-2-5` — Ensure no AWS EC2 Instances are Older than 180 days
+- `cis-aws-compute-2-6` — Ensure detailed monitoring is enabled for production EC2 Instances
+- `cis-aws-compute-2-7` — Ensure Default EC2 Security groups are not being used
+- `cis-aws-compute-2-8` — Ensure the Use of IMDSv2 is Enforced on All Existing Instances
+- `cis-aws-compute-2-9` — Ensure use of AWS Systems Manager to manage EC2 instances
+- `cis-aws-compute-3-1` — Ensure Amazon ECS task definitions using 'host' network mode do not allow privileged or root user access to the host
+- `cis-aws-compute-3-10` — Ensure Amazon ECS services are tagged
+- `cis-aws-compute-3-11` — Ensure Amazon ECS clusters are tagged
+- `cis-aws-compute-3-12` — Ensure Amazon ECS task definitions are tagged
+- `cis-aws-compute-3-13` — Ensure only trusted images are used with Amazon ECS
+- `cis-aws-compute-3-14` — Ensure 'assignPublicIp' is set to 'DISABLED' for Amazon ECS task sets
+- `cis-aws-compute-3-2` — Ensure 'assignPublicIp' is set to 'DISABLED' for Amazon ECS services
+- `cis-aws-compute-3-3` — Ensure Amazon ECS task definitions do not have 'pidMode' set to 'host'
+- `cis-aws-compute-3-4` — Ensure Amazon ECS task definitions do not have 'privileged' set to 'true'
+- `cis-aws-compute-3-5` — Ensure 'readonlyRootFilesystem' is set to 'true' for Amazon ECS task definitions
+- `cis-aws-compute-3-6` — Ensure secrets are not passed as container environment variables in Amazon ECS task definitions
+- `cis-aws-compute-3-7` — Ensure logging is configured for Amazon ECS task definitions
+- `cis-aws-compute-3-8` — Ensure Amazon ECS Fargate services are using the latest Fargate platform version
+- `cis-aws-compute-3-9` — Ensure monitoring is enabled for Amazon ECS clusters
+- `cis-aws-compute-5-1` — Apply updates to any apps running in Lightsail
+- `cis-aws-compute-5-10` — Enable storage bucket access logging
+- `cis-aws-compute-5-11` — Ensure your Windows Server based lightsail instances are updated with the latest security patches
+- `cis-aws-compute-5-12` — Change the auto-generated password for Windows based instances
+- `cis-aws-compute-5-2` — Change default Administrator login names and passwords for applications
+- `cis-aws-compute-5-3` — Disable SSH and RDP ports for Lightsail instances when not needed
+- `cis-aws-compute-5-4` — Ensure SSH is restricted to only IP address that should have this access
+- `cis-aws-compute-5-5` — Ensure RDP is restricted to only IP address that should have this access
+- `cis-aws-compute-5-6` — Disable IPv6 Networking if not in use within your organization
+- `cis-aws-compute-5-7` — Ensure you are using an IAM policy to manage access to buckets in Lightsail
+- `cis-aws-compute-5-8` — Ensure Lightsail instances are attached to the buckets
+- `cis-aws-compute-5-9` — Ensure that your Lightsail buckets are not publicly accessible
+- `cis-aws-compute-6-1` — Ensure you are using VPC Endpoints for source code access
+- `cis-aws-compute-8-1` — Ensure AWS Batch is configured with AWS CloudWatch Logs
+- `cis-aws-compute-8-2` — Ensure Batch roles are configured for cross-service confused deputy prevention
+- `cis-aws-database-10-1` — Ensure Data Ingestion is Secure
+- `cis-aws-database-10-10` — Ensure Database has automated Backups enabled
+- `cis-aws-database-10-2` — Ensure Data at Rest is Encrypted
+- `cis-aws-database-10-3` — Ensure Encryption in Transit is Configured
+- `cis-aws-database-10-4` — Ensure Access Control and Authentication is Enabled
+- `cis-aws-database-10-5` — Ensure Fine-Grained Access Control is Enabled
+- `cis-aws-database-10-6` — Ensure Audit Logging is Enabled
+- `cis-aws-database-10-7` — Ensure Regular Updates and Patches are Installed
+- `cis-aws-database-10-8` — Ensure Monitoring and Alerting is Enabled
+- `cis-aws-database-10-9` — Ensure to Review and Update the Security Configuration
+- `cis-aws-database-11-1` — Ensure to Implement Identity and Access Management (IAM)
+- `cis-aws-database-11-2` — Ensure Network Access is Secure
+- `cis-aws-database-11-3` — Ensure Data at Rest is Encrypted
+- `cis-aws-database-11-4` — Ensure Data in Transit is Encrypted
+- `cis-aws-database-11-5` — Ensure to Implement Access Control and Authentication
+- `cis-aws-database-11-6` — Ensure Monitoring and Logging is Enabled
+- `cis-aws-database-11-7` — Ensure to Enable Backup and Recovery
+- `cis-aws-database-2-1` — Ensure the Use of Security Groups
+- `cis-aws-database-2-10` — Ensure Database has IAM Auth is Enabled
+- `cis-aws-database-2-11` — Ensure Database has delete protection enabled
+- `cis-aws-database-2-2` — Ensure Data at Rest is Encrypted
+- `cis-aws-database-2-3` — Ensure Data in Transit Encryption is Enforced
+- `cis-aws-database-2-4` — Ensure IAM Roles and Policies are Created
+- `cis-aws-database-2-5` — Ensure Database Audit Logging is Enabled
+- `cis-aws-database-2-6` — Ensure Passwords are Regularly Rotated
+- `cis-aws-database-2-7` — Ensure Least Privilege Access
+- `cis-aws-database-2-8` — Ensure Automatic Backups and Retention Policies are configured
+- `cis-aws-database-2-9` — Ensure Database is not Publicly accessible
+- `cis-aws-database-3-1` — Ensure to Choose the Appropriate Database Engine
+- `cis-aws-database-3-10` — Ensure to Enable Backup and Recovery
+- `cis-aws-database-3-11` — Ensure to Regularly Review Security Configuration
+- `cis-aws-database-3-12` — Ensure Database is not Publicly accessible
+- `cis-aws-database-3-13` — Ensure Database has IAM Auth is Enabled
+- `cis-aws-database-3-14` — Ensure Database has delete protection enabled
+- `cis-aws-database-3-2` — Ensure to Create The Appropriate Deployment Configuration
+- `cis-aws-database-3-3` — Ensure to Create a Virtual Private Cloud (VPC)
+- `cis-aws-database-3-4` — Ensure to Configure Security Groups
+- `cis-aws-database-3-5` — Enable Encryption at Rest
+- `cis-aws-database-3-6` — Enable Encryption in Transit
+- `cis-aws-database-3-7` — Ensure to Implement Access Control and Authentication
+- `cis-aws-database-3-8` — Ensure to Regularly Patch Systems
+- `cis-aws-database-3-9` — Ensure Monitoring and Logging is Enabled
+- `cis-aws-database-4-1` — Ensure AWS Identity and Access Management (IAM) is in use
+- `cis-aws-database-4-2` — Ensure Fine-Grained Access Control is implemented
+- `cis-aws-database-4-3` — Ensure DynamoDB Encryption at Rest
+- `cis-aws-database-4-4` — Ensure DynamoDB Encryption in Transit
+- `cis-aws-database-4-5` — Ensure VPC Endpoints are configured
+- `cis-aws-database-4-6` — Ensure DynamoDB Streams and AWS Lambda for Automated Compliance Checking is Enabled
+- `cis-aws-database-4-7` — Ensure Monitor and Audit Activity is enabled
+- `cis-aws-database-4-8` — Ensure Database has delete protection enabled
+- `cis-aws-database-4-9` — Ensure Database has Backup enabled
+- `cis-aws-database-5-1` — Ensure Secure Access to ElastiCache
+- `cis-aws-database-5-10` — Ensure Security Configurations are Reviewed Regularly
+- `cis-aws-database-5-11` — Ensure ElastiCache has Cluster Mode Enabled
+- `cis-aws-database-5-12` — Ensure ElastiCache is deployed across multiple Availability Zones (AZs)
+- `cis-aws-database-5-13` — Ensure ElastiCache has automatic backups enabled
+- `cis-aws-database-5-2` — Ensure Network Security is Enabled
+- `cis-aws-database-5-3` — Ensure Encryption at Rest and in Transit is configured
+- `cis-aws-database-5-4` — Ensure Automatic Updates and Patching are Enabled
+- `cis-aws-database-5-5` — Ensure Virtual Private Cloud (VPC) is Enabled
+- `cis-aws-database-5-6` — Ensure Monitoring and Logging is Enabled
+- `cis-aws-database-5-7` — Ensure Security Configurations are Reviewed Regularly
+- `cis-aws-database-5-8` — Ensure Authentication and Access Control is Enabled
+- `cis-aws-database-5-9` — Ensure Audit Logging is Enabled
+- `cis-aws-database-6-1` — Ensure Network Security is Enabled
+- `cis-aws-database-6-2` — Ensure Data at Rest and in Transit is Encrypted
+- `cis-aws-database-6-3` — Ensure Authentication and Access Control is Enabled
+- `cis-aws-database-6-4` — Ensure Audit Logging is Enabled
+- `cis-aws-database-6-5` — Ensure Security Configurations are Reviewed Regularly
+- `cis-aws-database-6-6` — Ensure Monitoring and Alerting is Enabled
+- `cis-aws-database-6-7` — Ensure MemoryDB has automatic backups enabled
+- `cis-aws-database-7-1` — Ensure Network Architecture Planning
+- `cis-aws-database-7-10` — Ensure to Configure Backup Window
+- `cis-aws-database-7-11` — Ensure to Conduct Security Assessments
+- `cis-aws-database-7-12` — Ensure DocumentDB has delete protection enabled
+- `cis-aws-database-7-2` — Ensure VPC Security is Configured
+- `cis-aws-database-7-3` — Ensure Encryption at Rest is Enabled
+- `cis-aws-database-7-4` — Ensure Encryption in Transit is Enabled
+- `cis-aws-database-7-5` — Ensure to Implement Access Control and Authentication
+- `cis-aws-database-7-6` — Ensure Audit Logging is Enabled
+- `cis-aws-database-7-7` — Ensure Regular Updates and Patches
+- `cis-aws-database-7-8` — Ensure to Implement Monitoring and Alerting
+- `cis-aws-database-7-9` — Ensure to Implement Backup and Disaster Recovery
+- `cis-aws-database-8-1` — Ensure Keyspace Security is Configured
+- `cis-aws-database-8-2` — Ensure Network Security is Enabled
+- `cis-aws-database-8-3` — Ensure Data at Rest and in Transit is Encrypted
+- `cis-aws-database-8-4` — Ensure Amazon Keyspaces tables have Point-in-Time Recovery (PITR) enabled
+- `cis-aws-database-9-1` — Ensure Network Security is Enabled
+- `cis-aws-database-9-10` — Ensure Database has delete protection enabled
+- `cis-aws-database-9-11` — Ensure Neptune DB instances are deployed across multiple Availability Zones (AZs)
+- `cis-aws-database-9-2` — Ensure Data at Rest is Encrypted
+- `cis-aws-database-9-3` — Ensure Data in Transit is Encrypted
+- `cis-aws-database-9-4` — Ensure Authentication and Access Control is Enabled
+- `cis-aws-database-9-5` — Ensure Audit Logging is Enabled
+- `cis-aws-database-9-6` — Ensure Security Configurations are Reviewed Regularly
+- `cis-aws-database-9-7` — Ensure Monitoring and Alerting is Enabled
+- `cis-aws-database-9-8` — Ensure Neptune Database is not Publicly accessible
+- `cis-aws-database-9-9` — Ensure Neptune Database has automatic backups enabled
+- `cis-aws-euc-2-1` — Ensure Administration of WorkSpaces is defined using IAM
+- `cis-aws-euc-2-10` — Ensure that patches and updates are performed on the operating system for Workstations
+- `cis-aws-euc-2-11` — Ensure your WorkSpaces image has the appropriate CIS Operating System Benchmark applied
+- `cis-aws-euc-2-12` — Restrict WorkSpaces Bundle options to organization approved versions
+- `cis-aws-euc-2-13` — Ensure Workspaces images are not older than 90 days
+- `cis-aws-euc-2-14` — Ensure WorkSpaces that are not being utilized are removed
+- `cis-aws-euc-2-15` — Ensure primary interface ports for Workspaces are not open to all inbound traffic
+- `cis-aws-euc-2-16` — Ensure FIPS Endpoint encryption is enabled for WorkSpaces
+- `cis-aws-euc-2-17` — Ensure WorkSpaces API requests flow through a VPC Endpoint
+- `cis-aws-euc-2-18` — Ensure Radius server is using the recommended security protocol
+- `cis-aws-euc-2-2` — Ensure MFA is enabled for WorkSpaces users
+- `cis-aws-euc-2-3` — Ensure WorkSpace volumes are encrypted
+- `cis-aws-euc-2-4` — Ensure WorkSpaces are deployed in their own virtual private cloud (VPC)
+- `cis-aws-euc-2-5` — Ensure WorkSpaces traffic is controlled and routed through a NAT Gateway
+- `cis-aws-euc-2-6` — Ensure Web Access to Workspaces is Disabled
+- `cis-aws-euc-2-7` — Ensure access is limited to trusted devices
+- `cis-aws-euc-2-8` — Ensure the default IP access control group is disassociated
+- `cis-aws-euc-2-9` — Ensure CloudWatch is set up for WorkSpaces
+- `cis-aws-euc-3-1` — Ensure User Access Logging is enabled
+- `cis-aws-euc-4-1` — Ensure Administrators of WorkDocs is defined using IAM
+- `cis-aws-euc-4-2` — Ensure MFA is enabled for WorkDoc users
+- `cis-aws-euc-4-3` — Ensure Workdocs access is limited to a range of allowable IP addresses
+- `cis-aws-euc-4-4` — Utilize site wide activity feed for monitoring
+- `cis-aws-euc-4-5` — Ensure new users can only be invited from allowed domains
+- `cis-aws-euc-4-6` — Ensure only specific users are allowed to invite external users
+- `cis-aws-euc-4-7` — Ensure publicly shareable links is not allowed in WorkDocs
+- `cis-aws-euc-4-8` — Ensure any user that has not accessed WorkDocs in 30 days is set to inactive
+- `cis-aws-euc-5-1` — Ensure AppStream is utilizing its own virtual private cloud (VPC)
+- `cis-aws-euc-5-2` — Ensure a VPC Endpoint is set for AppStream
+- `cis-aws-euc-5-3` — Ensure maximum session duration is no longer than 10 hours
+- `cis-aws-euc-5-4` — Ensure session disconnect timeout is set to 5 minutes or less
+- `cis-aws-euc-5-5` — Ensure session Idle disconnect timeout is set to 10 minutes or less
+- `cis-aws-euc-5-6` — Ensure internet access is granted and managed through your VPC
+- `cis-aws-euc-5-7` — Ensure Operating system updates are applied to your base image every 30 days
+- `cis-aws-foundations-2-1-1` — Ensure centralized root access in AWS Organizations
+- `cis-aws-foundations-2-1-2` — Ensure authorization guardrails for all AWS Organization accounts
+- `cis-aws-foundations-2-1-3` — Ensure Organizations management account is not used for workloads
+- `cis-aws-foundations-2-1-4` — Ensure Organizational Units are structured by environment and sensitivity
+- `cis-aws-foundations-2-1-5` — Ensure delegated admin manages AWS Organizations policies
+- `cis-aws-foundations-2-1-6` — Ensure delegated admins manage AWS Organizations-integrated services
+- `cis-aws-foundations-2-10` — Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password
+- `cis-aws-foundations-2-11` — Ensure credentials unused for 45 days or more are disabled
+- `cis-aws-foundations-2-12` — Ensure access keys are rotated every 90 days or less
+- `cis-aws-foundations-2-13` — Ensure IAM users receive permissions only through groups
+- `cis-aws-foundations-2-14` — Ensure IAM policies that allow full '*:*' administrative privileges are not attached
+- `cis-aws-foundations-2-15` — Ensure a support role has been created to manage incidents with AWS Support
+- `cis-aws-foundations-2-16` — Ensure IAM instance roles are used for AWS resource access from instances
+- `cis-aws-foundations-2-17` — Ensure that all expired SSL/TLS certificates stored in AWS IAM are removed
+- `cis-aws-foundations-2-18` — Ensure that IAM External Access Analyzer is enabled for all regions
+- `cis-aws-foundations-2-19` — Ensure IAM users are managed centrally via identity federation or AWS Organizations for multi-account environments
+- `cis-aws-foundations-2-2` — Maintain current AWS account contact details
+- `cis-aws-foundations-2-20` — Ensure access to AWSCloudShellFullAccess is restricted
+- `cis-aws-foundations-2-21` — Ensure AWS resource policies do not allow unrestricted access using 'Principal': '*'
+- `cis-aws-foundations-2-3` — Ensure security contact information is registered
+- `cis-aws-foundations-2-4` — Ensure no 'root' user account access key exists
+- `cis-aws-foundations-2-5` — Ensure MFA is enabled for the 'root' user account
+- `cis-aws-foundations-2-6` — Ensure hardware MFA is enabled for the 'root' user account
+- `cis-aws-foundations-2-7` — Eliminate use of the 'root' user for administrative and daily tasks
+- `cis-aws-foundations-2-8` — Ensure IAM password policy requires minimum length of 14 or greater
+- `cis-aws-foundations-2-9` — Ensure IAM password policy prevents password reuse
+- `cis-aws-foundations-3-1-1` — Ensure S3 Bucket Policy is set to deny HTTP requests
+- `cis-aws-foundations-3-1-2` — Ensure MFA Delete is enabled on S3 buckets
+- `cis-aws-foundations-3-1-3` — Ensure all data in Amazon S3 has been discovered, classified, and secured when necessary
+- `cis-aws-foundations-3-1-4` — Ensure that S3 is configured with 'Block Public Access' enabled
+- `cis-aws-foundations-3-2-1` — Ensure that encryption-at-rest is enabled for RDS instances
+- `cis-aws-foundations-3-2-2` — Ensure the Auto Minor Version Upgrade feature is enabled for RDS instances
+- `cis-aws-foundations-3-2-3` — Ensure that RDS instances are not publicly accessible
+- `cis-aws-foundations-3-2-4` — Ensure Multi-AZ deployments are used for enhanced availability in Amazon RDS
+- `cis-aws-foundations-3-3-1` — Ensure that encryption is enabled for EFS file systems
+- `cis-aws-foundations-4-1` — Ensure CloudTrail is enabled in all regions
+- `cis-aws-foundations-4-10` — Ensure all AWS-managed web front-end services have access logging enabled
+- `cis-aws-foundations-4-2` — Ensure CloudTrail log file validation is enabled
+- `cis-aws-foundations-4-3` — Ensure AWS Config is enabled in all regions
+- `cis-aws-foundations-4-4` — Ensure that server access logging is enabled on the CloudTrail S3 bucket
+- `cis-aws-foundations-4-5` — Ensure CloudTrail logs are encrypted at rest using KMS CMKs
+- `cis-aws-foundations-4-6` — Ensure rotation for customer-created symmetric CMKs is enabled
+- `cis-aws-foundations-4-7` — Ensure VPC flow logging is enabled in all VPCs
+- `cis-aws-foundations-4-8` — Ensure that object-level logging for write events is enabled for S3 buckets
+- `cis-aws-foundations-4-9` — Ensure that object-level logging for read events is enabled for S3 buckets
+- `cis-aws-foundations-5-1` — Ensure unauthorized API calls are monitored
+- `cis-aws-foundations-5-10` — Ensure security group changes are monitored
+- `cis-aws-foundations-5-11` — Ensure Network Access Control List (NACL) changes are monitored
+- `cis-aws-foundations-5-12` — Ensure changes to network gateways are monitored
+- `cis-aws-foundations-5-13` — Ensure route table changes are monitored
+- `cis-aws-foundations-5-14` — Ensure VPC changes are monitored
+- `cis-aws-foundations-5-15` — Ensure AWS Organizations changes are monitored
+- `cis-aws-foundations-5-16` — Ensure AWS Security Hub is enabled
+- `cis-aws-foundations-5-2` — Ensure management console sign-in without MFA is monitored
+- `cis-aws-foundations-5-3` — Ensure usage of the 'root' account is monitored
+- `cis-aws-foundations-5-4` — Ensure IAM policy changes are monitored
+- `cis-aws-foundations-5-5` — Ensure CloudTrail configuration changes are monitored
+- `cis-aws-foundations-5-6` — Ensure AWS Management Console authentication failures are monitored
+- `cis-aws-foundations-5-7` — Ensure disabling or scheduled deletion of customer created CMKs is monitored
+- `cis-aws-foundations-5-8` — Ensure S3 bucket policy changes are monitored
+- `cis-aws-foundations-5-9` — Ensure AWS Config configuration changes are monitored
+- `cis-aws-foundations-6-1-1` — Ensure EBS volume encryption is enabled in all regions
+- `cis-aws-foundations-6-1-2` — Ensure CIFS access is restricted to trusted networks to prevent unauthorized access
+- `cis-aws-foundations-6-2` — Ensure no Network ACLs allow ingress from 0.0.0.0/0 to remote server administration ports
+- `cis-aws-foundations-6-3` — Ensure no security groups allow ingress from 0.0.0.0/0 to remote server administration ports
+- `cis-aws-foundations-6-4` — Ensure no security groups allow ingress from ::/0 to remote server administration ports
+- `cis-aws-foundations-6-5` — Ensure the default security group of every VPC restricts all traffic
+- `cis-aws-foundations-6-6` — Ensure routing tables for VPC peering are least access
+- `cis-aws-foundations-6-7` — Ensure that the EC2 Metadata Service only allows IMDSv2
+- `cis-aws-foundations-6-8` — Ensure VPC Endpoints are used for access to AWS Services
+- `cis-aws-storage-1-1` — AWS Storage Backups
+- `cis-aws-storage-1-2` — Ensure securing AWS Backups
+- `cis-aws-storage-1-3` — Ensure to create backup template and name
+- `cis-aws-storage-1-4` — Ensure to create AWS IAM Policies
+- `cis-aws-storage-1-5` — Ensure to create IAM roles for Backup
+- `cis-aws-storage-1-6` — Ensure AWS Backup with Service Linked Roles
+- `cis-aws-storage-2-1` — Ensure creating EC2 instance with EBS
+- `cis-aws-storage-2-10` — Ensure Resource Access via Tag-based Policies
+- `cis-aws-storage-2-11` — Ensure Secure Password Policy Implementation
+- `cis-aws-storage-2-12` — Ensure Monitoring EC2 and EBS with CloudWatch
+- `cis-aws-storage-2-13` — Ensure creating an SNS subscription
+- `cis-aws-storage-2-2` — Ensure configuring Security Groups
+- `cis-aws-storage-2-3` — Ensure the proper configuration of EBS storage
+- `cis-aws-storage-2-4` — Ensure the creation of a new volume
+- `cis-aws-storage-2-5` — Ensure creating snapshots of EBS volumes
+- `cis-aws-storage-2-6` — Ensure Proper IAM Configuration for EC2 Instances
+- `cis-aws-storage-2-7` — Ensure creating IAM User
+- `cis-aws-storage-2-8` — Ensure the Creation of IAM Groups
+- `cis-aws-storage-2-9` — Ensure Granular Policy Creation
+- `cis-aws-storage-3-1` — EFS - Ensure AWS EFS is implemented for file system deployment
+- `cis-aws-storage-3-10` — Ensure managing AWS EFS access points
+- `cis-aws-storage-3-11` — Ensure accessing Points and IAM Policies for EFS
+- `cis-aws-storage-3-12` — Ensure configuring IAM for AWS Elastic Disaster Recovery
+- `cis-aws-storage-3-2` — Ensure Implementation of EFS for managed file system deployment
+- `cis-aws-storage-3-3` — Ensure EFS and VPC Integration for redundancy and scalability
+- `cis-aws-storage-3-4` — Ensure controlling Network access to EFS Services
+- `cis-aws-storage-3-5` — Ensure using Security Groups for VPC to control EFS traffic
+- `cis-aws-storage-3-6` — Ensure Secure Ports for AWS storage services (S3, EFS, EBS)
+- `cis-aws-storage-3-7` — Ensure File-Level Access Control with Mount Targets
+- `cis-aws-storage-3-8` — Ensure managing mount target security groups
+- `cis-aws-storage-3-9` — Ensure using VPC endpoints - EFS
+- `cis-aws-storage-4-1` — FSX (AWS Elastic File Cache)
+- `cis-aws-storage-4-2` — Amazon Elastic File Cache
+- `cis-aws-storage-4-3` — Ensure the creation of an FSX Bucket
+- `cis-aws-storage-4-4` — Ensure the creation of Elastic File Cache
+- `cis-aws-storage-4-5` — Ensure installation and configuration of Lustre Client
+- `cis-aws-storage-4-6` — Ensure EC2 Kernel compatibility with Lustre
+- `cis-aws-storage-4-7` — Ensure mounting FSx cache
+- `cis-aws-storage-4-8` — Ensure exporting cache to S3
+- `cis-aws-storage-4-9` — Ensure cleaning up FSx Resources
+- `cis-aws-storage-5-1` — Amazon Simple Storage Service (S3)
+- `cis-aws-storage-5-2` — Ensure direct data addition to S3
+- `cis-aws-storage-5-3` — Ensure Storage Classes are Configured
+- `cis-aws-storage-6-1` — Ensure Elastic Disaster Recovery is Configured
+- `cis-aws-storage-6-10` — Ensure execution of a Disaster Recovery Failover
+- `cis-aws-storage-6-11` — Ensure execution of a failback
+- `cis-aws-storage-6-12` — Ensure CloudWatch Metrics for AWS EDR
+- `cis-aws-storage-6-13` — Ensure working of EDR
+- `cis-aws-storage-6-2` — Ensure AWS Disaster Recovery Configuration
+- `cis-aws-storage-6-3` — Ensure functionality of Endpoint Detection and Response (EDR)
+- `cis-aws-storage-6-4` — Ensure configuration of replication settings
+- `cis-aws-storage-6-5` — Ensure proper IAM configuration for AWS Elastic Disaster Recovery
+- `cis-aws-storage-6-6` — Ensure installation of the AWS Replication Agent
+- `cis-aws-storage-6-7` — Ensure proper configuration of the Launch Settings
+- `cis-aws-storage-6-8` — Ensure execution of a recovery drill
+- `cis-aws-storage-6-9` — Ensure Continuous Disaster Recovery Operations
+- `cis-azure-compute-15-1` — Ensure Batch account is set to use customer-managed keys to encrypt data
+- `cis-azure-compute-15-2` — Ensure Batch pools disk encryption is set enabled
+- `cis-azure-compute-15-3` — Ensure local authentication methods for accounts are disabled
+- `cis-azure-compute-15-4` — Ensure Private endpoints are considered for Batch accounts
+- `cis-azure-compute-15-5` — Ensure public network access is disabled for Batch accounts
+- `cis-azure-compute-15-6` — Ensure private DNS zones for private endpoints that connect to Batch accounts are configured
+- `cis-azure-compute-15-7` — Ensure Diagnostics settings logs for Batch accounts are enabled
+- `cis-azure-compute-2-1-1` — Ensure 'Java version' is currently supported (if in use)
+- `cis-azure-compute-2-1-10` — Ensure 'Remote debugging' is set to 'Off'
+- `cis-azure-compute-2-1-11` — Ensure incoming client certificates are enabled and required (if in use)
+- `cis-azure-compute-2-1-12` — Ensure 'App Service authentication' is set to 'Enabled'
+- `cis-azure-compute-2-1-13` — Ensure managed identities are configured
+- `cis-azure-compute-2-1-14` — Ensure public network access is disabled
+- `cis-azure-compute-2-1-15` — Ensure App Service plan SKU supports private endpoints
+- `cis-azure-compute-2-1-16` — Ensure private endpoints are used to access App Service apps
+- `cis-azure-compute-2-1-17` — Ensure private endpoints used to access App Service apps use private DNS zones
+- `cis-azure-compute-2-1-18` — Ensure app is integrated with a virtual network
+- `cis-azure-compute-2-1-19` — Ensure configuration is routed through the virtual network integration
+- `cis-azure-compute-2-1-2` — Ensure 'Python version' is currently supported (if in use)
+- `cis-azure-compute-2-1-20` — Ensure all traffic is routed through the virtual network
+- `cis-azure-compute-2-1-21` — Ensure cross-origin resource sharing does not allow all origins
+- `cis-azure-compute-2-1-3` — Ensure 'PHP version' is currently supported (if in use)
+- `cis-azure-compute-2-1-4` — Ensure 'Basic Authentication Publishing Credentials' are 'Disabled'
+- `cis-azure-compute-2-1-5` — Ensure 'FTP State' is set to 'FTPS only' or 'Disabled'
+- `cis-azure-compute-2-1-6` — Ensure 'HTTP version' is set to '2.0' (if in use)
+- `cis-azure-compute-2-1-7` — Ensure 'HTTPS Only' is set to 'On'
+- `cis-azure-compute-2-1-8` — Ensure 'Minimum Inbound TLS Version' is set to '1.2' or higher
+- `cis-azure-compute-2-1-9` — Ensure end-to-end TLS encryption is enabled
+- `cis-azure-compute-2-10` — Ensure App Service Environment has TLS cipher suite ordering configured
+- `cis-azure-compute-2-2-1` — Ensure 'Java version' is currently supported (if in use)
+- `cis-azure-compute-2-2-10` — Ensure 'Remote debugging' is set to 'Off'
+- `cis-azure-compute-2-2-11` — Ensure incoming client certificates are enabled and required (if in use)
+- `cis-azure-compute-2-2-12` — Ensure managed identities are configured
+- `cis-azure-compute-2-2-13` — Ensure public network access is disabled
+- `cis-azure-compute-2-2-14` — Ensure deployment slot is integrated with a virtual network
+- `cis-azure-compute-2-2-15` — Ensure configuration is routed through the virtual network integration
+- `cis-azure-compute-2-2-16` — Ensure all traffic is routed through the virtual network
+- `cis-azure-compute-2-2-17` — Ensure cross-origin resource sharing does not allow all origins
+- `cis-azure-compute-2-2-2` — Ensure 'Python version' is currently supported (if in use)
+- `cis-azure-compute-2-2-3` — Ensure 'PHP version' is currently supported (if in use)
+- `cis-azure-compute-2-2-4` — Ensure 'Basic Authentication Publishing Credentials' are 'Disabled'
+- `cis-azure-compute-2-2-5` — Ensure 'FTP state' is set to 'FTPS only' or 'Disabled'
+- `cis-azure-compute-2-2-6` — Ensure 'HTTP version' is set to '2.0' (if in use)
+- `cis-azure-compute-2-2-7` — Ensure 'HTTPS Only' is set to 'On'
+- `cis-azure-compute-2-2-8` — Ensure 'Minimum Inbound TLS Version' is set to '1.2' or higher
+- `cis-azure-compute-2-2-9` — Ensure end-to-end TLS encryption is enabled
+- `cis-azure-compute-2-3-1` — Ensure 'Java version' is currently supported (if in use)
+- `cis-azure-compute-2-3-10` — Ensure incoming client certificates are enabled and required (if in use)
+- `cis-azure-compute-2-3-11` — Ensure 'App Service authentication' is set to 'Enabled'
+- `cis-azure-compute-2-3-12` — Ensure managed identities are configured
+- `cis-azure-compute-2-3-13` — Ensure public network access is disabled
+- `cis-azure-compute-2-3-14` — Ensure function app is integrated with a virtual network
+- `cis-azure-compute-2-3-15` — Ensure configuration is routed through the virtual network integration
+- `cis-azure-compute-2-3-16` — Ensure all traffic is routed through the virtual network
+- `cis-azure-compute-2-3-17` — Ensure cross-origin resource sharing does not allow all origins
+- `cis-azure-compute-2-3-2` — Ensure 'Python version' is currently supported (if in use)
+- `cis-azure-compute-2-3-3` — Ensure 'Basic Authentication Publishing Credentials' are 'Disabled'
+- `cis-azure-compute-2-3-4` — Ensure 'FTP state' is set to 'FTPS only' or 'Disabled'
+- `cis-azure-compute-2-3-5` — Ensure 'HTTP version' is set to '2.0' (if in use)
+- `cis-azure-compute-2-3-6` — Ensure 'HTTPS Only' is set to 'On'
+- `cis-azure-compute-2-3-7` — Ensure 'Minimum Inbound TLS Version' is set to '1.2' or higher
+- `cis-azure-compute-2-3-8` — Ensure end-to-end TLS encryption is enabled
+- `cis-azure-compute-2-3-9` — Ensure 'Remote debugging' is set to 'Off'
+- `cis-azure-compute-2-4-1` — Ensure 'Java version' is currently supported (if in use)
+- `cis-azure-compute-2-4-10` — Ensure incoming client certificates are enabled and required (if in use)
+- `cis-azure-compute-2-4-11` — Ensure managed identities are configured
+- `cis-azure-compute-2-4-12` — Ensure public network access is disabled
+- `cis-azure-compute-2-4-13` — Ensure deployment slot is integrated with a virtual network
+- `cis-azure-compute-2-4-14` — Ensure configuration is routed through the virtual network integration
+- `cis-azure-compute-2-4-15` — Ensure all traffic is routed through the virtual network
+- `cis-azure-compute-2-4-16` — Ensure cross-origin resource sharing does not allow all origins
+- `cis-azure-compute-2-4-2` — Ensure 'Python version' is currently supported (if in use)
+- `cis-azure-compute-2-4-3` — Ensure 'Basic Authentication Publishing Credentials' are 'Disabled'
+- `cis-azure-compute-2-4-4` — Ensure 'FTP state' is set to 'FTPS only' or 'Disabled'
+- `cis-azure-compute-2-4-5` — Ensure 'HTTP version' is set to '2.0' (if in use)
+- `cis-azure-compute-2-4-6` — Ensure 'HTTPS Only' is set to 'On'
+- `cis-azure-compute-2-4-7` — Ensure 'Minimum Inbound TLS Version' is set to '1.2' or higher
+- `cis-azure-compute-2-4-8` — Ensure end-to-end TLS encryption is enabled
+- `cis-azure-compute-2-4-9` — Ensure 'Remote debugging' is set to 'Off'
+- `cis-azure-compute-2-5` — Ensure Azure Key Vaults are Used to Store Secrets
+- `cis-azure-compute-2-6` — Ensure App Service Environment is deployed with an internal load balancer
+- `cis-azure-compute-2-7` — Ensure App Service Environment is provisioned with v3 or higher
+- `cis-azure-compute-2-8` — Ensure App Service Environment has internal encryption enabled
+- `cis-azure-compute-2-9` — Ensure App Service Environment has TLS 1.0 and 1.1 disabled
+- `cis-azure-compute-20-1` — Ensure Virtual Machines are utilizing Managed Disks
+- `cis-azure-compute-20-10` — Ensure Trusted Launch is enabled on Virtual Machines
+- `cis-azure-compute-20-11` — Ensure that encryption at host is enabled
+- `cis-azure-compute-20-2` — Ensure that 'OS and Data' disks are encrypted with Customer Managed Key (CMK)
+- `cis-azure-compute-20-3` — Ensure that 'Unattached disks' are encrypted with 'Customer Managed Key' (CMK)
+- `cis-azure-compute-20-4` — Ensure that 'Disk Network Access' is NOT set to 'Enable public access from all networks'
+- `cis-azure-compute-20-5` — Ensure 'Enable Data Access Authentication Mode' is 'Checked'
+- `cis-azure-compute-20-6` — Ensure that Only Approved Extensions Are Installed
+- `cis-azure-compute-20-7` — Ensure that Endpoint Protection for all Virtual Machines is installed
+- `cis-azure-compute-20-8` — [Legacy] Ensure that VHDs are Encrypted
+- `cis-azure-compute-20-9` — Ensure only MFA enabled identities can access privileged Virtual Machine
+- `cis-azure-compute-3-1` — Ensure Private Virtual Networks are used for Container Instances
+- `cis-azure-compute-3-2` — Ensure a Managed Identity is used for interactions with other Azure services
+- `cis-azure-compute-3-3` — Ensure the principle of least privilege is used when assigning roles to a Managed Identity
+- `cis-azure-compute-4-1` — Ensure SSL is configured for CycleCloud
+- `cis-azure-database-2-1` — Ensure 'Microsoft Entra Authentication' is 'Enabled'
+- `cis-azure-database-2-10` — Ensure 'Update Channel' is set to 'Stable'
+- `cis-azure-database-2-2` — Ensure that 'Allow access only via SSL' is set to 'Yes'
+- `cis-azure-database-2-3` — Ensure that 'Minimum TLS version' is set to TLS v1.2 (or higher)
+- `cis-azure-database-2-4` — Ensure that 'Access Policies' are Implemented and Reviewed Periodically
+- `cis-azure-database-2-5` — Ensure that 'System Assigned Managed Identity' is set to 'On'
+- `cis-azure-database-2-6` — Ensure that 'Public Network Access' is 'Disabled'
+- `cis-azure-database-2-7` — Ensure Azure Cache for Redis is Using a Private Link
+- `cis-azure-database-2-8` — Ensure that Azure Cache for Redis is Using Customer-Managed Keys
+- `cis-azure-database-2-9` — Ensure 'Access Keys Authentication' is set to 'Disabled'
+- `cis-azure-database-3-1` — Ensure That 'Firewalls & Networks' Is Limited to Use Selected Networks Instead of All Networks
+- `cis-azure-database-3-2` — Ensure that Cosmos DB uses Private Endpoints where possible
+- `cis-azure-database-3-3` — Ensure that 'disableLocalAuth' is set to 'true'
+- `cis-azure-database-3-4` — Ensure 'Public Network Access' is 'Disabled'
+- `cis-azure-database-3-5` — Ensure critical data is encrypted with customer-managed keys (CMK)
+- `cis-azure-database-3-6` — Ensure the firewall does not allow all network traffic
+- `cis-azure-database-3-7` — Ensure that Cosmos DB Logging is Enabled
+- `cis-azure-database-4-1` — Ensure Data Factory is encrypted using Customer Managed Keys
+- `cis-azure-database-4-2` — Ensure Data Factory is using Managed Identities
+- `cis-azure-database-4-3` — Ensure that Data Factory is using Azure Key Vault to store Credentials and Secrets
+- `cis-azure-database-4-4` — Ensure that Data Factory is using RBAC to manage privilege assignment
+- `cis-azure-database-5-1` — Ensure Azure Database for MySQL uses Customer Managed Keys for Encryption at Rest
+- `cis-azure-database-5-2` — Ensure Azure Database for MySQL uses only Microsoft Entra Authentication
+- `cis-azure-database-5-3` — Ensure 'Public Network Access' is 'Disabled' for Azure Database for MySQL
+- `cis-azure-database-5-4` — Ensure Private Endpoints Are Used for Azure MySQL Databases
+- `cis-azure-database-5-5` — Ensure server parameter 'audit_log_enabled' is set to 'ON' for MySQL flexible server
+- `cis-azure-database-5-6` — Ensure server parameter 'audit_log_events' has 'CONNECTION' set for MySQL flexible server
+- `cis-azure-database-5-7` — Ensure server parameter 'error_server_log_file' is Enabled for MySQL Database Server
+- `cis-azure-database-5-8` — Ensure server parameter 'require_secure_transport' is set to 'ON' for MySQL Server
+- `cis-azure-database-5-9` — Ensure server parameter 'tls_version' is set to 'TLSv1.2' (or higher) for MySQL flexible server
+- `cis-azure-database-6-1` — Ensure Azure Database for PostgreSQL uses Customer Managed Keys for Encryption at Rest
+- `cis-azure-database-6-10` — Ensure server parameter 'require_secure_transport' is set to 'ON' for PostgreSQL server
+- `cis-azure-database-6-11` — Ensure server parameter 'ssl_min_protocol_version' is set to 'TLSv1.2' or higher for PostgreSQL server
+- `cis-azure-database-6-2` — Ensure Azure Database for PostgreSQL uses only Microsoft Entra Authentication
+- `cis-azure-database-6-3` — Ensure 'Public Network Access' is 'Disabled' for Azure Database for PostgreSQL
+- `cis-azure-database-6-4` — Ensure Private Endpoints Are Used for Azure Database for PostgreSQL
+- `cis-azure-database-6-5` — Ensure server parameter 'connection_throttle.enable' is set to 'ON' for PostgreSQL server
+- `cis-azure-database-6-6` — Ensure server parameter 'logfiles.retention_days' is greater than 3 days for PostgreSQL server
+- `cis-azure-database-6-7` — Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL server
+- `cis-azure-database-6-8` — Ensure server parameter 'log_disconnections' is set to 'ON' for PostgreSQL servers
+- `cis-azure-database-6-9` — Ensure server parameter 'log_connections' is set to 'ON' for PostgreSQL servers
+- `cis-azure-database-9-1` — Ensure that 'Auditing' is set to 'On'
+- `cis-azure-database-9-2` — Ensure that 'Public Network Access' is set to 'Disable'
+- `cis-azure-database-9-3` — Ensure no Azure SQL Database firewall rule is overly permissive
+- `cis-azure-database-9-4` — Ensure SQL server's Transparent Data Encryption (TDE) protector is encrypted with Customer-managed key
+- `cis-azure-database-9-5` — Ensure that Microsoft Entra authentication is Configured for SQL Servers
+- `cis-azure-database-9-6` — Ensure that 'Data encryption' is set to 'On' on a SQL Database
+- `cis-azure-database-9-7` — Ensure that 'Auditing' Retention is 'greater than 90 days'
+- `cis-azure-database-9-8` — Ensure 'Minimum TLS Version' is set to 'TLS 1.2' or higher
+- `cis-azure-foundations-2-1-1` — Ensure Azure Databricks is deployed in a customer-managed VNet
+- `cis-azure-foundations-2-1-10` — Ensure 'Allow Public Network Access' is set to 'Disabled'
+- `cis-azure-foundations-2-1-11` — Ensure private endpoints are used to access Azure Databricks workspaces
+- `cis-azure-foundations-2-1-2` — Ensure network security groups are configured for Databricks subnets
+- `cis-azure-foundations-2-1-3` — Ensure traffic is encrypted between cluster worker nodes
+- `cis-azure-foundations-2-1-4` — Ensure users and groups are synced from Microsoft Entra ID to Azure Databricks
+- `cis-azure-foundations-2-1-5` — Ensure Unity Catalog is configured for Azure Databricks
+- `cis-azure-foundations-2-1-6` — Ensure usage is restricted and expiry is enforced for Databricks personal access tokens
+- `cis-azure-foundations-2-1-7` — Ensure diagnostic log delivery is configured for Azure Databricks
+- `cis-azure-foundations-2-1-8` — Ensure critical data in Azure Databricks is encrypted with customer-managed keys (CMK)
+- `cis-azure-foundations-2-1-9` — Ensure 'No Public IP' is set to 'Enabled'
+- `cis-azure-foundations-3-1-1` — Ensure only MFA enabled identities can access privileged Virtual Machine
+- `cis-azure-foundations-5-1-1` — Ensure 'security defaults' is enabled in Microsoft Entra ID
+- `cis-azure-foundations-5-1-2` — Ensure 'multifactor authentication' is 'enabled' for all users
+- `cis-azure-foundations-5-1-3` — Ensure 'Allow users to remember multifactor authentication on devices they trust' is disabled
+- `cis-azure-foundations-5-10` — Ensure 'Notify users on password resets?' is set to 'Yes'
+- `cis-azure-foundations-5-11` — Ensure 'Notify all admins when other admins reset their password?' is set to 'Yes'
+- `cis-azure-foundations-5-12` — Ensure 'User consent for applications' is set to 'Do not allow user consent'
+- `cis-azure-foundations-5-13` — Ensure 'User consent for applications' is set to 'Allow user consent for apps from verified publishers, for selected permissions'
+- `cis-azure-foundations-5-14` — Ensure 'Users can register applications' is set to 'No'
+- `cis-azure-foundations-5-15` — Ensure 'Guest users access restrictions' is set to 'Guest user access is restricted to properties and memberships of their own directory objects'
+- `cis-azure-foundations-5-16` — Ensure 'Guest invite restrictions' is set to 'Only users assigned to specific admin roles can invite guest users' or 'No one in the organization can invite guest users'
+- `cis-azure-foundations-5-17` — Ensure 'Restrict access to Microsoft Entra admin center' is set to 'Yes'
+- `cis-azure-foundations-5-18` — Ensure 'Restrict user ability to access groups features in My Groups' is set to 'Yes'
+- `cis-azure-foundations-5-19` — Ensure 'Users can create security groups in Azure portals, API or PowerShell' is set to 'No'
+- `cis-azure-foundations-5-2-1` — Ensure 'trusted locations' are defined
+- `cis-azure-foundations-5-2-2` — Ensure an exclusionary geographic Conditional Access policy is considered
+- `cis-azure-foundations-5-2-3` — Ensure an exclusionary device code flow policy is considered
+- `cis-azure-foundations-5-2-4` — Ensure a multifactor authentication policy exists for all users
+- `cis-azure-foundations-5-2-5` — Ensure multifactor authentication is required for risky sign-ins
+- `cis-azure-foundations-5-2-6` — Ensure multifactor authentication is required for Windows Azure Service Management API
+- `cis-azure-foundations-5-2-7` — Ensure multifactor authentication is required to access Microsoft Admin Portals
+- `cis-azure-foundations-5-2-8` — Ensure a Token Protection Conditional Access policy is considered
+- `cis-azure-foundations-5-20` — Ensure 'Owners can manage group membership requests in My Groups' is set to 'No'
+- `cis-azure-foundations-5-21` — Ensure 'Users can create Microsoft 365 groups in Azure portals, API or PowerShell' is set to 'No'
+- `cis-azure-foundations-5-22` — Ensure 'Require Multifactor Authentication to register or join devices with Microsoft Entra' is set to 'Yes'
+- `cis-azure-foundations-5-23` — Ensure no custom subscription administrator roles exist
+- `cis-azure-foundations-5-24` — Ensure a custom role is assigned permissions for administering resource locks
+- `cis-azure-foundations-5-25` — Ensure 'Subscription leaving/entering Microsoft Entra tenant' is set to 'Permit no one'
+- `cis-azure-foundations-5-26` — Ensure fewer than 5 users have global administrator assignment
+- `cis-azure-foundations-5-27` — Ensure there are between 2 and 3 subscription owners
+- `cis-azure-foundations-5-28` — Ensure passwordless authentication methods are considered
+- `cis-azure-foundations-5-3-1` — Ensure Azure admin accounts are not used for daily operations
+- `cis-azure-foundations-5-3-2` — Ensure guest users are reviewed on a regular basis
+- `cis-azure-foundations-5-3-3` — Ensure use of the 'User Access Administrator' role is restricted
+- `cis-azure-foundations-5-3-4` — Ensure all 'privileged' role assignments are periodically reviewed
+- `cis-azure-foundations-5-3-5` — Ensure disabled user accounts do not have read, write, or owner permissions
+- `cis-azure-foundations-5-3-6` — Ensure 'Tenant Creator' role assignments are periodically reviewed
+- `cis-azure-foundations-5-3-7` — Ensure all non-privileged role assignments are periodically reviewed
+- `cis-azure-foundations-5-4` — Ensure 'Restrict non-admin users from creating tenants' is set to 'Yes'
+- `cis-azure-foundations-5-5` — Ensure 'Number of methods required to reset' is set to '2'
+- `cis-azure-foundations-5-6` — Ensure account 'Lockout threshold' is less than or equal to '10'
+- `cis-azure-foundations-5-7` — Ensure account 'Lockout duration in seconds' is greater than or equal to '60'
+- `cis-azure-foundations-5-8` — Ensure 'Custom banned password list' is set to 'Enforce'
+- `cis-azure-foundations-5-9` — Ensure 'Number of days before users are asked to re-confirm their authentication information' is not set to '0'
+- `cis-azure-foundations-6-1-1-1` — Ensure that a 'Diagnostic Setting' exists for Subscription Activity Logs
+- `cis-azure-foundations-6-1-1-10` — Ensure Intune logs are captured and sent to Log Analytics
+- `cis-azure-foundations-6-1-1-2` — Ensure Diagnostic Setting captures appropriate categories
+- `cis-azure-foundations-6-1-1-3` — Ensure storage account containing activity logs is encrypted with CMK
+- `cis-azure-foundations-6-1-1-4` — Ensure that logging for Azure Key Vault is 'Enabled'
+- `cis-azure-foundations-6-1-1-5` — Ensure Network Security Group Flow logs are captured and sent to Log Analytics
+- `cis-azure-foundations-6-1-1-6` — Ensure logging for Azure AppService 'HTTP logs' is enabled
+- `cis-azure-foundations-6-1-1-7` — Ensure virtual network flow logs are captured and sent to Log Analytics
+- `cis-azure-foundations-6-1-1-8` — Ensure Microsoft Entra diagnostic setting exists to send Microsoft Graph activity logs
+- `cis-azure-foundations-6-1-1-9` — Ensure Microsoft Entra diagnostic setting exists to send Microsoft Entra activity logs
+- `cis-azure-foundations-6-1-2-1` — Ensure Activity Log Alert exists for Create Policy Assignment
+- `cis-azure-foundations-6-1-2-10` — Ensure Activity Log Alert exists for Delete Public IP Address rule
+- `cis-azure-foundations-6-1-2-11` — Ensure that an Activity Log Alert exists for Service Health
+- `cis-azure-foundations-6-1-2-2` — Ensure Activity Log Alert exists for Delete Policy Assignment
+- `cis-azure-foundations-6-1-2-3` — Ensure Activity Log Alert exists for Create or Update Network Security Group
+- `cis-azure-foundations-6-1-2-4` — Ensure Activity Log Alert exists for Delete Network Security Group
+- `cis-azure-foundations-6-1-2-5` — Ensure Activity Log Alert exists for Create or Update Security Solution
+- `cis-azure-foundations-6-1-2-6` — Ensure Activity Log Alert exists for Delete Security Solution
+- `cis-azure-foundations-6-1-2-7` — Ensure Activity Log Alert exists for Create or Update SQL Server Firewall Rule
+- `cis-azure-foundations-6-1-2-8` — Ensure Activity Log Alert exists for Delete SQL Server Firewall Rule
+- `cis-azure-foundations-6-1-2-9` — Ensure Activity Log Alert exists for Create or Update Public IP Address rule
+- `cis-azure-foundations-6-1-3-1` — Ensure Application Insights are Configured
+- `cis-azure-foundations-6-1-4` — Ensure that Azure Monitor Resource Logging is Enabled for All Services that Support it
+- `cis-azure-foundations-6-1-5` — Ensure that SKU Basic/Consumption is not used on artifacts that need to be monitored
+- `cis-azure-foundations-6-2` — Ensure that Resource Locks are set for Mission-Critical Azure Resources
+- `cis-azure-foundations-7-1` — Ensure RDP access from the Internet is evaluated and restricted
+- `cis-azure-foundations-7-10` — Ensure Azure Web Application Firewall (WAF) is enabled on Azure Application Gateway
+- `cis-azure-foundations-7-11` — Ensure subnets are associated with network security groups
+- `cis-azure-foundations-7-12` — Ensure the SSL policy's 'Min protocol version' is set to 'TLSv1_2' or higher on Azure Application Gateway
+- `cis-azure-foundations-7-13` — Ensure 'HTTP2' is set to 'Enabled' on Azure Application Gateway
+- `cis-azure-foundations-7-14` — Ensure request body inspection is enabled in Azure WAF policy on Azure Application Gateway
+- `cis-azure-foundations-7-15` — Ensure bot protection is enabled in Azure WAF policy on Azure Application Gateway
+- `cis-azure-foundations-7-16` — Ensure Azure Network Security Perimeter is used to secure Azure PaaS resources
+- `cis-azure-foundations-7-2` — Ensure SSH access from the Internet is evaluated and restricted
+- `cis-azure-foundations-7-3` — Ensure UDP access from the Internet is evaluated and restricted
+- `cis-azure-foundations-7-4` — Ensure HTTP(S) access from the Internet is evaluated and restricted
+- `cis-azure-foundations-7-5` — Ensure network security group flow log retention days is >= 90
+- `cis-azure-foundations-7-6` — Ensure Network Watcher is 'Enabled' for Azure Regions that are in use
+- `cis-azure-foundations-7-7` — Ensure Public IP addresses are Evaluated on a Periodic Basis
+- `cis-azure-foundations-7-8` — Ensure virtual network flow log retention days is >= 90
+- `cis-azure-foundations-7-9` — Ensure 'Authentication type' is set to 'Azure Active Directory' only for Azure VPN Gateway point-to-site
+- `cis-azure-foundations-8-1-1-1` — Ensure Microsoft Defender CSPM is set to 'On'
+- `cis-azure-foundations-8-1-10` — Ensure That Microsoft Defender for Resource Manager Is Set To 'On'
+- `cis-azure-foundations-8-1-11` — Ensure That Microsoft Defender Recommendation for 'Apply system updates' status is 'Completed'
+- `cis-azure-foundations-8-1-12` — Ensure the Microsoft Defender for Cloud 'Security alert emails' is configured
+- `cis-azure-foundations-8-1-13` — Ensure 'Additional email addresses' for the subscription is configured with a security contact email
+- `cis-azure-foundations-8-1-14` — Ensure That 'Notify about alerts with the following severity' is Set to 'High'
+- `cis-azure-foundations-8-1-15` — Ensure that Microsoft Defender External Attack Surface Monitoring (EASM) is enabled
+- `cis-azure-foundations-8-1-16` — Ensure that Microsoft Cloud Security Benchmark policies are not set to 'Disabled'
+- `cis-azure-foundations-8-1-2-1` — Ensure Microsoft Defender for APIs is set to 'On'
+- `cis-azure-foundations-8-1-3-1` — Ensure that Defender for Servers is set to 'On'
+- `cis-azure-foundations-8-1-3-2` — Ensure 'Vulnerability assessment for machines' component status is set to 'On'
+- `cis-azure-foundations-8-1-3-3` — Ensure 'Endpoint protection' component status is set to 'On'
+- `cis-azure-foundations-8-1-3-4` — Ensure 'Agentless scanning for machines' component status is set to 'On'
+- `cis-azure-foundations-8-1-3-5` — Ensure 'File Integrity Monitoring' component status is set to 'On'
+- `cis-azure-foundations-8-1-4-1` — Ensure That Microsoft Defender for Containers Is Set To 'On'
+- `cis-azure-foundations-8-1-5-1` — Ensure That Microsoft Defender for Storage Is Set To 'On'
+- `cis-azure-foundations-8-1-5-2` — Ensure Advanced Threat Protection Alerts for Storage Accounts Are Monitored
+- `cis-azure-foundations-8-1-6-1` — Ensure That Microsoft Defender for App Services Is Set To 'On'
+- `cis-azure-foundations-8-1-7-1` — Ensure That Microsoft Defender for Azure Cosmos DB Is Set To 'On'
+- `cis-azure-foundations-8-1-7-2` — Ensure That Microsoft Defender for Open-Source Relational Databases Is Set To 'On'
+- `cis-azure-foundations-8-1-7-3` — Ensure That Microsoft Defender for Azure SQL Databases Is Set To 'On'
+- `cis-azure-foundations-8-1-7-4` — Ensure That Microsoft Defender for SQL Servers on Machines Is Set To 'On'
+- `cis-azure-foundations-8-1-8-1` — Ensure That Microsoft Defender for Key Vault Is Set To 'On'
+- `cis-azure-foundations-8-1-9-1` — Ensure That Microsoft Defender for DNS Is Set To 'On'
+- `cis-azure-foundations-8-2-1` — Ensure That Microsoft Sentinel Is Enabled
+- `cis-azure-foundations-8-3-1` — Ensure that the Expiration Date is set for all Keys in RBAC Key Vaults
+- `cis-azure-foundations-8-3-10` — Ensure 'Public network access' for Key Vault is set to 'Disabled'
+- `cis-azure-foundations-8-3-11` — Ensure Azure Resource Manager CanNotDelete Locks are considered for Key Vaults
+- `cis-azure-foundations-8-3-2` — Ensure that the Expiration Date is set for all Keys in Non-RBAC Key Vaults
+- `cis-azure-foundations-8-3-3` — Ensure that the Expiration Date is set for all Secrets in RBAC Key Vaults
+- `cis-azure-foundations-8-3-4` — Ensure that the Expiration Date is set for all Secrets in Non-RBAC Key Vaults
+- `cis-azure-foundations-8-3-5` — Ensure the Key Vault is Recoverable
+- `cis-azure-foundations-8-3-6` — Ensure that Private Endpoints are Used for Azure Key Vault
+- `cis-azure-foundations-8-3-7` — Ensure that Azure Key Vaults Use Azure RBAC for access management
+- `cis-azure-foundations-8-3-8` — Ensure Automatic Key Rotation is Enabled Within Azure Key Vault for the Supported Services
+- `cis-azure-foundations-8-3-9` — Ensure Azure Key Vault Managed HSM is Used for Key Encryption
+- `cis-azure-foundations-8-4-1` — Ensure That Microsoft Defender for APIs Is Set To 'On'
+- `cis-azure-foundations-8-5` — Ensure that Auto provisioning of 'Vulnerability assessment for machines' is Set to 'On'
+- `cis-azure-foundations-9-1-1` — Ensure soft delete for Azure File Shares is Enabled
+- `cis-azure-foundations-9-1-2` — Ensure 'SMB protocol version' is set to 'SMB 3.1.1' or higher for SMB file shares
+- `cis-azure-foundations-9-1-3` — Ensure 'SMB channel encryption' is set to 'AES-256-GCM' or higher for SMB file shares
+- `cis-azure-foundations-9-2-1` — Ensure soft delete for blobs on Azure Blob Storage storage accounts is Enabled
+- `cis-azure-foundations-9-2-2` — Ensure soft delete for containers on Azure Blob Storage storage accounts is Enabled
+- `cis-azure-foundations-9-2-3` — Ensure 'Versioning' is set to 'Enabled' on Azure Blob Storage storage accounts
+- `cis-azure-foundations-9-3-1-1` — Ensure 'Enable key rotation reminders' is enabled for each Storage Account
+- `cis-azure-foundations-9-3-1-2` — Ensure Storage Account access keys are periodically regenerated
+- `cis-azure-foundations-9-3-1-3` — Ensure 'Allow storage account key access' for Azure Storage Accounts is 'Disabled'
+- `cis-azure-foundations-9-3-10` — Ensure Azure Resource Manager ReadOnly locks are considered for Azure Storage Accounts
+- `cis-azure-foundations-9-3-11` — Ensure Redundancy is set to 'geo-redundant storage (GRS)' on critical Azure Storage Accounts
+- `cis-azure-foundations-9-3-2-1` — Ensure Private Endpoints are used to access Storage Accounts
+- `cis-azure-foundations-9-3-2-2` — Ensure 'Public Network Access' is 'Disabled' for storage accounts
+- `cis-azure-foundations-9-3-2-3` — Ensure default network access rule for storage accounts is set to deny
+- `cis-azure-foundations-9-3-3-1` — Ensure 'Default to Microsoft Entra authorization in the Azure portal' is set to 'Enabled'
+- `cis-azure-foundations-9-3-4` — Ensure 'Secure transfer required' is set to 'Enabled'
+- `cis-azure-foundations-9-3-5` — Ensure 'Allow Azure services on the trusted services list to access this storage account' is Enabled for Storage Account Access
+- `cis-azure-foundations-9-3-6` — Ensure the 'Minimum TLS version' for storage accounts is set to 'Version 1.2'
+- `cis-azure-foundations-9-3-7` — Ensure 'Cross Tenant Replication' is not enabled
+- `cis-azure-foundations-9-3-8` — Ensure 'Allow Blob Anonymous Access' is set to 'Disabled'
+- `cis-azure-foundations-9-3-9` — Ensure Azure Resource Manager Delete locks are applied to Azure Storage Accounts
+- `cis-azure-storage-10-1` — Ensure 'Encryption key source' is set to 'Customer Managed Key' for Azure NetApp Files accounts
+- `cis-azure-storage-11-1` — Ensure 'Allowed Protocols' for shared access signature (SAS) tokens is set to 'HTTPS Only'
+- `cis-azure-storage-11-2` — Ensure that shared access signature (SAS) tokens expire within an hour
+- `cis-azure-storage-11-3` — Ensure that soft delete for blobs on Azure Blob Storage storage accounts is Enabled
+- `cis-azure-storage-11-4` — Ensure stored access policies (SAP) are used when generating shared access signature (SAS) tokens
+- `cis-azure-storage-11-5` — Ensure 'Versioning' is set to 'Enabled' on Azure Blob Storage storage accounts
+- `cis-azure-storage-11-6` — Ensure locked immutability policies are used for containers storing business-critical blob data
+- `cis-azure-storage-12-1` — Ensure double encryption is used for Azure Data Box in high-security environments
+- `cis-azure-storage-15-1` — Ensure 'Public network access' is set to 'Disabled' on Azure Elastic SAN
+- `cis-azure-storage-15-2` — Ensure customer-managed keys (CMK) are used to encrypt data at rest on Azure Elastic SAN volume groups
+- `cis-azure-storage-16-1` — Ensure 'Allowed Protocols' for shared access signature (SAS) tokens is set to 'HTTPS Only'
+- `cis-azure-storage-16-2` — Ensure that shared access signature (SAS) tokens expire within an hour
+- `cis-azure-storage-16-3` — Ensure stored access policies (SAP) are used when generating shared access signature (SAS) tokens
+- `cis-azure-storage-17-1-1` — Ensure that 'Enable key rotation reminders' is enabled for each Storage Account
+- `cis-azure-storage-17-1-2` — Ensure 'Allowed Protocols' for shared access signature (SAS) tokens is set to 'HTTPS Only'
+- `cis-azure-storage-17-1-3` — Ensure that Storage Account Access Keys are Periodically Regenerated
+- `cis-azure-storage-17-1-4` — Ensure that shared access signature (SAS) tokens expire within an hour
+- `cis-azure-storage-17-1-5` — Ensure 'Allow storage account key access' for Azure Storage Accounts is 'Disabled'
+- `cis-azure-storage-17-1-6` — Ensure Storage for Critical Data are Encrypted with Customer Managed Keys (CMK)
+- `cis-azure-storage-17-10` — Ensure Storage Logging is Enabled for Table Service for 'Read', 'Write', and 'Delete' Requests
+- `cis-azure-storage-17-11` — Ensure the 'Minimum TLS version' for storage accounts is set to 'Version 1.2'
+- `cis-azure-storage-17-12` — Ensure 'Cross Tenant Replication' is not enabled
+- `cis-azure-storage-17-13` — Ensure that 'Allow Blob Anonymous Access' is set to 'Disabled'
+- `cis-azure-storage-17-14` — Ensure Azure Resource Manager Delete locks are applied to Azure Storage Accounts
+- `cis-azure-storage-17-15` — Ensure Azure Resource Manager ReadOnly locks are considered for Azure Storage Accounts
+- `cis-azure-storage-17-16` — Ensure Redundancy is set to 'geo-redundant storage (GRS)' on critical Azure Storage Accounts
+- `cis-azure-storage-17-2-1` — Ensure Private Endpoints are used to access Storage Accounts
+- `cis-azure-storage-17-2-2` — Ensure that 'Public Network Access' is 'Disabled' for storage accounts
+- `cis-azure-storage-17-2-3` — Ensure Default Network Access Rule for Storage Accounts is Set to Deny
+- `cis-azure-storage-17-4` — Ensure that 'Secure transfer required' is set to 'Enabled'
+- `cis-azure-storage-17-5` — Ensure that 'Enable Infrastructure Encryption' for Each Storage Account in Azure Storage is Set to 'enabled'
+- `cis-azure-storage-17-6` — Ensure 'Allow Azure services on the trusted services list to access this storage account' is Enabled for Storage Account Access
+- `cis-azure-storage-17-7` — Ensure Soft Delete is Enabled for Azure Containers and Blob Storage
+- `cis-azure-storage-17-8` — Ensure Storage Logging is Enabled for Queue Service for 'Read', 'Write', and 'Delete' requests
+- `cis-azure-storage-17-9` — Ensure Storage logging is Enabled for Blob Service for 'Read', 'Write', and 'Delete' requests
+- `cis-azure-storage-18-1` — Ensure that shared access signature (SAS) tokens expire within an hour
+- `cis-azure-storage-18-2` — Ensure stored access policies (SAP) are used when generating shared access signature (SAS) tokens
+- `cis-azure-storage-18-3` — Ensure Storage Explorer is using the latest version
+- `cis-azure-storage-2-1-1-1` — Ensure 'Allowed Protocols' for shared access signature (SAS) tokens is set to 'HTTPS Only'
+- `cis-azure-storage-2-1-1-2` — Ensure that shared access signature (SAS) tokens expire within an hour
+- `cis-azure-storage-2-1-1-3` — Ensure stored access policies (SAP) are used when generating shared access signature (SAS) tokens
+- `cis-azure-storage-2-1-2-1-1` — Ensure Critical Data is Encrypted with Microsoft Managed Keys (MMK)
+- `cis-azure-storage-2-1-2-2-1` — Ensure Critical Data is Encrypted with Customer Managed Keys (CMK)
+- `cis-azure-storage-2-2-1-1` — Ensure public network access is Disabled
+- `cis-azure-storage-2-2-1-2` — Ensure Network Access Rules are set to Deny-by-default
+- `cis-azure-storage-2-2-2-1` — Ensure Private Endpoints are used to access service
+- `cis-azure-storage-4-1` — Ensure 'Key encryption key' is set to a customer-managed key for Azure Managed Lustre file systems
+- `cis-azure-storage-5-1-1` — Ensure soft delete on Backup vaults is Enabled
+- `cis-azure-storage-5-1-2` — Ensure immutability for Backup vaults is Enabled
+- `cis-azure-storage-5-1-3` — Ensure backup data in Backup vaults is encrypted using customer-managed keys (CMK)
+- `cis-azure-storage-5-1-4` — Ensure 'Use infrastructure encryption for this vault' is enabled on Backup vaults
+- `cis-azure-storage-5-1-5` — Ensure 'Cross Region Restore' is set to 'Enabled' on Backup vaults
+- `cis-azure-storage-5-1-6` — Ensure 'Cross Subscription Restore' is set to 'Disabled' or 'Permanently Disabled' on Backup vaults
+- `cis-azure-storage-5-2-1` — Ensure soft delete on Recovery Services vaults is Enabled
+- `cis-azure-storage-5-2-2` — Ensure immutability for Recovery Services vaults is Enabled
+- `cis-azure-storage-5-2-3` — Ensure backup data in Recovery Services vaults is encrypted using customer-managed keys (CMK)
+- `cis-azure-storage-5-2-4` — Ensure 'Use infrastructure encryption for this vault' is enabled on Recovery Services vaults
+- `cis-azure-storage-5-2-5` — Ensure public network access on Recovery Services vaults is Disabled
+- `cis-azure-storage-5-2-6` — Ensure 'Cross Region Restore' is set to 'Enabled' on Recovery Services vaults
+- `cis-azure-storage-5-2-7` — Ensure 'Cross Subscription Restore' is set to 'Disabled' or 'Permanently Disabled' on Recovery Services vaults
+- `cis-azure-storage-8-1` — Ensure soft delete for Azure File Shares is Enabled
+- `cis-azure-storage-8-2` — Ensure root squash for NFS file shares is configured
+- `cis-azure-storage-8-3` — Ensure 'SMB protocol version' is set to 'SMB 3.1.1' or higher for SMB file shares
+- `cis-azure-storage-8-4` — Ensure 'SMB channel encryption' is set to 'AES-256-GCM' or higher for SMB file shares
+- `cis-bind-v100-1-1` — Use a Split-Horizon Architecture (Manual)
+- `cis-bind-v100-1-2` — Do Not Install a Multi-Use System (Manual)
+- `cis-bind-v100-1-3` — Dedicated Name Server Role (Automated)
+- `cis-bind-v100-1-4` — Use Secure Upstream Caching DNS Servers (Manual)
+- `cis-bind-v100-1-5` — Installing ISC BIND 9 (Automated)
+- `cis-bind-v100-10-1` — Ensure SELinux Is Enabled in Enforcing Mode (Automated)
+- `cis-bind-v100-10-2` — Ensure BIND Processes Run in the named_t Confined Context Type (Automated)
+- `cis-bind-v100-10-3` — Ensure the named_t Process Type is Not in Permissive Mode (Automated)
+- `cis-bind-v100-10-4` — Ensure Only the Necessary SELinux Booleans are Enabled (Automated)
+- `cis-bind-v100-2-1` — Run BIND as a non-root User (Automated)
+- `cis-bind-v100-2-2` — Give the BIND User Account an Invalid Shell (Automated)
+- `cis-bind-v100-2-3` — Lock the BIND User Account (Automated)
+- `cis-bind-v100-2-4` — Set root Ownership of BIND Directories (Automated)
+- `cis-bind-v100-2-5` — Set root Ownership of BIND Configuration Files (Automated)
+- `cis-bind-v100-2-6` — Set Group named or root for BIND Directories and Files (Automated)
+- `cis-bind-v100-2-7` — Set Group Read-Only for BIND Files and Non-Runtime Directories (Automated)
+- `cis-bind-v100-2-8` — Set Other Permissions Read-Only for All BIND Directories and Files (Automated)
+- `cis-bind-v100-2-9` — Isolate BIND with chroot'ed Subdirectory (Automated)
+- `cis-bind-v100-3-1` — Ignore Erroneous or Unwanted Queries (Automated)
+- `cis-bind-v100-3-2` — Restrict Recursive Queries (Automated)
+- `cis-bind-v100-3-3` — Restrict Query Origins (Manual)
+- `cis-bind-v100-3-4` — Restrict Queries of the Cache (Automated)
+- `cis-bind-v100-4-1` — Use TSIG Keys 256 Bits in Length (Automated)
+- `cis-bind-v100-4-2` — Include Cryptographic Key Files (Automated)
+- `cis-bind-v100-4-3` — Use Unique Keys for Each Pair of Hosts (Automated)
+- `cis-bind-v100-4-4` — Restrict Access to All Key Files (Automated)
+- `cis-bind-v100-4-5` — Protect TSIG Key Files During Deployment (Manual)
+- `cis-bind-v100-5-1` — Securely Authenticate Zone Transfers (Automated)
+- `cis-bind-v100-5-2` — Securely Authenticate Dynamic Updates (Automated)
+- `cis-bind-v100-5-3` — Securely Authenticate Update Forwarding (Automated)
+- `cis-bind-v100-6-1` — Hide BIND Version String (Automated)
+- `cis-bind-v100-6-2` — Hide Nameserver ID (Automated)
+- `cis-bind-v100-7-1` — Do Not Define a Static Source Port (Automated)
+- `cis-bind-v100-7-2` — Enable DNSSEC Validation (Automated)
+- `cis-bind-v100-7-3` — Disable the dnssec-accept-expired Option (Automated)
+- `cis-bind-v100-7-4` — Ensure Either SPF or DKIM DNS Records are Configured (Automated)
+- `cis-bind-v100-8-1` — Install the Haveged Package for Enhanced Entropy (Automated)
+- `cis-bind-v100-8-2` — Ensure Signing Keys are Generated with a Secure Algorithm (Automated)
+- `cis-bind-v100-8-3` — Ensure Any Signing Keys using RSA Have a Length of 2048 or Greater (Automated)
+- `cis-bind-v100-8-4` — Restrict Access to Zone and Key Signing Keys (Automated)
+- `cis-bind-v100-8-5` — Ensure each Zone has a Valid Digital Signature (Manual)
+- `cis-bind-v100-8-6` — Ensure Full Digital Chain of Trust can be Validated (Automated)
+- `cis-bind-v100-8-7` — Ensure Signing Keys are Unique (Automated)
+- `cis-bind-v100-8-8` — Ensure Zones are Signed with NSEC or NSEC3 (Automated)
+- `cis-bind-v100-9-1` — Apply Applicable Updates (Automated)
+- `cis-bind-v100-9-2` — Configure a Logging File Channel (Automated)
+- `cis-bind-v100-9-3` — Configure a Logging Syslog Channel (Automated)
+- `cis-bind-v100-9-4` — Disable the HTTP Statistics Server (Automated)
+- `cis-bind-v100-9-5` — Response Rate Limiting and DDOS Mitigation (Automated)
+- `cis-bind-v100-9-6` — Ensure Signing Keys are Scheduled to be Replaced Periodically (Automated)
+- `cis-bind9-v301-1-1` — Use a Split-Horizon Architecture (Manual)
+- `cis-bind9-v301-1-2` — Do Not Install a Multi-Use System (Manual)
+- `cis-bind9-v301-1-3` — Dedicated Name Server Role (Automated)
+- `cis-bind9-v301-1-4` — Use Secure Upstream Caching DNS Servers (Manual)
+- `cis-bind9-v301-1-5` — Installing ISC BIND 9 (Automated)
+- `cis-bind9-v301-2-1` — Run BIND as a non-root User (Automated)
+- `cis-bind9-v301-2-2` — Give the BIND User Account an Invalid Shell (Automated)
+- `cis-bind9-v301-2-3` — Lock the BIND User Account (Automated)
+- `cis-bind9-v301-2-4` — Set root Ownership of BIND Directories (Automated)
+- `cis-bind9-v301-2-5` — Set root Ownership of BIND Configuration Files (Automated)
+- `cis-bind9-v301-2-6` — Set Group named or root for BIND Directories and Files (Automated)
+- `cis-bind9-v301-2-7` — Set Group and Other Permissions Read-Only for BIND Non-Runtime Directories (Automated)
+- `cis-bind9-v301-2-8` — Set Group and Other Permissions Read-Only for All BIND Files (Automated)
+- `cis-bind9-v301-2-9` — Isolate BIND with chroot'ed Subdirectory (Automated)
+- `cis-bind9-v301-3-1` — Ignore Erroneous or Unwanted Queries (Automated)
+- `cis-bind9-v301-3-2` — Restrict Recursive Queries (Automated)
+- `cis-bind9-v301-3-3` — Restrict Query Origins (Manual)
+- `cis-bind9-v301-3-4` — Restrict Queries of the Cache (Automated)
+- `cis-bind9-v301-4-1` — Use TSIG Keys 256 Bits in Length (Scored)
+- `cis-bind9-v301-4-2` — Include Cryptographic Key Files (Scored)
+- `cis-bind9-v301-4-3` — Use Unique Keys for Each Pair of Hosts (Scored)
+- `cis-bind9-v301-4-4` — Restrict Access to All Key Files (Scored)
+- `cis-bind9-v301-4-5` — Protect TSIG Key Files During Deployment (Not Scored)
+- `cis-bind9-v301-5-1` — Securely Authenticate Zone Transfers (Scored)
+- `cis-bind9-v301-5-2` — Securely Authenticate Dynamic Updates (Scored)
+- `cis-bind9-v301-5-3` — Securely Authenticate Update Forwarding (Scored)
+- `cis-bind9-v301-6-1` — Hide BIND Version String (Scored)
+- `cis-bind9-v301-6-2` — Hide Nameserver ID (Scored)
+- `cis-bind9-v301-7-1` — Do Not Define a Static Source Port (Scored)
+- `cis-bind9-v301-7-2` — Enable DNSSEC Validation (Scored)
+- `cis-bind9-v301-7-3` — Disable the dnssec-accept-expired Option (Scored)
+- `cis-bind9-v301-8-1` — Apply Applicable Updates (Scored)
+- `cis-bind9-v301-8-2` — Configure a Logging File Channel (Scored)
+- `cis-bind9-v301-8-3` — Configure a Logging Syslog Channel (Scored)
+- `cis-bind9-v301-8-4` — Disable the HTTP Statistics Server (Scored)
+- `cis-cassandra311-1-1` — Ensure a separate user and group exist for Cassandra
+- `cis-cassandra311-1-2` — Ensure the latest version of Java is installed
+- `cis-cassandra311-1-3` — Ensure the latest version of Python is installed
+- `cis-cassandra311-1-4` — Ensure latest version of Cassandra is installed
+- `cis-cassandra311-1-5` — Ensure the Cassandra service is run as a non-root user
+- `cis-cassandra311-1-6` — Ensure clocks are synchronized on all nodes
+- `cis-cassandra311-2-1` — Ensure that authentication is enabled for Cassandra databases
+- `cis-cassandra311-2-2` — Ensure that authorization is enabled for Cassandra databases
+- `cis-cassandra311-3-1` — Ensure the cassandra and superuser roles are separate
+- `cis-cassandra311-3-2` — Ensure that the default password changed for the cassandra role
+- `cis-cassandra311-3-3` — Ensure there are no unnecessary roles or excessive privileges
+- `cis-cassandra311-3-4` — Ensure that Cassandra is run using a non-privileged, dedicated service account
+- `cis-cassandra311-3-5` — Ensure that Cassandra only listens for network connections on authorized interfaces
+- `cis-cassandra311-3-6` — Review User-Defined Roles
+- `cis-cassandra311-3-7` — Review Superuser/Admin Roles
+- `cis-cassandra311-4-1` — Ensure that logging is enabled
+- `cis-cassandra311-4-2` — Ensure that auditing is enabled
+- `cis-cassandra311-5-1` — Inter-node Encryption
+- `cis-cassandra311-5-2` — Client Encryption
+- `cis-cassandra40-v100-1-1` — Ensure a separate user and group exist for Cassandra
+- `cis-cassandra40-v100-1-2` — Ensure the latest version of Java is installed
+- `cis-cassandra40-v100-1-3` — Ensure the latest version of Python is installed
+- `cis-cassandra40-v100-1-4` — Ensure latest version of Cassandra is installed
+- `cis-cassandra40-v100-1-5` — Ensure the Cassandra service is run as a non-root user
+- `cis-cassandra40-v100-1-6` — Ensure clocks are synchronized on all nodes
+- `cis-cassandra40-v100-2-1` — Ensure that authentication is enabled for Cassandra databases
+- `cis-cassandra40-v100-2-2` — Ensure that authorization is enabled for Cassandra databases
+- `cis-cassandra40-v100-3-1` — Ensure the cassandra and superuser roles are separate
+- `cis-cassandra40-v100-3-2` — Ensure that the default password is changed for the cassandra role
+- `cis-cassandra40-v100-3-3` — Ensure there are no unnecessary roles or excessive privileges
+- `cis-cassandra40-v100-3-4` — Ensure that Cassandra is run using a non-privileged, dedicated service account
+- `cis-cassandra40-v100-3-5` — Ensure that Cassandra only listens for network connections on authorized interfaces
+- `cis-cassandra40-v100-3-6` — Ensure that Data Center Authorizations is activated
+- `cis-cassandra40-v100-3-7` — Review User-Defined Roles
+- `cis-cassandra40-v100-3-8` — Review Superuser/Admin Roles
+- `cis-cassandra40-v100-4-1` — Ensure that logging is enabled
+- `cis-cassandra40-v100-4-2` — Ensure that auditing is enabled
+- `cis-cassandra40-v100-5-1` — Inter-node Encryption
+- `cis-cassandra40-v100-5-2` — Client Encryption
+- `cis-cassandra40-v110-1-1` — Ensure a separate user and group exist for Cassandra
+- `cis-cassandra40-v110-1-2` — Ensure the latest version of Java is installed
+- `cis-cassandra40-v110-1-3` — Ensure the latest version of Python is installed
+- `cis-cassandra40-v110-1-4` — Ensure latest version of Cassandra is installed
+- `cis-cassandra40-v110-1-5` — Ensure the Cassandra service is run as a non-root user
+- `cis-cassandra40-v110-1-6` — Ensure clocks are synchronized on all nodes
+- `cis-cassandra40-v110-2-1` — Ensure that authentication is enabled for Cassandra databases
+- `cis-cassandra40-v110-2-2` — Ensure that authorization is enabled for Cassandra databases
+- `cis-cassandra40-v110-3-1` — Ensure the cassandra and superuser roles are separate
+- `cis-cassandra40-v110-3-2` — Ensure that the default password is changed for the cassandra role
+- `cis-cassandra40-v110-3-3` — Ensure there are no unnecessary roles or excessive privileges
+- `cis-cassandra40-v110-3-4` — Ensure that Cassandra is run using a non-privileged, dedicated service account
+- `cis-cassandra40-v110-3-5` — Ensure that Cassandra only listens for network connections on authorized interfaces
+- `cis-cassandra40-v110-3-6` — Ensure that Data Center Authorizations is activated
+- `cis-cassandra40-v110-3-7` — Review User-Defined Roles
+- `cis-cassandra40-v110-3-8` — Review Superuser/Admin Roles
+- `cis-cassandra40-v110-4-1` — Ensure that logging is enabled
+- `cis-cassandra40-v110-4-2` — Ensure that auditing is enabled
+- `cis-cassandra40-v110-5-1` — Inter-node Encryption
+- `cis-cassandra40-v110-5-2` — Client Encryption
+- `cis-cassandra40-v130-1-1` — Ensure a separate user and group exist for Cassandra
+- `cis-cassandra40-v130-1-2` — Ensure the latest version of Java is installed
+- `cis-cassandra40-v130-1-3` — Ensure the latest version of Python is installed
+- `cis-cassandra40-v130-1-4` — Ensure latest version of Cassandra is installed
+- `cis-cassandra40-v130-1-5` — Ensure the Cassandra service is run as a non-root user
+- `cis-cassandra40-v130-1-6` — Ensure clocks are synchronized on all nodes
+- `cis-cassandra40-v130-2-1` — Ensure that authentication is enabled for Cassandra databases
+- `cis-cassandra40-v130-2-2` — Ensure that authorization is enabled for Cassandra databases
+- `cis-cassandra40-v130-3-1` — Ensure the cassandra and superuser roles are separate
+- `cis-cassandra40-v130-3-2` — Ensure that the default password is changed for the cassandra role
+- `cis-cassandra40-v130-3-3` — Ensure there are no unnecessary roles or excessive privileges
+- `cis-cassandra40-v130-3-4` — Ensure that Cassandra is run using a non-privileged, dedicated service account
+- `cis-cassandra40-v130-3-5` — Ensure that Cassandra only listens for network connections on authorized interfaces
+- `cis-cassandra40-v130-3-6` — Ensure that Data Center Authorizations is activated
+- `cis-cassandra40-v130-3-7` — Review User-Defined Roles
+- `cis-cassandra40-v130-3-8` — Review Superuser/Admin Roles
+- `cis-cassandra40-v130-4-1` — Ensure that logging is enabled
+- `cis-cassandra40-v130-4-2` — Ensure that auditing is enabled
+- `cis-cassandra40-v130-5-1` — Inter-node Encryption
+- `cis-cassandra40-v130-5-2` — Client Encryption
+- `cis-cassandra41-1-1` — Ensure a separate user and group exist for Cassandra
+- `cis-cassandra41-1-2` — Ensure the latest version of Java is installed
+- `cis-cassandra41-1-3` — Ensure the latest version of Python is installed
+- `cis-cassandra41-1-4` — Ensure latest version of Cassandra is installed
+- `cis-cassandra41-1-5` — Ensure the Cassandra service is run as a non-root user
+- `cis-cassandra41-1-6` — Ensure clocks are synchronized on all nodes
+- `cis-cassandra41-2-1` — Ensure that authentication is enabled for Cassandra databases
+- `cis-cassandra41-2-2` — Ensure that authorization is enabled for Cassandra databases
+- `cis-cassandra41-3-1` — Ensure the cassandra and superuser roles are separate
+- `cis-cassandra41-3-2` — Ensure that the default password is changed for the cassandra role
+- `cis-cassandra41-3-3` — Ensure there are no unnecessary roles or excessive privileges
+- `cis-cassandra41-3-4` — Ensure that Cassandra is run using a non-privileged, dedicated service account
+- `cis-cassandra41-3-5` — Ensure that Cassandra only listens for network connections on authorized interfaces
+- `cis-cassandra41-3-6` — Ensure that Data Center Authorizations is activated
+- `cis-cassandra41-3-7` — Review User-Defined Roles
+- `cis-cassandra41-3-8` — Review Superuser/Admin Roles
+- `cis-cassandra41-4-1` — Ensure that logging is enabled
+- `cis-cassandra41-4-2` — Ensure that auditing is enabled
+- `cis-cassandra41-5-1` — Inter-node Encryption
+- `cis-cassandra41-5-2` — Client Encryption
+- `cis-cassandra5-1-1` — Ensure a separate user and group exist for Cassandra
+- `cis-cassandra5-1-2` — Ensure the latest version of Java is installed
+- `cis-cassandra5-1-3` — Ensure the latest version of Python is installed
+- `cis-cassandra5-1-4` — Ensure latest version of Cassandra is installed
+- `cis-cassandra5-1-5` — Ensure the Cassandra service is run as a non-root user
+- `cis-cassandra5-1-6` — Ensure clocks are synchronized on all nodes
+- `cis-cassandra5-2-1` — Ensure that authentication is enabled for Cassandra databases
+- `cis-cassandra5-2-2` — Ensure that authorization is enabled for Cassandra databases
+- `cis-cassandra5-3-1` — Ensure the cassandra and superuser roles are separate
+- `cis-cassandra5-3-2` — Ensure that the default password is changed for the cassandra role
+- `cis-cassandra5-3-3` — Ensure there are no unnecessary roles or excessive privileges
+- `cis-cassandra5-3-4` — Ensure that Cassandra is run using a non-privileged, dedicated service account
+- `cis-cassandra5-3-5` — Ensure that Cassandra only listens for network connections on authorized interfaces
+- `cis-cassandra5-3-6` — Ensure that Data Center Authorizations is activated
+- `cis-cassandra5-3-7` — Review User-Defined Roles
+- `cis-cassandra5-3-8` — Review Superuser/Admin Roles
+- `cis-cassandra5-4-1` — Ensure that logging is enabled
+- `cis-cassandra5-4-2` — Ensure that auditing is enabled
+- `cis-cassandra5-5-1` — Inter-node Encryption
+- `cis-cassandra5-5-2` — Client Encryption
+- `cis-docker-1-1-1` — Ensure a separate partition for containers has been created
+- `cis-docker-1-1-10` — Ensure auditing is configured for Docker files and directories - /etc/default/docker
+- `cis-docker-1-1-11` — Ensure auditing is configured for Docker files and directories - /etc/docker/daemon.json
+- `cis-docker-1-1-12` — Ensure auditing is configured for Docker files and directories - /etc/containerd/config.toml
+- `cis-docker-1-1-13` — Ensure auditing is configured for Docker files and directories - /etc/sysconfig/docker
+- `cis-docker-1-1-14` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd
+- `cis-docker-1-1-15` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim
+- `cis-docker-1-1-16` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim-runc-v1
+- `cis-docker-1-1-17` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim-runc-v2
+- `cis-docker-1-1-18` — Ensure auditing is configured for Docker files and directories - /usr/bin/runc
+- `cis-docker-1-1-2` — Ensure only trusted users are allowed to control Docker daemon
+- `cis-docker-1-1-3` — Ensure auditing is configured for the Docker daemon
+- `cis-docker-1-1-4` — Ensure auditing is configured for Docker files and directories - /run/containerd
+- `cis-docker-1-1-5` — Ensure auditing is configured for Docker files and directories - /var/lib/docker
+- `cis-docker-1-1-6` — Ensure auditing is configured for Docker files and directories - /etc/docker
+- `cis-docker-1-1-7` — Ensure auditing is configured for Docker files and directories - docker.service
+- `cis-docker-1-1-8` — Ensure auditing is configured for Docker files and directories - containerd.sock
+- `cis-docker-1-1-9` — Ensure auditing is configured for Docker files and directories - docker.sock
+- `cis-docker-1-2-1` — Ensure the container host has been Hardened
+- `cis-docker-1-2-2` — Ensure that the version of Docker is up to date
+- `cis-docker-2-1` — Run the Docker daemon as a non-root user, if possible
+- `cis-docker-2-10` — Enable user namespace support
+- `cis-docker-2-11` — Ensure the default cgroup usage has been confirmed
+- `cis-docker-2-12` — Ensure base device size is not changed until needed
+- `cis-docker-2-13` — Ensure that authorization for Docker client commands is enabled
+- `cis-docker-2-14` — Ensure centralized and remote logging is configured
+- `cis-docker-2-15` — Ensure containers are restricted from acquiring new privileges
+- `cis-docker-2-16` — Ensure live restore is enabled
+- `cis-docker-2-17` — Ensure Userland Proxy is Disabled
+- `cis-docker-2-18` — Ensure that a daemon-wide custom seccomp profile is applied if appropriate
+- `cis-docker-2-19` — Ensure that experimental features are not implemented in production
+- `cis-docker-2-2` — Ensure network traffic is restricted between containers on the default bridge
+- `cis-docker-2-3` — Ensure the logging level is set to 'info'
+- `cis-docker-2-4` — Ensure Docker is allowed to make changes to iptables
+- `cis-docker-2-5` — Ensure insecure registries are not used
+- `cis-docker-2-6` — Ensure aufs storage driver is not used
+- `cis-docker-2-7` — Ensure devicemapper storage driver is not used
+- `cis-docker-2-8` — Ensure TLS authentication for Docker daemon is configured
+- `cis-docker-2-9` — Ensure the default ulimit is configured appropriately
+- `cis-docker-3-1` — Ensure that the docker.service file ownership is set to root:root
+- `cis-docker-3-10` — Ensure that TLS CA certificate file permissions are set to 444 or more restrictively
+- `cis-docker-3-11` — Ensure that Docker server certificate file ownership is set to root:root
+- `cis-docker-3-12` — Ensure that the Docker server certificate file permissions are set to 444 or more restrictively
+- `cis-docker-3-13` — Ensure that the Docker server certificate key file ownership is set to root:root
+- `cis-docker-3-14` — Ensure that the Docker server certificate key file permissions are set to 400
+- `cis-docker-3-15` — Ensure that the Docker socket file ownership is set to root:docker
+- `cis-docker-3-16` — Ensure that the Docker socket file permissions are set to 660 or more restrictively
+- `cis-docker-3-17` — Ensure that the daemon.json file ownership is set to root:root
+- `cis-docker-3-18` — Ensure that daemon.json file permissions are set to 644 or more restrictive
+- `cis-docker-3-19` — Ensure that the /etc/default/docker file ownership is set to root:root
+- `cis-docker-3-2` — Ensure that docker.service file permissions are appropriately set
+- `cis-docker-3-20` — Ensure that the /etc/default/docker file permissions are set to 644 or more restrictively
+- `cis-docker-3-21` — Ensure that the /etc/sysconfig/docker file permissions are set to 644 or more restrictively
+- `cis-docker-3-22` — Ensure that the /etc/sysconfig/docker file ownership is set to root:root
+- `cis-docker-3-23` — Ensure that the Containerd socket file ownership is set to root:root
+- `cis-docker-3-24` — Ensure that the Containerd socket file permissions are set to 660 or more restrictively
+- `cis-docker-3-3` — Ensure that docker.socket file ownership is set to root:root
+- `cis-docker-3-4` — Ensure that docker.socket file permissions are set to 644 or more restrictive
+- `cis-docker-3-5` — Ensure that the /etc/docker directory ownership is set to root:root
+- `cis-docker-3-6` — Ensure that /etc/docker directory permissions are set to 755 or more restrictively
+- `cis-docker-3-7` — Ensure that registry certificate file ownership is set to root:root
+- `cis-docker-3-8` — Ensure that registry certificate file permissions are set to 444 or more restrictively
+- `cis-docker-3-9` — Ensure that TLS CA certificate file ownership is set to root:root
+- `cis-docker-4-1` — Ensure that a user for the container has been created
+- `cis-docker-4-10` — Ensure secrets are not stored in Dockerfiles
+- `cis-docker-4-11` — Ensure only verified packages are installed
+- `cis-docker-4-12` — Ensure all signed artifacts are validated
+- `cis-docker-4-2` — Ensure that containers use only trusted base images
+- `cis-docker-4-3` — Ensure that unnecessary packages are not installed in the container
+- `cis-docker-4-4` — Ensure images are scanned and rebuilt to include security patches
+- `cis-docker-4-5` — Ensure Content trust for Docker is Enabled
+- `cis-docker-4-6` — Ensure that HEALTHCHECK instructions have been added to container images
+- `cis-docker-4-7` — Ensure update instructions are not used alone in Dockerfiles
+- `cis-docker-4-8` — Ensure setuid and setgid permissions are removed
+- `cis-docker-4-9` — Ensure that COPY is used instead of ADD in Dockerfiles
+- `cis-docker-5-1` — Ensure swarm mode is not Enabled, if not needed
+- `cis-docker-5-10` — Ensure that the host's network namespace is not shared
+- `cis-docker-5-11` — Ensure that the memory usage for containers is limited
+- `cis-docker-5-12` — Ensure that CPU priority is set appropriately on containers
+- `cis-docker-5-13` — Ensure that the container's root filesystem is mounted as read only
+- `cis-docker-5-14` — Ensure that incoming container traffic is bound to a specific host interface
+- `cis-docker-5-15` — Ensure that the 'on-failure' container restart policy is set to '5'
+- `cis-docker-5-16` — Ensure that the host's process namespace is not shared
+- `cis-docker-5-17` — Ensure that the host's IPC namespace is not shared
+- `cis-docker-5-18` — Ensure that host devices are not directly exposed to containers
+- `cis-docker-5-19` — Ensure that the default ulimit is overwritten at runtime if needed
+- `cis-docker-5-2` — Ensure that, if applicable, an AppArmor Profile is enabled
+- `cis-docker-5-20` — Ensure mount propagation mode is not set to shared
+- `cis-docker-5-21` — Ensure that the host's UTS namespace is not shared
+- `cis-docker-5-22` — Ensure the default seccomp profile is not Disabled
+- `cis-docker-5-23` — Ensure that docker exec commands are not used with the privileged option
+- `cis-docker-5-24` — Ensure that docker exec commands are not used with the user=root option
+- `cis-docker-5-25` — Ensure that cgroup usage is confirmed
+- `cis-docker-5-26` — Ensure that the container is restricted from acquiring additional privileges
+- `cis-docker-5-27` — Ensure that container health is checked at runtime
+- `cis-docker-5-28` — Ensure that Docker commands always make use of the latest version of their image
+- `cis-docker-5-29` — Ensure that the PIDs cgroup limit is used
+- `cis-docker-5-3` — Ensure that, if applicable, SELinux security options are set
+- `cis-docker-5-30` — Ensure that Docker's default bridge docker0 is not used
+- `cis-docker-5-31` — Ensure that the host's user namespaces are not shared
+- `cis-docker-5-32` — Ensure that the Docker socket is not mounted inside any containers
+- `cis-docker-5-4` — Ensure that Linux kernel capabilities are restricted within containers
+- `cis-docker-5-5` — Ensure that privileged containers are not used
+- `cis-docker-5-6` — Ensure sensitive host system directories are not mounted on containers
+- `cis-docker-5-7` — Ensure sshd is not run within containers
+- `cis-docker-5-8` — Ensure privileged ports are not mapped within containers
+- `cis-docker-5-9` — Ensure that only needed ports are open on the container
+- `cis-docker-6-1` — Ensure that image sprawl is avoided
+- `cis-docker-6-2` — Ensure that container sprawl is avoided
+- `cis-docker-7-1` — Ensure that the minimum number of manager nodes have been created in a swarm
+- `cis-docker-7-2` — Ensure that swarm services are bound to a specific host interface
+- `cis-docker-7-3` — Ensure that all Docker swarm overlay networks are encrypted
+- `cis-docker-7-4` — Ensure that Docker's secret management commands are used for managing secrets in a swarm cluster
+- `cis-docker-7-5` — Ensure that swarm manager is run in auto-lock mode
+- `cis-docker-7-6` — Ensure that the swarm manager auto-lock key is rotated periodically
+- `cis-docker-7-7` — Ensure that node certificates are rotated as appropriate
+- `cis-docker-7-8` — Ensure that CA certificates are rotated as appropriate
+- `cis-docker-7-9` — Ensure that management plane traffic is separated from data plane traffic
+- `cis-docker-v160-1-1-1` — Ensure a separate partition for containers has been created
+- `cis-docker-v160-1-1-10` — Ensure auditing is configured for Docker files and directories - /etc/default/docker
+- `cis-docker-v160-1-1-11` — Ensure auditing is configured for Docker files and directories - /etc/docker/daemon.json
+- `cis-docker-v160-1-1-12` — Ensure auditing is configured for Docker files and directories - /etc/containerd/config.toml
+- `cis-docker-v160-1-1-13` — Ensure auditing is configured for Docker files and directories - /etc/sysconfig/docker
+- `cis-docker-v160-1-1-14` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd
+- `cis-docker-v160-1-1-15` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim
+- `cis-docker-v160-1-1-16` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim-runc-v1
+- `cis-docker-v160-1-1-17` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim-runc-v2
+- `cis-docker-v160-1-1-18` — Ensure auditing is configured for Docker files and directories - /usr/bin/runc
+- `cis-docker-v160-1-1-2` — Ensure only trusted users are allowed to control Docker daemon
+- `cis-docker-v160-1-1-3` — Ensure auditing is configured for the Docker daemon
+- `cis-docker-v160-1-1-4` — Ensure auditing is configured for Docker files and directories - /run/containerd
+- `cis-docker-v160-1-1-5` — Ensure auditing is configured for Docker files and directories - /var/lib/docker
+- `cis-docker-v160-1-1-6` — Ensure auditing is configured for Docker files and directories - /etc/docker
+- `cis-docker-v160-1-1-7` — Ensure auditing is configured for Docker files and directories - docker.service
+- `cis-docker-v160-1-1-8` — Ensure auditing is configured for Docker files and directories - containerd.sock
+- `cis-docker-v160-1-1-9` — Ensure auditing is configured for Docker files and directories - docker.socket
+- `cis-docker-v160-1-2-1` — Ensure the container host has been Hardened
+- `cis-docker-v160-1-2-2` — Ensure that the version of Docker is up to date
+- `cis-docker-v160-2-1` — Run the Docker daemon as a non-root user, if possible
+- `cis-docker-v160-2-10` — Ensure the default cgroup usage has been confirmed
+- `cis-docker-v160-2-11` — Ensure base device size is not changed until needed
+- `cis-docker-v160-2-12` — Ensure that authorization for Docker client commands is enabled
+- `cis-docker-v160-2-13` — Ensure centralized and remote logging is configured
+- `cis-docker-v160-2-14` — Ensure containers are restricted from acquiring new privileges
+- `cis-docker-v160-2-15` — Ensure live restore is enabled
+- `cis-docker-v160-2-16` — Ensure Userland Proxy is Disabled
+- `cis-docker-v160-2-17` — Ensure that a daemon-wide custom seccomp profile is applied if appropriate
+- `cis-docker-v160-2-18` — Ensure that experimental features are not implemented in production
+- `cis-docker-v160-2-2` — Ensure network traffic is restricted between containers on the default bridge
+- `cis-docker-v160-2-3` — Ensure the logging level is set to 'info'
+- `cis-docker-v160-2-4` — Ensure Docker is allowed to make changes to iptables
+- `cis-docker-v160-2-5` — Ensure insecure registries are not used
+- `cis-docker-v160-2-6` — Ensure aufs storage driver is not used
+- `cis-docker-v160-2-7` — Ensure TLS authentication for Docker daemon is configured
+- `cis-docker-v160-2-8` — Ensure the default ulimit is configured appropriately
+- `cis-docker-v160-2-9` — Enable user namespace support
+- `cis-docker-v170-1-1-1` — Ensure a separate partition for containers has been created
+- `cis-docker-v170-1-1-10` — Ensure auditing is configured for Docker files and directories - /etc/default/docker
+- `cis-docker-v170-1-1-11` — Ensure auditing is configured for Docker files and directories - /etc/docker/daemon.json
+- `cis-docker-v170-1-1-12` — Ensure auditing is configured for Docker files and directories - /etc/containerd/config.toml
+- `cis-docker-v170-1-1-13` — Ensure auditing is configured for Docker files and directories - /etc/sysconfig/docker
+- `cis-docker-v170-1-1-14` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd
+- `cis-docker-v170-1-1-15` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim
+- `cis-docker-v170-1-1-16` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim-runc-v1
+- `cis-docker-v170-1-1-17` — Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim-runc-v2
+- `cis-docker-v170-1-1-18` — Ensure auditing is configured for Docker files and directories - /usr/bin/runc
+- `cis-docker-v170-1-1-2` — Ensure only trusted users are allowed to control Docker daemon
+- `cis-docker-v170-1-1-3` — Ensure auditing is configured for the Docker daemon
+- `cis-docker-v170-1-1-4` — Ensure auditing is configured for Docker files and directories - /run/containerd
+- `cis-docker-v170-1-1-5` — Ensure auditing is configured for Docker files and directories - /var/lib/docker
+- `cis-docker-v170-1-1-6` — Ensure auditing is configured for Docker files and directories - /etc/docker
+- `cis-docker-v170-1-1-7` — Ensure auditing is configured for Docker files and directories - docker.service
+- `cis-docker-v170-1-1-8` — Ensure auditing is configured for Docker files and directories - containerd.sock
+- `cis-docker-v170-1-1-9` — Ensure auditing is configured for Docker files and directories - docker.sock
+- `cis-docker-v170-1-2-1` — Ensure the container host has been Hardened
+- `cis-docker-v170-1-2-2` — Ensure that the version of Docker is up to date
+- `cis-docker-v170-2-1` — Run the Docker daemon as a non-root user, if possible
+- `cis-docker-v170-2-10` — Ensure the default cgroup usage has been confirmed
+- `cis-docker-v170-2-11` — Ensure base device size is not changed until needed
+- `cis-docker-v170-2-12` — Ensure that authorization for Docker client commands is enabled
+- `cis-docker-v170-2-13` — Ensure centralized and remote logging is configured
+- `cis-docker-v170-2-14` — Ensure containers are restricted from acquiring new privileges
+- `cis-docker-v170-2-15` — Ensure live restore is enabled
+- `cis-docker-v170-2-16` — Ensure Userland Proxy is Disabled
+- `cis-docker-v170-2-17` — Ensure that a daemon-wide custom seccomp profile is applied if appropriate
+- `cis-docker-v170-2-18` — Ensure that experimental features are not implemented in production
+- `cis-docker-v170-2-2` — Ensure network traffic is restricted between containers on the default bridge
+- `cis-docker-v170-2-3` — Ensure the logging level is set to 'info'
+- `cis-docker-v170-2-4` — Ensure Docker is allowed to make changes to iptables
+- `cis-docker-v170-2-5` — Ensure insecure registries are not used
+- `cis-docker-v170-2-6` — Ensure aufs storage driver is not used
+- `cis-docker-v170-2-7` — Ensure TLS authentication for Docker daemon is configured
+- `cis-docker-v170-2-8` — Ensure the default ulimit is configured appropriately
+- `cis-docker-v170-2-9` — Enable user namespace support
+- `cis-docker-v170-3-1` — Ensure that the docker.service file ownership is set to root:root
+- `cis-docker-v170-3-10` — Ensure that TLS CA certificate file permissions are set to 444 or more restrictively
+- `cis-docker-v170-3-11` — Ensure that Docker server certificate file ownership is set to root:root
+- `cis-docker-v170-3-12` — Ensure that the Docker server certificate file permissions are set to 444 or more restrictively
+- `cis-docker-v170-3-13` — Ensure that the Docker server certificate key file ownership is set to root:root
+- `cis-docker-v170-3-14` — Ensure that the Docker server certificate key file permissions are set to 400
+- `cis-docker-v170-3-15` — Ensure that the Docker socket file ownership is set to root:docker
+- `cis-docker-v170-3-16` — Ensure that the Docker socket file permissions are set to 660 or more restrictively
+- `cis-docker-v170-3-17` — Ensure that the daemon.json file ownership is set to root:root
+- `cis-docker-v170-3-18` — Ensure that daemon.json file permissions are set to 644 or more restrictive
+- `cis-docker-v170-3-19` — Ensure that the /etc/default/docker file ownership is set to root:root
+- `cis-docker-v170-3-2` — Ensure that docker.service file permissions are appropriately set
+- `cis-docker-v170-3-20` — Ensure that the /etc/default/docker file permissions are set to 644 or more restrictively
+- `cis-docker-v170-3-21` — Ensure that the /etc/sysconfig/docker file permissions are set to 644 or more restrictively
+- `cis-docker-v170-3-22` — Ensure that the /etc/sysconfig/docker file ownership is set to root:root
+- `cis-docker-v170-3-23` — Ensure that the Containerd socket file ownership is set to root:root
+- `cis-docker-v170-3-24` — Ensure that the Containerd socket file permissions are set to 660 or more restrictively
+- `cis-docker-v170-3-3` — Ensure that docker.socket file ownership is set to root:root
+- `cis-docker-v170-3-4` — Ensure that docker.socket file permissions are set to 644 or more restrictive
+- `cis-docker-v170-3-5` — Ensure that the /etc/docker directory ownership is set to root:root
+- `cis-docker-v170-3-6` — Ensure that /etc/docker directory permissions are set to 755 or more restrictively
+- `cis-docker-v170-3-7` — Ensure that registry certificate file ownership is set to root:root
+- `cis-docker-v170-3-8` — Ensure that registry certificate file permissions are set to 444 or more restrictively
+- `cis-docker-v170-3-9` — Ensure that TLS CA certificate file ownership is set to root:root
+- `cis-docker-v170-4-1` — Ensure that a user for the container has been created
+- `cis-docker-v170-4-10` — Ensure secrets are not stored in Dockerfiles
+- `cis-docker-v170-4-11` — Ensure only verified packages are installed
+- `cis-docker-v170-4-12` — Ensure all signed artifacts are validated
+- `cis-docker-v170-4-2` — Ensure that containers use only trusted base images
+- `cis-docker-v170-4-3` — Ensure that unnecessary packages are not installed in the container
+- `cis-docker-v170-4-4` — Ensure images are scanned and rebuilt to include security patches
+- `cis-docker-v170-4-5` — Ensure Content trust for Docker is Enabled
+- `cis-docker-v170-4-6` — Ensure that HEALTHCHECK instructions have been added to container images
+- `cis-docker-v170-4-7` — Ensure update instructions are not used alone in Dockerfiles
+- `cis-docker-v170-4-8` — Ensure setuid and setgid permissions are removed
+- `cis-docker-v170-4-9` — Ensure that COPY is used instead of ADD in Dockerfiles
+- `cis-docker-v170-5-1` — Ensure swarm mode is not Enabled, if not needed
+- `cis-docker-v170-5-10` — Ensure that the host's network namespace is not shared
+- `cis-docker-v170-5-11` — Ensure that the memory usage for containers is limited
+- `cis-docker-v170-5-12` — Ensure that CPU priority is set appropriately on containers
+- `cis-docker-v170-5-13` — Ensure that the container's root filesystem is mounted as read only
+- `cis-docker-v170-5-14` — Ensure that incoming container traffic is bound to a specific host interface
+- `cis-docker-v170-5-15` — Ensure that the 'on-failure' container restart policy is set to '5'
+- `cis-docker-v170-5-16` — Ensure that the host's process namespace is not shared
+- `cis-docker-v170-5-17` — Ensure that the host's IPC namespace is not shared
+- `cis-docker-v170-5-18` — Ensure that host devices are not directly exposed to containers
+- `cis-docker-v170-5-19` — Ensure that the default ulimit is overwritten at runtime if needed
+- `cis-docker-v170-5-2` — Ensure that, if applicable, an AppArmor Profile is enabled
+- `cis-docker-v170-5-20` — Ensure mount propagation mode is not set to shared
+- `cis-docker-v170-5-21` — Ensure that the host's UTS namespace is not shared
+- `cis-docker-v170-5-22` — Ensure the default seccomp profile is not Disabled
+- `cis-docker-v170-5-23` — Ensure that docker exec commands are not used with the privileged option
+- `cis-docker-v170-5-24` — Ensure that docker exec commands are not used with the user=root option
+- `cis-docker-v170-5-25` — Ensure that cgroup usage is confirmed
+- `cis-docker-v170-5-26` — Ensure that the container is restricted from acquiring additional privileges
+- `cis-docker-v170-5-27` — Ensure that container health is checked at runtime
+- `cis-docker-v170-5-28` — Ensure that Docker commands always make use of the latest version of their image
+- `cis-docker-v170-5-29` — Ensure that the PIDs cgroup limit is used
+- `cis-docker-v170-5-3` — Ensure that, if applicable, SELinux security options are set
+- `cis-docker-v170-5-30` — Ensure that Docker's default bridge docker0 is not used
+- `cis-docker-v170-5-31` — Ensure that the host's user namespaces are not shared
+- `cis-docker-v170-5-32` — Ensure that the Docker socket is not mounted inside any containers
+- `cis-docker-v170-5-4` — Ensure that Linux kernel capabilities are restricted within containers
+- `cis-docker-v170-5-5` — Ensure that privileged containers are not used
+- `cis-docker-v170-5-6` — Ensure sensitive host system directories are not mounted on containers
+- `cis-docker-v170-5-7` — Ensure sshd is not run within containers
+- `cis-docker-v170-5-8` — Ensure privileged ports are not mapped within containers
+- `cis-docker-v170-5-9` — Ensure that only needed ports are open on the container
+- `cis-docker-v170-6-1` — Ensure that image sprawl is avoided
+- `cis-docker-v170-6-2` — Ensure that container sprawl is avoided
+- `cis-docker-v170-7-1` — Ensure that the minimum number of manager nodes have been created in a swarm
+- `cis-docker-v170-7-2` — Ensure that swarm services are bound to a specific host interface
+- `cis-docker-v170-7-3` — Ensure that all Docker swarm overlay networks are encrypted
+- `cis-docker-v170-7-4` — Ensure that Docker's secret management commands are used for managing secrets in a swarm cluster
+- `cis-docker-v170-7-5` — Ensure that swarm manager is run in auto-lock mode
+- `cis-docker-v170-7-6` — Ensure that the swarm manager auto-lock key is rotated periodically
+- `cis-docker-v170-7-7` — Ensure that node certificates are rotated as appropriate
+- `cis-docker-v170-7-8` — Ensure that CA certificates are rotated as appropriate
+- `cis-docker-v170-7-9` — Ensure that management plane traffic is separated from data plane traffic
+- `cis-eks-v160-2-1-1` — Enable audit Logs (Automated)
+- `cis-eks-v160-2-1-2` — Ensure audit logs are collected and managed (Manual)
+- `cis-eks-v160-3-1-1` — Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Automated)
+- `cis-eks-v160-3-1-2` — Ensure that the kubelet kubeconfig file ownership is set to root:root (Automated)
+- `cis-eks-v160-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Automated)
+- `cis-eks-v160-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-eks-v160-3-2-1` — Ensure that the Anonymous Auth is Not Enabled (Automated)
+- `cis-eks-v160-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-eks-v160-3-2-3` — Ensure that a Client CA File is Configured (Automated)
+- `cis-eks-v160-3-2-4` — Ensure that the --read-only-port is disabled (Automated)
+- `cis-eks-v160-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-eks-v160-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-eks-v160-3-2-7` — Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-eks-v160-3-2-8` — Ensure that the --rotate-certificates argument is not present or is set to true (Automated)
+- `cis-eks-v160-3-2-9` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-eks-v160-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-eks-v160-4-1-2` — Minimize access to secrets (Automated)
+- `cis-eks-v160-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-eks-v160-4-1-4` — Minimize access to create pods (Automated)
+- `cis-eks-v160-4-1-5` — Ensure that default service accounts are not actively used (Automated)
+- `cis-eks-v160-4-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-eks-v160-4-1-7` — Cluster Access Manager API to streamline and enhance the management of access controls within EKS clusters (Automated)
+- `cis-eks-v160-4-1-8` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-eks-v160-4-2-1` — Minimize the admission of privileged containers (Automated)
+- `cis-eks-v160-4-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- `cis-eks-v160-4-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- `cis-eks-v160-4-2-4` — Minimize the admission of containers wishing to share the host network namespace (Automated)
+- `cis-eks-v160-4-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- `cis-eks-v160-4-3-1` — Ensure CNI plugin supports network policies (Manual)
+- `cis-eks-v160-4-3-2` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-eks-v160-4-4-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-eks-v160-4-4-2` — Consider external secret storage (Manual)
+- `cis-eks-v160-4-5-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-eks-v160-4-5-2` — The default namespace should not be used (Automated)
+- `cis-eks-v160-5-1-1` — Ensure Image Vulnerability Scanning using Amazon ECR image scanning or a third party provider (Automated)
+- `cis-eks-v160-5-1-2` — Minimize user access to Amazon ECR (Manual)
+- `cis-eks-v160-5-1-3` — Minimize cluster access to read-only for Amazon ECR (Manual)
+- `cis-eks-v160-5-1-4` — Minimize Container Registries to only those approved (Manual)
+- `cis-eks-v160-5-2-1` — Prefer using dedicated EKS Service Accounts (Automated)
+- `cis-eks-v160-5-3-1` — Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed in AWS KMS (Manual)
+- `cis-eks-v160-5-4-1` — Restrict Access to the Control Plane Endpoint (Automated)
+- `cis-eks-v160-5-4-2` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-eks-v160-5-4-3` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-eks-v160-5-4-4` — Ensure Network Policy is Enabled and set as appropriate (Automated)
+- `cis-eks-v160-5-4-5` — Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- `cis-eks-v160-5-5-1` — Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes or Upgrade to AWS CLI v1.16.156 or greater (Manual)
+- `cis-eks-v170-2-1-1` — Enable audit Logs (Automated)
+- `cis-eks-v170-2-1-2` — Ensure audit logs are collected and managed (Manual)
+- `cis-eks-v170-3-1-1` — Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Automated)
+- `cis-eks-v170-3-1-2` — Ensure that the kubelet kubeconfig file ownership is set to root:root (Automated)
+- `cis-eks-v170-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Automated)
+- `cis-eks-v170-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-eks-v170-3-2-1` — Ensure that the Anonymous Auth is Not Enabled (Automated)
+- `cis-eks-v170-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-eks-v170-3-2-3` — Ensure that a Client CA File is Configured (Automated)
+- `cis-eks-v170-3-2-4` — Ensure that the --read-only-port is disabled (Automated)
+- `cis-eks-v170-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-eks-v170-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-eks-v170-3-2-7` — Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-eks-v170-3-2-8` — Ensure that the --rotate-certificates argument is not present or is set to true (Automated)
+- `cis-eks-v170-3-2-9` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-eks-v170-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-eks-v170-4-1-2` — Minimize access to secrets (Automated)
+- `cis-eks-v170-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-eks-v170-4-1-4` — Minimize access to create pods (Automated)
+- `cis-eks-v170-4-1-5` — Ensure that default service accounts are not actively used (Automated)
+- `cis-eks-v170-4-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-eks-v170-4-1-7` — Cluster Access Manager API to streamline and enhance the management of access controls within EKS clusters (Automated)
+- `cis-eks-v170-4-1-8` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-eks-v170-4-2-1` — Minimize the admission of privileged containers (Automated)
+- `cis-eks-v170-4-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- `cis-eks-v170-4-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- `cis-eks-v170-4-2-4` — Minimize the admission of containers wishing to share the host network namespace (Automated)
+- `cis-eks-v170-4-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- `cis-eks-v170-4-3-1` — Ensure CNI plugin supports network policies (Manual)
+- `cis-eks-v170-4-3-2` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-eks-v170-4-4-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-eks-v170-4-4-2` — Consider external secret storage (Manual)
+- `cis-eks-v170-4-5-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-eks-v170-4-5-2` — The default namespace should not be used (Automated)
+- `cis-eks-v170-5-1-1` — Ensure Image Vulnerability Scanning using Amazon ECR image scanning or a third party provider (Automated)
+- `cis-eks-v170-5-1-2` — Minimize user access to Amazon ECR (Manual)
+- `cis-eks-v170-5-1-3` — Minimize cluster access to read-only for Amazon ECR (Manual)
+- `cis-eks-v170-5-1-4` — Minimize Container Registries to only those approved (Manual)
+- `cis-eks-v170-5-2-1` — Prefer using dedicated EKS Service Accounts (Automated)
+- `cis-eks-v170-5-3-1` — Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed in AWS KMS (Manual)
+- `cis-eks-v170-5-4-1` — Restrict Access to the Control Plane Endpoint (Automated)
+- `cis-eks-v170-5-4-2` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-eks-v170-5-4-3` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-eks-v170-5-4-4` — Ensure Network Policy is Enabled and set as appropriate (Automated)
+- `cis-eks-v170-5-4-5` — Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- `cis-eks-v170-5-5-1` — Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes or Upgrade to AWS CLI v1.16.156 or greater (Manual)
+- `cis-eks-v180-2-1-1` — Enable audit Logs (Automated)
+- `cis-eks-v180-2-1-2` — Ensure audit logs are collected and managed (Manual)
+- `cis-eks-v180-3-1-1` — Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Automated)
+- `cis-eks-v180-3-1-2` — Ensure that the kubelet kubeconfig file ownership is set to root:root (Automated)
+- `cis-eks-v180-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Automated)
+- `cis-eks-v180-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-eks-v180-3-2-1` — Ensure that the Anonymous Auth is Not Enabled (Automated)
+- `cis-eks-v180-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-eks-v180-3-2-3` — Ensure that a Client CA File is Configured (Automated)
+- `cis-eks-v180-3-2-4` — Ensure that the --read-only-port is disabled (Automated)
+- `cis-eks-v180-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-eks-v180-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-eks-v180-3-2-7` — Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-eks-v180-3-2-8` — Ensure that the --rotate-certificates argument is not present or is set to true (Automated)
+- `cis-eks-v180-3-2-9` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-eks-v180-4-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-eks-v180-4-1-10` — Minimize access to the proxy sub-resource of nodes (Manual)
+- `cis-eks-v180-4-1-11` — Minimize access to webhook configuration objects (Manual)
+- `cis-eks-v180-4-1-12` — Minimize access to the service account token creation (Manual)
+- `cis-eks-v180-4-1-2` — Minimize access to secrets (Manual)
+- `cis-eks-v180-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-eks-v180-4-1-4` — Minimize access to create pods (Manual)
+- `cis-eks-v180-4-1-5` — Ensure that default service accounts are not actively used (Manual)
+- `cis-eks-v180-4-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-eks-v180-4-1-7` — Cluster Access Manager API to streamline and enhance the management of access controls within EKS clusters (Automated)
+- `cis-eks-v180-4-1-8` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-eks-v180-4-1-9` — Minimize access to create persistent volumes (Manual)
+- `cis-eks-v180-4-2-1` — Minimize the admission of privileged containers (Manual)
+- `cis-eks-v180-4-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Manual)
+- `cis-eks-v180-4-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Manual)
+- `cis-eks-v180-4-2-4` — Minimize the admission of containers wishing to share the host network namespace (Manual)
+- `cis-eks-v180-4-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-eks-v180-4-3-1` — Ensure CNI plugin supports network policies (Manual)
+- `cis-eks-v180-4-3-2` — Ensure that all Namespaces have Network Policies defined (Manual)
+- `cis-eks-v180-4-4-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-eks-v180-4-4-2` — Consider external secret storage (Manual)
+- `cis-eks-v180-4-5-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-eks-v180-4-5-2` — The default namespace should not be used (Automated)
+- `cis-eks-v180-5-1-1` — Ensure Image Vulnerability Scanning using Amazon ECR image scanning or a third party provider (Automated)
+- `cis-eks-v180-5-1-2` — Minimize user access to Amazon ECR (Manual)
+- `cis-eks-v180-5-1-3` — Minimize cluster access to read-only for Amazon ECR (Manual)
+- `cis-eks-v180-5-1-4` — Minimize Container Registries to only those approved (Manual)
+- `cis-eks-v180-5-2-1` — Prefer using dedicated EKS Service Accounts (Automated)
+- `cis-eks-v180-5-3-1` — Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed in AWS KMS (Manual)
+- `cis-eks-v180-5-4-1` — Restrict Access to the Control Plane Endpoint (Automated)
+- `cis-eks-v180-5-4-2` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-eks-v180-5-4-3` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-eks-v180-5-4-4` — Ensure AmazonEKSNetworkingPolicy is Enabled and set as appropriate (Automated)
+- `cis-eks-v180-5-4-5` — Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- `cis-eks-v180-5-5-1` — Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes or Upgrade to AWS CLI v1.16.156 or greater (Manual)
+- `cis-gcp-cos-1-1-1-1` — Ensure mounting of udf filesystems is disabled
+- `cis-gcp-cos-1-1-10` — Ensure nodev option set on /dev/shm partition
+- `cis-gcp-cos-1-1-11` — Ensure nosuid option set on /dev/shm partition
+- `cis-gcp-cos-1-1-12` — Ensure noexec option set on /dev/shm partition
+- `cis-gcp-cos-1-1-13` — Disable Automounting
+- `cis-gcp-cos-1-1-2` — Ensure /tmp is configured
+- `cis-gcp-cos-1-1-3` — Ensure nodev option set on /tmp partition
+- `cis-gcp-cos-1-1-4` — Ensure nosuid option set on /tmp partition
+- `cis-gcp-cos-1-1-5` — Ensure noexec option set on /tmp partition
+- `cis-gcp-cos-1-1-6` — Ensure nosuid option set on /var partition
+- `cis-gcp-cos-1-1-7` — Ensure noexec option set on /var partition
+- `cis-gcp-cos-1-1-8` — Ensure nodev option set on /var partition
+- `cis-gcp-cos-1-1-9` — Ensure nodev option set on /home partition
+- `cis-gcp-cos-1-2-1` — Ensure dm-verity is enabled
+- `cis-gcp-cos-1-3-1` — Ensure authentication required for single user mode
+- `cis-gcp-cos-1-4-1` — Ensure core dumps are restricted
+- `cis-gcp-cos-1-4-2` — Ensure XD/NX support is enabled
+- `cis-gcp-cos-1-4-3` — Ensure address space layout randomization (ASLR) is enabled
+- `cis-gcp-cos-1-5-1-1` — Ensure message of the day is configured properly
+- `cis-gcp-cos-1-5-1-2` — Ensure local login warning banner is configured properly
+- `cis-gcp-cos-1-5-1-3` — Ensure remote login warning banner is configured properly
+- `cis-gcp-cos-1-5-1-4` — Ensure permissions on /etc/motd are configured
+- `cis-gcp-cos-1-5-1-5` — Ensure permissions on /etc/issue are configured
+- `cis-gcp-cos-1-5-1-6` — Ensure permissions on /etc/issue.net are configured
+- `cis-gcp-cos-1-6` — Ensure AppArmor is installed
+- `cis-gcp-cos-2-1-1-1` — Ensure time synchronization is in use
+- `cis-gcp-cos-2-1-1-2` — Ensure chrony is configured
+- `cis-gcp-cos-2-1-2` — Ensure X Window System is not installed
+- `cis-gcp-cos-2-1-3` — Ensure NFS and RPC are not enabled
+- `cis-gcp-cos-2-1-4` — Ensure rsync service is not enabled
+- `cis-gcp-cos-3-1-1` — Ensure packet redirect sending is disabled
+- `cis-gcp-cos-3-2-1` — Ensure source routed packets are not accepted
+- `cis-gcp-cos-3-2-2` — Ensure ICMP redirects are not accepted
+- `cis-gcp-cos-3-2-3` — Ensure secure ICMP redirects are not accepted
+- `cis-gcp-cos-3-2-4` — Ensure suspicious packets are logged
+- `cis-gcp-cos-3-2-5` — Ensure broadcast ICMP requests are ignored
+- `cis-gcp-cos-3-2-6` — Ensure bogus ICMP responses are ignored
+- `cis-gcp-cos-3-2-7` — Ensure Reverse Path Filtering is enabled
+- `cis-gcp-cos-3-2-8` — Ensure TCP SYN Cookies is enabled
+- `cis-gcp-cos-3-2-9` — Ensure IPv6 router advertisements are not accepted
+- `cis-gcp-cos-3-3-1-1` — Ensure IPv6 default deny firewall policy
+- `cis-gcp-cos-3-3-1-2` — Ensure IPv6 loopback traffic is configured
+- `cis-gcp-cos-3-3-1-3` — Ensure IPv6 outbound and established connections are configured
+- `cis-gcp-cos-3-3-1-4` — Ensure IPv6 firewall rules exist for all open ports
+- `cis-gcp-cos-3-3-2-1` — Ensure default deny firewall policy
+- `cis-gcp-cos-3-3-2-2` — Ensure loopback traffic is configured
+- `cis-gcp-cos-3-3-2-3` — Ensure outbound and established connections are configured
+- `cis-gcp-cos-3-3-3` — Ensure iptables is installed
+- `cis-gcp-cos-4-1-1-1` — Ensure correct container image is set for stackdriver logging agent
+- `cis-gcp-cos-4-1-1-2` — Ensure Logging Service is Running
+- `cis-gcp-cos-4-1-1-3` — Ensure logging is configured
+- `cis-gcp-cos-4-1-2-1` — Ensure journald is configured to compress large log files
+- `cis-gcp-cos-4-1-2-2` — Ensure journald is configured to write logfiles to persistent disk
+- `cis-gcp-cos-4-1-3` — Ensure permissions on all logfiles are configured
+- `cis-gcp-cos-4-2` — Ensure logrotate is configured
+- `cis-gcp-cos-5-1-1` — Ensure permissions on /etc/ssh/sshd_config are configured
+- `cis-gcp-cos-5-1-10` — Ensure SSH root login is disabled
+- `cis-gcp-cos-5-1-11` — Ensure SSH PermitEmptyPasswords is disabled
+- `cis-gcp-cos-5-1-12` — Ensure SSH PermitUserEnvironment is disabled
+- `cis-gcp-cos-5-1-13` — Ensure only strong Ciphers are used
+- `cis-gcp-cos-5-1-14` — Ensure only strong MAC algorithms are used
+- `cis-gcp-cos-5-1-15` — Ensure only strong Key Exchange algorithms are used
+- `cis-gcp-cos-5-1-16` — Ensure SSH Idle Timeout Interval is configured
+- `cis-gcp-cos-5-1-17` — Ensure SSH LoginGraceTime is set to one minute or less
+- `cis-gcp-cos-5-1-18` — Ensure SSH warning banner is configured
+- `cis-gcp-cos-5-1-19` — Ensure SSH PAM is enabled
+- `cis-gcp-cos-5-1-2` — Ensure permissions on SSH private host key files are configured
+- `cis-gcp-cos-5-1-20` — Ensure SSH AllowTcpForwarding is disabled
+- `cis-gcp-cos-5-1-21` — Ensure SSH MaxStartups is configured
+- `cis-gcp-cos-5-1-22` — Ensure SSH MaxSessions is set to 4 or less
+- `cis-gcp-cos-5-1-3` — Ensure permissions on SSH public host key files are configured
+- `cis-gcp-cos-5-1-4` — Ensure SSH Protocol is set to 2
+- `cis-gcp-cos-5-1-5` — Ensure SSH LogLevel is appropriate
+- `cis-gcp-cos-5-1-6` — Ensure SSH X11 forwarding is disabled
+- `cis-gcp-cos-5-1-7` — Ensure SSH MaxAuthTries is set to 4 or less
+- `cis-gcp-cos-5-1-8` — Ensure SSH IgnoreRhosts is enabled
+- `cis-gcp-cos-5-1-9` — Ensure SSH HostbasedAuthentication is disabled
+- `cis-gcp-cos-5-2-1` — Ensure password creation requirements are configured
+- `cis-gcp-cos-5-2-2` — Ensure password reuse is limited
+- `cis-gcp-cos-5-2-3` — Ensure password hashing algorithm is SHA-512
+- `cis-gcp-cos-5-3-1-1` — Ensure password expiration is 365 days or less
+- `cis-gcp-cos-5-3-1-2` — Ensure minimum days between password changes is 7 or more
+- `cis-gcp-cos-5-3-1-3` — Ensure password expiration warning days is 7 or more
+- `cis-gcp-cos-5-3-1-4` — Ensure inactive password lock is 30 days or less
+- `cis-gcp-cos-5-3-1-5` — Ensure all users last password change date is in the past
+- `cis-gcp-cos-5-3-2` — Ensure system accounts are secured
+- `cis-gcp-cos-5-3-3` — Ensure default group for the root account is GID 0
+- `cis-gcp-cos-5-3-4` — Ensure default user umask is 027 or more restrictive
+- `cis-gcp-cos-5-3-5` — Ensure default user shell timeout is 900 seconds or less
+- `cis-gcp-cos-5-4` — Ensure root login is restricted to system console
+- `cis-gcp-cos-5-5` — Ensure access to the su command is restricted
+- `cis-gcp-cos-6-1-1` — Ensure permissions on /etc/passwd are configured
+- `cis-gcp-cos-6-1-2` — Ensure permissions on /etc/shadow are configured
+- `cis-gcp-cos-6-1-3` — Ensure permissions on /etc/group are configured
+- `cis-gcp-cos-6-1-4` — Ensure permissions on /etc/gshadow are configured
+- `cis-gcp-cos-6-1-5` — Ensure permissions on /etc/passwd- are configured
+- `cis-gcp-cos-6-1-6` — Ensure permissions on /etc/shadow- are configured
+- `cis-gcp-cos-6-1-7` — Ensure permissions on /etc/group- are configured
+- `cis-gcp-cos-6-1-8` — Ensure permissions on /etc/gshadow- are configured
+- `cis-gcp-cos-6-2-1` — Ensure password fields are not empty
+- `cis-gcp-cos-6-2-10` — Ensure users' dot files are not group or world writable
+- `cis-gcp-cos-6-2-11` — Ensure no users have .forward files
+- `cis-gcp-cos-6-2-12` — Ensure no users have .netrc files
+- `cis-gcp-cos-6-2-13` — Ensure users' .netrc Files are not group or world accessible
+- `cis-gcp-cos-6-2-14` — Ensure no users have .rhosts files
+- `cis-gcp-cos-6-2-15` — Ensure all groups in /etc/passwd exist in /etc/group
+- `cis-gcp-cos-6-2-16` — Ensure no duplicate UIDs exist
+- `cis-gcp-cos-6-2-17` — Ensure no duplicate GIDs exist
+- `cis-gcp-cos-6-2-18` — Ensure no duplicate user names exist
+- `cis-gcp-cos-6-2-19` — Ensure no duplicate group names exist
+- `cis-gcp-cos-6-2-2` — Ensure no legacy '+' entries exist in /etc/passwd
+- `cis-gcp-cos-6-2-20` — Ensure shadow group is empty
+- `cis-gcp-cos-6-2-3` — Ensure no legacy '+' entries exist in /etc/shadow
+- `cis-gcp-cos-6-2-4` — Ensure no legacy '+' entries exist in /etc/group
+- `cis-gcp-cos-6-2-5` — Ensure root is the only UID 0 account
+- `cis-gcp-cos-6-2-6` — Ensure root PATH Integrity
+- `cis-gcp-cos-6-2-7` — Ensure all users' home directories exist
+- `cis-gcp-cos-6-2-8` — Ensure users' home directories permissions are 750 or more restrictive
+- `cis-gcp-cos-6-2-9` — Ensure users own their home directories
+- `cis-gcp-foundations-1-1` — Ensure That Corporate Login Credentials Are Used
+- `cis-gcp-foundations-1-10` — Ensure KMS Encryption Keys Are Rotated Within a Period of 90 Days
+- `cis-gcp-foundations-1-11` — Ensure That Separation of Duties Is Enforced While Assigning KMS Related Roles to Users
+- `cis-gcp-foundations-1-12` — Ensure API Keys Only Exist for Active Services
+- `cis-gcp-foundations-1-13` — Ensure API Keys Are Restricted To Use by Only Specified Hosts and Apps
+- `cis-gcp-foundations-1-14` — Ensure API Keys Are Restricted to Only APIs That Application Needs Access
+- `cis-gcp-foundations-1-15` — Ensure API Keys Are Rotated Every 90 Days
+- `cis-gcp-foundations-1-16` — Ensure Essential Contacts is Configured for Organization
+- `cis-gcp-foundations-1-17` — Ensure Secrets are Not Stored in Cloud Functions Environment Variables by Using Secret Manager
+- `cis-gcp-foundations-1-2` — Ensure That Multi-Factor Authentication is Enabled for All Non-Service Accounts
+- `cis-gcp-foundations-1-3` — Ensure That Security Key Enforcement is Enabled for All Admin Accounts
+- `cis-gcp-foundations-1-4` — Ensure That There Are Only GCP-Managed Service Account Keys for Each Service Account
+- `cis-gcp-foundations-1-5` — Ensure That Service Account Has No Admin Privileges
+- `cis-gcp-foundations-1-6` — Ensure That IAM Users Are Not Assigned the Service Account User or Service Account Token Creator Roles at Project Level
+- `cis-gcp-foundations-1-7` — Ensure User-Managed/External Keys for Service Accounts Are Rotated Every 90 Days or Fewer
+- `cis-gcp-foundations-1-8` — Ensure That Separation of Duties Is Enforced While Assigning Service Account Related Roles to Users
+- `cis-gcp-foundations-1-9` — Ensure That Cloud KMS Cryptokeys Are Not Anonymously or Publicly Accessible
+- `cis-gcp-foundations-2-1` — Ensure That Cloud Audit Logging Is Configured Properly
+- `cis-gcp-foundations-2-10` — Ensure That the Log Metric Filter and Alerts Exist for Cloud Storage IAM Permission Changes
+- `cis-gcp-foundations-2-11` — Ensure That the Log Metric Filter and Alerts Exist for SQL Instance Configuration Changes
+- `cis-gcp-foundations-2-12` — Ensure That Cloud DNS Logging Is Enabled for All VPC Networks
+- `cis-gcp-foundations-2-13` — Ensure Cloud Asset Inventory Is Enabled
+- `cis-gcp-foundations-2-14` — Ensure 'Access Transparency' is 'Enabled'
+- `cis-gcp-foundations-2-15` — Ensure 'Access Approval' is 'Enabled'
+- `cis-gcp-foundations-2-16` — Ensure Logging is enabled for HTTP(S) Load Balancer
+- `cis-gcp-foundations-2-2` — Ensure That Sinks Are Configured for All Log Entries
+- `cis-gcp-foundations-2-3` — Ensure That Retention Policies on Cloud Storage Buckets Used for Exporting Logs Are Configured Using Bucket Lock
+- `cis-gcp-foundations-2-4` — Ensure Log Metric Filter and Alerts Exist for Project Ownership Assignments/Changes
+- `cis-gcp-foundations-2-5` — Ensure That the Log Metric Filter and Alerts Exist for Audit Configuration Changes
+- `cis-gcp-foundations-2-6` — Ensure That the Log Metric Filter and Alerts Exist for Custom Role Changes
+- `cis-gcp-foundations-2-7` — Ensure That the Log Metric Filter and Alerts Exist for VPC Network Firewall Rule Changes
+- `cis-gcp-foundations-2-8` — Ensure That the Log Metric Filter and Alerts Exist for VPC Network Route Changes
+- `cis-gcp-foundations-2-9` — Ensure That the Log Metric Filter and Alerts Exist for VPC Network Changes
+- `cis-gcp-foundations-3-1` — Ensure That the Default Network Does Not Exist in a Project
+- `cis-gcp-foundations-3-10` — Use Identity Aware Proxy (IAP) to Ensure Only Traffic From Google IP Addresses are Allowed
+- `cis-gcp-foundations-3-2` — Ensure Legacy Networks Do Not Exist for Older Projects
+- `cis-gcp-foundations-3-3` — Ensure That DNSSEC Is Enabled for Cloud DNS
+- `cis-gcp-foundations-3-4` — Ensure That RSASHA1 Is Not Used for the Key-Signing Key in Cloud DNS DNSSEC
+- `cis-gcp-foundations-3-5` — Ensure That RSASHA1 Is Not Used for the Zone-Signing Key in Cloud DNS DNSSEC
+- `cis-gcp-foundations-3-6` — Ensure That SSH Access Is Restricted From the Internet
+- `cis-gcp-foundations-3-7` — Ensure That RDP Access Is Restricted From the Internet
+- `cis-gcp-foundations-3-8` — Ensure That VPC Flow Logs Is Enabled for Every Subnet in a VPC Network
+- `cis-gcp-foundations-3-9` — Ensure No HTTPS or SSL Proxy Load Balancers Permit SSL Policies With Weak Cipher Suites
+- `cis-gcp-foundations-4-1` — Ensure That Instances Are Not Configured To Use the Default Service Account
+- `cis-gcp-foundations-4-10` — Ensure That App Engine Applications Enforce HTTPS Connections
+- `cis-gcp-foundations-4-11` — Ensure That Compute Instances Have Confidential Computing Enabled
+- `cis-gcp-foundations-4-12` — Ensure the Latest Operating System Updates Are Installed On Your Virtual Machines in All Projects
+- `cis-gcp-foundations-4-2` — Ensure That Instances Are Not Configured To Use the Default Service Account With Full Access to All Cloud APIs
+- `cis-gcp-foundations-4-3` — Ensure 'Block Project-Wide SSH Keys' Is Enabled for VM Instances
+- `cis-gcp-foundations-4-4` — Ensure Oslogin Is Enabled for a Project
+- `cis-gcp-foundations-4-5` — Ensure 'Enable Connecting to Serial Ports' Is Not Enabled for VM Instance
+- `cis-gcp-foundations-4-6` — Ensure That IP Forwarding Is Not Enabled on Instances
+- `cis-gcp-foundations-4-7` — Ensure VM Disks for Critical VMs Are Encrypted With Customer-Supplied Encryption Keys (CSEK)
+- `cis-gcp-foundations-4-8` — Ensure Compute Instances Are Launched With Shielded VM Enabled
+- `cis-gcp-foundations-4-9` — Ensure That Compute Instances Do Not Have Public IP Addresses
+- `cis-gcp-foundations-5-1` — Ensure That Cloud Storage Bucket Is Not Anonymously or Publicly Accessible
+- `cis-gcp-foundations-5-2` — Ensure That Cloud Storage Buckets Have Uniform Bucket-Level Access Enabled
+- `cis-gcp-foundations-6-1-1` — Ensure That a MySQL Instance Does Not Allow Anyone To Connect With Administrative Privileges
+- `cis-gcp-foundations-6-1-2` — Ensure 'Skip_show_database' Database Flag for Cloud SQL MySQL Instance Is Set to 'On'
+- `cis-gcp-foundations-6-1-3` — Ensure That the 'Local_infile' Database Flag for a Cloud SQL MySQL Instance Is Set to 'Off'
+- `cis-gcp-foundations-6-2-1` — Ensure 'Log_error_verbosity' Database Flag for Cloud SQL PostgreSQL Instance Is Set to 'DEFAULT' or Stricter
+- `cis-gcp-foundations-6-2-2` — Ensure 'Log_connections' Database Flag for Cloud SQL PostgreSQL Instance Is Set to 'On'
+- `cis-gcp-foundations-6-2-3` — Ensure 'Log_disconnections' Database Flag for Cloud SQL PostgreSQL Instance Is Set to 'On'
+- `cis-gcp-foundations-6-2-4` — Ensure 'Log_statement' Database Flag for Cloud SQL PostgreSQL Instance Is Set Appropriately
+- `cis-gcp-foundations-6-2-5` — Ensure That the 'Log_min_messages' Flag for a Cloud SQL PostgreSQL Instance Is Set at Minimum to 'Warning'
+- `cis-gcp-foundations-6-2-6` — Ensure 'Log_min_error_statement' Database Flag for Cloud SQL PostgreSQL Instance Is Set to 'Error' or Stricter
+- `cis-gcp-foundations-6-2-7` — Ensure 'Log_min_duration_statement' Database Flag for Cloud SQL PostgreSQL Instance Is Set to '-1' (Disabled)
+- `cis-gcp-foundations-6-2-8` — Ensure 'cloudsql.enable_pgaudit' Database Flag for each Cloud SQL PostgreSQL Instance Is Set to 'on' For Centralized Logging
+- `cis-gcp-foundations-6-3-1` — Ensure 'external scripts enabled' Database Flag for Cloud SQL SQL Server Instance Is Set to 'off'
+- `cis-gcp-foundations-6-3-2` — Ensure 'cross db ownership chaining' Database Flag for Cloud SQL SQL Server Instance Is Set to 'off'
+- `cis-gcp-foundations-6-3-3` — Ensure 'user Connections' Database Flag for Cloud SQL SQL Server Instance Is Set to a Non-limiting Value
+- `cis-gcp-foundations-6-3-4` — Ensure 'user options' Database Flag for Cloud SQL SQL Server Instance Is Not Configured
+- `cis-gcp-foundations-6-3-5` — Ensure 'remote access' Database Flag for Cloud SQL SQL Server Instance Is Set to 'off'
+- `cis-gcp-foundations-6-3-6` — Ensure '3625 (trace flag)' Database Flag for all Cloud SQL SQL Server Instances Is Set to 'on'
+- `cis-gcp-foundations-6-3-7` — Ensure 'contained database authentication' Database Flag for Cloud SQL SQL Server Instance Is Set to 'off'
+- `cis-gcp-foundations-6-4` — Ensure That the Cloud SQL Database Instance Requires All Incoming Connections To Use SSL
+- `cis-gcp-foundations-6-5` — Ensure That Cloud SQL Database Instances Do Not Implicitly Whitelist All Public IP Addresses
+- `cis-gcp-foundations-6-6` — Ensure That Cloud SQL Database Instances Do Not Have Public IPs
+- `cis-gcp-foundations-6-7` — Ensure That Cloud SQL Database Instances Are Configured With Automated Backups
+- `cis-gcp-foundations-7-1` — Ensure That BigQuery Datasets Are Not Anonymously or Publicly Accessible
+- `cis-gcp-foundations-7-2` — Ensure That All BigQuery Tables Are Encrypted With Customer-Managed Encryption Key (CMEK)
+- `cis-gcp-foundations-7-3` — Ensure That a Default Customer-Managed Encryption Key (CMEK) Is Specified for All BigQuery Data Sets
+- `cis-gcp-foundations-7-4` — Ensure all data in BigQuery has been classified
+- `cis-gcp-foundations-8-1` — Ensure That Dataproc Cluster Is Encrypted Using Customer-Managed Encryption Key
+- `cis-gke-autopilot-v100-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-gke-autopilot-v100-4-1-10` — Avoid non-default bindings to system:authenticated (Automated)
+- `cis-gke-autopilot-v100-4-1-2` — Minimize access to secrets (Automated)
+- `cis-gke-autopilot-v100-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-gke-autopilot-v100-4-1-4` — Ensure that default service accounts are not actively used (Automated)
+- `cis-gke-autopilot-v100-4-1-5` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-gke-autopilot-v100-4-1-6` — Avoid use of system:masters group (Automated)
+- `cis-gke-autopilot-v100-4-1-7` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-gke-autopilot-v100-4-1-8` — Avoid bindings to system:anonymous (Automated)
+- `cis-gke-autopilot-v100-4-1-9` — Avoid non-default bindings to system:unauthenticated (Automated)
+- `cis-gke-autopilot-v100-4-2-1` — Ensure that the cluster enforces Pod Security Standard Baseline profile or stricter for all namespaces (Manual)
+- `cis-gke-autopilot-v100-4-3-1` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-gke-autopilot-v100-4-4-1` — Consider external secret storage (Manual)
+- `cis-gke-autopilot-v100-4-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-gke-autopilot-v100-4-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-gke-autopilot-v100-4-6-2` — Ensure that the seccomp profile is set to RuntimeDefault in the pod definitions (Automated)
+- `cis-gke-autopilot-v100-4-6-3` — Apply Security Context to Pods and Containers (Manual)
+- `cis-gke-autopilot-v100-4-6-4` — The default namespace should not be used (Automated)
+- `cis-gke-autopilot-v100-5-1-1` — Ensure Image Vulnerability Scanning is enabled (Automated)
+- `cis-gke-autopilot-v100-5-1-2` — Minimize user access to Container Image repositories (Manual)
+- `cis-gke-autopilot-v100-5-1-3` — Minimize cluster access to read-only for Container Image repositories (Manual)
+- `cis-gke-autopilot-v100-5-1-4` — Ensure only trusted container images are used (Automated)
+- `cis-gke-autopilot-v100-5-2-1` — Ensure GKE clusters are not running using the Compute Engine default service account (Automated)
+- `cis-gke-autopilot-v100-5-3-1` — Ensure Kubernetes Secrets are encrypted using keys managed in Cloud KMS (Automated)
+- `cis-gke-autopilot-v100-5-4-1` — Enable VPC Flow Logs and Intranode Visibility (Automated)
+- `cis-gke-autopilot-v100-5-4-2` — Ensure Control Plane Authorized Networks is Enabled (Automated)
+- `cis-gke-autopilot-v100-5-4-3` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-gke-autopilot-v100-5-4-4` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-gke-autopilot-v100-5-4-5` — Ensure use of Google-managed SSL Certificates (Automated)
+- `cis-gke-autopilot-v100-5-5-1` — Manage Kubernetes RBAC users with Google Groups for GKE (Manual)
+- `cis-gke-autopilot-v100-5-6-1` — Enable Customer-Managed Encryption Keys (CMEK) for GKE Persistent Disks (PD) (Manual)
+- `cis-gke-autopilot-v100-5-7-1` — Enable Security Posture (Manual)
+- `cis-gke-autopilot-v120-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-gke-autopilot-v120-4-1-10` — Avoid non-default bindings to system:authenticated (Automated)
+- `cis-gke-autopilot-v120-4-1-2` — Minimize access to secrets (Automated)
+- `cis-gke-autopilot-v120-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-gke-autopilot-v120-4-1-4` — Ensure that default service accounts are not actively used (Automated)
+- `cis-gke-autopilot-v120-4-1-5` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-gke-autopilot-v120-4-1-6` — Avoid use of system:masters group (Automated)
+- `cis-gke-autopilot-v120-4-1-7` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-gke-autopilot-v120-4-1-8` — Avoid bindings to system:anonymous (Automated)
+- `cis-gke-autopilot-v120-4-1-9` — Avoid non-default bindings to system:unauthenticated (Automated)
+- `cis-gke-autopilot-v120-4-2-1` — Ensure that the cluster enforces Pod Security Standard Baseline profile or stricter for all namespaces (Manual)
+- `cis-gke-autopilot-v120-4-3-1` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-gke-autopilot-v120-4-4-1` — Consider external secret storage (Manual)
+- `cis-gke-autopilot-v120-4-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-gke-autopilot-v120-4-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-gke-autopilot-v120-4-6-2` — Ensure that the seccomp profile is set to RuntimeDefault in the pod definitions (Automated)
+- `cis-gke-autopilot-v120-4-6-3` — Apply Security Context to Pods and Containers (Manual)
+- `cis-gke-autopilot-v120-4-6-4` — The default namespace should not be used (Automated)
+- `cis-gke-autopilot-v120-5-1-1` — Ensure Image Vulnerability Scanning is enabled (Automated)
+- `cis-gke-autopilot-v120-5-1-2` — Minimize user access to Container Image repositories (Manual)
+- `cis-gke-autopilot-v120-5-1-3` — Minimize cluster access to read-only for Container Image repositories (Manual)
+- `cis-gke-autopilot-v120-5-1-4` — Ensure only trusted container images are used (Automated)
+- `cis-gke-autopilot-v120-5-2-1` — Ensure GKE clusters are not running using the Compute Engine default service account (Automated)
+- `cis-gke-autopilot-v120-5-3-1` — Ensure Kubernetes Secrets are encrypted using keys managed in Cloud KMS (Automated)
+- `cis-gke-autopilot-v120-5-4-1` — Enable VPC Flow Logs and Intranode Visibility (Automated)
+- `cis-gke-autopilot-v120-5-4-2` — Ensure Control Plane Authorized Networks is Enabled (Automated)
+- `cis-gke-autopilot-v120-5-4-3` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-gke-autopilot-v120-5-4-4` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-gke-autopilot-v120-5-4-5` — Ensure use of Google-managed SSL Certificates (Automated)
+- `cis-gke-autopilot-v120-5-5-1` — Manage Kubernetes RBAC users with Google Groups for GKE (Manual)
+- `cis-gke-autopilot-v120-5-6-1` — Enable Customer-Managed Encryption Keys (CMEK) for GKE Persistent Disks (PD) (Manual)
+- `cis-gke-autopilot-v120-5-7-1` — Enable Security Posture (Manual)
+- `cis-gke-autopilot-v130-4-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-gke-autopilot-v130-4-1-10` — Avoid non-default bindings to system:authenticated (Automated)
+- `cis-gke-autopilot-v130-4-1-2` — Minimize access to secrets (Manual)
+- `cis-gke-autopilot-v130-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-gke-autopilot-v130-4-1-4` — Ensure that default service accounts are not actively used (Automated)
+- `cis-gke-autopilot-v130-4-1-5` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-gke-autopilot-v130-4-1-6` — Avoid use of system:masters group (Automated)
+- `cis-gke-autopilot-v130-4-1-7` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-gke-autopilot-v130-4-1-8` — Avoid bindings to system:anonymous (Automated)
+- `cis-gke-autopilot-v130-4-1-9` — Avoid non-default bindings to system:unauthenticated (Automated)
+- `cis-gke-autopilot-v130-4-2-1` — Ensure that the cluster enforces Pod Security Standard Baseline profile or stricter for all namespaces (Manual)
+- `cis-gke-autopilot-v130-4-3-1` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-gke-autopilot-v130-4-4-1` — Consider external secret storage (Manual)
+- `cis-gke-autopilot-v130-4-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-gke-autopilot-v130-4-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-gke-autopilot-v130-4-6-2` — Ensure that the seccomp profile is set to RuntimeDefault in the pod definitions (Automated)
+- `cis-gke-autopilot-v130-4-6-3` — Apply Security Context to Pods and Containers (Manual)
+- `cis-gke-autopilot-v130-4-6-4` — The default namespace should not be used (Automated)
+- `cis-gke-autopilot-v130-5-1-1` — Ensure Image Vulnerability Scanning is enabled (Automated)
+- `cis-gke-autopilot-v130-5-1-2` — Minimize user access to Container Image repositories (Manual)
+- `cis-gke-autopilot-v130-5-1-3` — Minimize cluster access to read-only for Container Image repositories (Manual)
+- `cis-gke-autopilot-v130-5-1-4` — Ensure only trusted container images are used (Automated)
+- `cis-gke-autopilot-v130-5-2-1` — Ensure GKE clusters are not running using the Compute Engine default service account (Automated)
+- `cis-gke-autopilot-v130-5-3-1` — Ensure Kubernetes Secrets are encrypted using keys managed in Cloud KMS (Automated)
+- `cis-gke-autopilot-v130-5-4-1` — Enable VPC Flow Logs and Intranode Visibility (Automated)
+- `cis-gke-autopilot-v130-5-4-2` — Ensure Control Plane Authorized Networks is Enabled (Manual)
+- `cis-gke-autopilot-v130-5-4-3` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-gke-autopilot-v130-5-4-4` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-gke-autopilot-v130-5-4-5` — Ensure use of Google-managed SSL Certificates (Automated)
+- `cis-gke-autopilot-v130-5-5-1` — Manage Kubernetes RBAC users with Google Groups for GKE (Manual)
+- `cis-gke-autopilot-v130-5-6-1` — Enable Customer-Managed Encryption Keys (CMEK) for GKE Persistent Disks (PD) (Manual)
+- `cis-gke-autopilot-v130-5-7-1` — Enable Security Posture (Automated)
+- `cis-gke-v170-3-1-1` — Ensure that the proxy kubeconfig file permissions are set to 644 or more restrictive (Automated)
+- `cis-gke-v170-3-1-2` — Ensure that the proxy kubeconfig file ownership is set to root:root (Automated)
+- `cis-gke-v170-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 (Automated)
+- `cis-gke-v170-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-gke-v170-3-2-1` — Ensure that the Anonymous Auth is Not Enabled Draft (Automated)
+- `cis-gke-v170-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-gke-v170-3-2-3` — Ensure that a Client CA File is Configured (Automated)
+- `cis-gke-v170-3-2-4` — Ensure that the --read-only-port is disabled (Automated)
+- `cis-gke-v170-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-gke-v170-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-gke-v170-3-2-7` — Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-gke-v170-3-2-8` — Ensure that the --rotate-certificates argument is not present or is set to true (Automated)
+- `cis-gke-v170-3-2-9` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-gke-v170-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-gke-v170-4-1-10` — Avoid non-default bindings to system:authenticated (Automated)
+- `cis-gke-v170-4-1-2` — Minimize access to secrets (Automated)
+- `cis-gke-v170-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-gke-v170-4-1-4` — Ensure that default service accounts are not actively used (Automated)
+- `cis-gke-v170-4-1-5` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-gke-v170-4-1-6` — Avoid use of system:masters group (Automated)
+- `cis-gke-v170-4-1-7` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-gke-v170-4-1-8` — Avoid bindings to system:anonymous (Automated)
+- `cis-gke-v170-4-1-9` — Avoid non-default bindings to system:unauthenticated (Automated)
+- `cis-gke-v170-4-2-1` — Ensure that the cluster enforces Pod Security Standard Baseline profile or stricter for all namespaces (Manual)
+- `cis-gke-v170-4-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-gke-v170-4-3-2` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-gke-v170-4-4-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-gke-v170-4-4-2` — Consider external secret storage (Manual)
+- `cis-gke-v170-4-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-gke-v170-4-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-gke-v170-4-6-2` — Ensure that the seccomp profile is set to RuntimeDefault in the pod definitions (Automated)
+- `cis-gke-v170-4-6-3` — Apply Security Context to Pods and Containers (Manual)
+- `cis-gke-v170-4-6-4` — The default namespace should not be used (Automated)
+- `cis-gke-v170-5-1-1` — Ensure Image Vulnerability Scanning is enabled (Automated)
+- `cis-gke-v170-5-1-2` — Minimize user access to Container Image repositories (Manual)
+- `cis-gke-v170-5-1-3` — Minimize cluster access to read-only for Container Image repositories (Manual)
+- `cis-gke-v170-5-1-4` — Ensure only trusted container images are used (Manual)
+- `cis-gke-v170-5-10-1` — Ensure Kubernetes Web UI is Disabled (Automated)
+- `cis-gke-v170-5-10-2` — Ensure that Alpha clusters are not used for production workloads (Automated)
+- `cis-gke-v170-5-10-3` — Consider GKE Sandbox for running untrusted workloads (Automated)
+- `cis-gke-v170-5-10-4` — Ensure use of Binary Authorization (Automated)
+- `cis-gke-v170-5-10-5` — Enable Security Posture (Manual)
+- `cis-gke-v170-5-2-1` — Ensure GKE clusters are not running using the Compute Engine default service account (Automated)
+- `cis-gke-v170-5-2-2` — Prefer using dedicated GCP Service Accounts and Workload Identity (Manual)
+- `cis-gke-v170-5-3-1` — Ensure Kubernetes Secrets are encrypted using keys managed in Cloud KMS (Automated)
+- `cis-gke-v170-5-4-1` — Ensure the GKE Metadata Server is Enabled (Automated)
+- `cis-gke-v170-5-5-1` — Ensure Container-Optimized OS (cos_containerd) is used for GKE node images (Automated)
+- `cis-gke-v170-5-5-2` — Ensure Node Auto-Repair is enabled for GKE nodes (Automated)
+- `cis-gke-v170-5-5-3` — Ensure Node Auto-Upgrade is enabled for GKE nodes (Automated)
+- `cis-gke-v170-5-5-4` — When creating New Clusters - Automate GKE version management using Release Channels (Automated)
+- `cis-gke-v170-5-5-5` — Ensure Shielded GKE Nodes are Enabled (Automated)
+- `cis-gke-v170-5-5-6` — Ensure Integrity Monitoring for Shielded GKE Nodes is Enabled (Automated)
+- `cis-gke-v170-5-5-7` — Ensure Secure Boot for Shielded GKE Nodes is Enabled (Automated)
+- `cis-gke-v170-5-6-1` — Enable VPC Flow Logs and Intranode Visibility (Automated)
+- `cis-gke-v170-5-6-2` — Ensure use of VPC-native clusters (Automated)
+- `cis-gke-v170-5-6-3` — Ensure Control Plane Authorized Networks is Enabled (Automated)
+- `cis-gke-v170-5-6-4` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-gke-v170-5-6-5` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-gke-v170-5-6-6` — Consider firewalling GKE worker nodes (Manual)
+- `cis-gke-v170-5-6-7` — Ensure use of Google-managed SSL Certificates (Automated)
+- `cis-gke-v170-5-7-1` — Ensure Logging and Cloud Monitoring is Enabled (Automated)
+- `cis-gke-v170-5-7-2` — Enable Linux auditd logging (Manual)
+- `cis-gke-v170-5-8-1` — Ensure authentication using Client Certificates is Disabled (Automated)
+- `cis-gke-v170-5-8-2` — Manage Kubernetes RBAC users with Google Groups for GKE (Manual)
+- `cis-gke-v170-5-8-3` — Ensure Legacy Authorization (ABAC) is Disabled (Automated)
+- `cis-gke-v170-5-9-1` — Enable Customer-Managed Encryption Keys (CMEK) for GKE Persistent Disks (PD) (Manual)
+- `cis-gke-v170-5-9-2` — Enable Customer-Managed Encryption Keys (CMEK) for Boot Disks (Automated)
+- `cis-gke-v180-3-1-1` — Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Automated)
+- `cis-gke-v180-3-1-2` — Ensure that the kubelet kubeconfig file ownership is set to root:root (Automated)
+- `cis-gke-v180-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 (Automated)
+- `cis-gke-v180-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-gke-v180-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-gke-v180-4-1-10` — Avoid non-default bindings to system:authenticated (Automated)
+- `cis-gke-v180-4-1-2` — Minimize access to secrets (Automated)
+- `cis-gke-v180-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-gke-v180-4-1-4` — Ensure that default service accounts are not actively used (Automated)
+- `cis-gke-v180-4-1-5` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-gke-v180-4-1-6` — Avoid use of system:masters group (Automated)
+- `cis-gke-v180-4-1-7` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-gke-v180-4-1-8` — Avoid bindings to system:anonymous (Automated)
+- `cis-gke-v180-4-1-9` — Avoid non-default bindings to system:unauthenticated (Automated)
+- `cis-gke-v180-4-2-1` — Ensure that the cluster enforces Pod Security Standard Baseline profile or stricter for all namespaces (Manual)
+- `cis-gke-v180-4-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-gke-v180-4-3-2` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-gke-v180-4-4-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-gke-v180-4-4-2` — Consider external secret storage (Manual)
+- `cis-gke-v180-4-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-gke-v180-4-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-gke-v180-4-6-2` — Ensure that the seccomp profile is set to RuntimeDefault in the pod definitions (Automated)
+- `cis-gke-v180-4-6-3` — Apply Security Context to Pods and Containers (Manual)
+- `cis-gke-v180-4-6-4` — The default namespace should not be used (Automated)
+- `cis-gke-v180-5-1-1` — Ensure Image Vulnerability Scanning is enabled (Automated)
+- `cis-gke-v180-5-1-2` — Minimize user access to Container Image repositories (Manual)
+- `cis-gke-v180-5-1-3` — Minimize cluster access to read-only for Container Image repositories (Manual)
+- `cis-gke-v180-5-1-4` — Ensure only trusted container images are used (Manual)
+- `cis-gke-v180-5-10-1` — Ensure Kubernetes Web UI is Disabled (Automated)
+- `cis-gke-v180-5-10-2` — Ensure that Alpha clusters are not used for production workloads (Automated)
+- `cis-gke-v180-5-10-3` — Consider GKE Sandbox for running untrusted workloads (Automated)
+- `cis-gke-v180-5-10-4` — Enable Security Posture (Manual)
+- `cis-gke-v180-5-2-1` — Ensure GKE clusters are not running using the Compute Engine default service account (Automated)
+- `cis-gke-v180-5-2-2` — Prefer using dedicated GCP Service Accounts and Workload Identity (Manual)
+- `cis-gke-v180-5-3-1` — Ensure Kubernetes Secrets are encrypted using keys managed in Cloud KMS (Automated)
+- `cis-gke-v180-5-4-1` — Ensure the GKE Metadata Server is Enabled (Automated)
+- `cis-gke-v180-5-5-1` — Ensure Container-Optimized OS (cos_containerd) is used for GKE Node images (Automated)
+- `cis-gke-v180-5-5-2` — Ensure Node Auto-Repair is Enabled for GKE Nodes (Automated)
+- `cis-gke-v180-5-5-3` — Ensure Node Auto-Upgrade is Enabled for GKE Nodes (Automated)
+- `cis-gke-v180-5-5-4` — When creating New Clusters - Automate GKE version management using Release Channels (Automated)
+- `cis-gke-v180-5-5-5` — Ensure Shielded GKE Nodes are Enabled (Automated)
+- `cis-gke-v180-5-5-6` — Ensure Integrity Monitoring for Shielded GKE Nodes is Enabled (Automated)
+- `cis-gke-v180-5-5-7` — Ensure Secure Boot for Shielded GKE Nodes is Enabled (Automated)
+- `cis-gke-v180-5-6-1` — Enable VPC Flow Logs and Intranode Visibility (Automated)
+- `cis-gke-v180-5-6-2` — Ensure use of VPC-native clusters (Automated)
+- `cis-gke-v180-5-6-3` — Ensure Control Plane Authorized Networks is Enabled (Automated)
+- `cis-gke-v180-5-6-4` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-gke-v180-5-6-5` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-gke-v180-5-6-6` — Consider firewalling GKE worker nodes (Manual)
+- `cis-gke-v180-5-6-7` — Ensure use of Google-managed SSL Certificates (Automated)
+- `cis-gke-v180-5-7-1` — Ensure Logging and Cloud Monitoring is Enabled (Automated)
+- `cis-gke-v180-5-7-2` — Enable Linux auditd logging (Manual)
+- `cis-gke-v180-5-8-1` — Ensure authentication using Client Certificates is Disabled (Automated)
+- `cis-gke-v180-5-8-2` — Manage Kubernetes RBAC users with Google Groups for GKE (Manual)
+- `cis-gke-v180-5-8-3` — Ensure Legacy Authorization (ABAC) is Disabled (Automated)
+- `cis-gke-v180-5-9-1` — Enable Customer-Managed Encryption Keys (CMEK) for GKE Persistent Disks (PD) (Manual)
+- `cis-gke-v180-5-9-2` — Enable Customer-Managed Encryption Keys (CMEK) for Boot Disks (Automated)
+- `cis-gke-v190-3-1-1` — Ensure that the proxy kubeconfig file permissions are set to 644 or more restrictive (Automated)
+- `cis-gke-v190-3-1-2` — Ensure that the proxy kubeconfig file ownership is set to root:root (Automated)
+- `cis-gke-v190-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 (Automated)
+- `cis-gke-v190-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-gke-v190-4-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-gke-v190-4-1-10` — Avoid non-default bindings to system:authenticated (Automated)
+- `cis-gke-v190-4-1-2` — Minimize access to secrets (Manual)
+- `cis-gke-v190-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-gke-v190-4-1-4` — Ensure that default service accounts are not actively used (Automated)
+- `cis-gke-v190-4-1-5` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-gke-v190-4-1-6` — Avoid use of system:masters group (Automated)
+- `cis-gke-v190-4-1-7` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-gke-v190-4-1-8` — Avoid bindings to system:anonymous (Automated)
+- `cis-gke-v190-4-1-9` — Avoid non-default bindings to system:unauthenticated (Automated)
+- `cis-gke-v190-4-2-1` — Ensure that the cluster enforces Pod Security Standard Baseline profile or stricter for all namespaces (Manual)
+- `cis-gke-v190-4-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-gke-v190-4-3-2` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-gke-v190-4-4-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-gke-v190-4-4-2` — Consider external secret storage (Manual)
+- `cis-gke-v190-4-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-gke-v190-4-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-gke-v190-4-6-2` — Ensure that the seccomp profile is set to RuntimeDefault in the pod definitions (Automated)
+- `cis-gke-v190-4-6-3` — Apply Security Context to Pods and Containers (Manual)
+- `cis-gke-v190-4-6-4` — The default namespace should not be used (Manual)
+- `cis-gke-v190-5-1-1` — Ensure Image Vulnerability Scanning is enabled (Automated)
+- `cis-gke-v190-5-1-2` — Minimize user access to Container Image repositories (Manual)
+- `cis-gke-v190-5-1-3` — Minimize cluster access to read-only for Container Image repositories (Manual)
+- `cis-gke-v190-5-1-4` — Ensure only trusted container images are used (Manual)
+- `cis-gke-v190-5-10-1` — Ensure Kubernetes Web UI is Disabled (Automated)
+- `cis-gke-v190-5-10-2` — Ensure that Alpha clusters are not used for production workloads (Automated)
+- `cis-gke-v190-5-10-3` — Consider GKE Sandbox for running untrusted workloads (Automated)
+- `cis-gke-v190-5-10-4` — Enable Security Posture (Automated)
+- `cis-gke-v190-5-2-1` — Ensure GKE clusters are not running using the Compute Engine default service account (Automated)
+- `cis-gke-v190-5-2-2` — Prefer using dedicated GCP Service Accounts and Workload Identity (Manual)
+- `cis-gke-v190-5-3-1` — Ensure Kubernetes Secrets are encrypted using keys managed in Cloud KMS (Automated)
+- `cis-gke-v190-5-4-1` — Ensure the GKE Metadata Server is Enabled (Automated)
+- `cis-gke-v190-5-5-1` — Ensure Container-Optimized OS (cos_containerd) is used for GKE node images (Automated)
+- `cis-gke-v190-5-5-2` — Ensure Node Auto-Repair is enabled for GKE nodes (Automated)
+- `cis-gke-v190-5-5-3` — Ensure Node Auto-Upgrade is enabled for GKE nodes (Automated)
+- `cis-gke-v190-5-5-4` — When creating New Clusters - Automate GKE version management using Release Channels (Automated)
+- `cis-gke-v190-5-5-5` — Ensure Shielded GKE Nodes are Enabled (Automated)
+- `cis-gke-v190-5-5-6` — Ensure Integrity Monitoring for Shielded GKE Nodes is Enabled (Automated)
+- `cis-gke-v190-5-5-7` — Ensure Secure Boot for Shielded GKE Nodes is Enabled (Automated)
+- `cis-gke-v190-5-6-1` — Enable VPC Flow Logs and Intranode Visibility (Automated)
+- `cis-gke-v190-5-6-2` — Ensure use of VPC-native clusters (Automated)
+- `cis-gke-v190-5-6-3` — Ensure Control Plane Authorized Networks is Enabled (Automated)
+- `cis-gke-v190-5-6-4` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-gke-v190-5-6-5` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-gke-v190-5-6-6` — Consider firewalling GKE worker nodes (Manual)
+- `cis-gke-v190-5-6-7` — Ensure use of Google-managed SSL Certificates (Automated)
+- `cis-gke-v190-5-7-1` — Ensure Logging and Cloud Monitoring is Enabled (Automated)
+- `cis-gke-v190-5-7-2` — Enable Linux auditd logging (Manual)
+- `cis-gke-v190-5-8-1` — Ensure authentication using Client Certificates is Disabled (Automated)
+- `cis-gke-v190-5-8-2` — Manage Kubernetes RBAC users with groups in Google Workspace (Manual)
+- `cis-gke-v190-5-8-3` — Ensure Legacy Authorization (ABAC) is Disabled (Automated)
+- `cis-gke-v190-5-9-1` — Enable Customer-Managed Encryption Keys (CMEK) for GKE Persistent Disks (PD) (Manual)
+- `cis-gke-v190-5-9-2` — Enable Customer-Managed Encryption Keys (CMEK) for Boot Disks (Automated)
+- `cis-gworkspace-1-1-1` — Ensure more than one Super Admin account exists
+- `cis-gworkspace-1-1-2` — Ensure no more than 4 Super Admin accounts exist
+- `cis-gworkspace-1-1-3` — Ensure super admin accounts are used only for super admin activities
+- `cis-gworkspace-1-2-1-1` — Ensure directory data access is externally restricted
+- `cis-gworkspace-3-1-1-1-1` — Ensure external sharing options for primary calendars are configured
+- `cis-gworkspace-3-1-1-1-2` — Ensure internal sharing options for primary calendars are configured
+- `cis-gworkspace-3-1-1-1-3` — Ensure external invitation warnings for Google Calendar are configured
+- `cis-gworkspace-3-1-1-2-1` — Ensure external sharing options for secondary calendars are configured
+- `cis-gworkspace-3-1-1-2-2` — Ensure internal sharing options for secondary calendars are configured
+- `cis-gworkspace-3-1-1-3-1` — Ensure calendar web offline is disabled
+- `cis-gworkspace-3-1-2-1-1-1` — Ensure users are warned when they share a file outside their domain
+- `cis-gworkspace-3-1-2-1-1-2` — Ensure users cannot publish files to the web or make visible to the world as public or unlisted
+- `cis-gworkspace-3-1-2-1-1-3` — Ensure document sharing is being controlled by domain with allowlists
+- `cis-gworkspace-3-1-2-1-1-4` — Ensure users are warned when they share a file with users in an allowlisted domain
+- `cis-gworkspace-3-1-2-1-1-5` — Ensure Access Checker is configured to limit file access
+- `cis-gworkspace-3-1-2-1-1-6` — Ensure only users inside your organization can distribute content externally
+- `cis-gworkspace-3-1-2-1-2-1` — Ensure users can create new shared drives
+- `cis-gworkspace-3-1-2-1-2-2` — Ensure manager access members cannot modify shared drive settings
+- `cis-gworkspace-3-1-2-1-2-3` — Ensure shared drive file access is restricted to members only
+- `cis-gworkspace-3-1-2-1-2-4` — Ensure viewers and commenters ability to download, print, and copy files is disabled
+- `cis-gworkspace-3-1-2-2-1` — Ensure offline access to documents is disabled
+- `cis-gworkspace-3-1-2-2-2` — Ensure desktop access to Drive is disabled
+- `cis-gworkspace-3-1-2-2-3` — Ensure Add-Ons is disabled
+- `cis-gworkspace-3-1-3-1-1` — Ensure users cannot delegate access to their mailbox
+- `cis-gworkspace-3-1-3-1-2` — Ensure offline access to Gmail is disabled
+- `cis-gworkspace-3-1-3-2-1` — Ensure that DKIM is enabled for all mail enabled domains
+- `cis-gworkspace-3-1-3-2-2` — Ensure the SPF record is configured for all mail enabled domains
+- `cis-gworkspace-3-1-3-2-3` — Ensure the DMARC record is configured for all mail enabled domains
+- `cis-gworkspace-3-1-3-3-1` — Enable quarantine admin notifications for Gmail
+- `cis-gworkspace-3-1-3-4-1-1` — Ensure protection against encrypted attachments from untrusted senders is enabled
+- `cis-gworkspace-3-1-3-4-1-2` — Ensure protection against attachments with scripts from untrusted senders is enabled
+- `cis-gworkspace-3-1-3-4-1-3` — Ensure protection against anomalous attachment types in emails is enabled
+- `cis-gworkspace-3-1-3-4-2-1` — Ensure link identification behind shortened URLs is enabled
+- `cis-gworkspace-3-1-3-4-2-2` — Ensure scan linked images for malicious content is enabled
+- `cis-gworkspace-3-1-3-4-2-3` — Ensure warning prompt is shown for any click on links to untrusted domains
+- `cis-gworkspace-3-1-3-4-3-1` — Ensure protection against domain spoofing based on similar domain names is enabled
+- `cis-gworkspace-3-1-3-4-3-2` — Ensure protection against spoofing of employee names is enabled
+- `cis-gworkspace-3-1-3-4-3-3` — Ensure protection against inbound emails spoofing your domain is enabled
+- `cis-gworkspace-3-1-3-4-3-4` — Ensure protection against any unauthenticated emails is enabled
+- `cis-gworkspace-3-1-3-4-3-5` — Ensure groups are protected from inbound emails spoofing your domain
+- `cis-gworkspace-3-1-3-5-1` — Ensure POP and IMAP access is disabled for all users
+- `cis-gworkspace-3-1-3-5-2` — Ensure automatic forwarding options are disabled
+- `cis-gworkspace-3-1-3-5-3` — Ensure per-user outbound gateways is disabled
+- `cis-gworkspace-3-1-3-5-4` — Ensure external recipient warnings are enabled
+- `cis-gworkspace-3-1-3-6-1` — Ensure enhanced pre-delivery message scanning is enabled
+- `cis-gworkspace-3-1-3-6-2` — Ensure spam filters are not bypassed for internal senders
+- `cis-gworkspace-3-1-3-7-1` — Ensure comprehensive mail storage is enabled
+- `cis-gworkspace-3-1-3-7-2` — Ensure 'Send email over a secure TLS connection' Is Enabled
+- `cis-gworkspace-3-1-4-1-1` — Ensure external filesharing in Google Chat and Hangouts is disabled
+- `cis-gworkspace-3-1-4-1-2` — Ensure internal filesharing in Google Chat and Hangouts is disabled
+- `cis-gworkspace-3-1-4-2-1` — Ensure Google Chat externally is restricted to allowed domains
+- `cis-gworkspace-3-1-4-3-1` — Ensure external spaces in Google Chat and Hangouts are restricted
+- `cis-gworkspace-3-1-4-4-1` — Ensure allow users to install Chat apps is disabled
+- `cis-gworkspace-3-1-4-4-2` — Ensure allow users to add and use incoming webhooks is disabled
+- `cis-gworkspace-3-1-6-1` — Ensure accessing groups from outside this organization is set to private
+- `cis-gworkspace-3-1-6-2` — Ensure creating groups is restricted
+- `cis-gworkspace-3-1-6-3` — Ensure default for permission to view conversations is restricted
+- `cis-gworkspace-3-1-7-1` — Ensure service status for Google Sites is set to off
+- `cis-gworkspace-3-1-8-1` — Ensure access to external Google Groups is OFF for Everyone
+- `cis-gworkspace-3-1-9-1-1` — Ensure users access to Google Workspace Marketplace apps is restricted
+- `cis-gworkspace-4-1-1-1` — Ensure 2-Step Verification (MFA) is enforced for all users in administrative roles
+- `cis-gworkspace-4-1-1-2` — Ensure hardware security keys are used for all users in administrative roles and other high-value accounts
+- `cis-gworkspace-4-1-1-3` — Ensure 2-Step Verification (MFA) is enforced for all users
+- `cis-gworkspace-4-1-2-1` — Ensure Super Admin account recovery is disabled
+- `cis-gworkspace-4-1-2-2` — Ensure User account recovery is enabled
+- `cis-gworkspace-4-1-3-1` — Ensure Advanced Protection Program is configured
+- `cis-gworkspace-4-1-4-1` — Ensure login challenges are enforced
+- `cis-gworkspace-4-1-5-1` — Ensure password policy is configured for enhanced security
+- `cis-gworkspace-4-2-1-1` — Ensure application access to Google services is restricted
+- `cis-gworkspace-4-2-1-2` — Review third-party applications periodically
+- `cis-gworkspace-4-2-1-3` — Ensure internal apps can access Google Workspace APIs
+- `cis-gworkspace-4-2-1-4` — Review domain-wide delegation for applications periodically
+- `cis-gworkspace-4-2-2-1` — Ensure blocking access from unapproved geographic locations
+- `cis-gworkspace-4-2-3-1` — Ensure DLP policies for Google Drive are configured
+- `cis-gworkspace-4-2-4-1` — Ensure Google session control is configured
+- `cis-gworkspace-4-2-5-1` — Ensure Google Cloud session control is configured
+- `cis-gworkspace-4-2-6-1` — Ensure less secure app access is disabled
+- `cis-gworkspace-4-3-1` — Ensure the Dashboard is reviewed regularly for anomalies
+- `cis-gworkspace-4-3-2` — Ensure the Security health is reviewed regularly for anomalies
+- `cis-gworkspace-5-1-1-1` — Ensure the App Usage Report is reviewed regularly for anomalies
+- `cis-gworkspace-5-1-1-2` — Ensure the Security Report is reviewed regularly for anomalies
+- `cis-gworkspace-6-1` — Ensure User's password changed is configured
+- `cis-gworkspace-6-2` — Ensure Government-backed attacks is configured
+- `cis-gworkspace-6-3` — Ensure User suspended due to suspicious activity is configured
+- `cis-gworkspace-6-4` — Ensure User granted Admin privilege is configured
+- `cis-gworkspace-6-5` — Ensure Suspicious programmatic login is configured
+- `cis-gworkspace-6-6` — Ensure Suspicious login is configured
+- `cis-gworkspace-6-7` — Ensure Leaked password is configured
+- `cis-gworkspace-6-8` — Ensure Gmail potential employee spoofing is configured
+- `cis-k8s-v1110-1-1-1` — Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-1-1-10` — Ensure that the Container Network Interface file ownership is set to root:root (Manual)
+- `cis-k8s-v1110-1-1-11` — Ensure that the etcd data directory permissions are set to 700 or more restrictive (Automated)
+- `cis-k8s-v1110-1-1-12` — Ensure that the etcd data directory ownership is set to etcd:etcd (Automated)
+- `cis-k8s-v1110-1-1-13` — Ensure that the default administrative credential file permissions are set to 600 (Automated)
+- `cis-k8s-v1110-1-1-14` — Ensure that the default administrative credential file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-1-1-15` — Ensure that the scheduler.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-1-1-16` — Ensure that the scheduler.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-1-1-17` — Ensure that the controller-manager.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-1-1-18` — Ensure that the controller-manager.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-1-1-19` — Ensure that the Kubernetes PKI directory and file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-1-1-2` — Ensure that the API server pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-1-1-20` — Ensure that the Kubernetes PKI certificate file permissions are set to 644 or more restrictive (Manual)
+- `cis-k8s-v1110-1-1-21` — Ensure that the Kubernetes PKI key file permissions are set to 600 (Manual)
+- `cis-k8s-v1110-1-1-3` — Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-1-1-4` — Ensure that the controller manager pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-1-1-5` — Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-1-1-6` — Ensure that the scheduler pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-1-1-7` — Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-1-1-8` — Ensure that the etcd pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-1-1-9` — Ensure that the Container Network Interface file permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v1110-1-2-1` — Ensure that the --anonymous-auth argument is set to false (Manual)
+- `cis-k8s-v1110-1-2-10` — Ensure that the admission control plugin AlwaysAdmit is not set (Automated)
+- `cis-k8s-v1110-1-2-11` — Ensure that the admission control plugin AlwaysPullImages is set (Manual)
+- `cis-k8s-v1110-1-2-12` — Ensure that the admission control plugin ServiceAccount is set (Automated)
+- `cis-k8s-v1110-1-2-13` — Ensure that the admission control plugin NamespaceLifecycle is set (Automated)
+- `cis-k8s-v1110-1-2-14` — Ensure that the admission control plugin NodeRestriction is set (Automated)
+- `cis-k8s-v1110-1-2-15` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1110-1-2-16` — Ensure that the --audit-log-path argument is set (Automated)
+- `cis-k8s-v1110-1-2-17` — Ensure that the --audit-log-maxage argument is set to 30 or as appropriate (Automated)
+- `cis-k8s-v1110-1-2-18` — Ensure that the --audit-log-maxbackup argument is set to 10 or as appropriate (Automated)
+- `cis-k8s-v1110-1-2-19` — Ensure that the --audit-log-maxsize argument is set to 100 or as appropriate (Automated)
+- `cis-k8s-v1110-1-2-2` — Ensure that the --token-auth-file parameter is not set (Automated)
+- `cis-k8s-v1110-1-2-20` — Ensure that the --request-timeout argument is set as appropriate (Manual)
+- `cis-k8s-v1110-1-2-21` — Ensure that the --service-account-lookup argument is set to true (Automated)
+- `cis-k8s-v1110-1-2-22` — Ensure that the --service-account-key-file argument is set as appropriate (Automated)
+- `cis-k8s-v1110-1-2-23` — Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Automated)
+- `cis-k8s-v1110-1-2-24` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1110-1-2-25` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1110-1-2-26` — Ensure that the --etcd-cafile argument is set as appropriate (Automated)
+- `cis-k8s-v1110-1-2-27` — Ensure that the --encryption-provider-config argument is set as appropriate (Manual)
+- `cis-k8s-v1110-1-2-28` — Ensure that encryption providers are appropriately configured (Manual)
+- `cis-k8s-v1110-1-2-29` — Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-k8s-v1110-1-2-3` — Ensure that the DenyServiceExternalIPs is set (Manual)
+- `cis-k8s-v1110-1-2-30` — Ensure that the --service-account-extend-token-expiration parameter is set to false (Automated)
+- `cis-k8s-v1110-1-2-4` — Ensure that the --kubelet-client-certificate and --kubelet-client-key arguments are set as appropriate (Automated)
+- `cis-k8s-v1110-1-2-5` — Ensure that the --kubelet-certificate-authority argument is set as appropriate (Automated)
+- `cis-k8s-v1110-1-2-6` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-k8s-v1110-1-2-7` — Ensure that the --authorization-mode argument includes Node (Automated)
+- `cis-k8s-v1110-1-2-8` — Ensure that the --authorization-mode argument includes RBAC (Automated)
+- `cis-k8s-v1110-1-2-9` — Ensure that the admission control plugin EventRateLimit is set (Manual)
+- `cis-k8s-v1110-1-3-1` — Ensure that the --terminated-pod-gc-threshold argument is set as appropriate (Manual)
+- `cis-k8s-v1110-1-3-2` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1110-1-3-3` — Ensure that the --use-service-account-credentials argument is set to true (Automated)
+- `cis-k8s-v1110-1-3-4` — Ensure that the --service-account-private-key-file argument is set as appropriate (Automated)
+- `cis-k8s-v1110-1-3-5` — Ensure that the --root-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1110-1-3-6` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-k8s-v1110-1-3-7` — Ensure that the --bind-address argument is set to 127.0.0.1 (Automated)
+- `cis-k8s-v1110-1-4-1` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1110-1-4-2` — Ensure that the --bind-address argument is set to 127.0.0.1 (Automated)
+- `cis-k8s-v1110-2-1` — Ensure that the --cert-file and --key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1110-2-2` — Ensure that the --cert-file and --key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1110-2-3` — Ensure that the --client-cert-auth argument is set to true (Automated)
+- `cis-k8s-v1110-2-4` — Ensure that the --auto-tls argument is not set to true (Automated)
+- `cis-k8s-v1110-2-5` — Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1110-2-6` — Ensure that the --peer-client-cert-auth argument is set to true (Automated)
+- `cis-k8s-v1110-2-7` — Ensure that the --peer-auto-tls argument is not set to true (Automated)
+- `cis-k8s-v1110-2-8` — Ensure that a unique Certificate Authority is used for etcd (Manual)
+- `cis-k8s-v1110-3-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-k8s-v1110-3-1-2` — Service account token authentication should not be used for users (Manual)
+- `cis-k8s-v1110-3-1-3` — Bootstrap token authentication should not be used for users (Manual)
+- `cis-k8s-v1110-3-2-1` — Ensure that a minimal audit policy is created (Manual)
+- `cis-k8s-v1110-3-2-2` — Ensure that the audit policy covers key security concerns (Manual)
+- `cis-k8s-v1110-4-1-1` — Ensure that the kubelet service file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-4-1-10` — If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-4-1-2` — Ensure that the kubelet service file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-4-1-3` — If proxy kubeconfig file exists ensure permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v1110-4-1-4` — If proxy kubeconfig file exists ensure ownership is set to root:root (Manual)
+- `cis-k8s-v1110-4-1-5` — Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-4-1-6` — Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1110-4-1-7` — Ensure that the certificate authorities file permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v1110-4-1-8` — Ensure that the client certificate authorities file ownership is set to root:root (Manual)
+- `cis-k8s-v1110-4-1-9` — If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive (Automated)
+- `cis-k8s-v1110-4-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-k8s-v1110-4-2-10` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-k8s-v1110-4-2-11` — Verify that the RotateKubeletServerCertificate argument is set to true (Manual)
+- `cis-k8s-v1110-4-2-12` — Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-k8s-v1110-4-2-13` — Ensure that a limit is set on pod PIDs (Manual)
+- `cis-k8s-v1110-4-2-14` — Ensure that the --seccomp-default parameter is set to true (Manual)
+- `cis-k8s-v1110-4-2-15` — Ensure that the --IPAddressDeny is set to any (Manual)
+- `cis-k8s-v1110-4-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-k8s-v1110-4-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1110-4-2-4` — Verify that if defined, readOnlyPort is set to 0 (Manual)
+- `cis-k8s-v1110-4-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual)
+- `cis-k8s-v1110-4-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-k8s-v1110-4-2-7` — Ensure that the --hostname-override argument is not set (Manual)
+- `cis-k8s-v1110-4-2-8` — Ensure that the eventRecordQPS argument is set to a level which ensures appropriate event capture (Manual)
+- `cis-k8s-v1110-4-2-9` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-k8s-v1110-4-3-1` — Ensure that the kube-proxy metrics service is bound to localhost (Manual)
+- `cis-k8s-v1110-5-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-k8s-v1110-5-1-10` — Minimize access to the proxy sub-resource of nodes (Manual)
+- `cis-k8s-v1110-5-1-11` — Minimize access to the approval sub-resource of certificatesigningrequests objects (Manual)
+- `cis-k8s-v1110-5-1-12` — Minimize access to webhook configuration objects (Manual)
+- `cis-k8s-v1110-5-1-13` — Minimize access to the service account token creation (Manual)
+- `cis-k8s-v1110-5-1-2` — Minimize access to secrets (Manual)
+- `cis-k8s-v1110-5-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-k8s-v1110-5-1-4` — Minimize access to create pods (Manual)
+- `cis-k8s-v1110-5-1-5` — Ensure that default service accounts are not actively used (Manual)
+- `cis-k8s-v1110-5-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-k8s-v1110-5-1-7` — Avoid use of system:masters group (Manual)
+- `cis-k8s-v1110-5-1-8` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-k8s-v1110-5-1-9` — Minimize access to create persistent volumes (Manual)
+- `cis-k8s-v1110-5-2-1` — Ensure that the cluster has at least one active policy control mechanism in place (Manual)
+- `cis-k8s-v1110-5-2-10` — Minimize the admission of containers with capabilities assigned (Manual)
+- `cis-k8s-v1110-5-2-11` — Minimize the admission of Windows HostProcess Containers (Manual)
+- `cis-k8s-v1110-5-2-12` — Minimize the admission of HostPath volumes (Manual)
+- `cis-k8s-v1110-5-2-13` — Minimize the admission of containers which use HostPorts (Manual)
+- `cis-k8s-v1110-5-2-2` — Minimize the admission of privileged containers (Manual)
+- `cis-k8s-v1110-5-2-3` — Minimize the admission of containers wishing to share the host process ID namespace (Manual)
+- `cis-k8s-v1110-5-2-4` — Minimize the admission of containers wishing to share the host IPC namespace (Manual)
+- `cis-k8s-v1110-5-2-5` — Minimize the admission of containers wishing to share the host network namespace (Manual)
+- `cis-k8s-v1110-5-2-6` — Minimize the admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-k8s-v1110-5-2-7` — Minimize the admission of root containers (Manual)
+- `cis-k8s-v1110-5-2-8` — Minimize the admission of containers with the NET_RAW capability (Manual)
+- `cis-k8s-v1110-5-2-9` — Minimize the admission of containers with added capabilities (Manual)
+- `cis-k8s-v1110-5-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-k8s-v1110-5-3-2` — Ensure that all Namespaces have Network Policies defined (Manual)
+- `cis-k8s-v1110-5-4-1` — Prefer using secrets as files over secrets as environment variables (Manual)
+- `cis-k8s-v1110-5-4-2` — Consider external secret storage (Manual)
+- `cis-k8s-v1110-5-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-k8s-v1110-5-7-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-k8s-v1110-5-7-2` — Ensure that the seccomp profile is set to docker/default in your pod definitions (Manual)
+- `cis-k8s-v1110-5-7-3` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-k8s-v1110-5-7-4` — The default namespace should not be used (Manual)
+- `cis-k8s-v1111-1-1-1` — Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-1-1-10` — Ensure that the Container Network Interface file ownership is set to root:root (Manual)
+- `cis-k8s-v1111-1-1-11` — Ensure that the etcd data directory permissions are set to 700 or more restrictive (Automated)
+- `cis-k8s-v1111-1-1-12` — Ensure that the etcd data directory ownership is set to etcd:etcd (Automated)
+- `cis-k8s-v1111-1-1-13` — Ensure that the default administrative credential file permissions are set to 600 (Automated)
+- `cis-k8s-v1111-1-1-14` — Ensure that the default administrative credential file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-1-1-15` — Ensure that the scheduler.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-1-1-16` — Ensure that the scheduler.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-1-1-17` — Ensure that the controller-manager.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-1-1-18` — Ensure that the controller-manager.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-1-1-19` — Ensure that the Kubernetes PKI directory and file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-1-1-2` — Ensure that the API server pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-1-1-20` — Ensure that the Kubernetes PKI certificate file permissions are set to 644 or more restrictive (Manual)
+- `cis-k8s-v1111-1-1-21` — Ensure that the Kubernetes PKI key file permissions are set to 600 (Manual)
+- `cis-k8s-v1111-1-1-3` — Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-1-1-4` — Ensure that the controller manager pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-1-1-5` — Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-1-1-6` — Ensure that the scheduler pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-1-1-7` — Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-1-1-8` — Ensure that the etcd pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-1-1-9` — Ensure that the Container Network Interface file permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v1111-1-2-1` — Ensure that the --anonymous-auth argument is set to false (Manual)
+- `cis-k8s-v1111-1-2-10` — Ensure that the admission control plugin AlwaysAdmit is not set (Automated)
+- `cis-k8s-v1111-1-2-11` — Ensure that the admission control plugin AlwaysPullImages is set (Manual)
+- `cis-k8s-v1111-1-2-12` — Ensure that the admission control plugin ServiceAccount is set (Automated)
+- `cis-k8s-v1111-1-2-13` — Ensure that the admission control plugin NamespaceLifecycle is set (Automated)
+- `cis-k8s-v1111-1-2-14` — Ensure that the admission control plugin NodeRestriction is set (Automated)
+- `cis-k8s-v1111-1-2-15` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1111-1-2-16` — Ensure that the --audit-log-path argument is set (Automated)
+- `cis-k8s-v1111-1-2-17` — Ensure that the --audit-log-maxage argument is set to 30 or as appropriate (Automated)
+- `cis-k8s-v1111-1-2-18` — Ensure that the --audit-log-maxbackup argument is set to 10 or as appropriate (Automated)
+- `cis-k8s-v1111-1-2-19` — Ensure that the --audit-log-maxsize argument is set to 100 or as appropriate (Automated)
+- `cis-k8s-v1111-1-2-2` — Ensure that the --token-auth-file parameter is not set (Automated)
+- `cis-k8s-v1111-1-2-20` — Ensure that the --request-timeout argument is set as appropriate (Manual)
+- `cis-k8s-v1111-1-2-21` — Ensure that the --service-account-lookup argument is set to true (Automated)
+- `cis-k8s-v1111-1-2-22` — Ensure that the --service-account-key-file argument is set as appropriate (Automated)
+- `cis-k8s-v1111-1-2-23` — Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Automated)
+- `cis-k8s-v1111-1-2-24` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1111-1-2-25` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1111-1-2-26` — Ensure that the --etcd-cafile argument is set as appropriate (Automated)
+- `cis-k8s-v1111-1-2-27` — Ensure that the --encryption-provider-config argument is set as appropriate (Manual)
+- `cis-k8s-v1111-1-2-28` — Ensure that encryption providers are appropriately configured (Manual)
+- `cis-k8s-v1111-1-2-29` — Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-k8s-v1111-1-2-3` — Ensure that the DenyServiceExternalIPs is set (Manual)
+- `cis-k8s-v1111-1-2-30` — Ensure that the --service-account-extend-token-expiration parameter is set to false (Automated)
+- `cis-k8s-v1111-1-2-4` — Ensure that the --kubelet-client-certificate and --kubelet-client-key arguments are set as appropriate (Automated)
+- `cis-k8s-v1111-1-2-5` — Ensure that the --kubelet-certificate-authority argument is set as appropriate (Automated)
+- `cis-k8s-v1111-1-2-6` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-k8s-v1111-1-2-7` — Ensure that the --authorization-mode argument includes Node (Automated)
+- `cis-k8s-v1111-1-2-8` — Ensure that the --authorization-mode argument includes RBAC (Automated)
+- `cis-k8s-v1111-1-2-9` — Ensure that the admission control plugin EventRateLimit is set (Manual)
+- `cis-k8s-v1111-1-3-1` — Ensure that the --terminated-pod-gc-threshold argument is set as appropriate (Manual)
+- `cis-k8s-v1111-1-3-2` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1111-1-3-3` — Ensure that the --use-service-account-credentials argument is set to true (Automated)
+- `cis-k8s-v1111-1-3-4` — Ensure that the --service-account-private-key-file argument is set as appropriate (Automated)
+- `cis-k8s-v1111-1-3-5` — Ensure that the --root-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1111-1-3-6` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-k8s-v1111-1-3-7` — Ensure that the --bind-address argument is set to 127.0.0.1 (Automated)
+- `cis-k8s-v1111-1-4-1` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1111-1-4-2` — Ensure that the --bind-address argument is set to 127.0.0.1 (Automated)
+- `cis-k8s-v1111-2-1` — Ensure that the --cert-file and --key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1111-2-2` — Ensure that the --cert-file and --key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1111-2-3` — Ensure that the --client-cert-auth argument is set to true (Automated)
+- `cis-k8s-v1111-2-4` — Ensure that the --auto-tls argument is not set to true (Automated)
+- `cis-k8s-v1111-2-5` — Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1111-2-6` — Ensure that the --peer-client-cert-auth argument is set to true (Automated)
+- `cis-k8s-v1111-2-7` — Ensure that the --peer-auto-tls argument is not set to true (Automated)
+- `cis-k8s-v1111-2-8` — Ensure that a unique Certificate Authority is used for etcd (Manual)
+- `cis-k8s-v1111-3-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-k8s-v1111-3-1-2` — Service account token authentication should not be used for users (Manual)
+- `cis-k8s-v1111-3-1-3` — Bootstrap token authentication should not be used for users (Manual)
+- `cis-k8s-v1111-3-2-1` — Ensure that a minimal audit policy is created (Manual)
+- `cis-k8s-v1111-3-2-2` — Ensure that the audit policy covers key security concerns (Manual)
+- `cis-k8s-v1111-4-1-1` — Ensure that the kubelet service file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-4-1-10` — If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-4-1-2` — Ensure that the kubelet service file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-4-1-3` — If proxy kubeconfig file exists ensure permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v1111-4-1-4` — If proxy kubeconfig file exists ensure ownership is set to root:root (Manual)
+- `cis-k8s-v1111-4-1-5` — Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-4-1-6` — Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1111-4-1-7` — Ensure that the certificate authorities file permissions are set to 644 or more restrictive (Manual)
+- `cis-k8s-v1111-4-1-8` — Ensure that the client certificate authorities file ownership is set to root:root (Manual)
+- `cis-k8s-v1111-4-1-9` — If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive (Automated)
+- `cis-k8s-v1111-4-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-k8s-v1111-4-2-10` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-k8s-v1111-4-2-11` — Verify that the RotateKubeletServerCertificate argument is set to true (Manual)
+- `cis-k8s-v1111-4-2-12` — Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-k8s-v1111-4-2-13` — Ensure that a limit is set on pod PIDs (Manual)
+- `cis-k8s-v1111-4-2-14` — Ensure that the --seccomp-default parameter is set to true (Manual)
+- `cis-k8s-v1111-4-2-15` — Ensure that the --IPAddressDeny is set to any (Manual)
+- `cis-k8s-v1111-4-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-k8s-v1111-4-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1111-4-2-4` — Verify that if defined, readOnlyPort is set to 0 (Manual)
+- `cis-k8s-v1111-4-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual)
+- `cis-k8s-v1111-4-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-k8s-v1111-4-2-7` — Ensure that the --hostname-override argument is not set (Manual)
+- `cis-k8s-v1111-4-2-8` — Ensure that the eventRecordQPS argument is set to a level which ensures appropriate event capture (Manual)
+- `cis-k8s-v1111-4-2-9` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-k8s-v1111-4-3-1` — Ensure that the kube-proxy metrics service is bound to localhost (Manual)
+- `cis-k8s-v1111-5-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-k8s-v1111-5-1-10` — Minimize access to the proxy sub-resource of nodes (Manual)
+- `cis-k8s-v1111-5-1-11` — Minimize access to the approval sub-resource of certificatesigningrequests objects (Manual)
+- `cis-k8s-v1111-5-1-12` — Minimize access to webhook configuration objects (Manual)
+- `cis-k8s-v1111-5-1-13` — Minimize access to the service account token creation (Manual)
+- `cis-k8s-v1111-5-1-2` — Minimize access to secrets (Manual)
+- `cis-k8s-v1111-5-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-k8s-v1111-5-1-4` — Minimize access to create pods (Manual)
+- `cis-k8s-v1111-5-1-5` — Ensure that default service accounts are not actively used (Manual)
+- `cis-k8s-v1111-5-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-k8s-v1111-5-1-7` — Avoid use of system:masters group (Manual)
+- `cis-k8s-v1111-5-1-8` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-k8s-v1111-5-1-9` — Minimize access to create persistent volumes (Manual)
+- `cis-k8s-v1111-5-2-1` — Ensure that the cluster has at least one active policy control mechanism in place (Manual)
+- `cis-k8s-v1111-5-2-10` — Minimize the admission of containers with capabilities assigned (Manual)
+- `cis-k8s-v1111-5-2-11` — Minimize the admission of Windows HostProcess Containers (Manual)
+- `cis-k8s-v1111-5-2-12` — Minimize the admission of HostPath volumes (Manual)
+- `cis-k8s-v1111-5-2-13` — Minimize the admission of containers which use HostPorts (Manual)
+- `cis-k8s-v1111-5-2-2` — Minimize the admission of privileged containers (Manual)
+- `cis-k8s-v1111-5-2-3` — Minimize the admission of containers wishing to share the host process ID namespace (Manual)
+- `cis-k8s-v1111-5-2-4` — Minimize the admission of containers wishing to share the host IPC namespace (Manual)
+- `cis-k8s-v1111-5-2-5` — Minimize the admission of containers wishing to share the host network namespace (Manual)
+- `cis-k8s-v1111-5-2-6` — Minimize the admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-k8s-v1111-5-2-7` — Minimize the admission of root containers (Manual)
+- `cis-k8s-v1111-5-2-8` — Minimize the admission of containers with the NET_RAW capability (Manual)
+- `cis-k8s-v1111-5-2-9` — Minimize the admission of containers with added capabilities (Manual)
+- `cis-k8s-v1111-5-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-k8s-v1111-5-3-2` — Ensure that all Namespaces have Network Policies defined (Manual)
+- `cis-k8s-v1111-5-4-1` — Prefer using secrets as files over secrets as environment variables (Manual)
+- `cis-k8s-v1111-5-4-2` — Consider external secret storage (Manual)
+- `cis-k8s-v1111-5-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-k8s-v1111-5-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-k8s-v1111-5-6-2` — Ensure that the seccomp profile is set to docker/default in your pod definitions (Manual)
+- `cis-k8s-v1111-5-6-3` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-k8s-v1111-5-6-4` — The default namespace should not be used (Manual)
+- `cis-k8s-v1120-1-1-1` — Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-1-1-10` — Ensure that the Container Network Interface file ownership is set to root:root (Manual)
+- `cis-k8s-v1120-1-1-11` — Ensure that the etcd data directory permissions are set to 700 or more restrictive (Automated)
+- `cis-k8s-v1120-1-1-12` — Ensure that the etcd data directory ownership is set to etcd:etcd (Automated)
+- `cis-k8s-v1120-1-1-13` — Ensure that the default administrative credential file permissions are set to 600 (Automated)
+- `cis-k8s-v1120-1-1-14` — Ensure that the default administrative credential file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-1-1-15` — Ensure that the scheduler.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-1-1-16` — Ensure that the scheduler.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-1-1-17` — Ensure that the controller-manager.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-1-1-18` — Ensure that the controller-manager.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-1-1-19` — Ensure that the Kubernetes PKI directory and file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-1-1-2` — Ensure that the API server pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-1-1-20` — Ensure that the Kubernetes PKI certificate file permissions are set to 644 or more restrictive (Manual)
+- `cis-k8s-v1120-1-1-21` — Ensure that the Kubernetes PKI key file permissions are set to 600 (Manual)
+- `cis-k8s-v1120-1-1-3` — Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-1-1-4` — Ensure that the controller manager pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-1-1-5` — Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-1-1-6` — Ensure that the scheduler pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-1-1-7` — Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-1-1-8` — Ensure that the etcd pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-1-1-9` — Ensure that the Container Network Interface file permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v1120-1-2-1` — Ensure that the --anonymous-auth argument is set to false (Manual)
+- `cis-k8s-v1120-1-2-10` — Ensure that the admission control plugin AlwaysAdmit is not set (Automated)
+- `cis-k8s-v1120-1-2-11` — Ensure that the admission control plugin AlwaysPullImages is set (Manual)
+- `cis-k8s-v1120-1-2-12` — Ensure that the admission control plugin ServiceAccount is set (Automated)
+- `cis-k8s-v1120-1-2-13` — Ensure that the admission control plugin NamespaceLifecycle is set (Automated)
+- `cis-k8s-v1120-1-2-14` — Ensure that the admission control plugin NodeRestriction is set (Automated)
+- `cis-k8s-v1120-1-2-15` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1120-1-2-16` — Ensure that the --audit-log-path argument is set (Automated)
+- `cis-k8s-v1120-1-2-17` — Ensure that the --audit-log-maxage argument is set to 30 or as appropriate (Automated)
+- `cis-k8s-v1120-1-2-18` — Ensure that the --audit-log-maxbackup argument is set to 10 or as appropriate (Automated)
+- `cis-k8s-v1120-1-2-19` — Ensure that the --audit-log-maxsize argument is set to 100 or as appropriate (Automated)
+- `cis-k8s-v1120-1-2-2` — Ensure that the --token-auth-file parameter is not set (Automated)
+- `cis-k8s-v1120-1-2-20` — Ensure that the --request-timeout argument is set as appropriate (Manual)
+- `cis-k8s-v1120-1-2-21` — Ensure that the --service-account-lookup argument is set to true (Automated)
+- `cis-k8s-v1120-1-2-22` — Ensure that the --service-account-key-file argument is set as appropriate (Automated)
+- `cis-k8s-v1120-1-2-23` — Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Automated)
+- `cis-k8s-v1120-1-2-24` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1120-1-2-25` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1120-1-2-26` — Ensure that the --etcd-cafile argument is set as appropriate (Automated)
+- `cis-k8s-v1120-1-2-27` — Ensure that the --encryption-provider-config argument is set as appropriate (Manual)
+- `cis-k8s-v1120-1-2-28` — Ensure that encryption providers are appropriately configured (Manual)
+- `cis-k8s-v1120-1-2-29` — Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-k8s-v1120-1-2-3` — Ensure that the DenyServiceExternalIPs is set (Manual)
+- `cis-k8s-v1120-1-2-30` — Ensure that the --service-account-extend-token-expiration parameter is set to false (Automated)
+- `cis-k8s-v1120-1-2-4` — Ensure that the --kubelet-client-certificate and --kubelet-client-key arguments are set as appropriate (Automated)
+- `cis-k8s-v1120-1-2-5` — Ensure that the --kubelet-certificate-authority argument is set as appropriate (Automated)
+- `cis-k8s-v1120-1-2-6` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-k8s-v1120-1-2-7` — Ensure that the --authorization-mode argument includes Node (Automated)
+- `cis-k8s-v1120-1-2-8` — Ensure that the --authorization-mode argument includes RBAC (Automated)
+- `cis-k8s-v1120-1-2-9` — Ensure that the admission control plugin EventRateLimit is set (Manual)
+- `cis-k8s-v1120-1-3-1` — Ensure that the --terminated-pod-gc-threshold argument is set as appropriate (Manual)
+- `cis-k8s-v1120-1-3-2` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1120-1-3-3` — Ensure that the --use-service-account-credentials argument is set to true (Automated)
+- `cis-k8s-v1120-1-3-4` — Ensure that the --service-account-private-key-file argument is set as appropriate (Automated)
+- `cis-k8s-v1120-1-3-5` — Ensure that the --root-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1120-1-3-6` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-k8s-v1120-1-3-7` — Ensure that the --bind-address argument is set to 127.0.0.1 (Automated)
+- `cis-k8s-v1120-1-4-1` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v1120-1-4-2` — Ensure that the --bind-address argument is set to 127.0.0.1 (Automated)
+- `cis-k8s-v1120-2-1` — Ensure that the --cert-file and --key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1120-2-2` — Ensure that the --client-cert-auth argument is set to true (Automated)
+- `cis-k8s-v1120-2-3` — Ensure that the --auto-tls argument is not set to true (Automated)
+- `cis-k8s-v1120-2-4` — Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v1120-2-5` — Ensure that the --peer-client-cert-auth argument is set to true (Automated)
+- `cis-k8s-v1120-2-6` — Ensure that the --peer-auto-tls argument is not set to true (Automated)
+- `cis-k8s-v1120-2-7` — Ensure that a unique Certificate Authority is used for etcd (Manual)
+- `cis-k8s-v1120-3-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-k8s-v1120-3-1-2` — Service account token authentication should not be used for users (Manual)
+- `cis-k8s-v1120-3-1-3` — Bootstrap token authentication should not be used for users (Manual)
+- `cis-k8s-v1120-3-2-1` — Ensure that a minimal audit policy is created (Manual)
+- `cis-k8s-v1120-3-2-2` — Ensure that the audit policy covers key security concerns (Manual)
+- `cis-k8s-v1120-4-1-1` — Ensure that the kubelet service file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-4-1-10` — If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-4-1-2` — Ensure that the kubelet service file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-4-1-3` — If proxy kubeconfig file exists ensure permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v1120-4-1-4` — If proxy kubeconfig file exists ensure ownership is set to root:root (Manual)
+- `cis-k8s-v1120-4-1-5` — Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-4-1-6` — Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v1120-4-1-7` — Ensure that the certificate authorities file permissions are set to 644 or more restrictive (Manual)
+- `cis-k8s-v1120-4-1-8` — Ensure that the client certificate authorities file ownership is set to root:root (Manual)
+- `cis-k8s-v1120-4-1-9` — If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive (Automated)
+- `cis-k8s-v1120-4-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-k8s-v1120-4-2-10` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-k8s-v1120-4-2-11` — Verify that the RotateKubeletServerCertificate argument is set to true (Manual)
+- `cis-k8s-v1120-4-2-12` — Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-k8s-v1120-4-2-13` — Ensure that a limit is set on pod PIDs (Manual)
+- `cis-k8s-v1120-4-2-14` — Ensure that the --seccomp-default parameter is set to true (Manual)
+- `cis-k8s-v1120-4-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-k8s-v1120-4-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v1120-4-2-4` — Verify that if defined, readOnlyPort is set to 0 (Manual)
+- `cis-k8s-v1120-4-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual)
+- `cis-k8s-v1120-4-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-k8s-v1120-4-2-7` — Ensure that the --hostname-override argument is not set (Manual)
+- `cis-k8s-v1120-4-2-8` — Ensure that the eventRecordQPS argument is set to a level which ensures appropriate event capture (Manual)
+- `cis-k8s-v1120-4-2-9` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-k8s-v1120-4-3-1` — Ensure that the kube-proxy metrics service is bound to localhost (Manual)
+- `cis-k8s-v1120-5-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-k8s-v1120-5-1-10` — Minimize access to the proxy sub-resource of nodes (Manual)
+- `cis-k8s-v1120-5-1-11` — Minimize access to the approval sub-resource of certificatesigningrequests objects (Manual)
+- `cis-k8s-v1120-5-1-12` — Minimize access to webhook configuration objects (Manual)
+- `cis-k8s-v1120-5-1-13` — Minimize access to the service account token creation (Manual)
+- `cis-k8s-v1120-5-1-2` — Minimize access to secrets (Manual)
+- `cis-k8s-v1120-5-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-k8s-v1120-5-1-4` — Minimize access to create pods (Manual)
+- `cis-k8s-v1120-5-1-5` — Ensure that default service accounts are not actively used (Manual)
+- `cis-k8s-v1120-5-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-k8s-v1120-5-1-7` — Avoid use of system:masters group (Manual)
+- `cis-k8s-v1120-5-1-8` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-k8s-v1120-5-1-9` — Minimize access to create persistent volumes (Manual)
+- `cis-k8s-v1120-5-2-1` — Ensure that the cluster has at least one active policy control mechanism in place (Manual)
+- `cis-k8s-v1120-5-2-10` — Minimize the admission of Windows HostProcess Containers (Manual)
+- `cis-k8s-v1120-5-2-11` — Minimize the admission of HostPath volumes (Manual)
+- `cis-k8s-v1120-5-2-12` — Minimize the admission of containers which use HostPorts (Manual)
+- `cis-k8s-v1120-5-2-2` — Minimize the admission of privileged containers (Manual)
+- `cis-k8s-v1120-5-2-3` — Minimize the admission of containers wishing to share the host process ID namespace (Manual)
+- `cis-k8s-v1120-5-2-4` — Minimize the admission of containers wishing to share the host IPC namespace (Manual)
+- `cis-k8s-v1120-5-2-5` — Minimize the admission of containers wishing to share the host network namespace (Manual)
+- `cis-k8s-v1120-5-2-6` — Minimize the admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-k8s-v1120-5-2-7` — Minimize the admission of root containers (Manual)
+- `cis-k8s-v1120-5-2-8` — Minimize the admission of containers with the NET_RAW capability (Manual)
+- `cis-k8s-v1120-5-2-9` — Minimize the admission of containers with capabilities assigned (Manual)
+- `cis-k8s-v1120-5-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-k8s-v1120-5-3-2` — Ensure that all Namespaces have Network Policies defined (Manual)
+- `cis-k8s-v1120-5-4-1` — Prefer using secrets as files over secrets as environment variables (Manual)
+- `cis-k8s-v1120-5-4-2` — Consider external secret storage (Manual)
+- `cis-k8s-v1120-5-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-k8s-v1120-5-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-k8s-v1120-5-6-2` — Ensure that the seccomp profile is set to docker/default in your pod definitions (Manual)
+- `cis-k8s-v1120-5-6-3` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-k8s-v1120-5-6-4` — The default namespace should not be used (Manual)
+- `cis-k8s-v200-1-1-1` — Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-1-1-10` — Ensure that the Container Network Interface file ownership is set to root:root (Manual)
+- `cis-k8s-v200-1-1-11` — Ensure that the etcd data directory permissions are set to 700 or more restrictive (Automated)
+- `cis-k8s-v200-1-1-12` — Ensure that the etcd data directory ownership is set to etcd:etcd (Automated)
+- `cis-k8s-v200-1-1-13` — Ensure that the default administrative credential file permissions are set to 600 (Automated)
+- `cis-k8s-v200-1-1-14` — Ensure that the default administrative credential file ownership is set to root:root (Automated)
+- `cis-k8s-v200-1-1-15` — Ensure that the scheduler.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-1-1-16` — Ensure that the scheduler.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v200-1-1-17` — Ensure that the controller-manager.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-1-1-18` — Ensure that the controller-manager.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v200-1-1-19` — Ensure that the Kubernetes PKI directory and file ownership is set to root:root (Automated)
+- `cis-k8s-v200-1-1-2` — Ensure that the API server pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v200-1-1-20` — Ensure that the Kubernetes PKI certificate file permissions are set to 644 or more restrictive (Manual)
+- `cis-k8s-v200-1-1-21` — Ensure that the Kubernetes PKI key file permissions are set to 600 (Manual)
+- `cis-k8s-v200-1-1-3` — Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-1-1-4` — Ensure that the controller manager pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v200-1-1-5` — Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-1-1-6` — Ensure that the scheduler pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v200-1-1-7` — Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-1-1-8` — Ensure that the etcd pod specification file ownership is set to root:root (Automated)
+- `cis-k8s-v200-1-1-9` — Ensure that the Container Network Interface file permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v200-1-2-1` — Ensure that the --anonymous-auth argument is set to false (Manual)
+- `cis-k8s-v200-1-2-10` — Ensure that the admission control plugin AlwaysAdmit is not set (Automated)
+- `cis-k8s-v200-1-2-11` — Ensure that the admission control plugin AlwaysPullImages is set (Manual)
+- `cis-k8s-v200-1-2-12` — Ensure that the admission control plugin ServiceAccount is set (Automated)
+- `cis-k8s-v200-1-2-13` — Ensure that the admission control plugin NamespaceLifecycle is set (Automated)
+- `cis-k8s-v200-1-2-14` — Ensure that the admission control plugin NodeRestriction is set (Automated)
+- `cis-k8s-v200-1-2-15` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v200-1-2-16` — Ensure that the --audit-log-path argument is set (Automated)
+- `cis-k8s-v200-1-2-17` — Ensure that the --audit-log-maxage argument is set to 30 or as appropriate (Automated)
+- `cis-k8s-v200-1-2-18` — Ensure that the --audit-log-maxbackup argument is set to 10 or as appropriate (Automated)
+- `cis-k8s-v200-1-2-19` — Ensure that the --audit-log-maxsize argument is set to 100 or as appropriate (Automated)
+- `cis-k8s-v200-1-2-2` — Ensure that the --token-auth-file parameter is not set (Automated)
+- `cis-k8s-v200-1-2-20` — Ensure that the --request-timeout argument is set as appropriate (Manual)
+- `cis-k8s-v200-1-2-21` — Ensure that the --service-account-lookup argument is set to true (Automated)
+- `cis-k8s-v200-1-2-22` — Ensure that the --service-account-key-file argument is set as appropriate (Automated)
+- `cis-k8s-v200-1-2-23` — Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Automated)
+- `cis-k8s-v200-1-2-24` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v200-1-2-25` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v200-1-2-26` — Ensure that the --etcd-cafile argument is set as appropriate (Automated)
+- `cis-k8s-v200-1-2-27` — Ensure that the --encryption-provider-config argument is set as appropriate (Manual)
+- `cis-k8s-v200-1-2-28` — Ensure that encryption providers are appropriately configured (Manual)
+- `cis-k8s-v200-1-2-29` — Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-k8s-v200-1-2-3` — Ensure that the DenyServiceExternalIPs is set (Manual)
+- `cis-k8s-v200-1-2-30` — Ensure that the --service-account-extend-token-expiration parameter is set to false (Automated)
+- `cis-k8s-v200-1-2-4` — Ensure that the --kubelet-client-certificate and --kubelet-client-key arguments are set as appropriate (Automated)
+- `cis-k8s-v200-1-2-5` — Ensure that the --kubelet-certificate-authority argument is set as appropriate (Automated)
+- `cis-k8s-v200-1-2-6` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-k8s-v200-1-2-7` — Ensure that the --authorization-mode argument includes Node (Automated)
+- `cis-k8s-v200-1-2-8` — Ensure that the --authorization-mode argument includes RBAC (Automated)
+- `cis-k8s-v200-1-2-9` — Ensure that the admission control plugin EventRateLimit is set (Manual)
+- `cis-k8s-v200-1-3-1` — Ensure that the --terminated-pod-gc-threshold argument is set as appropriate (Manual)
+- `cis-k8s-v200-1-3-2` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v200-1-3-3` — Ensure that the --use-service-account-credentials argument is set to true (Automated)
+- `cis-k8s-v200-1-3-4` — Ensure that the --service-account-private-key-file argument is set as appropriate (Automated)
+- `cis-k8s-v200-1-3-5` — Ensure that the --root-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v200-1-3-6` — Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- `cis-k8s-v200-1-3-7` — Ensure that the --bind-address argument is set to 127.0.0.1 (Automated)
+- `cis-k8s-v200-1-4-1` — Ensure that the --profiling argument is set to false (Automated)
+- `cis-k8s-v200-1-4-2` — Ensure that the --bind-address argument is set to 127.0.0.1 (Automated)
+- `cis-k8s-v200-2-1` — Ensure that the --cert-file and --key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v200-2-2` — Ensure that the --client-cert-auth argument is set to true (Automated)
+- `cis-k8s-v200-2-3` — Ensure that the --auto-tls argument is not set to true (Automated)
+- `cis-k8s-v200-2-4` — Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate (Automated)
+- `cis-k8s-v200-2-5` — Ensure that the --peer-client-cert-auth argument is set to true (Automated)
+- `cis-k8s-v200-2-6` — Ensure that the --peer-auto-tls argument is not set to true (Automated)
+- `cis-k8s-v200-2-7` — Ensure that a unique Certificate Authority is used for etcd (Manual)
+- `cis-k8s-v200-3-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-k8s-v200-3-1-2` — Service account token authentication should not be used for users (Manual)
+- `cis-k8s-v200-3-1-3` — Bootstrap token authentication should not be used for users (Manual)
+- `cis-k8s-v200-3-2-1` — Ensure that a minimal audit policy is created (Manual)
+- `cis-k8s-v200-3-2-2` — Ensure that the audit policy covers key security concerns (Manual)
+- `cis-k8s-v200-4-1-1` — Ensure that the kubelet service file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-4-1-10` — If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root (Automated)
+- `cis-k8s-v200-4-1-2` — Ensure that the kubelet service file ownership is set to root:root (Automated)
+- `cis-k8s-v200-4-1-3` — If proxy kubeconfig file exists ensure permissions are set to 600 or more restrictive (Manual)
+- `cis-k8s-v200-4-1-4` — If proxy kubeconfig file exists ensure ownership is set to root:root (Manual)
+- `cis-k8s-v200-4-1-5` — Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-4-1-6` — Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated)
+- `cis-k8s-v200-4-1-7` — Ensure that the certificate authorities file permissions are set to 644 or more restrictive (Manual)
+- `cis-k8s-v200-4-1-8` — Ensure that the client certificate authorities file ownership is set to root:root (Manual)
+- `cis-k8s-v200-4-1-9` — If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive (Automated)
+- `cis-k8s-v200-4-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-k8s-v200-4-2-10` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-k8s-v200-4-2-11` — Verify that the RotateKubeletServerCertificate argument is set to true (Manual)
+- `cis-k8s-v200-4-2-12` — Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-k8s-v200-4-2-13` — Ensure that a limit is set on pod PIDs (Manual)
+- `cis-k8s-v200-4-2-14` — Ensure that the --seccomp-default parameter is set to true (Manual)
+- `cis-k8s-v200-4-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-k8s-v200-4-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-k8s-v200-4-2-4` — Verify that if defined, readOnlyPort is set to 0 (Manual)
+- `cis-k8s-v200-4-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual)
+- `cis-k8s-v200-4-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-k8s-v200-4-2-7` — Ensure that the --hostname-override argument is not set (Manual)
+- `cis-k8s-v200-4-2-8` — Ensure that the eventRecordQPS argument is set to a level which ensures appropriate event capture (Manual)
+- `cis-k8s-v200-4-2-9` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-k8s-v200-4-3-1` — Ensure that the kube-proxy metrics service is bound to localhost (Manual)
+- `cis-k8s-v200-5-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-k8s-v200-5-1-10` — Minimize access to the proxy sub-resource of nodes (Manual)
+- `cis-k8s-v200-5-1-11` — Minimize access to the approval sub-resource of certificatesigningrequests objects (Manual)
+- `cis-k8s-v200-5-1-12` — Minimize access to webhook configuration objects (Manual)
+- `cis-k8s-v200-5-1-13` — Minimize access to the service account token creation (Manual)
+- `cis-k8s-v200-5-1-2` — Minimize access to secrets (Manual)
+- `cis-k8s-v200-5-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-k8s-v200-5-1-4` — Minimize access to create pods (Manual)
+- `cis-k8s-v200-5-1-5` — Ensure that default service accounts are not actively used. (Manual)
+- `cis-k8s-v200-5-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-k8s-v200-5-1-7` — Avoid use of system:masters group (Manual)
+- `cis-k8s-v200-5-1-8` — Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster (Manual)
+- `cis-k8s-v200-5-1-9` — Minimize access to create persistent volumes (Manual)
+- `cis-k8s-v200-5-2-1` — Ensure that the cluster has at least one active policy control mechanism in place (Manual)
+- `cis-k8s-v200-5-2-10` — Minimize the admission of Windows HostProcess Containers (Manual)
+- `cis-k8s-v200-5-2-11` — Minimize the admission of HostPath volumes (Manual)
+- `cis-k8s-v200-5-2-12` — Minimize the admission of containers which use HostPorts (Manual)
+- `cis-k8s-v200-5-2-2` — Minimize the admission of privileged containers (Manual)
+- `cis-k8s-v200-5-2-3` — Minimize the admission of containers wishing to share the host process ID namespace (Manual)
+- `cis-k8s-v200-5-2-4` — Minimize the admission of containers wishing to share the host IPC namespace (Manual)
+- `cis-k8s-v200-5-2-5` — Minimize the admission of containers wishing to share the host network namespace (Manual)
+- `cis-k8s-v200-5-2-6` — Minimize the admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-k8s-v200-5-2-7` — Minimize the admission of root containers (Manual)
+- `cis-k8s-v200-5-2-8` — Minimize the admission of containers with the NET_RAW capability (Manual)
+- `cis-k8s-v200-5-2-9` — Minimize the admission of containers with capabilities assigned (Manual)
+- `cis-k8s-v200-5-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-k8s-v200-5-3-2` — Ensure that all Namespaces have Network Policies defined (Manual)
+- `cis-k8s-v200-5-4-1` — Prefer using secrets as files over secrets as environment variables (Manual)
+- `cis-k8s-v200-5-4-2` — Consider external secret storage (Manual)
+- `cis-k8s-v200-5-5-1` — Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)
+- `cis-k8s-v200-5-6-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-k8s-v200-5-6-2` — Ensure that the seccomp profile is set to docker/default in your pod definitions (Manual)
+- `cis-k8s-v200-5-6-3` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-k8s-v200-5-6-4` — The default namespace should not be used (Manual)
+- `cis-nginx-v300-1-1-1` — Ensure NGINX is installed (Manual)
+- `cis-nginx-v300-1-2-1` — Ensure package manager repositories are properly configured (Manual)
+- `cis-nginx-v300-1-2-2` — Ensure the latest software package is installed (Manual)
+- `cis-nginx-v300-2-1-1` — Ensure only required dynamic modules are loaded (Manual)
+- `cis-nginx-v300-2-2-1` — Ensure that NGINX is run using a non-privileged, dedicated service account (Manual)
+- `cis-nginx-v300-2-2-2` — Ensure the NGINX service account is locked (Manual)
+- `cis-nginx-v300-2-2-3` — Ensure the NGINX service account has an invalid shell (Manual)
+- `cis-nginx-v300-2-3-1` — Ensure NGINX directories and files are owned by root (Manual)
+- `cis-nginx-v300-2-3-2` — Ensure access to NGINX directories and files is restricted (Manual)
+- `cis-nginx-v300-2-3-3` — Ensure the NGINX process ID (PID) file is secured (Manual)
+- `cis-nginx-v300-2-4-1` — Ensure NGINX only listens for network connections on authorized ports (Manual)
+- `cis-nginx-v300-2-4-2` — Ensure requests for unknown host names are rejected (Manual)
+- `cis-nginx-v300-2-4-3` — Ensure keepalive_timeout is 10 seconds or less, but not 0 (Manual)
+- `cis-nginx-v300-2-4-4` — Ensure send_timeout is set to 10 seconds or less, but not 0 (Manual)
+- `cis-nginx-v300-2-5-1` — Ensure server_tokens directive is set to off (Manual)
+- `cis-nginx-v300-2-5-2` — Ensure default error and index.html pages do not reference NGINX (Manual)
+- `cis-nginx-v300-2-5-3` — Ensure hidden file serving is disabled (Manual)
+- `cis-nginx-v300-2-5-4` — Ensure the NGINX reverse proxy does not enable information disclosure (Manual)
+- `cis-nginx-v300-3-1` — Ensure detailed logging is enabled (Manual)
+- `cis-nginx-v300-3-2` — Ensure access logging is enabled (Manual)
+- `cis-nginx-v300-3-3` — Ensure error logging is enabled and set to the info logging level (Manual)
+- `cis-nginx-v300-3-4` — Ensure proxies pass source IP information (Manual)
+- `cis-nginx-v300-4-1-1` — Ensure HTTP is redirected to HTTPS (Manual)
+- `cis-nginx-v300-4-1-10` — Ensure the upstream traffic server certificate is trusted (Manual)
+- `cis-nginx-v300-4-1-11` — Ensure Secure Session Resumption is Enabled (Manual)
+- `cis-nginx-v300-4-1-12` — Ensure HTTP/3.0 is used (Manual)
+- `cis-nginx-v300-4-1-2` — Ensure a trusted certificate and trust chain is installed (Manual)
+- `cis-nginx-v300-4-1-3` — Ensure private key permissions are restricted (Manual)
+- `cis-nginx-v300-4-1-4` — Ensure only modern TLS protocols are used (Manual)
+- `cis-nginx-v300-4-1-5` — Disable weak ciphers (Manual)
+- `cis-nginx-v300-4-1-6` — Ensure awareness of TLS 1.3 new Diffie-Hellman parameters (Manual)
+- `cis-nginx-v300-4-1-7` — Ensure Online Certificate Status Protocol (OCSP) stapling is enabled (Manual)
+- `cis-nginx-v300-4-1-8` — Ensure HTTP Strict Transport Security (HSTS) is enabled (Manual)
+- `cis-nginx-v300-4-1-9` — Ensure upstream server traffic is authenticated with a client certificate (Manual)
+- `cis-nginx-v300-5-1-1` — Ensure allow and deny filters limit access to specific IP addresses (Manual)
+- `cis-nginx-v300-5-1-2` — Ensure only approved HTTP methods are allowed (Manual)
+- `cis-nginx-v300-5-2-1` — Ensure timeout values for reading the client header and body are set correctly (Manual)
+- `cis-nginx-v300-5-2-2` — Ensure the maximum request body size is set correctly (Manual)
+- `cis-nginx-v300-5-2-3` — Ensure the maximum buffer size for URIs is defined (Manual)
+- `cis-nginx-v300-5-2-4` — Ensure the number of connections per IP address is limited (Manual)
+- `cis-nginx-v300-5-2-5` — Ensure rate limits by IP address are set (Manual)
+- `cis-nginx-v300-5-3-1` — Ensure X-Content-Type-Options header is configured and enabled (Manual)
+- `cis-nginx-v300-5-3-2` — Ensure that Content Security Policy (CSP) is enabled and configured properly (Manual)
+- `cis-nginx-v300-5-3-3` — Ensure the Referrer Policy is enabled and configured properly (Manual)
+- `cis-ocp-v160-1-1-1` — Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-10` — Ensure that the Container Network Interface file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-11` — Ensure that the etcd data directory permissions are set to 700 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-12` — Ensure that the etcd data directory ownership is set to etcd:etcd (Manual)
+- `cis-ocp-v160-1-1-13` — Ensure that the kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-14` — Ensure that the kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-15` — Ensure that the Scheduler kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-16` — Ensure that the Scheduler kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-17` — Ensure that the Controller Manager kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-18` — Ensure that the Controller Manager kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-19` — Ensure that the OpenShift PKI directory and file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-2` — Ensure that the API server pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-20` — Ensure that the OpenShift PKI certificate file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-21` — Ensure that the OpenShift PKI key file permissions are set to 600 (Manual)
+- `cis-ocp-v160-1-1-3` — Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-4` — Ensure that the controller manager pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-5` — Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-6` — Ensure that the scheduler pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-7` — Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-1-8` — Ensure that the etcd pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v160-1-1-9` — Ensure that the Container Network Interface file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v160-1-2-1` — Ensure that anonymous requests are authorized (Manual)
+- `cis-ocp-v160-1-2-10` — Ensure that the admission control plugin AlwaysAdmit is not set (Manual)
+- `cis-ocp-v160-1-2-11` — Ensure that the admission control plugin AlwaysPullImages is not set (Manual)
+- `cis-ocp-v160-1-2-12` — Ensure that the admission control plugin ServiceAccount is set (Manual)
+- `cis-ocp-v160-1-2-13` — Ensure that the admission control plugin NamespaceLifecycle is set (Manual)
+- `cis-ocp-v160-1-2-14` — Ensure that the admission control plugin SecurityContextConstraint is set (Manual)
+- `cis-ocp-v160-1-2-15` — Ensure that the admission control plugin NodeRestriction is set (Manual)
+- `cis-ocp-v160-1-2-16` — Ensure that the --insecure-bind-address argument is not set (Manual)
+- `cis-ocp-v160-1-2-17` — Ensure that the --insecure-port argument is set to 0 (Manual)
+- `cis-ocp-v160-1-2-18` — Ensure that the --secure-port argument is not set to 0 (Manual)
+- `cis-ocp-v160-1-2-19` — Ensure that the healthz endpoint is protected by RBAC (Manual)
+- `cis-ocp-v160-1-2-2` — Ensure that the --basic-auth-file argument is not set (Manual)
+- `cis-ocp-v160-1-2-20` — Ensure that the --audit-log-path argument is set (Manual)
+- `cis-ocp-v160-1-2-21` — Ensure that the audit logs are forwarded off the cluster for retention (Manual)
+- `cis-ocp-v160-1-2-22` — Ensure that the maximumRetainedFiles argument is set to 10 or as appropriate (Manual)
+- `cis-ocp-v160-1-2-23` — Ensure that the maximumFileSizeMegabytes argument is set to 100 (Manual)
+- `cis-ocp-v160-1-2-24` — Ensure that the --request-timeout argument is set (Manual)
+- `cis-ocp-v160-1-2-25` — Ensure that the --service-account-lookup argument is set to true (Manual)
+- `cis-ocp-v160-1-2-26` — Ensure that the --service-account-key-file argument is set as appropriate (Manual)
+- `cis-ocp-v160-1-2-27` — Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Manual)
+- `cis-ocp-v160-1-2-28` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v160-1-2-29` — Ensure that the --client-ca-file argument is set as appropriate (Manual)
+- `cis-ocp-v160-1-2-3` — Ensure that the --token-auth-file parameter is not set (Manual)
+- `cis-ocp-v160-1-2-30` — Ensure that the --etcd-cafile argument is set as appropriate (Manual)
+- `cis-ocp-v160-1-2-31` — Ensure that encryption providers are appropriately configured (Manual)
+- `cis-ocp-v160-1-2-32` — Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-ocp-v160-1-2-33` — Ensure unsupported configuration overrides are not used (Manual)
+- `cis-ocp-v160-1-2-4` — Use https for kubelet connections (Manual)
+- `cis-ocp-v160-1-2-5` — Ensure that the kubelet uses certificates to authenticate (Manual)
+- `cis-ocp-v160-1-2-6` — Verify that the kubelet certificate authority is set as appropriate (Manual)
+- `cis-ocp-v160-1-2-7` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Manual)
+- `cis-ocp-v160-1-2-8` — Verify that RBAC is enabled (Manual)
+- `cis-ocp-v160-1-2-9` — Ensure that the APIPriorityAndFairness feature gate is enabled (Manual)
+- `cis-ocp-v160-1-3-1` — Ensure that controller manager healthz endpoints are protected by RBAC (Manual)
+- `cis-ocp-v160-1-3-2` — Ensure that the --use-service-account-credentials argument is set to true (Manual)
+- `cis-ocp-v160-1-3-3` — Ensure that the --service-account-private-key-file argument is set as appropriate (Manual)
+- `cis-ocp-v160-1-3-4` — Ensure that the --root-ca-file argument is set as appropriate (Manual)
+- `cis-ocp-v160-1-3-5` — Ensure that the --bind-address argument is set to 127.0.0.1 (Manual)
+- `cis-ocp-v160-1-4-1` — Ensure that the healthz endpoints for the scheduler are protected by RBAC (Manual)
+- `cis-ocp-v160-1-4-2` — Verify that the scheduler API service is protected by RBAC (Manual)
+- `cis-ocp-v160-2-1` — Ensure that the --cert-file and --key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v160-2-2` — Ensure that the --client-cert-auth argument is set to true (Manual)
+- `cis-ocp-v160-2-3` — Ensure that the --auto-tls argument is not set to true (Manual)
+- `cis-ocp-v160-2-4` — Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v160-2-5` — Ensure that the --peer-client-cert-auth argument is set to true (Manual)
+- `cis-ocp-v160-2-6` — Ensure that the --peer-auto-tls argument is not set to true (Manual)
+- `cis-ocp-v160-2-7` — Ensure that a unique Certificate Authority is used for etcd (Manual)
+- `cis-ocp-v160-3-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-ocp-v160-3-2-1` — Ensure that a minimal audit policy is created (Manual)
+- `cis-ocp-v160-3-2-2` — Ensure that the audit policy covers key security concerns (Manual)
+- `cis-ocp-v160-4-1-1` — Ensure that the kubelet service file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v160-4-1-10` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-ocp-v160-4-1-2` — Ensure that the kubelet service file ownership is set to root:root (Automated)
+- `cis-ocp-v160-4-1-3` — If proxy kube proxy configuration file exists ensure permissions are set to 644 or more restrictive (Manual)
+- `cis-ocp-v160-4-1-4` — If proxy kubeconfig file exists ensure ownership is set to root:root (Manual)
+- `cis-ocp-v160-4-1-5` — Ensure that the --kubeconfig kubelet.conf file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v160-4-1-6` — Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated)
+- `cis-ocp-v160-4-1-7` — Ensure that the certificate authorities file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v160-4-1-8` — Ensure that the client certificate authorities file ownership is set to root:root (Automated)
+- `cis-ocp-v160-4-1-9` — Ensure that the kubelet --config configuration file has permissions set to 600 or more restrictive (Automated)
+- `cis-ocp-v160-4-2-1` — Activate Garbage collection in OpenShift Container Platform 4, as appropriate (Manual)
+- `cis-ocp-v160-4-2-10` — Ensure that the --rotate-certificates argument is not set to false (Manual)
+- `cis-ocp-v160-4-2-11` — Verify that the RotateKubeletServerCertificate argument is set to true (Manual)
+- `cis-ocp-v160-4-2-12` — Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-ocp-v160-4-2-2` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-ocp-v160-4-2-3` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-ocp-v160-4-2-4` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-ocp-v160-4-2-5` — Verify that the read only port is not used or is set to 0 (Automated)
+- `cis-ocp-v160-4-2-6` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-ocp-v160-4-2-7` — Ensure that the --make-iptables-util-chains argument is set to true (Manual)
+- `cis-ocp-v160-4-2-8` — Ensure that the kubeAPIQPS [--event-qps] argument is set to 0 or a level which ensures appropriate event capture (Manual)
+- `cis-ocp-v160-4-2-9` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v160-5-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-ocp-v160-5-1-2` — Minimize access to secrets (Manual)
+- `cis-ocp-v160-5-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-ocp-v160-5-1-4` — Minimize access to create pods (Manual)
+- `cis-ocp-v160-5-1-5` — Ensure that default service accounts are not actively used. (Manual)
+- `cis-ocp-v160-5-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-ocp-v160-5-2-1` — Minimize the admission of privileged containers (Manual)
+- `cis-ocp-v160-5-2-10` — Minimize access to privileged Security Context Constraints (Manual)
+- `cis-ocp-v160-5-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Manual)
+- `cis-ocp-v160-5-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Manual)
+- `cis-ocp-v160-5-2-4` — Minimize the admission of containers wishing to share the host network namespace (Manual)
+- `cis-ocp-v160-5-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-ocp-v160-5-2-6` — Minimize the admission of root containers (Manual)
+- `cis-ocp-v160-5-2-7` — Minimize the admission of containers with the NET_RAW capability (Manual)
+- `cis-ocp-v160-5-2-8` — Minimize the admission of containers with added capabilities (Manual)
+- `cis-ocp-v160-5-2-9` — Minimize the admission of containers with capabilities assigned (Manual)
+- `cis-ocp-v160-5-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-ocp-v160-5-3-2` — Ensure that all Namespaces have Network Policies defined (Manual)
+- `cis-ocp-v160-5-4-1` — Prefer using secrets as files over secrets as environment variables (Manual)
+- `cis-ocp-v160-5-4-2` — Consider external secret storage (Manual)
+- `cis-ocp-v160-5-5-1` — Configure Image Provenance using image controller configuration parameters (Manual)
+- `cis-ocp-v160-5-7-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-ocp-v160-5-7-2` — Ensure that the seccomp profile is set to docker/default in your pod definitions (Manual)
+- `cis-ocp-v160-5-7-3` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-ocp-v160-5-7-4` — The default namespace should not be used (Manual)
+- `cis-ocp-v170-1-1-1` — Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-10` — Ensure that the Container Network Interface file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-11` — Ensure that the etcd data directory permissions are set to 700 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-12` — Ensure that the etcd data directory ownership is set to etcd:etcd (Manual)
+- `cis-ocp-v170-1-1-13` — Ensure that the kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-14` — Ensure that the kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-15` — Ensure that the Scheduler kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-16` — Ensure that the Scheduler kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-17` — Ensure that the Controller Manager kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-18` — Ensure that the Controller Manager kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-19` — Ensure that the OpenShift PKI directory and file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-2` — Ensure that the API server pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-20` — Ensure that the OpenShift PKI certificate file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-21` — Ensure that the OpenShift PKI key file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-3` — Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-4` — Ensure that the controller manager pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-5` — Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-6` — Ensure that the scheduler pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-7` — Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-1-8` — Ensure that the etcd pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v170-1-1-9` — Ensure that the Container Network Interface file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v170-1-2-1` — Ensure that anonymous requests are authorized (Manual)
+- `cis-ocp-v170-1-2-10` — Ensure that the admission control plugin AlwaysAdmit is not set (Manual)
+- `cis-ocp-v170-1-2-11` — Ensure that the admission control plugin AlwaysPullImages is not set (Manual)
+- `cis-ocp-v170-1-2-12` — Ensure that the admission control plugin ServiceAccount is set (Manual)
+- `cis-ocp-v170-1-2-13` — Ensure that the admission control plugin NamespaceLifecycle is set (Manual)
+- `cis-ocp-v170-1-2-14` — Ensure that the admission control plugin SecurityContextConstraint is set (Manual)
+- `cis-ocp-v170-1-2-15` — Ensure that the admission control plugin NodeRestriction is set (Manual)
+- `cis-ocp-v170-1-2-16` — Ensure that the --insecure-bind-address argument is not set (Manual)
+- `cis-ocp-v170-1-2-17` — Ensure that the --insecure-port argument is set to 0 (Manual)
+- `cis-ocp-v170-1-2-18` — Ensure that the --secure-port argument is not set to 0 (Manual)
+- `cis-ocp-v170-1-2-19` — Ensure that the healthz endpoint is protected by RBAC (Manual)
+- `cis-ocp-v170-1-2-2` — Ensure that the --basic-auth-file argument is not set (Manual)
+- `cis-ocp-v170-1-2-20` — Ensure that the --audit-log-path argument is set (Manual)
+- `cis-ocp-v170-1-2-21` — Ensure that the audit logs are forwarded off the cluster for retention (Manual)
+- `cis-ocp-v170-1-2-22` — Ensure that the maximumRetainedFiles argument is set to 10 or as appropriate (Manual)
+- `cis-ocp-v170-1-2-23` — Ensure that the maximumFileSizeMegabytes argument is set to 100 (Manual)
+- `cis-ocp-v170-1-2-24` — Ensure that the --request-timeout argument is set as appropriate (Manual)
+- `cis-ocp-v170-1-2-25` — Ensure that the --service-account-lookup argument is set to true (Manual)
+- `cis-ocp-v170-1-2-26` — Ensure that the --service-account-key-file argument is set as appropriate (Manual)
+- `cis-ocp-v170-1-2-27` — Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Manual)
+- `cis-ocp-v170-1-2-28` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v170-1-2-29` — Ensure that the --client-ca-file argument is set as appropriate (Manual)
+- `cis-ocp-v170-1-2-3` — Ensure that the --token-auth-file parameter is not set (Manual)
+- `cis-ocp-v170-1-2-30` — Ensure that the --etcd-cafile argument is set as appropriate (Manual)
+- `cis-ocp-v170-1-2-31` — Ensure that encryption providers are appropriately configured (Manual)
+- `cis-ocp-v170-1-2-32` — Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-ocp-v170-1-2-33` — Ensure that unsupported configuration overrides are not used (Manual)
+- `cis-ocp-v170-1-2-4` — Use https for kubelet connections (Manual)
+- `cis-ocp-v170-1-2-5` — Ensure that the kubelet uses certificates to authenticate (Manual)
+- `cis-ocp-v170-1-2-6` — Verify that the kubelet certificate authority is set as appropriate (Manual)
+- `cis-ocp-v170-1-2-7` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Manual)
+- `cis-ocp-v170-1-2-8` — Verify that RBAC is enabled (Manual)
+- `cis-ocp-v170-1-2-9` — Ensure that the APIPriorityAndFairness feature gate is enabled (Manual)
+- `cis-ocp-v170-1-3-1` — Ensure controller manager healthz endpoints protected by RBAC (Manual)
+- `cis-ocp-v170-1-3-2` — Ensure --use-service-account-credentials set to true (Manual)
+- `cis-ocp-v170-1-3-3` — Ensure --service-account-private-key-file set (Manual)
+- `cis-ocp-v170-1-3-4` — Ensure --root-ca-file set as appropriate (Manual)
+- `cis-ocp-v170-1-3-5` — Ensure --bind-address set to 127.0.0.1 (Manual)
+- `cis-ocp-v170-1-4-1` — Ensure healthz endpoints for scheduler protected by RBAC (Manual)
+- `cis-ocp-v170-1-4-2` — Verify scheduler API service protected by RBAC (Manual)
+- `cis-ocp-v170-2-1` — Ensure --cert-file and --key-file set (Manual)
+- `cis-ocp-v170-2-2` — Ensure --client-cert-auth set to true (Manual)
+- `cis-ocp-v170-2-3` — Ensure --auto-tls not set to true (Manual)
+- `cis-ocp-v170-2-4` — Ensure --peer-cert-file and --peer-key-file set (Manual)
+- `cis-ocp-v170-2-5` — Ensure --peer-client-cert-auth set to true (Manual)
+- `cis-ocp-v170-2-6` — Ensure --peer-auto-tls not set to true (Manual)
+- `cis-ocp-v170-2-7` — Ensure unique Certificate Authority used for etcd (Manual)
+- `cis-ocp-v170-3-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-ocp-v170-3-2-1` — Ensure minimal audit policy created (Manual)
+- `cis-ocp-v170-3-2-2` — Ensure audit policy covers key security concerns (Manual)
+- `cis-ocp-v170-4-1-1` — Ensure that the kubelet service file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v170-4-1-10` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-ocp-v170-4-1-2` — Ensure that the kubelet service file ownership is set to root:root (Automated)
+- `cis-ocp-v170-4-1-3` — If proxy kubeconfig file exists ensure permissions are set to 644 or more restrictive (Manual)
+- `cis-ocp-v170-4-1-4` — If proxy kubeconfig file exists ensure ownership is set to root:root (Manual)
+- `cis-ocp-v170-4-1-5` — Ensure that the --kubeconfig kubelet.conf file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v170-4-1-6` — Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated)
+- `cis-ocp-v170-4-1-7` — Ensure that the certificate authorities file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v170-4-1-8` — Ensure that the client certificate authorities file ownership is set to root:root (Automated)
+- `cis-ocp-v170-4-1-9` — Ensure that the kubelet --config configuration file has permissions set to 600 or more restrictive (Automated)
+- `cis-ocp-v170-4-2-1` — Activate Garbage collection in OpenShift Container Platform 4, as appropriate (Manual)
+- `cis-ocp-v170-4-2-10` — Ensure that the --rotate-certificates argument is not set to false (Manual)
+- `cis-ocp-v170-4-2-11` — Verify that the RotateKubeletServerCertificate argument is set to true (Manual)
+- `cis-ocp-v170-4-2-12` — Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-ocp-v170-4-2-2` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-ocp-v170-4-2-3` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-ocp-v170-4-2-4` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-ocp-v170-4-2-5` — Verify that the read only port is not used or is set to 0 (Automated)
+- `cis-ocp-v170-4-2-6` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-ocp-v170-4-2-7` — Ensure that the --make-iptables-util-chains argument is set to true (Manual)
+- `cis-ocp-v170-4-2-8` — Ensure that the kubeAPIQPS [--event-qps] argument is set to 0 or a level which ensures appropriate event capture (Manual)
+- `cis-ocp-v170-4-2-9` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v170-5-1-1` — Ensure cluster-admin role only used where required (Manual)
+- `cis-ocp-v170-5-1-2` — Minimize access to secrets (Manual)
+- `cis-ocp-v170-5-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-ocp-v170-5-1-4` — Minimize access to create pods (Manual)
+- `cis-ocp-v170-5-1-5` — Ensure default service accounts not actively used (Manual)
+- `cis-ocp-v170-5-1-6` — Ensure Service Account Tokens only mounted where necessary (Manual)
+- `cis-ocp-v170-5-2-1` — Minimize admission of privileged containers (Manual)
+- `cis-ocp-v170-5-2-10` — Minimize access to privileged Security Context Constraints (Manual)
+- `cis-ocp-v170-5-2-2` — Minimize admission of containers sharing host process ID namespace (Manual)
+- `cis-ocp-v170-5-2-3` — Minimize admission of containers sharing host IPC namespace (Manual)
+- `cis-ocp-v170-5-2-4` — Minimize admission of containers sharing host network namespace (Manual)
+- `cis-ocp-v170-5-2-5` — Minimize admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-ocp-v170-5-2-6` — Minimize admission of root containers (Manual)
+- `cis-ocp-v170-5-2-7` — Minimize admission of containers with NET_RAW capability (Manual)
+- `cis-ocp-v170-5-2-8` — Minimize admission of containers with added capabilities (Manual)
+- `cis-ocp-v170-5-2-9` — Minimize admission of containers with capabilities assigned (Manual)
+- `cis-ocp-v170-5-3-1` — Ensure CNI in use supports Network Policies (Manual)
+- `cis-ocp-v170-5-3-2` — Ensure all Namespaces have Network Policies defined (Manual)
+- `cis-ocp-v170-5-4-1` — Prefer using secrets as files over environment variables (Manual)
+- `cis-ocp-v170-5-4-2` — Consider external secret storage (Manual)
+- `cis-ocp-v170-5-5-1` — Configure Image Provenance using image controller config (Manual)
+- `cis-ocp-v170-5-7-1` — Create administrative boundaries using namespaces (Manual)
+- `cis-ocp-v170-5-7-2` — Ensure seccomp profile set to docker/default (Manual)
+- `cis-ocp-v170-5-7-3` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-ocp-v170-5-7-4` — The default namespace should not be used (Manual)
+- `cis-ocp-v180-1-1-1` — Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-10` — Ensure that the Container Network Interface file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-11` — Ensure that the etcd data directory permissions are set to 700 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-12` — Ensure that the etcd data directory ownership is set to etcd:etcd (Manual)
+- `cis-ocp-v180-1-1-13` — Ensure that the kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-14` — Ensure that the kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-15` — Ensure that the Scheduler kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-16` — Ensure that the Scheduler kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-17` — Ensure that the Controller Manager kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-18` — Ensure that the Controller Manager kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-19` — Ensure that the OpenShift PKI directory and file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-2` — Ensure that the API server pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-20` — Ensure that the OpenShift PKI certificate file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-21` — Ensure that the OpenShift PKI key file permissions are set to 600 (Manual)
+- `cis-ocp-v180-1-1-3` — Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-4` — Ensure that the controller manager pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-5` — Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-6` — Ensure that the scheduler pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-7` — Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-1-8` — Ensure that the etcd pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v180-1-1-9` — Ensure that the Container Network Interface file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v180-1-2-1` — Ensure that anonymous requests are authorized (Manual)
+- `cis-ocp-v180-1-2-10` — Ensure that the admission control plugin ServiceAccount is set (Manual)
+- `cis-ocp-v180-1-2-11` — Ensure that the admission control plugin NamespaceLifecycle is set (Manual)
+- `cis-ocp-v180-1-2-12` — Ensure that the admission control plugin SecurityContextConstraint is set (Manual)
+- `cis-ocp-v180-1-2-13` — Ensure that the admission control plugin NodeRestriction is set (Manual)
+- `cis-ocp-v180-1-2-14` — Ensure that the --insecure-bind-address argument is not set (Manual)
+- `cis-ocp-v180-1-2-15` — Ensure that the --insecure-port argument is set to 0 (Manual)
+- `cis-ocp-v180-1-2-16` — Ensure that the --secure-port argument is not set to 0 (Manual)
+- `cis-ocp-v180-1-2-17` — Ensure that the healthz endpoint is protected by RBAC (Manual)
+- `cis-ocp-v180-1-2-18` — Ensure that the --audit-log-path argument is set (Manual)
+- `cis-ocp-v180-1-2-19` — Ensure that the audit logs are forwarded off the cluster for retention (Manual)
+- `cis-ocp-v180-1-2-2` — Use https for kubelet connections (Manual)
+- `cis-ocp-v180-1-2-20` — Ensure that the maximumRetainedFiles argument is set to 10 or as appropriate (Manual)
+- `cis-ocp-v180-1-2-21` — Configure Kubernetes API Server Maximum Audit Log Size (Manual)
+- `cis-ocp-v180-1-2-22` — Ensure that the --request-timeout argument is set (Manual)
+- `cis-ocp-v180-1-2-23` — Ensure that the --service-account-lookup argument is set to true (Manual)
+- `cis-ocp-v180-1-2-24` — Ensure that the --service-account-key-file argument is set (Manual)
+- `cis-ocp-v180-1-2-25` — Ensure that the --etcd-certfile and --etcd-keyfile arguments are set (Manual)
+- `cis-ocp-v180-1-2-26` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set (Manual)
+- `cis-ocp-v180-1-2-27` — Ensure that the --tls-ca-file argument is set (Manual)
+- `cis-ocp-v180-1-2-28` — Ensure that the --etcd-cafile argument is set (Manual)
+- `cis-ocp-v180-1-2-29` — Ensure that encryption providers are appropriately configured (Manual)
+- `cis-ocp-v180-1-2-3` — Ensure that the kubelet uses certificates to authenticate (Manual)
+- `cis-ocp-v180-1-2-30` — Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-ocp-v180-1-2-31` — Ensure that unsupported configuration overrides are not used (Manual)
+- `cis-ocp-v180-1-2-4` — Verify that the kubelet certificate authority is set as appropriate (Manual)
+- `cis-ocp-v180-1-2-5` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Manual)
+- `cis-ocp-v180-1-2-6` — Verify that RBAC is enabled (Manual)
+- `cis-ocp-v180-1-2-7` — Ensure that the APIPriorityAndFairness feature gate is enabled (Manual)
+- `cis-ocp-v180-1-2-8` — Ensure that the admission control plugin AlwaysAdmit is not set (Manual)
+- `cis-ocp-v180-1-2-9` — Ensure that the admission control plugin AlwaysPullImages is not set (Manual)
+- `cis-ocp-v180-1-3-1` — Ensure controller manager healthz endpoints protected by RBAC (Manual)
+- `cis-ocp-v180-1-3-2` — Ensure --use-service-account-credentials set to true (Manual)
+- `cis-ocp-v180-1-3-3` — Ensure --service-account-private-key-file set (Manual)
+- `cis-ocp-v180-1-3-4` — Ensure --root-ca-file set as appropriate (Manual)
+- `cis-ocp-v180-1-4-1` — Ensure healthz endpoints for scheduler protected by RBAC (Manual)
+- `cis-ocp-v180-1-4-2` — Verify scheduler API service protected by RBAC (Manual)
+- `cis-ocp-v180-2-1` — Ensure --cert-file and --key-file set (Manual)
+- `cis-ocp-v180-2-2` — Ensure --client-cert-auth set to true (Manual)
+- `cis-ocp-v180-2-3` — Ensure --auto-tls not set to true (Manual)
+- `cis-ocp-v180-2-4` — Ensure --peer-cert-file and --peer-key-file set (Manual)
+- `cis-ocp-v180-2-5` — Ensure --peer-client-cert-auth set to true (Manual)
+- `cis-ocp-v180-2-6` — Ensure --peer-auto-tls not set to true (Manual)
+- `cis-ocp-v180-2-7` — Ensure unique Certificate Authority used for etcd (Manual)
+- `cis-ocp-v180-3-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-ocp-v180-3-2-1` — Ensure minimal audit policy created (Manual)
+- `cis-ocp-v180-3-2-2` — Ensure audit policy covers key security concerns (Manual)
+- `cis-ocp-v180-4-1-1` — Ensure that the kubelet service file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v180-4-1-10` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-ocp-v180-4-1-2` — Ensure that the kubelet service file ownership is set to root:root (Automated)
+- `cis-ocp-v180-4-1-3` — If proxy kube proxy configuration file exists ensure permissions are set to 644 or more restrictive (Manual)
+- `cis-ocp-v180-4-1-4` — If proxy kubeconfig file exists ensure ownership is set to root:root (Manual)
+- `cis-ocp-v180-4-1-5` — Ensure that the --kubeconfig kubelet.conf file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v180-4-1-6` — Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated)
+- `cis-ocp-v180-4-1-7` — Ensure that the certificate authorities file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v180-4-1-8` — Ensure that the client certificate authorities file ownership is set to root:root (Automated)
+- `cis-ocp-v180-4-1-9` — Ensure that the kubelet --config configuration file has permissions set to 600 or more restrictive (Automated)
+- `cis-ocp-v180-4-2-1` — Activate Garbage collection in OpenShift Container Platform 4, as appropriate (Manual)
+- `cis-ocp-v180-4-2-10` — Ensure that the --rotate-certificates argument is not set to false (Manual)
+- `cis-ocp-v180-4-2-11` — Verify that the RotateKubeletServerCertificate argument is set to true (Manual)
+- `cis-ocp-v180-4-2-12` — Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-ocp-v180-4-2-2` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-ocp-v180-4-2-3` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-ocp-v180-4-2-4` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-ocp-v180-4-2-5` — Verify that the read only port is not used or is set to 0 (Automated)
+- `cis-ocp-v180-4-2-6` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-ocp-v180-4-2-7` — Ensure that the --make-iptables-util-chains argument is set to true (Manual)
+- `cis-ocp-v180-4-2-8` — Ensure that the kubeAPIQPS [--event-qps] argument is set to 0 or a level which ensures appropriate event capture (Manual)
+- `cis-ocp-v180-4-2-9` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v180-5-1-1` — Ensure cluster-admin role only used where required (Manual)
+- `cis-ocp-v180-5-1-2` — Minimize access to secrets (Manual)
+- `cis-ocp-v180-5-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-ocp-v180-5-1-4` — Minimize access to create pods (Manual)
+- `cis-ocp-v180-5-1-5` — Ensure default service accounts not actively used (Manual)
+- `cis-ocp-v180-5-1-6` — Ensure Service Account Tokens only mounted where necessary (Manual)
+- `cis-ocp-v180-5-2-1` — Minimize admission of privileged containers (Manual)
+- `cis-ocp-v180-5-2-10` — Minimize access to privileged Security Context Constraints (Manual)
+- `cis-ocp-v180-5-2-2` — Minimize admission of containers sharing host process ID namespace (Manual)
+- `cis-ocp-v180-5-2-3` — Minimize admission of containers sharing host IPC namespace (Manual)
+- `cis-ocp-v180-5-2-4` — Minimize admission of containers sharing host network namespace (Manual)
+- `cis-ocp-v180-5-2-5` — Minimize admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-ocp-v180-5-2-6` — Minimize admission of root containers (Manual)
+- `cis-ocp-v180-5-2-7` — Minimize admission of containers with NET_RAW capability (Manual)
+- `cis-ocp-v180-5-2-8` — Minimize admission of containers with added capabilities (Manual)
+- `cis-ocp-v180-5-2-9` — Minimize admission of containers with capabilities assigned (Manual)
+- `cis-ocp-v180-5-3-1` — Ensure CNI in use supports Network Policies (Manual)
+- `cis-ocp-v180-5-3-2` — Ensure all Namespaces have Network Policies defined (Manual)
+- `cis-ocp-v180-5-4-1` — Prefer using secrets as files over secrets as environment variables (Manual)
+- `cis-ocp-v180-5-4-2` — Consider external secret storage (Manual)
+- `cis-ocp-v180-5-5-1` — Configure Image Provenance using image controller configuration parameters (Manual)
+- `cis-ocp-v180-5-7-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-ocp-v180-5-7-2` — Ensure seccomp profile set to docker/default in pod definitions (Manual)
+- `cis-ocp-v180-5-7-3` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-ocp-v180-5-7-4` — The default namespace should not be used (Manual)
+- `cis-ocp-v190-1-1-1` — Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-10` — Ensure that the Container Network Interface file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-11` — Ensure that the etcd data directory permissions are set to 700 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-12` — Ensure that the etcd data directory ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-13` — Ensure that the kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-14` — Ensure that the kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-15` — Ensure that the Scheduler kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-16` — Ensure that the Scheduler kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-17` — Ensure that the Controller Manager kubeconfig file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-18` — Ensure that the Controller Manager kubeconfig file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-19` — Ensure that the OpenShift PKI directory and file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-2` — Ensure that the API server pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-20` — Ensure that the OpenShift PKI certificate file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-21` — Ensure that the OpenShift PKI key file permissions are set to 600 (Manual)
+- `cis-ocp-v190-1-1-3` — Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-4` — Ensure that the controller manager pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-5` — Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-6` — Ensure that the scheduler pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-7` — Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-1-8` — Ensure that the etcd pod specification file ownership is set to root:root (Manual)
+- `cis-ocp-v190-1-1-9` — Ensure that the Container Network Interface file permissions are set to 600 or more restrictive (Manual)
+- `cis-ocp-v190-1-2-1` — Ensure that anonymous requests are authorized (Manual)
+- `cis-ocp-v190-1-2-10` — Ensure that the admission control plugin ServiceAccount is set (Manual)
+- `cis-ocp-v190-1-2-11` — Ensure that the admission control plugin NamespaceLifecycle is set (Manual)
+- `cis-ocp-v190-1-2-12` — Ensure that the admission control plugin SecurityContextConstraint is set (Manual)
+- `cis-ocp-v190-1-2-13` — Ensure that the admission control plugin NodeRestriction is set (Manual)
+- `cis-ocp-v190-1-2-14` — Ensure that the --insecure-bind-address argument is not set (Manual)
+- `cis-ocp-v190-1-2-15` — Ensure that the --insecure-port argument is set to 0 (Manual)
+- `cis-ocp-v190-1-2-16` — Ensure that the --secure-port argument is not set to 0 (Manual)
+- `cis-ocp-v190-1-2-17` — Ensure that the healthz endpoint is protected by RBAC (Manual)
+- `cis-ocp-v190-1-2-18` — Ensure that the --audit-log-path argument is set (Manual)
+- `cis-ocp-v190-1-2-19` — Ensure that the audit logs are forwarded off the cluster for retention (Manual)
+- `cis-ocp-v190-1-2-2` — Use https for kubelet connections (Manual)
+- `cis-ocp-v190-1-2-20` — Ensure that the maximumRetainedFiles argument is set to 10 or as appropriate (Manual)
+- `cis-ocp-v190-1-2-21` — Configure Kubernetes API Server Maximum Audit Log Size (Manual)
+- `cis-ocp-v190-1-2-22` — Ensure that the --request-timeout argument is set (Manual)
+- `cis-ocp-v190-1-2-23` — Ensure that the --service-account-lookup argument is set to true (Manual)
+- `cis-ocp-v190-1-2-24` — Ensure that the --service-account-key-file argument is set as appropriate (Manual)
+- `cis-ocp-v190-1-2-25` — Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Manual)
+- `cis-ocp-v190-1-2-26` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v190-1-2-27` — Ensure that the --client-ca-file argument is set as appropriate (Manual)
+- `cis-ocp-v190-1-2-28` — Ensure that the --etcd-cafile argument is set as appropriate (Manual)
+- `cis-ocp-v190-1-2-29` — Ensure that encryption providers are appropriately configured (Manual)
+- `cis-ocp-v190-1-2-3` — Ensure that the kubelet uses certificates to authenticate (Manual)
+- `cis-ocp-v190-1-2-30` — Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-ocp-v190-1-2-31` — Ensure unsupported configuration overrides are not used (Manual)
+- `cis-ocp-v190-1-2-4` — Verify that the kubelet certificate authority is set as appropriate (Manual)
+- `cis-ocp-v190-1-2-5` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Manual)
+- `cis-ocp-v190-1-2-6` — Verify that RBAC is enabled (Manual)
+- `cis-ocp-v190-1-2-7` — Ensure that the APIPriorityAndFairness feature gate is enabled (Manual)
+- `cis-ocp-v190-1-2-8` — Ensure that the admission control plugin AlwaysAdmit is not set (Manual)
+- `cis-ocp-v190-1-2-9` — Ensure that the admission control plugin AlwaysPullImages is not set (Manual)
+- `cis-ocp-v190-1-3-1` — Ensure that controller manager healthz endpoints are protected by RBAC (Manual)
+- `cis-ocp-v190-1-3-2` — Ensure that the --use-service-account-credentials argument is set to true (Manual)
+- `cis-ocp-v190-1-3-3` — Ensure that the --service-account-private-key-file argument is set as appropriate (Manual)
+- `cis-ocp-v190-1-3-4` — Ensure that the --root-ca-file argument is set as appropriate (Manual)
+- `cis-ocp-v190-1-4-1` — Ensure that the healthz endpoints for the scheduler are protected by RBAC (Manual)
+- `cis-ocp-v190-1-4-2` — Verify that the scheduler API service is protected by RBAC (Manual)
+- `cis-ocp-v190-2-1` — Ensure that the --cert-file and --key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v190-2-2` — Ensure that the --client-cert-auth argument is set to true (Manual)
+- `cis-ocp-v190-2-3` — Ensure that the --auto-tls argument is not set to true (Manual)
+- `cis-ocp-v190-2-4` — Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v190-2-5` — Ensure that the --peer-client-cert-auth argument is set to true (Manual)
+- `cis-ocp-v190-2-6` — Ensure that the --peer-auto-tls argument is not set to true (Manual)
+- `cis-ocp-v190-2-7` — Ensure that a unique Certificate Authority is used for etcd (Manual)
+- `cis-ocp-v190-3-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-ocp-v190-3-2-1` — Ensure that a minimal audit policy is created (Manual)
+- `cis-ocp-v190-3-2-2` — Ensure that the audit policy covers key security concerns (Manual)
+- `cis-ocp-v190-4-1-1` — Ensure that the kubelet service file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v190-4-1-10` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-ocp-v190-4-1-2` — Ensure that the kubelet service file ownership is set to root:root (Automated)
+- `cis-ocp-v190-4-1-3` — If proxy kube proxy configuration file exists ensure permissions are set to 644 or more restrictive (Manual)
+- `cis-ocp-v190-4-1-4` — If proxy kubeconfig file exists ensure ownership is set to root:root (Manual)
+- `cis-ocp-v190-4-1-5` — Ensure that the --kubeconfig kubelet.conf file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v190-4-1-6` — Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated)
+- `cis-ocp-v190-4-1-7` — Ensure that the certificate authorities file permissions are set to 644 or more restrictive (Automated)
+- `cis-ocp-v190-4-1-8` — Ensure that the client certificate authorities file ownership is set to root:root (Automated)
+- `cis-ocp-v190-4-1-9` — Ensure that the kubelet --config configuration file has permissions set to 600 or more restrictive (Automated)
+- `cis-ocp-v190-4-2-1` — Activate Garbage collection in OpenShift Container Platform 4, as appropriate (Manual)
+- `cis-ocp-v190-4-2-10` — Ensure that the --rotate-certificates argument is not set to false (Manual)
+- `cis-ocp-v190-4-2-11` — Verify that the RotateKubeletServerCertificate argument is set to true (Manual)
+- `cis-ocp-v190-4-2-12` — Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual)
+- `cis-ocp-v190-4-2-2` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-ocp-v190-4-2-3` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-ocp-v190-4-2-4` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-ocp-v190-4-2-5` — Verify that the read only port is not used or is set to 0 (Automated)
+- `cis-ocp-v190-4-2-6` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-ocp-v190-4-2-7` — Ensure that the --make-iptables-util-chains argument is set to true (Manual)
+- `cis-ocp-v190-4-2-8` — Ensure that the kubeAPIQPS [--event-qps] argument is set to a level which ensures appropriate event capture (Manual)
+- `cis-ocp-v190-4-2-9` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual)
+- `cis-ocp-v190-5-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-ocp-v190-5-1-2` — Minimize access to secrets (Manual)
+- `cis-ocp-v190-5-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-ocp-v190-5-1-4` — Minimize access to create pods (Manual)
+- `cis-ocp-v190-5-1-5` — Ensure that default service accounts are not actively used (Manual)
+- `cis-ocp-v190-5-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- `cis-ocp-v190-5-2-1` — Minimize the admission of privileged containers (Manual)
+- `cis-ocp-v190-5-2-10` — Minimize access to privileged Security Context Constraints (Manual)
+- `cis-ocp-v190-5-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Manual)
+- `cis-ocp-v190-5-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Manual)
+- `cis-ocp-v190-5-2-4` — Minimize the admission of containers wishing to share the host network namespace (Manual)
+- `cis-ocp-v190-5-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Manual)
+- `cis-ocp-v190-5-2-6` — Minimize the admission of root containers (Manual)
+- `cis-ocp-v190-5-2-7` — Minimize the admission of containers with the NET_RAW capability (Manual)
+- `cis-ocp-v190-5-2-8` — Minimize the admission of containers with added capabilities (Manual)
+- `cis-ocp-v190-5-2-9` — Minimize the admission of containers with capabilities assigned (Manual)
+- `cis-ocp-v190-5-3-1` — Ensure that the CNI in use supports Network Policies (Manual)
+- `cis-ocp-v190-5-3-2` — Ensure that all Namespaces have Network Policies defined (Manual)
+- `cis-ocp-v190-5-4-1` — Prefer using secrets as files over secrets as environment variables (Manual)
+- `cis-ocp-v190-5-4-2` — Consider external secret storage (Manual)
+- `cis-ocp-v190-5-5-1` — Configure Image Provenance using image controller configuration parameters (Manual)
+- `cis-ocp-v190-5-7-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-ocp-v190-5-7-2` — Ensure that the seccomp profile is set to docker/default in your pod definitions (Manual)
+- `cis-ocp-v190-5-7-3` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-ocp-v190-5-7-4` — The default namespace should not be used (Manual)
+- `cis-ocp-vm-v100-1-1` — Restrict GPU and USB pass through to approved devices (Manual)
+- `cis-ocp-vm-v100-1-10` — Restrict namespace administrator access to migration tools (Manual)
+- `cis-ocp-vm-v100-1-11` — Restrict exec access to the pods (Manual)
+- `cis-ocp-vm-v100-1-12` — Restrict VNC access to cluster workloads (Manual)
+- `cis-ocp-vm-v100-1-13` — Restrict access to create and modify the Virtual Machine Cluster Instance and Preference Types (Manual)
+- `cis-ocp-vm-v100-1-14` — Restrict update access to the CDI CR (Manual)
+- `cis-ocp-vm-v100-1-2` — Enable nonRoot feature gate in OCPvirt prior to 4.18 (Automated)
+- `cis-ocp-vm-v100-1-3` — Disable persistentReservations feature gate (Automated)
+- `cis-ocp-vm-v100-1-4` — Disable downwardMetrics feature gate (Automated)
+- `cis-ocp-vm-v100-1-5` — Enforce the use of trusted registries using TLS (Automated)
+- `cis-ocp-vm-v100-1-6` — Restrict patching operations in the annotations for Hyperconverged (Manual)
+- `cis-ocp-vm-v100-1-7` — Ensure KSM is disabled (Automated)
+- `cis-ocp-vm-v100-1-8` — Ensure kubevirt seccomp profile file permission is set to 700 or more restrictive (Automated)
+- `cis-ocp-vm-v100-1-9` — Ensure kubevirt cache directory permission is set to 755 or more restrictive (Automated)
+- `cis-ocp-vm-v100-2-1` — Restrict pass through of GPUs and Host devices to the Virtual Machine (Manual)
+- `cis-ocp-vm-v100-2-2` — Disable overcommitting guest memory (Manual)
+- `cis-ocp-vm-v100-3-1` — Restrict access to cross datavolumes cloning (Manual)
+- `cis-ocp-vm-v100-3-2` — Disable Shareable disks (Automated)
+- `cis-ocp-vm-v100-3-3` — Ensure errorPolicy is not set to ignore (Manual)
+- `cis-ocp-vm-v100-4-1` — Use dedicated VLANs to segment network traffic (Automated)
+- `cis-ocp-vm-v100-4-2` — Enable MAC spoof filtering (Automated)
+- `cis-ocp-vm-v100-4-3` — Use multi-network policies (Manual)
+- `cis-ocp-vm-v100-5-1` — Disable Intel Trusted Execution Technology (TXT) (Manual)
+- `cis-ocp-vm-v100-6-1` — Disable nested virtualization (Manual)
+- `cis-ocp-vm-v100-6-2` — Enable vCPU metrics (Manual)
+- `cis-ocp-vm-v100-6-3` — Ensure all CPU vulnerabilities are mitigated (Manual)
+- `cis-oke-v150-2-1-1` — Client certificate authentication should not be used for users (Automated)
+- `cis-oke-v150-2-2-1` — Ensure access to OCI Audit service Log for OKE (Manual)
+- `cis-oke-v150-3-1-1` — Ensure that the oke_kubelet_conf.json file permissions are set to 644 or more restrictive (Automated)
+- `cis-oke-v150-3-1-2` — Ensure that the proxy oke_kubelet_conf.json file ownership is set to root:root (Automated)
+- `cis-oke-v150-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Automated)
+- `cis-oke-v150-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-oke-v150-3-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-oke-v150-3-2-10` — Ensure that the --rotate-server-certificates argument is set to true (Automated)
+- `cis-oke-v150-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-oke-v150-3-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-oke-v150-3-2-4` — Ensure that the --read-only-port argument is set to 0 (Automated)
+- `cis-oke-v150-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-oke-v150-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-oke-v150-3-2-7` — Ensure that the --event-qps argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-oke-v150-3-2-8` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated)
+- `cis-oke-v150-3-2-9` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-oke-v150-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-oke-v150-4-1-2` — Minimize access to secrets (Automated)
+- `cis-oke-v150-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-oke-v150-4-1-4` — Minimize access to create pods (Automated)
+- `cis-oke-v150-4-1-5` — Ensure that default service accounts are not actively used (Automated)
+- `cis-oke-v150-4-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-oke-v150-4-2-1` — Minimize the admission of privileged containers (Automated)
+- `cis-oke-v150-4-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- `cis-oke-v150-4-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- `cis-oke-v150-4-2-4` — Minimize the admission of containers wishing to share the host network namespace (Automated)
+- `cis-oke-v150-4-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- `cis-oke-v150-4-3-1` — Ensure latest CNI version is used (Manual)
+- `cis-oke-v150-4-3-2` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-oke-v150-4-4-1` — Prefer using secrets as files over secrets as environment variables (Manual)
+- `cis-oke-v150-4-4-2` — Consider external secret storage (Manual)
+- `cis-oke-v150-4-5-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-oke-v150-4-5-2` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-oke-v150-4-5-3` — The default namespace should not be used (Automated)
+- `cis-oke-v150-5-1-1` — Ensure Image Vulnerability Scanning using Oracle Vulnerability Scanning Service (Manual)
+- `cis-oke-v150-5-1-2` — Minimize user access to Oracle Cloud Infrastructure Container Registry (OCIR) (Manual)
+- `cis-oke-v150-5-1-3` — Minimize cluster access to read-only for Oracle Cloud Infrastructure Container Registry (OCIR) (Manual)
+- `cis-oke-v150-5-1-4` — Minimize Container Registries to only those approved (Manual)
+- `cis-oke-v150-5-2-1` — Prefer using dedicated OCI tenancies to manage OKE clusters (Manual)
+- `cis-oke-v150-5-3-1` — Ensure Kubernetes Secrets are encrypted (Manual)
+- `cis-oke-v150-5-4-1` — Restrict Access to the Control Plane Endpoint (Automated)
+- `cis-oke-v150-5-4-2` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-oke-v150-5-4-3` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-oke-v150-5-4-4` — Ensure Network Policy is Enabled and set as appropriate (Automated)
+- `cis-oke-v150-5-4-5` — Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- `cis-oke-v150-5-5-1` — Manage Kubernetes RBAC users with Oracle Cloud Infrastructure Identity and Access Management (IAM) (Manual)
+- `cis-oke-v170-2-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-oke-v170-2-2-1` — Ensure access to OCI Audit service Log for OKE (Manual)
+- `cis-oke-v170-3-1-1` — Ensure that the kubelet-config.json file permissions are set to 644 or more restrictive (Automated)
+- `cis-oke-v170-3-1-2` — Ensure that the kubelet-config.json file ownership is set to root:root (Automated)
+- `cis-oke-v170-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Automated)
+- `cis-oke-v170-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-oke-v170-3-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-oke-v170-3-2-10` — Ensure that the --rotate-server-certificates argument is set to true (Automated)
+- `cis-oke-v170-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-oke-v170-3-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-oke-v170-3-2-4` — Ensure that the --read-only-port argument is set to 0 (Automated)
+- `cis-oke-v170-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-oke-v170-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-oke-v170-3-2-7` — Ensure that the --event-qps argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-oke-v170-3-2-8` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated)
+- `cis-oke-v170-3-2-9` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-oke-v170-4-1-1` — Ensure that the cluster-admin role is only used where required (Automated)
+- `cis-oke-v170-4-1-2` — Minimize access to secrets (Automated)
+- `cis-oke-v170-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Automated)
+- `cis-oke-v170-4-1-4` — Minimize access to create pods (Automated)
+- `cis-oke-v170-4-1-5` — Ensure that default service accounts are not actively used (Automated)
+- `cis-oke-v170-4-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-oke-v170-4-2-1` — Minimize the admission of privileged containers (Automated)
+- `cis-oke-v170-4-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- `cis-oke-v170-4-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- `cis-oke-v170-4-2-4` — Minimize the admission of containers wishing to share the host network namespace (Automated)
+- `cis-oke-v170-4-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- `cis-oke-v170-4-3-1` — Ensure latest CNI version is used (Automated)
+- `cis-oke-v170-4-3-2` — Ensure that all Namespaces have Network Policies defined (Automated)
+- `cis-oke-v170-4-4-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-oke-v170-4-4-2` — Consider external secret storage (Manual)
+- `cis-oke-v170-4-5-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-oke-v170-4-5-2` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-oke-v170-4-5-3` — The default namespace should not be used (Automated)
+- `cis-oke-v170-5-1-1` — Oracle Cloud Security Penetration and Vulnerability Testing (Manual)
+- `cis-oke-v170-5-1-2` — Minimize user access control to Container Engine for Kubernetes (Manual)
+- `cis-oke-v170-5-1-3` — Minimize cluster access to read-only (Manual)
+- `cis-oke-v170-5-1-4` — Minimize Container Registries to only those approved (Manual)
+- `cis-oke-v170-5-2-1` — Prefer using dedicated Service Accounts (Automated)
+- `cis-oke-v170-5-3-1` — Encrypting Kubernetes Secrets at Rest in Etcd (Manual)
+- `cis-oke-v170-5-4-1` — Restrict Access to the Control Plane Endpoint (Automated)
+- `cis-oke-v170-5-4-2` — Ensure clusters created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-oke-v170-5-4-3` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-oke-v170-5-4-4` — Ensure Network Policy is Enabled and set as appropriate (Automated)
+- `cis-oke-v170-5-4-5` — Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- `cis-oke-v170-5-5-1` — Access Control and Container Engine for Kubernetes (Manual)
+- `cis-oke-v180-2-1-1` — Client certificate authentication should not be used for users (Manual)
+- `cis-oke-v180-2-2-1` — Ensure access to OCI Audit service Log for OKE (Manual)
+- `cis-oke-v180-3-1-1` — Ensure that the kubelet-config.json file permissions are set to 644 or more restrictive (Automated)
+- `cis-oke-v180-3-1-2` — Ensure that the kubelet-config.json file ownership is set to root:root (Automated)
+- `cis-oke-v180-3-1-3` — Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Automated)
+- `cis-oke-v180-3-1-4` — Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+- `cis-oke-v180-3-2-1` — Ensure that the --anonymous-auth argument is set to false (Automated)
+- `cis-oke-v180-3-2-10` — Ensure that the --rotate-server-certificates argument is set to true (Automated)
+- `cis-oke-v180-3-2-2` — Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- `cis-oke-v180-3-2-3` — Ensure that the --client-ca-file argument is set as appropriate (Automated)
+- `cis-oke-v180-3-2-4` — Ensure that the --read-only-port argument is set to 0 (Manual)
+- `cis-oke-v180-3-2-5` — Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- `cis-oke-v180-3-2-6` — Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- `cis-oke-v180-3-2-7` — Ensure that the --event-qps argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- `cis-oke-v180-3-2-8` — Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated)
+- `cis-oke-v180-3-2-9` — Ensure that the --rotate-certificates argument is not set to false (Automated)
+- `cis-oke-v180-4-1-1` — Ensure that the cluster-admin role is only used where required (Manual)
+- `cis-oke-v180-4-1-2` — Minimize access to secrets (Manual)
+- `cis-oke-v180-4-1-3` — Minimize wildcard use in Roles and ClusterRoles (Manual)
+- `cis-oke-v180-4-1-4` — Minimize access to create pods (Manual)
+- `cis-oke-v180-4-1-5` — Ensure that default service accounts are not actively used (Automated)
+- `cis-oke-v180-4-1-6` — Ensure that Service Account Tokens are only mounted where necessary (Automated)
+- `cis-oke-v180-4-2-1` — Minimize the admission of privileged containers (Automated)
+- `cis-oke-v180-4-2-2` — Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- `cis-oke-v180-4-2-3` — Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- `cis-oke-v180-4-2-4` — Minimize the admission of containers wishing to share the host network namespace (Automated)
+- `cis-oke-v180-4-2-5` — Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- `cis-oke-v180-4-3-1` — Ensure latest CNI version is used (Automated)
+- `cis-oke-v180-4-3-2` — Ensure that all Namespaces have Network Policies defined (Manual)
+- `cis-oke-v180-4-4-1` — Prefer using secrets as files over secrets as environment variables (Automated)
+- `cis-oke-v180-4-4-2` — Consider external secret storage (Manual)
+- `cis-oke-v180-4-5-1` — Create administrative boundaries between resources using namespaces (Manual)
+- `cis-oke-v180-4-5-2` — Apply Security Context to Your Pods and Containers (Manual)
+- `cis-oke-v180-4-5-3` — The default namespace should not be used (Automated)
+- `cis-oke-v180-5-1-1` — Oracle Cloud Security Penetration and Vulnerability Testing (Manual)
+- `cis-oke-v180-5-1-2` — Minimize user access control to Container Engine for Kubernetes (Manual)
+- `cis-oke-v180-5-1-3` — Minimize cluster access to read-only (Manual)
+- `cis-oke-v180-5-1-4` — Minimize Container Registries to only those approved (Manual)
+- `cis-oke-v180-5-2-1` — Prefer using dedicated Service Accounts (Automated)
+- `cis-oke-v180-5-3-1` — Encrypting Kubernetes Secrets at Rest in Etcd (Manual)
+- `cis-oke-v180-5-4-1` — Restrict Access to the Control Plane Endpoint (Automated)
+- `cis-oke-v180-5-4-2` — Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Automated)
+- `cis-oke-v180-5-4-3` — Ensure clusters are created with Private Nodes (Automated)
+- `cis-oke-v180-5-4-4` — Ensure Network Policy is Enabled and set as appropriate (Manual)
+- `cis-oke-v180-5-4-5` — Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- `cis-oke-v180-5-5-1` — Access Control and Container Engine for Kubernetes (Manual)
+- `cis-tomcat10-v110-1-1` — Remove extraneous files and directories (Manual)
+- `cis-tomcat10-v110-1-2` — Disable Unused Connectors (Manual)
+- `cis-tomcat10-v110-10-1` — Ensure Web content directory is on a separate partition from the Tomcat system files (Manual)
+- `cis-tomcat10-v110-10-10` — Configure maxHttpHeaderSize (Automated)
+- `cis-tomcat10-v110-10-11` — Force SSL for all applications (Automated)
+- `cis-tomcat10-v110-10-12` — Do not allow symbolic linking (Automated)
+- `cis-tomcat10-v110-10-13` — Do not run applications as privileged (Automated)
+- `cis-tomcat10-v110-10-14` — Do not allow cross context requests (Automated)
+- `cis-tomcat10-v110-10-15` — Do not resolve hosts on logging valves (Automated)
+- `cis-tomcat10-v110-10-16` — Enable memory leak listener (Automated)
+- `cis-tomcat10-v110-10-17` — Setting Security Lifecycle Listener (Automated)
+- `cis-tomcat10-v110-10-18` — Use the logEffectiveWebXml and metadata-complete settings for deploying applications in production (Automated)
+- `cis-tomcat10-v110-10-19` — Ensure Manager Application Passwords are Encrypted (Manual)
+- `cis-tomcat10-v110-10-2` — Restrict access to the web administration application (Automated)
+- `cis-tomcat10-v110-10-3` — Restrict manager application (Manual)
+- `cis-tomcat10-v110-10-4` — Force SSL when accessing the manager application via HTTP (Manual)
+- `cis-tomcat10-v110-10-5` — Rename the manager application (Manual)
+- `cis-tomcat10-v110-10-6` — Enable strict servlet Compliance (Manual)
+- `cis-tomcat10-v110-10-7` — Turn off session facade recycling (Manual)
+- `cis-tomcat10-v110-10-8` — Do not allow additional path delimiters (Manual)
+- `cis-tomcat10-v110-10-9` — Configure connectionTimeout (Automated)
+- `cis-tomcat10-v110-2-1` — Alter the Advertised server.info String (Manual)
+- `cis-tomcat10-v110-2-2` — Alter the Advertised server.number String (Manual)
+- `cis-tomcat10-v110-2-3` — Alter the Advertised server.built Date (Manual)
+- `cis-tomcat10-v110-2-4` — Disable X-Powered-By HTTP Header and Rename the Server Value for all Connectors (Automated)
+- `cis-tomcat10-v110-2-5` — Disable client facing Stack Traces (Automated)
+- `cis-tomcat10-v110-2-6` — Turn off TRACE (Automated)
+- `cis-tomcat10-v110-2-7` — Ensure Sever Header is Modified To Prevent Information Disclosure (Automated)
+- `cis-tomcat10-v110-3-1` — Set a nondeterministic Shutdown command value (Automated)
+- `cis-tomcat10-v110-3-2` — Disable the Shutdown port (Automated)
+- `cis-tomcat10-v110-4-1` — Restrict access to $CATALINA_HOME (Automated)
+- `cis-tomcat10-v110-4-10` — Restrict access to Tomcat context.xml
+- `cis-tomcat10-v110-4-11` — Restrict access to Tomcat logging.properties
+- `cis-tomcat10-v110-4-12` — Restrict access to Tomcat server.xml
+- `cis-tomcat10-v110-4-13` — Restrict access to Tomcat tomcat-users.xml
+- `cis-tomcat10-v110-4-14` — Restrict access to Tomcat web.xml
+- `cis-tomcat10-v110-4-15` — Restrict access to jaspic-providers.xml
+- `cis-tomcat10-v110-4-2` — Restrict access to $CATALINA_BASE (Automated)
+- `cis-tomcat10-v110-4-3` — Restrict access to Tomcat configuration directory
+- `cis-tomcat10-v110-4-4` — Restrict access to Tomcat logs directory
+- `cis-tomcat10-v110-4-5` — Restrict access to Tomcat temp directory
+- `cis-tomcat10-v110-4-6` — Restrict access to Tomcat binaries directory
+- `cis-tomcat10-v110-4-7` — Restrict access to Tomcat web application directory
+- `cis-tomcat10-v110-4-8` — Restrict access to Tomcat catalina.properties
+- `cis-tomcat10-v110-4-9` — Restrict access to Tomcat catalina.policy
+- `cis-tomcat10-v110-5-1` — Use secure Realms
+- `cis-tomcat10-v110-5-2` — Use LockOut Realms
+- `cis-tomcat10-v110-6-1` — Setup Client-cert Authentication
+- `cis-tomcat10-v110-6-2` — Ensure SSLEnabled is set to True for Sensitive Connectors
+- `cis-tomcat10-v110-6-3` — Ensure scheme is set accurately
+- `cis-tomcat10-v110-6-4` — Ensure secure is set to true only for SSL-enabled Connectors
+- `cis-tomcat10-v110-6-5` — Ensure 'sslProtocol' is Configured Correctly for Secure Connectors
+- `cis-tomcat10-v110-7-1` — Application specific logging (Automated)
+- `cis-tomcat10-v110-7-2` — Specify file handler in logging.properties files (Automated)
+- `cis-tomcat10-v110-7-3` — Ensure className is set correctly in context.xml (Automated)
+- `cis-tomcat10-v110-7-4` — Ensure directory in context.xml is a secure location (Manual)
+- `cis-tomcat10-v110-7-5` — Ensure pattern in context.xml is correct (Automated)
+- `cis-tomcat10-v110-7-6` — Ensure directory in logging.properties is a secure location (Automated)
+- `cis-tomcat10-v110-8-1` — Restrict runtime access to sensitive packages (Automated)
+- `cis-tomcat10-v110-9-1` — Disabling auto deployment of applications (Automated)
+- `cis-tomcat10-v110-9-2` — Disable deploy on startup of applications (Automated)
+- `cis-tomcat10-v110-9-3` — Disable deploy on startup of applications (Automated)
+- `cis-tomcat101-1-1` — Remove extraneous files and directories (Manual)
+- `cis-tomcat101-1-2` — Disable Unused Connectors (Manual)
+- `cis-tomcat101-10-1` — Ensure Web content directory is on a separate partition from the Tomcat system files (Manual)
+- `cis-tomcat101-10-10` — Configure maxHttpHeaderSize (Automated)
+- `cis-tomcat101-10-11` — Force SSL for all applications (Automated)
+- `cis-tomcat101-10-12` — Do not allow symbolic linking (Automated)
+- `cis-tomcat101-10-13` — Do not run applications as privileged (Automated)
+- `cis-tomcat101-10-14` — Do not allow cross context requests (Automated)
+- `cis-tomcat101-10-15` — Do not resolve hosts on logging valves (Automated)
+- `cis-tomcat101-10-16` — Enable memory leak listener (Automated)
+- `cis-tomcat101-10-17` — Setting Security Lifecycle Listener (Automated)
+- `cis-tomcat101-10-18` — Use the logEffectiveWebXml and metadata-complete settings for deploying applications in production (Automated)
+- `cis-tomcat101-10-19` — Ensure Manager Application Passwords are Encrypted (Manual)
+- `cis-tomcat101-10-2` — Restrict access to the web administration application (Automated)
+- `cis-tomcat101-10-3` — Restrict manager application (Manual)
+- `cis-tomcat101-10-4` — Force SSL when accessing the manager application via HTTP (Manual)
+- `cis-tomcat101-10-5` — Rename the manager application (Manual)
+- `cis-tomcat101-10-6` — Enable strict servlet Compliance (Manual)
+- `cis-tomcat101-10-7` — Turn off session facade recycling (Manual)
+- `cis-tomcat101-10-8` — Do not allow additional path delimiters (Manual)
+- `cis-tomcat101-10-9` — Configure connectionTimeout (Automated)
+- `cis-tomcat101-2-1` — Alter the Advertised server.info String (Manual)
+- `cis-tomcat101-2-2` — Alter the Advertised server.number String (Manual)
+- `cis-tomcat101-2-3` — Alter the Advertised server.built Date (Manual)
+- `cis-tomcat101-2-4` — Disable X-Powered-By HTTP Header and Rename the Server Value for all Connectors (Automated)
+- `cis-tomcat101-2-5` — Disable client facing Stack Traces (Automated)
+- `cis-tomcat101-2-6` — Turn off TRACE (Automated)
+- `cis-tomcat101-2-7` — Ensure Sever Header is Modified To Prevent Information Disclosure (Automated)
+- `cis-tomcat101-3-1` — Set a nondeterministic Shutdown command value (Automated)
+- `cis-tomcat101-3-2` — Disable the Shutdown port (Automated)
+- `cis-tomcat101-4-1` — Restrict access to $CATALINA_HOME (Automated)
+- `cis-tomcat101-4-10` — Restrict access to Tomcat context.xml
+- `cis-tomcat101-4-11` — Restrict access to Tomcat logging.properties
+- `cis-tomcat101-4-12` — Restrict access to Tomcat server.xml
+- `cis-tomcat101-4-13` — Restrict access to Tomcat tomcat-users.xml
+- `cis-tomcat101-4-14` — Restrict access to Tomcat web.xml
+- `cis-tomcat101-4-15` — Restrict access to jaspic-providers.xml
+- `cis-tomcat101-4-2` — Restrict access to $CATALINA_BASE (Automated)
+- `cis-tomcat101-4-3` — Restrict access to Tomcat configuration directory
+- `cis-tomcat101-4-4` — Restrict access to Tomcat logs directory
+- `cis-tomcat101-4-5` — Restrict access to Tomcat temp directory
+- `cis-tomcat101-4-6` — Restrict access to Tomcat binaries directory
+- `cis-tomcat101-4-7` — Restrict access to Tomcat web application directory
+- `cis-tomcat101-4-8` — Restrict access to Tomcat catalina.properties
+- `cis-tomcat101-4-9` — Restrict access to Tomcat catalina.policy
+- `cis-tomcat101-5-1` — Use secure Realms
+- `cis-tomcat101-5-2` — Use LockOut Realms
+- `cis-tomcat101-6-1` — Setup Client-cert Authentication
+- `cis-tomcat101-6-2` — Ensure SSLEnabled is set to True for Sensitive Connectors
+- `cis-tomcat101-6-3` — Ensure scheme is set accurately
+- `cis-tomcat101-6-4` — Ensure secure is set to true only for SSL-enabled Connectors
+- `cis-tomcat101-6-5` — Ensure 'sslProtocol' is Configured Correctly for Secure Connectors
+- `cis-tomcat101-7-1` — Application specific logging (Automated)
+- `cis-tomcat101-7-2` — Specify file handler in logging.properties files (Automated)
+- `cis-tomcat101-7-3` — Ensure className is set correctly in context.xml (Automated)
+- `cis-tomcat101-7-4` — Ensure directory in context.xml is a secure location (Manual)
+- `cis-tomcat101-7-5` — Ensure pattern in context.xml is correct (Automated)
+- `cis-tomcat101-7-6` — Ensure directory in logging.properties is a secure location (Automated)
+- `cis-tomcat101-8-1` — Restrict runtime access to sensitive packages (Automated)
+- `cis-tomcat101-9-1` — Disabling auto deployment of applications (Automated)
+- `cis-tomcat101-9-2` — Disable deploy on startup of applications (Automated)
+- `cis-tomcat7-v100-1-1` — Remove extraneous files and directories
+- `cis-tomcat7-v100-1-2` — Disable Unused Connectors
+- `cis-tomcat7-v100-10-1` — Ensure Web content directory is on a separate partition from the Tomcat system files
+- `cis-tomcat7-v100-10-10` — Configure connectionTimeout
+- `cis-tomcat7-v100-10-11` — Configure maxHttpHeaderSize
+- `cis-tomcat7-v100-10-12` — Force SSL for all applications
+- `cis-tomcat7-v100-10-13` — Increase the entropy in session identifiers
+- `cis-tomcat7-v100-10-14` — Do not allow symbolic linking
+- `cis-tomcat7-v100-10-15` — Do not run applications as privileged
+- `cis-tomcat7-v100-10-16` — Do not allow cross context requests
+- `cis-tomcat7-v100-10-17` — Do not resolve hosts on logging valves
+- `cis-tomcat7-v100-10-18` — Enable memory leak listener
+- `cis-tomcat7-v100-10-19` — Setting Security Lifecycle Listener
+- `cis-tomcat7-v100-10-2` — Restrict access to the web administration
+- `cis-tomcat7-v100-10-20` — use the logEffectiveWebXml and metadata-complete settings for deploying applications in production
+- `cis-tomcat7-v100-10-3` — Restrict manager application
+- `cis-tomcat7-v100-10-4` — Force SSL when accessing the manager application
+- `cis-tomcat7-v100-10-5` — Rename the manager application
+- `cis-tomcat7-v100-10-6` — Enable strict servlet Compliance
+- `cis-tomcat7-v100-10-7` — Turn off session façade recycling
+- `cis-tomcat7-v100-10-8` — Do not allow additional path delimiters
+- `cis-tomcat7-v100-10-9` — Do not allow custom header status messages
+- `cis-tomcat7-v100-2-1` — Alter the Advertised server.info String
+- `cis-tomcat7-v100-2-2` — Alter the Advertised server.number String
+- `cis-tomcat7-v100-2-3` — Alter the Advertised server.built Date
+- `cis-tomcat7-v100-2-4` — Disable X-Powered-By HTTP Header and Rename the Server Value for all Connectors
+- `cis-tomcat7-v100-2-5` — Disable client facing Stack Traces
+- `cis-tomcat7-v100-2-6` — Turn off TRACE
+- `cis-tomcat7-v100-3-1` — Set a nondeterministic Shutdown command value
+- `cis-tomcat7-v100-3-2` — Disable the Shutdown port
+- `cis-tomcat7-v100-4-1` — Restrict access to $CATALINA_HOME
+- `cis-tomcat7-v100-4-10` — Restrict access to Tomcat context.xml
+- `cis-tomcat7-v100-4-11` — Restrict access to Tomcat logging.properties
+- `cis-tomcat7-v100-4-12` — Restrict access to Tomcat server.xml
+- `cis-tomcat7-v100-4-13` — Restrict access to Tomcat tomcat-users.xml
+- `cis-tomcat7-v100-4-14` — Restrict access to Tomcat web.xml
+- `cis-tomcat7-v100-4-2` — Restrict access to $CATALINA_BASE
+- `cis-tomcat7-v100-4-3` — Restrict access to Tomcat configuration directory
+- `cis-tomcat7-v100-4-4` — Restrict access to Tomcat logs directory
+- `cis-tomcat7-v100-4-5` — Restrict access to Tomcat temp directory
+- `cis-tomcat7-v100-4-6` — Restrict access to Tomcat binaries directory
+- `cis-tomcat7-v100-4-7` — Restrict access to Tomcat web application directory
+- `cis-tomcat7-v100-4-8` — Restrict access to Tomcat catalina.policy
+- `cis-tomcat7-v100-4-9` — Restrict access to Tomcat catalina.properties
+- `cis-tomcat7-v100-5-1` — Use secure Realms
+- `cis-tomcat7-v100-5-2` — Use LockOut Realms
+- `cis-tomcat7-v100-6-1` — Setup Client-cert Authentication
+- `cis-tomcat7-v100-6-2` — Ensure SSLEnabled is set to True for Sensitive Connectors
+- `cis-tomcat7-v100-6-3` — Ensure scheme is set accurately
+- `cis-tomcat7-v100-6-4` — Ensure secure is set to true only for SSL-enabled Connectors
+- `cis-tomcat7-v100-6-5` — Ensure SSL Protocol is set to TLS for Secure Connectors
+- `cis-tomcat7-v100-7-1` — Application specific logging
+- `cis-tomcat7-v100-7-2` — Specify file handler in logging.properties files
+- `cis-tomcat7-v100-7-3` — Ensure className is set correctly in context.xml
+- `cis-tomcat7-v100-7-4` — Ensure directory in context.xml is a secure location
+- `cis-tomcat7-v100-7-5` — Ensure pattern in context.xml is correct
+- `cis-tomcat7-v100-7-6` — Ensure directory in logging.properties is a secure location
+- `cis-tomcat7-v100-7-7` — Configure log file size limit
+- `cis-tomcat7-v100-8-1` — Restrict runtime access to sensitive packages
+- `cis-tomcat7-v100-9-1` — Starting Tomcat with Security Manager
+- `cis-tomcat7-v100-9-2` — Disabling auto deployment of applications
+- `cis-tomcat7-v100-9-3` — Disable deploy on startup of applications
+- `cis-tomcat7-v110-1-1` — Remove extraneous files and directories
+- `cis-tomcat7-v110-1-2` — Disable Unused Connectors
+- `cis-tomcat7-v110-10-1` — Ensure Web content directory is on a separate partition from the Tomcat system files
+- `cis-tomcat7-v110-10-10` — Configure connectionTimeout
+- `cis-tomcat7-v110-10-11` — Configure maxHttpHeaderSize
+- `cis-tomcat7-v110-10-12` — Force SSL for all applications
+- `cis-tomcat7-v110-10-13` — Do not allow symbolic linking
+- `cis-tomcat7-v110-10-14` — Do not run applications as privileged
+- `cis-tomcat7-v110-10-15` — Do not allow cross context requests
+- `cis-tomcat7-v110-10-16` — Do not resolve hosts on logging valves
+- `cis-tomcat7-v110-10-17` — Enable memory leak listener
+- `cis-tomcat7-v110-10-18` — Setting Security Lifecycle Listener
+- `cis-tomcat7-v110-10-19` — use the logEffectiveWebXml and metadata-complete settings for deploying applications in production
+- `cis-tomcat7-v110-10-2` — Restrict access to the web administration
+- `cis-tomcat7-v110-10-3` — Restrict manager application
+- `cis-tomcat7-v110-10-4` — Force SSL when accessing the manager application
+- `cis-tomcat7-v110-10-5` — Rename the manager application
+- `cis-tomcat7-v110-10-6` — Enable strict servlet Compliance
+- `cis-tomcat7-v110-10-7` — Turn off session facade recycling
+- `cis-tomcat7-v110-10-8` — Do not allow additional path delimiters
+- `cis-tomcat7-v110-10-9` — Do not allow custom header status messages
+- `cis-tomcat7-v110-2-1` — Alter the Advertised server.info String
+- `cis-tomcat7-v110-2-2` — Alter the Advertised server.number String
+- `cis-tomcat7-v110-2-3` — Alter the Advertised server.built Date
+- `cis-tomcat7-v110-2-4` — Disable X-Powered-By HTTP Header and Rename the Server Value for all Connectors
+- `cis-tomcat7-v110-2-5` — Disable client facing Stack Traces
+- `cis-tomcat7-v110-2-6` — Turn off TRACE
+- `cis-tomcat7-v110-3-1` — Set a nondeterministic Shutdown command value
+- `cis-tomcat7-v110-3-2` — Disable the Shutdown port
+- `cis-tomcat7-v110-4-1` — Restrict access to $CATALINA_HOME
+- `cis-tomcat7-v110-4-10` — Restrict access to Tomcat context.xml
+- `cis-tomcat7-v110-4-11` — Restrict access to Tomcat logging.properties
+- `cis-tomcat7-v110-4-12` — Restrict access to Tomcat server.xml
+- `cis-tomcat7-v110-4-13` — Restrict access to Tomcat tomcat-users.xml
+- `cis-tomcat7-v110-4-14` — Restrict access to Tomcat web.xml
+- `cis-tomcat7-v110-4-2` — Restrict access to $CATALINA_BASE
+- `cis-tomcat7-v110-4-3` — Restrict access to Tomcat configuration directory
+- `cis-tomcat7-v110-4-4` — Restrict access to Tomcat logs directory
+- `cis-tomcat7-v110-4-5` — Restrict access to Tomcat temp directory
+- `cis-tomcat7-v110-4-6` — Restrict access to Tomcat binaries directory
+- `cis-tomcat7-v110-4-7` — Restrict access to Tomcat web application directory
+- `cis-tomcat7-v110-4-8` — Restrict access to Tomcat catalina.policy
+- `cis-tomcat7-v110-4-9` — Restrict access to Tomcat catalina.properties
+- `cis-tomcat7-v110-5-1` — Use secure Realms
+- `cis-tomcat7-v110-5-2` — Use LockOut Realms
+- `cis-tomcat7-v110-6-1` — Setup Client-cert Authentication
+- `cis-tomcat7-v110-6-2` — Ensure SSLEnabled is set to True for Sensitive Connectors
+- `cis-tomcat7-v110-6-3` — Ensure scheme is set accurately
+- `cis-tomcat7-v110-6-4` — Ensure secure is set to true only for SSL-enabled Connectors
+- `cis-tomcat7-v110-6-5` — Ensure SSL Protocol is set to TLS for Secure Connectors
+- `cis-tomcat7-v110-7-1` — Application specific logging
+- `cis-tomcat7-v110-7-2` — Specify file handler in logging.properties files
+- `cis-tomcat7-v110-7-3` — Ensure className is set correctly in context.xml
+- `cis-tomcat7-v110-7-4` — Ensure directory in context.xml is a secure location
+- `cis-tomcat7-v110-7-5` — Ensure pattern in context.xml is correct
+- `cis-tomcat7-v110-7-6` — Ensure directory in logging.properties is a secure location
+- `cis-tomcat7-v110-7-7` — Configure log file size limit
+- `cis-tomcat7-v110-8-1` — Restrict runtime access to sensitive packages
+- `cis-tomcat7-v110-9-1` — Starting Tomcat with Security Manager
+- `cis-tomcat7-v110-9-2` — Disabling auto deployment of applications
+- `cis-tomcat7-v110-9-3` — Disable deploy on startup of applications
+- `cis-tomcat8-v100-1-1` — Remove extraneous files and directories
+- `cis-tomcat8-v100-1-2` — Disable Unused Connectors
+- `cis-tomcat8-v100-10-1` — Ensure Web content directory is on a separate partition from the Tomcat system files (Manual)
+- `cis-tomcat8-v100-10-10` — Configure maxHttpHeaderSize (Automated)
+- `cis-tomcat8-v100-10-11` — Force SSL for all applications (Automated)
+- `cis-tomcat8-v100-10-12` — Do not allow symbolic linking (Automated)
+- `cis-tomcat8-v100-10-14` — Do not allow cross context requests (Automated)
+- `cis-tomcat8-v100-10-15` — Do not resolve hosts on logging valves (Automated)
+- `cis-tomcat8-v100-10-16` — Enable memory leak listener (Automated)
+- `cis-tomcat8-v100-10-17` — Setting Security Lifecycle Listener (Automated)
+- `cis-tomcat8-v100-10-18` — Use the logEffectiveWebXml and metadata-complete settings for deploying applications in production (Automated)
+- `cis-tomcat8-v100-10-19` — Ensure Manager Application Passwords are Encrypted (Manual)
+- `cis-tomcat8-v100-10-2` — Restrict access to the web administration application (Automated)
+- `cis-tomcat8-v100-10-20` — Use the logEffectiveWebXml and metadata-complete settings for deploying applications in production (Scored)
+- `cis-tomcat8-v100-10-3` — Restrict manager application (Manual)
+- `cis-tomcat8-v100-10-4` — Force SSL when accessing the manager application via HTTP (Manual)
+- `cis-tomcat8-v100-10-5` — Rename the manager application (Manual)
+- `cis-tomcat8-v100-10-6` — Enable strict servlet Compliance (Manual)
+- `cis-tomcat8-v100-10-7` — Turn off session facade recycling (Manual)
+- `cis-tomcat8-v100-10-8` — Do not allow additional path delimiters (Manual)
+- `cis-tomcat8-v100-10-9` — Configure connectionTimeout (Automated)
+- `cis-tomcat8-v100-2-1` — Alter the Advertised server.info String
+- `cis-tomcat8-v100-2-2` — Alter the Advertised server.number String
+- `cis-tomcat8-v100-2-3` — Alter the Advertised server.built Date
+- `cis-tomcat8-v100-2-4` — Disable X-Powered-By HTTP Header and Rename the Server Value for all Connectors
+- `cis-tomcat8-v100-2-5` — Disable client facing Stack Traces
+- `cis-tomcat8-v100-2-6` — Turn off TRACE
+- `cis-tomcat8-v100-3-1` — Set a nondeterministic Shutdown command value
+- `cis-tomcat8-v100-3-2` — Disable the Shutdown port
+- `cis-tomcat8-v100-4-1` — Restrict access to $CATALINA_HOME (Automated)
+- `cis-tomcat8-v100-4-10` — Restrict access to Tomcat context.xml
+- `cis-tomcat8-v100-4-11` — Restrict access to Tomcat logging.properties
+- `cis-tomcat8-v100-4-12` — Restrict access to Tomcat server.xml
+- `cis-tomcat8-v100-4-13` — Restrict access to Tomcat tomcat-users.xml
+- `cis-tomcat8-v100-4-14` — Restrict access to Tomcat web.xml
+- `cis-tomcat8-v100-4-2` — Restrict access to $CATALINA_BASE (Automated)
+- `cis-tomcat8-v100-4-3` — Restrict access to Tomcat configuration directory
+- `cis-tomcat8-v100-4-4` — Restrict access to Tomcat logs directory
+- `cis-tomcat8-v100-4-5` — Restrict access to Tomcat temp directory
+- `cis-tomcat8-v100-4-6` — Restrict access to Tomcat binaries directory
+- `cis-tomcat8-v100-4-7` — Restrict access to Tomcat web application directory
+- `cis-tomcat8-v100-4-8` — Restrict access to Tomcat catalina.properties
+- `cis-tomcat8-v100-4-9` — Restrict access to Tomcat catalina.policy
+- `cis-tomcat8-v100-5-1` — Use secure Realms
+- `cis-tomcat8-v100-5-2` — Use LockOut Realms
+- `cis-tomcat8-v100-6-1` — Setup Client-cert Authentication
+- `cis-tomcat8-v100-6-2` — Ensure SSLEnabled is set to True for Sensitive Connectors
+- `cis-tomcat8-v100-6-3` — Ensure scheme is set accurately
+- `cis-tomcat8-v100-6-4` — Ensure secure is set to true only for SSL-enabled Connectors
+- `cis-tomcat8-v100-6-5` — Ensure 'sslProtocol' is Configured Correctly for Secure Connectors
+- `cis-tomcat8-v100-7-1` — Application specific logging (Automated)
+- `cis-tomcat8-v100-7-2` — Specify file handler in logging.properties files (Automated)
+- `cis-tomcat8-v100-7-3` — Ensure className is set correctly in context.xml (Automated)
+- `cis-tomcat8-v100-7-4` — Ensure directory in context.xml is a secure location (Manual)
+- `cis-tomcat8-v100-7-5` — Ensure pattern in context.xml is correct (Automated)
+- `cis-tomcat8-v100-7-6` — Ensure directory in logging.properties is a secure location (Automated)
+- `cis-tomcat8-v100-7-7` — Configure log file size limit (Scored)
+- `cis-tomcat8-v100-8-1` — Restrict runtime access to sensitive packages (Automated)
+- `cis-tomcat8-v100-9-1` — Disabling auto deployment of applications (Automated)
+- `cis-tomcat8-v100-9-2` — Disable deploy on startup of applications (Automated)
+- `cis-tomcat8-v100-9-3` — Disable deploy on startup of applications (Scored)
+- `cis-tomcat8-v110-1-1` — Remove extraneous files and directories (Scored)
+- `cis-tomcat8-v110-1-2` — Disable Unused Connectors (Not Scored)
+- `cis-tomcat8-v110-10-1` — Ensure Web content directory is on a separate partition from the Tomcat system files (Manual)
+- `cis-tomcat8-v110-10-10` — Configure maxHttpHeaderSize (Automated)
+- `cis-tomcat8-v110-10-11` — Force SSL for all applications (Automated)
+- `cis-tomcat8-v110-10-12` — Do not allow symbolic linking (Automated)
+- `cis-tomcat8-v110-10-13` — Do not run applications as privileged (Automated)
+- `cis-tomcat8-v110-10-14` — Do not allow cross context requests (Automated)
+- `cis-tomcat8-v110-10-15` — Do not resolve hosts on logging valves (Automated)
+- `cis-tomcat8-v110-10-16` — Enable memory leak listener (Automated)
+- `cis-tomcat8-v110-10-17` — Setting Security Lifecycle Listener (Automated)
+- `cis-tomcat8-v110-10-18` — Use the logEffectiveWebXml and metadata-complete settings for deploying applications in production (Automated)
+- `cis-tomcat8-v110-10-19` — Ensure Manager Application Passwords are Encrypted (Manual)
+- `cis-tomcat8-v110-10-2` — Restrict access to the web administration application (Automated)
+- `cis-tomcat8-v110-10-3` — Restrict manager application (Manual)
+- `cis-tomcat8-v110-10-4` — Force SSL when accessing the manager application via HTTP (Manual)
+- `cis-tomcat8-v110-10-5` — Rename the manager application (Manual)
+- `cis-tomcat8-v110-10-6` — Enable strict servlet Compliance (Manual)
+- `cis-tomcat8-v110-10-7` — Turn off session facade recycling (Manual)
+- `cis-tomcat8-v110-10-8` — Do not allow additional path delimiters (Manual)
+- `cis-tomcat8-v110-10-9` — Configure connectionTimeout (Automated)
+- `cis-tomcat8-v110-11-1` — Limit HTTP Request Methods (Scored)
+- `cis-tomcat8-v110-2-1` — Alter the Advertised server.info String (Scored)
+- `cis-tomcat8-v110-2-2` — Alter the Advertised server.number String (Scored)
+- `cis-tomcat8-v110-2-3` — Alter the Advertised server.built Date (Scored)
+- `cis-tomcat8-v110-2-4` — Disable X-Powered-By HTTP Header and Rename the Server Value for all Connectors (Scored)
+- `cis-tomcat8-v110-2-5` — Disable client facing Stack Traces (Scored)
+- `cis-tomcat8-v110-2-6` — Turn off TRACE (Scored)
+- `cis-tomcat8-v110-2-7` — Ensure Sever Header is Modified To Prevent Information Disclosure (Not Scored)
+- `cis-tomcat8-v110-3-1` — Set a nondeterministic Shutdown command value (Scored)
+- `cis-tomcat8-v110-3-2` — Disable the Shutdown port (Not Scored)
+- `cis-tomcat8-v110-4-1` — Restrict access to $CATALINA_HOME (Scored)
+- `cis-tomcat8-v110-4-10` — Restrict access to Tomcat context.xml
+- `cis-tomcat8-v110-4-11` — Restrict access to Tomcat logging.properties
+- `cis-tomcat8-v110-4-12` — Restrict access to Tomcat server.xml
+- `cis-tomcat8-v110-4-13` — Restrict access to Tomcat tomcat-users.xml
+- `cis-tomcat8-v110-4-14` — Restrict access to Tomcat web.xml
+- `cis-tomcat8-v110-4-2` — Restrict access to $CATALINA_BASE (Scored)
+- `cis-tomcat8-v110-4-3` — Restrict access to Tomcat configuration directory (Scored)
+- `cis-tomcat8-v110-4-4` — Restrict access to Tomcat logs directory (Scored)
+- `cis-tomcat8-v110-4-5` — Restrict access to Tomcat temp directory (Scored)
+- `cis-tomcat8-v110-4-6` — Restrict access to Tomcat binaries directory (Scored)
+- `cis-tomcat8-v110-4-7` — Restrict access to Tomcat web application directory (Scored)
+- `cis-tomcat8-v110-4-8` — Restrict access to Tomcat catalina.properties (Scored)
+- `cis-tomcat8-v110-4-9` — Restrict access to Tomcat catalina.policy (Scored)
+- `cis-tomcat8-v110-5-1` — Use secure Realms
+- `cis-tomcat8-v110-5-2` — Use LockOut Realms
+- `cis-tomcat8-v110-6-1` — Setup Client-cert Authentication
+- `cis-tomcat8-v110-6-2` — Ensure SSLEnabled is set to True for Sensitive Connectors
+- `cis-tomcat8-v110-6-3` — Ensure scheme is set accurately
+- `cis-tomcat8-v110-6-4` — Ensure secure is set to true only for SSL-enabled Connectors
+- `cis-tomcat8-v110-6-5` — Ensure 'sslProtocol' is Configured Correctly for Secure Connectors
+- `cis-tomcat8-v110-6-6` — Control the maximum size of a POST request that will be parsed for parameters (Scored)
+- `cis-tomcat8-v110-7-1` — Application specific logging (Automated)
+- `cis-tomcat8-v110-7-2` — Specify file handler in logging.properties files (Automated)
+- `cis-tomcat8-v110-7-3` — Ensure className is set correctly in context.xml (Automated)
+- `cis-tomcat8-v110-7-4` — Ensure directory in context.xml is a secure location (Manual)
+- `cis-tomcat8-v110-7-5` — Ensure pattern in context.xml is correct (Automated)
+- `cis-tomcat8-v110-7-6` — Ensure directory in logging.properties is a secure location (Automated)
+- `cis-tomcat8-v110-8-1` — Restrict runtime access to sensitive packages (Automated)
+- `cis-tomcat8-v110-9-1` — Disabling auto deployment of applications (Automated)
+- `cis-tomcat8-v110-9-2` — Disable deploy on startup of applications (Automated)
+- `cis-tomcat8-v110-9-3` — Disable deploy on startup of applications (Scored)
+- `cis-tomcat9-v120-1-1` — Remove extraneous files and directories (Manual)
+- `cis-tomcat9-v120-1-2` — Disable Unused Connectors (Manual)
+- `cis-tomcat9-v120-10-1` — Ensure Web content directory is on a separate partition from the Tomcat system files (Manual)
+- `cis-tomcat9-v120-10-10` — Configure maxHttpHeaderSize (Automated)
+- `cis-tomcat9-v120-10-11` — Force SSL for all applications (Automated)
+- `cis-tomcat9-v120-10-12` — Do not allow symbolic linking (Automated)
+- `cis-tomcat9-v120-10-13` — Do not run applications as privileged (Automated)
+- `cis-tomcat9-v120-10-14` — Do not allow cross context requests (Automated)
+- `cis-tomcat9-v120-10-15` — Do not resolve hosts on logging valves (Automated)
+- `cis-tomcat9-v120-10-16` — Enable memory leak listener (Automated)
+- `cis-tomcat9-v120-10-17` — Setting Security Lifecycle Listener (Automated)
+- `cis-tomcat9-v120-10-18` — Use the logEffectiveWebXml and metadata-complete settings for deploying applications in production (Automated)
+- `cis-tomcat9-v120-10-19` — Ensure Manager Application Passwords are Encrypted (Manual)
+- `cis-tomcat9-v120-10-2` — Restrict access to the web administration application (Automated)
+- `cis-tomcat9-v120-10-3` — Restrict manager application (Manual)
+- `cis-tomcat9-v120-10-4` — Force SSL when accessing the manager application via HTTP (Manual)
+- `cis-tomcat9-v120-10-5` — Rename the manager application (Manual)
+- `cis-tomcat9-v120-10-6` — Enable strict servlet Compliance (Manual)
+- `cis-tomcat9-v120-10-7` — Turn off session facade recycling (Manual)
+- `cis-tomcat9-v120-10-8` — Do not allow additional path delimiters (Manual)
+- `cis-tomcat9-v120-10-9` — Configure connectionTimeout (Automated)
+- `cis-tomcat9-v120-2-1` — Alter the Advertised server.info String (Manual)
+- `cis-tomcat9-v120-2-2` — Alter the Advertised server.number String (Manual)
+- `cis-tomcat9-v120-2-3` — Alter the Advertised server.built Date (Manual)
+- `cis-tomcat9-v120-2-4` — Disable X-Powered-By HTTP Header and Rename the Server Value for all Connectors (Automated)
+- `cis-tomcat9-v120-2-5` — Disable client facing Stack Traces (Automated)
+- `cis-tomcat9-v120-2-6` — Turn off TRACE (Automated)
+- `cis-tomcat9-v120-2-7` — Ensure Sever Header is Modified To Prevent Information Disclosure (Automated)
+- `cis-tomcat9-v120-3-1` — Set a nondeterministic Shutdown command value (Automated)
+- `cis-tomcat9-v120-3-2` — Disable the Shutdown port (Automated)
+- `cis-tomcat9-v120-4-1` — Restrict access to $CATALINA_HOME (Automated)
+- `cis-tomcat9-v120-4-10` — Restrict access to Tomcat context.xml
+- `cis-tomcat9-v120-4-11` — Restrict access to Tomcat logging.properties
+- `cis-tomcat9-v120-4-12` — Restrict access to Tomcat server.xml
+- `cis-tomcat9-v120-4-13` — Restrict access to Tomcat tomcat-users.xml
+- `cis-tomcat9-v120-4-14` — Restrict access to Tomcat web.xml
+- `cis-tomcat9-v120-4-15` — Restrict access to jaspic-providers.xml
+- `cis-tomcat9-v120-4-2` — Restrict access to $CATALINA_BASE (Automated)
+- `cis-tomcat9-v120-4-3` — Restrict access to Tomcat configuration directory
+- `cis-tomcat9-v120-4-4` — Restrict access to Tomcat logs directory
+- `cis-tomcat9-v120-4-5` — Restrict access to Tomcat temp directory
+- `cis-tomcat9-v120-4-6` — Restrict access to Tomcat binaries directory
+- `cis-tomcat9-v120-4-7` — Restrict access to Tomcat web application directory
+- `cis-tomcat9-v120-4-8` — Restrict access to Tomcat catalina.properties
+- `cis-tomcat9-v120-4-9` — Restrict access to Tomcat catalina.policy
+- `cis-tomcat9-v120-5-1` — Use secure Realms
+- `cis-tomcat9-v120-5-2` — Use LockOut Realms
+- `cis-tomcat9-v120-6-1` — Setup Client-cert Authentication
+- `cis-tomcat9-v120-6-2` — Ensure SSLEnabled is set to True for Sensitive Connectors
+- `cis-tomcat9-v120-6-3` — Ensure scheme is set accurately
+- `cis-tomcat9-v120-6-4` — Ensure secure is set to true only for SSL-enabled Connectors
+- `cis-tomcat9-v120-6-5` — Ensure 'sslProtocol' is Configured Correctly for Secure Connectors
+- `cis-tomcat9-v120-7-1` — Application specific logging (Automated)
+- `cis-tomcat9-v120-7-2` — Specify file handler in logging.properties files (Automated)
+- `cis-tomcat9-v120-7-3` — Ensure className is set correctly in context.xml (Automated)
+- `cis-tomcat9-v120-7-4` — Ensure directory in context.xml is a secure location (Manual)
+- `cis-tomcat9-v120-7-5` — Ensure pattern in context.xml is correct (Automated)
+- `cis-tomcat9-v120-7-6` — Ensure directory in logging.properties is a secure location (Automated)
+- `cis-tomcat9-v120-8-1` — Restrict runtime access to sensitive packages (Automated)
+- `cis-tomcat9-v120-9-1` — Disabling auto deployment of applications (Automated)
+- `cis-tomcat9-v120-9-2` — Disable deploy on startup of applications (Automated)
+- `cis-tomcat9-v120-9-3` — Disable deploy on startup of applications (Automated)
+- `cis-ubuntu-14-04-lts-1-1-1-1-ensure-mounting-of-cramfs-filesyste` — Ensure the cramfs filesystem type is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-1-1-1-2-ensure-mounting-of-freevxfs-filesys` — Ensure the freevxfs filesystem type is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-1-1-1-3-ensure-mounting-of-jffs2-filesystem` — Ensure the jffs2 filesystem type is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-1-1-1-4-ensure-mounting-of-hfs-filesystems` — Ensure the hfs filesystem type is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-1-1-1-5-ensure-mounting-of-hfsplus-filesyst` — Ensure the hfsplus filesystem type is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-1-1-1-6-ensure-mounting-of-udf-filesystems` — Ensure the udf filesystem type is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-1-1-10-ensure-separate-partition-exists-for` — Ensure a separate partition exists for /var/log to protect log data
+- `cis-ubuntu-14-04-lts-1-1-11-ensure-separate-partition-exists-for` — Ensure a separate partition exists for /var/log/audit to protect audit data
+- `cis-ubuntu-14-04-lts-1-1-12-ensure-separate-partition-exists-for` — Ensure a separate partition exists for /home to protect user data
+- `cis-ubuntu-14-04-lts-1-1-13-ensure-nodev-option-set-on-home-part` — Ensure nodev option is set on /home partition to prevent special device access
+- `cis-ubuntu-14-04-lts-1-1-14-ensure-nodev-option-set-on-run-shm-p` — Ensure nodev option is set on /run/shm partition to prevent special device access
+- `cis-ubuntu-14-04-lts-1-1-15-ensure-nosuid-option-set-on-run-shm` — Ensure nosuid option is set on /run/shm partition to prevent privileged programs
+- `cis-ubuntu-14-04-lts-1-1-16-ensure-noexec-option-set-on-run-shm` — Ensure noexec option is set on /run/shm partition to prevent executable binaries
+- `cis-ubuntu-14-04-lts-1-1-17-ensure-nodev-option-set-on-removable` — Ensure nodev option is set on removable media partitions to prevent special device access
+- `cis-ubuntu-14-04-lts-1-1-18-ensure-nosuid-option-set-on-removabl` — Ensure nosuid option is set on removable media partitions to prevent privileged programs
+- `cis-ubuntu-14-04-lts-1-1-19-ensure-noexec-option-set-on-removabl` — Ensure noexec option is set on removable media partitions to prevent executable binaries
+- `cis-ubuntu-14-04-lts-1-1-2-ensure-separate-partition-exists-for` — Ensure a separate partition exists for /tmp to prevent resource exhaustion
+- `cis-ubuntu-14-04-lts-1-1-20-ensure-sticky-bit-is-set-on-all-worl` — Ensure sticky bit is set on all world-writable directories to prevent unauthorized file deletion
+- `cis-ubuntu-14-04-lts-1-1-21-disable-automounting` — Disable autofs to prevent automatic mounting of removable media devices
+- `cis-ubuntu-14-04-lts-1-1-3-ensure-nodev-option-set-on-tmp-partit` — Ensure nodev option is set on /tmp partition to prevent special device access
+- `cis-ubuntu-14-04-lts-1-1-4-ensure-nosuid-option-set-on-tmp-parti` — Ensure nosuid option is set on /tmp partition to prevent setuid file creation
+- `cis-ubuntu-14-04-lts-1-1-5-ensure-separate-partition-exists-for` — Ensure a separate partition exists for /var to prevent resource exhaustion
+- `cis-ubuntu-14-04-lts-1-1-6-ensure-separate-partition-exists-for` — Ensure a separate partition exists for /var/tmp to prevent resource exhaustion
+- `cis-ubuntu-14-04-lts-1-1-7-ensure-nodev-option-set-on-var-tmp-pa` — Ensure nodev option is set on /var/tmp partition to prevent special device access
+- `cis-ubuntu-14-04-lts-1-1-8-ensure-nosuid-option-set-on-var-tmp-p` — Ensure nosuid option is set on /var/tmp partition to prevent setuid file creation
+- `cis-ubuntu-14-04-lts-1-1-9-ensure-noexec-option-set-on-var-tmp-p` — Ensure noexec option is set on /var/tmp partition to prevent executable binaries
+- `cis-ubuntu-14-04-lts-1-2-1-ensure-package-manager-repositories-a` — Verify that package manager repositories are properly configured to receive latest patches and updates
+- `cis-ubuntu-14-04-lts-1-2-2-ensure-gpg-keys-are-configured` — Verify that GPG keys are configured for package manager to ensure package integrity
+- `cis-ubuntu-14-04-lts-1-3-1-ensure-aide-is-installed` — Verify that AIDE file integrity checking tool is installed for filesystem monitoring
+- `cis-ubuntu-14-04-lts-1-3-2-ensure-filesystem-integrity-is-regula` — Verify that filesystem integrity checking is scheduled via cron to detect unauthorized changes
+- `cis-ubuntu-14-04-lts-1-4-1-ensure-permissions-on-bootloader-conf` — Verify that permissions on grub bootloader configuration are restricted to root only
+- `cis-ubuntu-14-04-lts-1-4-2-ensure-bootloader-password-is-set` — Verify that a bootloader password is set to prevent unauthorized boot parameter changes
+- `cis-ubuntu-14-04-lts-1-4-3-ensure-authentication-required-for-si` — Verify that authentication is required when booting into single user mode
+- `cis-ubuntu-14-04-lts-1-5-1-ensure-core-dumps-are-restricted` — Verify that core dumps are restricted to prevent information disclosure from memory dumps
+- `cis-ubuntu-14-04-lts-1-5-2-ensure-xd-nx-support-is-enabled` — Verify that XD/NX (Execute Disable/No Execute) CPU protection is enabled to prevent buffer overflow exploitation
+- `cis-ubuntu-14-04-lts-1-5-3-ensure-address-space-layout-randomiza` — Verify that ASLR is enabled to randomize process memory layout and mitigate exploits
+- `cis-ubuntu-14-04-lts-1-5-4-ensure-prelink-is-disabled` — Verify that prelink is disabled to prevent interference with AIDE integrity checking
+- `cis-ubuntu-14-04-lts-1-6-1-1-ensure-selinux-is-not-disabled-in-b` — Verify that SELinux is not disabled via GRUB bootloader parameters
+- `cis-ubuntu-14-04-lts-1-6-1-2-ensure-the-selinux-state-is-enforci` — Verify that SELinux is set to enforcing mode for mandatory access control
+- `cis-ubuntu-14-04-lts-1-6-1-3-ensure-selinux-policy-is-configured` — Verify that SELinux policy is configured to meet or exceed the default targeted policy
+- `cis-ubuntu-14-04-lts-1-6-1-4-ensure-no-unconfined-daemons-exist` — Verify that no daemons are running unconfined outside of SELinux policy restrictions
+- `cis-ubuntu-14-04-lts-1-6-2-1-ensure-apparmor-is-not-disabled-in` — Verify that AppArmor is not disabled via GRUB bootloader parameters
+- `cis-ubuntu-14-04-lts-1-6-2-2-ensure-all-apparmor-profiles-are-en` — Verify that all AppArmor profiles are loaded and in enforcing mode with no unconfined processes
+- `cis-ubuntu-14-04-lts-1-6-3-ensure-selinux-or-apparmor-are-instal` — Verify that either SELinux or AppArmor mandatory access control system is installed
+- `cis-ubuntu-14-04-lts-1-7-1-1-ensure-message-of-the-day-is-config` — Verify that /etc/motd does not contain OS version or system information that could aid attackers
+- `cis-ubuntu-14-04-lts-1-7-1-2-ensure-local-login-warning-banner-i` — Verify that /etc/issue local login banner does not contain OS version information
+- `cis-ubuntu-14-04-lts-1-7-1-3-ensure-remote-login-warning-banner` — Verify that /etc/issue.net remote login banner does not contain OS version information
+- `cis-ubuntu-14-04-lts-1-7-1-4-ensure-permissions-on-etc-motd-are` — Verify that /etc/motd has correct ownership and permissions to prevent unauthorized modification
+- `cis-ubuntu-14-04-lts-1-7-1-5-ensure-permissions-on-etc-issue-are` — Verify that /etc/issue has correct ownership and permissions to prevent unauthorized modification
+- `cis-ubuntu-14-04-lts-1-7-1-6-ensure-permissions-on-etc-issue-net` — Verify that /etc/issue.net has correct ownership and permissions to prevent unauthorized modification
+- `cis-ubuntu-14-04-lts-1-7-2-ensure-gdm-login-banner-is-configured` — Verify that GDM graphical login banner is configured with appropriate warning message
+- `cis-ubuntu-14-04-lts-1-8-ensure-updates-patches-and-additional-s` — Verify that all available updates, patches, and security software are installed on the system
+- `cis-ubuntu-14-04-lts-2-1-1-ensure-chargen-services-are-not-enabl` — Verify that chargen inetd services are disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-2-1-10-ensure-xinetd-is-not-enabled` — Verify that the xinetd super daemon is disabled when not required
+- `cis-ubuntu-14-04-lts-2-1-11-ensure-openbsd-inetd-is-not-installe` — Verify that openbsd-inetd package is not installed on the system
+- `cis-ubuntu-14-04-lts-2-1-2-ensure-daytime-services-are-not-enabl` — Verify that daytime inetd services are disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-2-1-3-ensure-discard-services-are-not-enabl` — Verify that discard inetd services are disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-2-1-4-ensure-echo-services-are-not-enabled` — Verify that echo inetd services are disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-2-1-5-ensure-time-services-are-not-enabled` — Verify that time inetd services are disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-2-1-6-ensure-rsh-server-is-not-enabled` — Verify that rsh, rlogin, and rexec inetd services are disabled
+- `cis-ubuntu-14-04-lts-2-1-7-ensure-talk-server-is-not-enabled` — Verify that talk inetd services are disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-2-1-8-ensure-telnet-server-is-not-enabled` — Verify that telnet inetd service is disabled to prevent cleartext credential exposure
+- `cis-ubuntu-14-04-lts-2-1-9-ensure-tftp-server-is-not-enabled` — Verify that tftp inetd service is disabled to prevent unauthenticated file transfers
+- `cis-ubuntu-14-04-lts-2-2-1-1-ensure-time-synchronization-is-in-u` — Verify that NTP or chrony is installed for system time synchronization
+- `cis-ubuntu-14-04-lts-2-2-1-2-ensure-ntp-is-configured` — Verify that NTP is properly configured with restrict options and running as ntp user
+- `cis-ubuntu-14-04-lts-2-2-1-3-ensure-chrony-is-configured` — Verify that chrony is properly configured with remote time server
+- `cis-ubuntu-14-04-lts-2-2-10-ensure-http-server-is-not-enabled` — Verify that Apache HTTP server is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-11-ensure-imap-and-pop3-server-is-not-e` — Verify that dovecot IMAP/POP3 server is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-12-ensure-samba-is-not-enabled` — Verify that Samba SMB file sharing service is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-13-ensure-http-proxy-server-is-not-enab` — Verify that Squid HTTP proxy server is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-14-ensure-snmp-server-is-not-enabled` — Verify that SNMP server is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-15-ensure-mail-transfer-agent-is-config` — Verify that MTA is configured to only listen on loopback address
+- `cis-ubuntu-14-04-lts-2-2-16-ensure-rsync-service-is-not-enabled` — Verify that rsync service is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-17-ensure-nis-server-is-not-enabled` — Verify that NIS (ypserv) server is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-2-ensure-x-window-system-is-not-install` — Verify that X Window System packages are not installed on servers
+- `cis-ubuntu-14-04-lts-2-2-3-ensure-avahi-server-is-not-enabled` — Verify that Avahi mDNS/DNS-SD daemon is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-2-2-4-ensure-cups-is-not-enabled` — Verify that CUPS print service is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-5-ensure-dhcp-server-is-not-enabled` — Verify that DHCP server service is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-6-ensure-ldap-server-is-not-enabled` — Verify that slapd LDAP server is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-7-ensure-nfs-and-rpc-are-not-enabled` — Verify that NFS and RPC services are disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-8-ensure-dns-server-is-not-enabled` — Verify that BIND DNS server is disabled when not required
+- `cis-ubuntu-14-04-lts-2-2-9-ensure-ftp-server-is-not-enabled` — Verify that vsftpd FTP server is disabled when not required
+- `cis-ubuntu-14-04-lts-2-3-1-ensure-nis-client-is-not-installed` — Verify that the NIS client (ypbind) package is not installed
+- `cis-ubuntu-14-04-lts-2-3-2-ensure-rsh-client-is-not-installed` — Verify that the rsh client package is not installed
+- `cis-ubuntu-14-04-lts-2-3-3-ensure-talk-client-is-not-installed` — Verify that the talk client package is not installed
+- `cis-ubuntu-14-04-lts-2-3-4-ensure-telnet-client-is-not-installed` — Verify that the telnet client package is not installed
+- `cis-ubuntu-14-04-lts-2-3-5-ensure-ldap-client-is-not-installed` — Verify that the LDAP client (ldap-utils) package is not installed
+- `cis-ubuntu-14-04-lts-3-1-1-ensure-ip-forwarding-is-disabled` — Verify that IP forwarding is disabled to prevent the system from acting as a router
+- `cis-ubuntu-14-04-lts-3-1-2-ensure-packet-redirect-sending-is-dis` — Verify that ICMP packet redirect sending is disabled to prevent routing information disclosure
+- `cis-ubuntu-14-04-lts-3-2-1-ensure-source-routed-packets-are-not` — Verify that source routed packets are not accepted to prevent source routing attacks
+- `cis-ubuntu-14-04-lts-3-2-2-ensure-icmp-redirects-are-not-accepte` — Verify that ICMP redirects are not accepted to prevent routing table manipulation
+- `cis-ubuntu-14-04-lts-3-2-3-ensure-secure-icmp-redirects-are-not` — Verify that secure ICMP redirects are not accepted to prevent routing table manipulation from known gateways
+- `cis-ubuntu-14-04-lts-3-2-4-ensure-suspicious-packets-are-logged` — Verify that packets with un-routable source addresses are logged for investigation
+- `cis-ubuntu-14-04-lts-3-2-5-ensure-broadcast-icmp-requests-are-ig` — Verify that broadcast ICMP echo and timestamp requests are ignored to prevent Smurf attacks
+- `cis-ubuntu-14-04-lts-3-2-6-ensure-bogus-icmp-responses-are-ignor` — Verify that bogus ICMP error responses are ignored to prevent log file pollution
+- `cis-ubuntu-14-04-lts-3-2-7-ensure-reverse-path-filtering-is-enab` — Verify that reverse path filtering is enabled to prevent IP spoofing
+- `cis-ubuntu-14-04-lts-3-2-8-ensure-tcp-syn-cookies-is-enabled` — Verify that TCP SYN Cookies are enabled to protect against SYN flood attacks
+- `cis-ubuntu-14-04-lts-3-3-1-ensure-ipv6-router-advertisements-are` — Verify that IPv6 router advertisements are not accepted to prevent routing to compromised machines
+- `cis-ubuntu-14-04-lts-3-3-2-ensure-ipv6-redirects-are-not-accepte` — Verify that IPv6 ICMP redirects are not accepted to prevent routing to compromised machines
+- `cis-ubuntu-14-04-lts-3-3-3-ensure-ipv6-is-disabled` — Verify that IPv6 is disabled if not required to reduce the attack surface
+- `cis-ubuntu-14-04-lts-3-4-1-ensure-tcp-wrappers-is-installed` — Verify that TCP Wrappers is installed for host-based access control
+- `cis-ubuntu-14-04-lts-3-4-2-ensure-etc-hosts-allow-is-configured` — Verify that /etc/hosts.allow is configured to permit authorized network access
+- `cis-ubuntu-14-04-lts-3-4-3-ensure-etc-hosts-deny-is-configured` — Verify that /etc/hosts.deny is configured to deny all unauthorized network access
+- `cis-ubuntu-14-04-lts-3-4-4-ensure-permissions-on-etc-hosts-allow` — Verify that /etc/hosts.allow has correct ownership and permissions (root:root 644)
+- `cis-ubuntu-14-04-lts-3-4-5-ensure-permissions-on-etc-hosts-deny` — Verify that /etc/hosts.deny has correct ownership and permissions (root:root 644)
+- `cis-ubuntu-14-04-lts-3-5-1-ensure-dccp-is-disabled` — Verify that the DCCP protocol kernel module is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-3-5-2-ensure-sctp-is-disabled` — Verify that the SCTP protocol kernel module is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-3-5-3-ensure-rds-is-disabled` — Verify that the RDS protocol kernel module is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-3-5-4-ensure-tipc-is-disabled` — Verify that the TIPC protocol kernel module is disabled to reduce attack surface
+- `cis-ubuntu-14-04-lts-3-6-1-ensure-iptables-is-installed` — Verify that iptables is installed for firewall management and configuration
+- `cis-ubuntu-14-04-lts-3-6-2-ensure-default-deny-firewall-policy` — Verify that default deny firewall policy is configured for INPUT, OUTPUT, and FORWARD chains
+- `cis-ubuntu-14-04-lts-3-6-3-ensure-loopback-traffic-is-configured` — Verify that loopback interface accepts traffic and other interfaces deny loopback network traffic
+- `cis-ubuntu-14-04-lts-3-6-4-ensure-outbound-and-established-conne` — Verify that firewall rules for outbound and established connections are configured
+- `cis-ubuntu-14-04-lts-3-6-5-ensure-firewall-rules-exist-for-all-o` — Verify that firewall rules exist for all open ports on non-loopback addresses
+- `cis-ubuntu-14-04-lts-3-7-ensure-wireless-interfaces-are-disabled` — Verify that wireless interfaces are disabled to reduce the attack surface
+- `cis-ubuntu-14-04-lts-4-1-1-1-ensure-audit-log-storage-size-is-co` — Configure the maximum size of the audit log file to prevent disk space exhaustion
+- `cis-ubuntu-14-04-lts-4-1-1-2-ensure-system-is-disabled-when-audi` — Configure auditd to halt the system when audit logs are full to prevent loss of audit data
+- `cis-ubuntu-14-04-lts-4-1-1-3-ensure-audit-logs-are-not-automatic` — Configure auditd to retain all audit logs by setting max_log_file_action to keep_logs
+- `cis-ubuntu-14-04-lts-4-1-10-ensure-discretionary-access-control` — Collect audit events for file permission, ownership, and attribute changes
+- `cis-ubuntu-14-04-lts-4-1-11-ensure-unsuccessful-unauthorized-fil` — Collect audit events for failed file access attempts indicating unauthorized access
+- `cis-ubuntu-14-04-lts-4-1-12-ensure-use-of-privileged-commands-is` — Collect audit events for execution of setuid and setgid privileged programs
+- `cis-ubuntu-14-04-lts-4-1-13-ensure-successful-file-system-mounts` — Collect audit events for mount system calls to detect media export activity
+- `cis-ubuntu-14-04-lts-4-1-14-ensure-file-deletion-events-by-users` — Collect audit events for file deletion system calls to detect unauthorized removal
+- `cis-ubuntu-14-04-lts-4-1-15-ensure-changes-to-system-administrat` — Collect audit events for modifications to sudoers configuration files
+- `cis-ubuntu-14-04-lts-4-1-16-ensure-system-administrator-actions` — Collect audit events for sudo command execution via the sudo log file
+- `cis-ubuntu-14-04-lts-4-1-17-ensure-kernel-module-loading-and-unl` — Collect audit events for kernel module loading and unloading operations
+- `cis-ubuntu-14-04-lts-4-1-18-ensure-the-audit-configuration-is-im` — Set audit configuration to immutable mode requiring reboot for changes
+- `cis-ubuntu-14-04-lts-4-1-2-ensure-auditd-service-is-enabled` — Enable the auditd daemon to record system events for security monitoring
+- `cis-ubuntu-14-04-lts-4-1-3-ensure-auditing-for-processes-that-st` — Configure grub to enable auditing for processes that start before auditd
+- `cis-ubuntu-14-04-lts-4-1-4-ensure-events-that-modify-date-and-ti` — Collect audit events for system date and time modifications to detect tampering
+- `cis-ubuntu-14-04-lts-4-1-5-ensure-events-that-modify-user-group` — Collect audit events for modifications to user and group identity files
+- `cis-ubuntu-14-04-lts-4-1-6-ensure-events-that-modify-the-system` — Collect audit events for changes to network environment files and system calls
+- `cis-ubuntu-14-04-lts-4-1-7-ensure-events-that-modify-the-system` — Collect audit events for modifications to SELinux/AppArmor mandatory access controls
+- `cis-ubuntu-14-04-lts-4-1-8-ensure-login-and-logout-events-are-co` — Collect audit events for login and logout activity from faillog, lastlog, and tallylog
+- `cis-ubuntu-14-04-lts-4-1-9-ensure-session-initiation-information` — Collect audit events for session initiation from utmp, wtmp, and btmp files
+- `cis-ubuntu-14-04-lts-4-2-1-1-ensure-rsyslog-service-is-enabled` — Enable the rsyslog service to ensure system logging is active
+- `cis-ubuntu-14-04-lts-4-2-1-2-ensure-logging-is-configured` — Configure rsyslog to capture appropriate logging for all facilities
+- `cis-ubuntu-14-04-lts-4-2-1-3-ensure-rsyslog-default-file-permiss` — Configure rsyslog to create log files with restrictive permissions (0640)
+- `cis-ubuntu-14-04-lts-4-2-1-4-ensure-rsyslog-is-configured-to-sen` — Configure rsyslog to forward logs to a remote log host for centralized logging
+- `cis-ubuntu-14-04-lts-4-2-1-5-ensure-remote-rsyslog-messages-are` — Configure rsyslog to accept remote messages only on designated log hosts
+- `cis-ubuntu-14-04-lts-4-2-2-1-ensure-syslog-ng-service-is-enabled` — Enable the syslog-ng service to ensure system logging is active
+- `cis-ubuntu-14-04-lts-4-2-2-2-ensure-logging-is-configured` — Configure syslog-ng to capture appropriate logging for all facilities
+- `cis-ubuntu-14-04-lts-4-2-2-3-ensure-syslog-ng-default-file-permi` — Configure syslog-ng to create log files with restrictive permissions (0640)
+- `cis-ubuntu-14-04-lts-4-2-2-4-ensure-syslog-ng-is-configured-to-s` — Configure syslog-ng to forward logs to a remote log host for centralized logging
+- `cis-ubuntu-14-04-lts-4-2-2-5-ensure-remote-syslog-ng-messages-ar` — Configure syslog-ng to accept remote messages only on designated log hosts
+- `cis-ubuntu-14-04-lts-4-2-3-ensure-rsyslog-or-syslog-ng-is-instal` — Ensure either rsyslog or syslog-ng is installed for system logging
+- `cis-ubuntu-14-04-lts-4-2-4-ensure-permissions-on-all-logfiles-ar` — Ensure restrictive permissions on all log files in /var/log to protect sensitive data
+- `cis-ubuntu-14-04-lts-4-3-ensure-logrotate-is-configured` — Configure logrotate to ensure logs are rotated regularly to prevent disk exhaustion
+- `cis-ubuntu-14-04-lts-5-1-1-ensure-cron-daemon-is-enabled` — Verify the cron daemon is enabled to execute scheduled batch jobs on the system
+- `cis-ubuntu-14-04-lts-5-1-2-ensure-permissions-on-etc-crontab-are` — Verify /etc/crontab ownership and permissions are restricted to root with no group/other access
+- `cis-ubuntu-14-04-lts-5-1-3-ensure-permissions-on-etc-cron-hourly` — Verify /etc/cron.hourly ownership and permissions are restricted to root with no group/other access
+- `cis-ubuntu-14-04-lts-5-1-4-ensure-permissions-on-etc-cron-daily` — Verify /etc/cron.daily ownership and permissions are restricted to root with no group/other access
+- `cis-ubuntu-14-04-lts-5-1-5-ensure-permissions-on-etc-cron-weekly` — Verify /etc/cron.weekly ownership and permissions are restricted to root with no group/other access
+- `cis-ubuntu-14-04-lts-5-1-6-ensure-permissions-on-etc-cron-monthl` — Verify /etc/cron.monthly ownership and permissions are restricted to root with no group/other access
+- `cis-ubuntu-14-04-lts-5-1-7-ensure-permissions-on-etc-cron-d-are` — Verify /etc/cron.d ownership and permissions are restricted to root with no group/other access
+- `cis-ubuntu-14-04-lts-5-1-8-ensure-at-cron-is-restricted-to-autho` — Verify at and cron access is restricted using allow files with proper ownership and permissions
+- `cis-ubuntu-14-04-lts-5-2-1-ensure-permissions-on-etc-ssh-sshd-co` — Verify /etc/ssh/sshd_config ownership and permissions are restricted to root with no group/other access
+- `cis-ubuntu-14-04-lts-5-2-10-ensure-ssh-permituserenvironment-is` — Verify SSH PermitUserEnvironment is set to no to prevent users from setting environment options
+- `cis-ubuntu-14-04-lts-5-2-11-ensure-only-approved-mac-algorithms` — Verify SSH is configured to use only approved MAC algorithms to prevent weak cipher attacks
+- `cis-ubuntu-14-04-lts-5-2-12-ensure-ssh-idle-timeout-interval-is` — Verify SSH ClientAliveInterval and ClientAliveCountMax are configured for idle session timeout
+- `cis-ubuntu-14-04-lts-5-2-13-ensure-ssh-logingracetime-is-set-to` — Verify SSH LoginGraceTime is set to 60 seconds or less to limit unauthenticated connections
+- `cis-ubuntu-14-04-lts-5-2-14-ensure-ssh-access-is-limited` — Verify SSH access is limited using AllowUsers, AllowGroups, DenyUsers, or DenyGroups directives
+- `cis-ubuntu-14-04-lts-5-2-15-ensure-ssh-warning-banner-is-configu` — Verify SSH Banner is configured to display a warning message before authentication
+- `cis-ubuntu-14-04-lts-5-2-2-ensure-ssh-protocol-is-set-to-2` — Verify SSH is configured to use Protocol version 2 only
+- `cis-ubuntu-14-04-lts-5-2-3-ensure-ssh-loglevel-is-set-to-info` — Verify SSH LogLevel is configured to INFO for adequate logging of login activity
+- `cis-ubuntu-14-04-lts-5-2-4-ensure-ssh-x11-forwarding-is-disabled` — Verify SSH X11 forwarding is disabled to prevent remote graphic connection tunneling
+- `cis-ubuntu-14-04-lts-5-2-5-ensure-ssh-maxauthtries-is-set-to-4-o` — Verify SSH MaxAuthTries is set to 4 or less to limit brute force attack risk
+- `cis-ubuntu-14-04-lts-5-2-6-ensure-ssh-ignorerhosts-is-enabled` — Verify SSH IgnoreRhosts is set to yes to prevent .rhosts-based authentication
+- `cis-ubuntu-14-04-lts-5-2-7-ensure-ssh-hostbasedauthentication-is` — Verify SSH HostbasedAuthentication is disabled to prevent host-based trust authentication
+- `cis-ubuntu-14-04-lts-5-2-8-ensure-ssh-root-login-is-disabled` — Verify SSH PermitRootLogin is set to no to prevent direct root login over SSH
+- `cis-ubuntu-14-04-lts-5-2-9-ensure-ssh-permitemptypasswords-is-di` — Verify SSH PermitEmptyPasswords is set to no to prevent login with empty passwords
+- `cis-ubuntu-14-04-lts-5-3-1-ensure-password-creation-requirements` — Verify PAM password quality requirements enforce minimum length and complexity
+- `cis-ubuntu-14-04-lts-5-3-2-ensure-lockout-for-failed-password-at` — Verify PAM is configured to lock out users after repeated failed password attempts
+- `cis-ubuntu-14-04-lts-5-3-3-ensure-password-reuse-is-limited` — Verify PAM is configured to remember at least 5 previous passwords to prevent reuse
+- `cis-ubuntu-14-04-lts-5-3-4-ensure-password-hashing-algorithm-is` — Verify PAM is configured to use SHA-512 hashing algorithm for password storage
+- `cis-ubuntu-14-04-lts-5-4-1-1-ensure-password-expiration-is-365-d` — Verify PASS_MAX_DAYS is set to 365 or less in /etc/login.defs for password expiration
+- `cis-ubuntu-14-04-lts-5-4-1-2-ensure-minimum-days-between-passwor` — Verify PASS_MIN_DAYS is set to 7 or more in /etc/login.defs to prevent rapid password cycling
+- `cis-ubuntu-14-04-lts-5-4-1-3-ensure-password-expiration-warning` — Verify PASS_WARN_AGE is set to 7 or more in /etc/login.defs for password expiry warnings
+- `cis-ubuntu-14-04-lts-5-4-1-4-ensure-inactive-password-lock-is-30` — Verify inactive password lock is set to 30 days or less to disable dormant accounts
+- `cis-ubuntu-14-04-lts-5-4-1-5-ensure-all-users-last-password-chan` — Verify no users have a password change date set in the future which could bypass expiration
+- `cis-ubuntu-14-04-lts-5-4-2-ensure-system-accounts-are-non-login` — Verify system accounts have non-login shells and are locked to prevent interactive access
+- `cis-ubuntu-14-04-lts-5-4-3-ensure-default-group-for-the-root-acc` — Verify the root account default group is GID 0 to prevent root-owned files becoming accessible
+- `cis-ubuntu-14-04-lts-5-4-4-ensure-default-user-umask-is-027-or-m` — Verify default umask is set to 027 or more restrictive in shell configuration files
+- `cis-ubuntu-14-04-lts-5-4-5-ensure-default-user-shell-timeout-is` — Verify TMOUT is set to 900 seconds or less in shell configuration files for idle session timeout
+- `cis-ubuntu-14-04-lts-5-5-ensure-root-login-is-restricted-to-syst` — Verify root login is restricted to physically secure system consoles via /etc/securetty
+- `cis-ubuntu-14-04-lts-5-6-ensure-access-to-the-su-command-is-rest` — Verify access to the su command is restricted to the wheel group via PAM configuration
+- `cis-ubuntu-14-04-lts-6-1-1-audit-system-file-permissions` — Audit system file permissions using dpkg --verify to detect unauthorized changes
+- `cis-ubuntu-14-04-lts-6-1-10-ensure-no-world-writable-files-exist` — Find and remediate world writable files across all local filesystems
+- `cis-ubuntu-14-04-lts-6-1-11-ensure-no-unowned-files-or-directori` — Find and remediate files and directories without a valid owner
+- `cis-ubuntu-14-04-lts-6-1-12-ensure-no-ungrouped-files-or-directo` — Find and remediate files and directories without a valid group owner
+- `cis-ubuntu-14-04-lts-6-1-13-audit-suid-executables` — Identify and review all SUID executables to ensure they are legitimate
+- `cis-ubuntu-14-04-lts-6-1-14-audit-sgid-executables` — Identify and review all SGID executables to ensure they are legitimate
+- `cis-ubuntu-14-04-lts-6-1-2-ensure-permissions-on-etc-passwd-are` — Verify /etc/passwd has correct ownership (root:root) and permissions (644)
+- `cis-ubuntu-14-04-lts-6-1-3-ensure-permissions-on-etc-shadow-are` — Verify /etc/shadow has correct ownership (root:shadow) and permissions (640 or more restrictive)
+- `cis-ubuntu-14-04-lts-6-1-4-ensure-permissions-on-etc-group-are-c` — Verify /etc/group has correct ownership (root:root) and permissions (644)
+- `cis-ubuntu-14-04-lts-6-1-5-ensure-permissions-on-etc-gshadow-are` — Verify /etc/gshadow has correct ownership (root:shadow) and permissions (640 or more restrictive)
+- `cis-ubuntu-14-04-lts-6-1-6-ensure-permissions-on-etc-passwd-are` — Verify /etc/passwd- has correct ownership (root:root) and permissions (644 or more restrictive)
+- `cis-ubuntu-14-04-lts-6-1-7-ensure-permissions-on-etc-shadow-are` — Verify /etc/shadow- has correct ownership and permissions (640 or more restrictive)
+- `cis-ubuntu-14-04-lts-6-1-8-ensure-permissions-on-etc-group-are-c` — Verify /etc/group- has correct ownership (root:root) and permissions (644 or more restrictive)
+- `cis-ubuntu-14-04-lts-6-1-9-ensure-permissions-on-etc-gshadow-are` — Verify /etc/gshadow- has correct ownership and permissions (640 or more restrictive)
+- `cis-ubuntu-14-04-lts-6-2-1-ensure-password-fields-are-not-empty` — Verify all accounts in /etc/shadow have a password or are locked
+- `cis-ubuntu-14-04-lts-6-2-10-ensure-users-dot-files-are-not-group` — Verify user dot files do not have group or world write permissions
+- `cis-ubuntu-14-04-lts-6-2-11-ensure-no-users-have-forward-files` — Verify no users have .forward files in their home directories
+- `cis-ubuntu-14-04-lts-6-2-12-ensure-no-users-have-netrc-files` — Verify no users have .netrc files in their home directories
+- `cis-ubuntu-14-04-lts-6-2-13-ensure-users-netrc-files-are-not-gro` — Verify .netrc files are not accessible by group or world
+- `cis-ubuntu-14-04-lts-6-2-14-ensure-no-users-have-rhosts-files` — Verify no users have .rhosts files in their home directories
+- `cis-ubuntu-14-04-lts-6-2-15-ensure-all-groups-in-etc-passwd-exis` — Verify all groups referenced in /etc/passwd exist in /etc/group
+- `cis-ubuntu-14-04-lts-6-2-16-ensure-no-duplicate-uids-exist` — Verify no duplicate User IDs exist in /etc/passwd
+- `cis-ubuntu-14-04-lts-6-2-17-ensure-no-duplicate-gids-exist` — Verify no duplicate Group IDs exist in /etc/group
+- `cis-ubuntu-14-04-lts-6-2-18-ensure-no-duplicate-user-names-exist` — Verify no duplicate user names exist in /etc/passwd
+- `cis-ubuntu-14-04-lts-6-2-19-ensure-no-duplicate-group-names-exis` — Verify no duplicate group names exist in /etc/group
+- `cis-ubuntu-14-04-lts-6-2-2-ensure-no-legacy-entries-exist-in-etc` — Verify no legacy NIS '+' entries exist in /etc/passwd
+- `cis-ubuntu-14-04-lts-6-2-20-ensure-shadow-group-is-empty` — Verify the shadow group has no users assigned to it
+- `cis-ubuntu-14-04-lts-6-2-3-ensure-no-legacy-entries-exist-in-etc` — Verify no legacy NIS '+' entries exist in /etc/shadow
+- `cis-ubuntu-14-04-lts-6-2-4-ensure-no-legacy-entries-exist-in-etc` — Verify no legacy NIS '+' entries exist in /etc/group
+- `cis-ubuntu-14-04-lts-6-2-5-ensure-root-is-the-only-uid-0-account` — Verify that only the root account has UID 0
+- `cis-ubuntu-14-04-lts-6-2-6-ensure-root-path-integrity` — Verify root PATH does not contain writable or non-root-owned directories
+- `cis-ubuntu-14-04-lts-6-2-7-ensure-all-users-home-directories-exi` — Verify that all users defined in /etc/passwd have existing home directories
+- `cis-ubuntu-14-04-lts-6-2-8-ensure-users-home-directories-permiss` — Verify user home directories have permissions of 750 or more restrictive
+- `cis-ubuntu-14-04-lts-6-2-9-ensure-users-own-their-home-directori` — Verify that users own their assigned home directories
+- `cis-ubuntu1204-v110-1-1` — Install Updates, Patches and Additional Security Software
+- `cis-ubuntu1204-v110-10-1-1` — Set Password Expiration Days
+- `cis-ubuntu1204-v110-10-1-2` — Set Password Change Minimum Number of Days
+- `cis-ubuntu1204-v110-10-1-3` — Set Password Expiring Warning Days
+- `cis-ubuntu1204-v110-10-2` — Disable System Accounts
+- `cis-ubuntu1204-v110-10-3` — Set Default Group for root Account
+- `cis-ubuntu1204-v110-10-4` — Set Default umask for Users
+- `cis-ubuntu1204-v110-10-5` — Lock Inactive User Accounts
+- `cis-ubuntu1204-v110-11-1` — Set Warning Banner for Standard Login Services
+- `cis-ubuntu1204-v110-11-2` — Remove OS Information from Login Warning Banners
+- `cis-ubuntu1204-v110-11-3` — Set Graphical Warning Banner
+- `cis-ubuntu1204-v110-12-1` — Verify Permissions on /etc/passwd
+- `cis-ubuntu1204-v110-12-10` — Find SUID System Executables
+- `cis-ubuntu1204-v110-12-11` — Find SGID System Executables
+- `cis-ubuntu1204-v110-12-2` — Verify Permissions on /etc/shadow
+- `cis-ubuntu1204-v110-12-3` — Verify Permissions on /etc/group
+- `cis-ubuntu1204-v110-12-4` — Verify User/Group Ownership on /etc/passwd
+- `cis-ubuntu1204-v110-12-5` — Verify User/Group Ownership on /etc/shadow
+- `cis-ubuntu1204-v110-12-6` — Verify User/Group Ownership on /etc/group
+- `cis-ubuntu1204-v110-12-7` — Find World Writable Files
+- `cis-ubuntu1204-v110-12-8` — Find Un-owned Files and Directories
+- `cis-ubuntu1204-v110-12-9` — Find Un-grouped Files and Directories
+- `cis-ubuntu1204-v110-13-1` — Ensure Password Fields are Not Empty
+- `cis-ubuntu1204-v110-13-10` — Check for Presence of User .rhosts Files
+- `cis-ubuntu1204-v110-13-11` — Check Groups in /etc/passwd
+- `cis-ubuntu1204-v110-13-12` — Check That Users Are Assigned Valid Home Directories
+- `cis-ubuntu1204-v110-13-13` — Check User Home Directory Ownership
+- `cis-ubuntu1204-v110-13-14` — Check for Duplicate UIDs
+- `cis-ubuntu1204-v110-13-15` — Check for Duplicate GIDs
+- `cis-ubuntu1204-v110-13-16` — Check That Reserved UIDs Are Assigned to System Accounts
+- `cis-ubuntu1204-v110-13-17` — Check for Duplicate User Names
+- `cis-ubuntu1204-v110-13-18` — Check for Duplicate Group Names
+- `cis-ubuntu1204-v110-13-19` — Check for Presence of User .netrc Files
+- `cis-ubuntu1204-v110-13-2` — Verify No Legacy '+' Entries Exist in /etc/passwd File
+- `cis-ubuntu1204-v110-13-20` — Check for Presence of User .forward Files
+- `cis-ubuntu1204-v110-13-3` — Verify No Legacy '+' Entries Exist in /etc/shadow File
+- `cis-ubuntu1204-v110-13-4` — Verify No Legacy '+' Entries Exist in /etc/group File
+- `cis-ubuntu1204-v110-13-5` — Verify No UID 0 Accounts Exist Other Than root
+- `cis-ubuntu1204-v110-13-6` — Ensure root PATH Integrity
+- `cis-ubuntu1204-v110-13-7` — Check Permissions on User Home Directories
+- `cis-ubuntu1204-v110-13-8` — Check User Dot File Permissions
+- `cis-ubuntu1204-v110-13-9` — Check Permissions on User .netrc Files
+- `cis-ubuntu1204-v110-2-1` — Create Separate Partition for /tmp
+- `cis-ubuntu1204-v110-2-10` — Add nodev Option to /home
+- `cis-ubuntu1204-v110-2-11` — Add nodev Option to Removable Media Partitions
+- `cis-ubuntu1204-v110-2-12` — Add noexec Option to Removable Media Partitions
+- `cis-ubuntu1204-v110-2-13` — Add nosuid Option to Removable Media Partitions
+- `cis-ubuntu1204-v110-2-14` — Add nodev Option to /run/shm Partition
+- `cis-ubuntu1204-v110-2-15` — Add nosuid Option to /run/shm Partition
+- `cis-ubuntu1204-v110-2-16` — Add noexec Option to /run/shm Partition
+- `cis-ubuntu1204-v110-2-17` — Set Sticky Bit on All World-Writable Directories
+- `cis-ubuntu1204-v110-2-18` — Disable Mounting of cramfs Filesystems
+- `cis-ubuntu1204-v110-2-19` — Disable Mounting of freevxfs Filesystems
+- `cis-ubuntu1204-v110-2-2` — Set nodev option for /tmp Partition
+- `cis-ubuntu1204-v110-2-20` — Disable Mounting of jffs2 Filesystems
+- `cis-ubuntu1204-v110-2-21` — Disable Mounting of hfs Filesystems
+- `cis-ubuntu1204-v110-2-22` — Disable Mounting of hfsplus Filesystems
+- `cis-ubuntu1204-v110-2-23` — Disable Mounting of squashfs Filesystems
+- `cis-ubuntu1204-v110-2-24` — Disable Mounting of udf Filesystems
+- `cis-ubuntu1204-v110-2-25` — Disable Automounting
+- `cis-ubuntu1204-v110-2-3` — Set nosuid option for /tmp Partition
+- `cis-ubuntu1204-v110-2-4` — Set noexec option for /tmp Partition
+- `cis-ubuntu1204-v110-2-5` — Create Separate Partition for /var
+- `cis-ubuntu1204-v110-2-6` — Bind Mount the /var/tmp directory to /tmp
+- `cis-ubuntu1204-v110-2-7` — Create Separate Partition for /var/log
+- `cis-ubuntu1204-v110-2-8` — Create Separate Partition for /var/log/audit
+- `cis-ubuntu1204-v110-2-9` — Create Separate Partition for /home
+- `cis-ubuntu1204-v110-3-1` — Set User/Group Owner on bootloader config
+- `cis-ubuntu1204-v110-3-2` — Set Permissions on bootloader config
+- `cis-ubuntu1204-v110-3-3` — Set Boot Loader Password
+- `cis-ubuntu1204-v110-3-4` — Require Authentication for Single-User Mode
+- `cis-ubuntu1204-v110-4-1` — Restrict Core Dumps
+- `cis-ubuntu1204-v110-4-2` — Enable XD/NX Support on 32-bit x86 Systems
+- `cis-ubuntu1204-v110-4-3` — Enable Randomized Virtual Memory Region Placement
+- `cis-ubuntu1204-v110-4-4` — Disable Prelink
+- `cis-ubuntu1204-v110-4-5` — Activate AppArmor
+- `cis-ubuntu1204-v110-5-1-1` — Ensure NIS is not installed
+- `cis-ubuntu1204-v110-5-1-2` — Ensure rsh server is not enabled
+- `cis-ubuntu1204-v110-5-1-3` — Ensure rsh client is not installed
+- `cis-ubuntu1204-v110-5-1-4` — Ensure talk server is not enabled
+- `cis-ubuntu1204-v110-5-1-5` — Ensure talk client is not installed
+- `cis-ubuntu1204-v110-5-1-6` — Ensure telnet server is not enabled
+- `cis-ubuntu1204-v110-5-1-7` — Ensure tftp-server is not enabled
+- `cis-ubuntu1204-v110-5-1-8` — Ensure xinetd is not enabled
+- `cis-ubuntu1204-v110-5-2` — Ensure chargen is not enabled
+- `cis-ubuntu1204-v110-5-3` — Ensure daytime is not enabled
+- `cis-ubuntu1204-v110-5-4` — Ensure echo is not enabled
+- `cis-ubuntu1204-v110-5-5` — Ensure discard is not enabled
+- `cis-ubuntu1204-v110-5-6` — Ensure time is not enabled
+- `cis-ubuntu1204-v110-6-1` — Ensure the X Window system is not installed
+- `cis-ubuntu1204-v110-6-10` — Ensure HTTP Server is not enabled
+- `cis-ubuntu1204-v110-6-11` — Ensure IMAP and POP server is not enabled
+- `cis-ubuntu1204-v110-6-12` — Ensure Samba is not enabled
+- `cis-ubuntu1204-v110-6-13` — Ensure HTTP Proxy Server is not enabled
+- `cis-ubuntu1204-v110-6-14` — Ensure SNMP Server is not enabled
+- `cis-ubuntu1204-v110-6-15` — Configure Mail Transfer Agent for Local-Only Mode
+- `cis-ubuntu1204-v110-6-16` — Ensure rsync service is not enabled
+- `cis-ubuntu1204-v110-6-17` — Ensure Biosdevname is not enabled
+- `cis-ubuntu1204-v110-6-2` — Ensure Avahi Server is not enabled
+- `cis-ubuntu1204-v110-6-3` — Ensure print server is not enabled
+- `cis-ubuntu1204-v110-6-4` — Ensure DHCP Server is not enabled
+- `cis-ubuntu1204-v110-6-5` — Configure Network Time Protocol (NTP)
+- `cis-ubuntu1204-v110-6-6` — Ensure LDAP is not enabled
+- `cis-ubuntu1204-v110-6-7` — Ensure NFS and RPC are not enabled
+- `cis-ubuntu1204-v110-6-8` — Ensure DNS Server is not enabled
+- `cis-ubuntu1204-v110-6-9` — Ensure FTP Server is not enabled
+- `cis-ubuntu1204-v110-7-1-1` — Disable IP Forwarding
+- `cis-ubuntu1204-v110-7-1-2` — Disable Send Packet Redirects
+- `cis-ubuntu1204-v110-7-2-1` — Disable Source Routed Packet Acceptance
+- `cis-ubuntu1204-v110-7-2-2` — Disable ICMP Redirect Acceptance
+- `cis-ubuntu1204-v110-7-2-3` — Disable Secure ICMP Redirect Acceptance
+- `cis-ubuntu1204-v110-7-2-4` — Log Suspicious Packets
+- `cis-ubuntu1204-v110-7-2-5` — Enable Ignore Broadcast Requests
+- `cis-ubuntu1204-v110-7-2-6` — Enable Bad Error Message Protection
+- `cis-ubuntu1204-v110-7-2-7` — Enable RFC-recommended Source Route Validation
+- `cis-ubuntu1204-v110-7-2-8` — Enable TCP SYN Cookies
+- `cis-ubuntu1204-v110-7-3-1` — Disable IPv6 Router Advertisements
+- `cis-ubuntu1204-v110-7-3-2` — Disable IPv6 Redirect Acceptance
+- `cis-ubuntu1204-v110-7-3-3` — Disable IPv6
+- `cis-ubuntu1204-v110-7-4-1` — Install TCP Wrappers
+- `cis-ubuntu1204-v110-7-4-2` — Create /etc/hosts.allow
+- `cis-ubuntu1204-v110-7-4-3` — Verify Permissions on /etc/hosts.allow
+- `cis-ubuntu1204-v110-7-4-4` — Create /etc/hosts.deny
+- `cis-ubuntu1204-v110-7-4-5` — Verify Permissions on /etc/hosts.deny
+- `cis-ubuntu1204-v110-7-5-1` — Disable DCCP
+- `cis-ubuntu1204-v110-7-5-2` — Disable SCTP
+- `cis-ubuntu1204-v110-7-5-3` — Disable RDS
+- `cis-ubuntu1204-v110-7-5-4` — Disable TIPC
+- `cis-ubuntu1204-v110-7-6` — Deactivate Wireless Interfaces
+- `cis-ubuntu1204-v110-7-7` — Ensure Firewall is active
+- `cis-ubuntu1204-v110-8-1-1-1` — Configure Audit Log Storage Size
+- `cis-ubuntu1204-v110-8-1-1-2` — Disable System on Audit Log Full
+- `cis-ubuntu1204-v110-8-1-1-3` — Keep All Auditing Information
+- `cis-ubuntu1204-v110-8-1-10` — Collect Discretionary Access Control Permission Modification Events
+- `cis-ubuntu1204-v110-8-1-11` — Collect Unsuccessful Unauthorized Access Attempts to Files
+- `cis-ubuntu1204-v110-8-1-12` — Collect Use of Privileged Commands
+- `cis-ubuntu1204-v110-8-1-13` — Collect Successful File System Mounts
+- `cis-ubuntu1204-v110-8-1-14` — Collect File Deletion Events by User
+- `cis-ubuntu1204-v110-8-1-15` — Collect Changes to System Administration Scope (sudoers)
+- `cis-ubuntu1204-v110-8-1-16` — Collect System Administrator Actions (sudolog)
+- `cis-ubuntu1204-v110-8-1-17` — Collect Kernel Module Loading and Unloading
+- `cis-ubuntu1204-v110-8-1-18` — Make the Audit Configuration Immutable
+- `cis-ubuntu1204-v110-8-1-2` — Install and Enable auditd Service
+- `cis-ubuntu1204-v110-8-1-3` — Enable Auditing for Processes That Start Prior to auditd
+- `cis-ubuntu1204-v110-8-1-4` — Record Events That Modify Date and Time Information
+- `cis-ubuntu1204-v110-8-1-5` — Record Events That Modify User/Group Information
+- `cis-ubuntu1204-v110-8-1-6` — Record Events That Modify the System's Network Environment
+- `cis-ubuntu1204-v110-8-1-7` — Record Events That Modify the System's Mandatory Access Controls
+- `cis-ubuntu1204-v110-8-1-8` — Collect Login and Logout Events
+- `cis-ubuntu1204-v110-8-1-9` — Collect Session Initiation Information
+- `cis-ubuntu1204-v110-8-2-1` — Install the rsyslog package
+- `cis-ubuntu1204-v110-8-2-2` — Ensure the rsyslog Service is activated
+- `cis-ubuntu1204-v110-8-2-3` — Configure /etc/rsyslog.conf
+- `cis-ubuntu1204-v110-8-2-4` — Create and Set Permissions on rsyslog Log Files
+- `cis-ubuntu1204-v110-8-2-5` — Configure rsyslog to Send Logs to a Remote Log Host
+- `cis-ubuntu1204-v110-8-2-6` — Accept Remote rsyslog Messages Only on Designated Log Hosts
+- `cis-ubuntu1204-v110-8-3-1` — Install AIDE
+- `cis-ubuntu1204-v110-8-3-2` — Implement Periodic Execution of File Integrity
+- `cis-ubuntu1204-v110-8-4` — Configure logrotate
+- `cis-ubuntu1204-v110-9-1-1` — Enable cron Daemon
+- `cis-ubuntu1204-v110-9-1-2` — Set User/Group Owner and Permission on /etc/crontab
+- `cis-ubuntu1204-v110-9-1-3` — Set User/Group Owner and Permission on /etc/cron.hourly
+- `cis-ubuntu1204-v110-9-1-4` — Set User/Group Owner and Permission on /etc/cron.daily
+- `cis-ubuntu1204-v110-9-1-5` — Set User/Group Owner and Permission on /etc/cron.weekly
+- `cis-ubuntu1204-v110-9-1-6` — Set User/Group Owner and Permission on /etc/cron.monthly
+- `cis-ubuntu1204-v110-9-1-7` — Set User/Group Owner and Permission on /etc/cron.d
+- `cis-ubuntu1204-v110-9-1-8` — Restrict at/cron to Authorized Users
+- `cis-ubuntu1204-v110-9-2-1` — Set Password Creation Requirement Parameters Using pam_cracklib
+- `cis-ubuntu1204-v110-9-2-2` — Set Lockout for Failed Password Attempts
+- `cis-ubuntu1204-v110-9-2-3` — Limit Password Reuse
+- `cis-ubuntu1204-v110-9-3-1` — Set SSH Protocol to 2
+- `cis-ubuntu1204-v110-9-3-10` — Do Not Allow Users to Set Environment Options
+- `cis-ubuntu1204-v110-9-3-11` — Use Only Approved Cipher in Counter Mode
+- `cis-ubuntu1204-v110-9-3-12` — Set Idle Timeout Interval for User Login
+- `cis-ubuntu1204-v110-9-3-13` — Limit Access via SSH
+- `cis-ubuntu1204-v110-9-3-14` — Set SSH Banner
+- `cis-ubuntu1204-v110-9-3-2` — Set LogLevel to INFO
+- `cis-ubuntu1204-v110-9-3-3` — Set Permissions on /etc/ssh/sshd_config
+- `cis-ubuntu1204-v110-9-3-4` — Disable SSH X11 Forwarding
+- `cis-ubuntu1204-v110-9-3-5` — Set SSH MaxAuthTries to 4 or Less
+- `cis-ubuntu1204-v110-9-3-6` — Set SSH IgnoreRhosts to Yes
+- `cis-ubuntu1204-v110-9-3-7` — Set SSH HostbasedAuthentication to No
+- `cis-ubuntu1204-v110-9-3-8` — Disable SSH Root Login
+- `cis-ubuntu1204-v110-9-3-9` — Set SSH PermitEmptyPasswords to No
+- `cis-ubuntu1204-v110-9-4` — Restrict root Login to System Console
+- `cis-ubuntu1204-v110-9-5` — Restrict Access to the su Command
+- `cis-ubuntu1604-v200-1-1-1-1` — Ensure mounting of cramfs filesystems is disabled
+- `cis-ubuntu1604-v200-1-1-1-2` — Ensure mounting of freevxfs filesystems is disabled
+- `cis-ubuntu1604-v200-1-1-1-3` — Ensure mounting of jffs2 filesystems is disabled
+- `cis-ubuntu1604-v200-1-1-1-4` — Ensure mounting of hfs filesystems is disabled
+- `cis-ubuntu1604-v200-1-1-1-5` — Ensure mounting of hfsplus filesystems is disabled
+- `cis-ubuntu1604-v200-1-1-1-6` — Ensure mounting of udf filesystems is disabled
+- `cis-ubuntu1604-v200-1-1-10` — Ensure separate partition exists for /var
+- `cis-ubuntu1604-v200-1-1-11` — Ensure separate partition exists for /var/tmp
+- `cis-ubuntu1604-v200-1-1-12` — Ensure /var/tmp partition includes the nodev option
+- `cis-ubuntu1604-v200-1-1-13` — Ensure /var/tmp partition includes the nosuid option
+- `cis-ubuntu1604-v200-1-1-14` — Ensure /var/tmp partition includes the noexec option
+- `cis-ubuntu1604-v200-1-1-15` — Ensure separate partition exists for /var/log
+- `cis-ubuntu1604-v200-1-1-16` — Ensure separate partition exists for /var/log/audit
+- `cis-ubuntu1604-v200-1-1-17` — Ensure separate partition exists for /home
+- `cis-ubuntu1604-v200-1-1-18` — Ensure /home partition includes the nodev option
+- `cis-ubuntu1604-v200-1-1-19` — Ensure nodev option set on removable media partitions
+- `cis-ubuntu1604-v200-1-1-2` — Ensure /tmp is configured
+- `cis-ubuntu1604-v200-1-1-20` — Ensure nosuid option set on removable media partitions
+- `cis-ubuntu1604-v200-1-1-21` — Ensure noexec option set on removable media partitions
+- `cis-ubuntu1604-v200-1-1-22` — Ensure sticky bit is set on all world-writable directories
+- `cis-ubuntu1604-v200-1-1-23` — Disable Automounting
+- `cis-ubuntu1604-v200-1-1-24` — Disable USB Storage
+- `cis-ubuntu1604-v200-1-1-3` — Ensure nodev option set on /tmp partition
+- `cis-ubuntu1604-v200-1-1-4` — Ensure nosuid option set on /tmp partition
+- `cis-ubuntu1604-v200-1-1-5` — Ensure noexec option set on /tmp partition
+- `cis-ubuntu1604-v200-1-1-6` — Ensure /dev/shm is configured
+- `cis-ubuntu1604-v200-1-1-7` — Ensure nodev option set on /dev/shm partition
+- `cis-ubuntu1604-v200-1-1-8` — Ensure nosuid option set on /dev/shm partition
+- `cis-ubuntu1604-v200-1-1-9` — Ensure noexec option set on /dev/shm partition
+- `cis-ubuntu1604-v200-1-2-1` — Ensure package manager repositories are configured
+- `cis-ubuntu1604-v200-1-2-2` — Ensure GPG keys are configured
+- `cis-ubuntu1604-v200-1-3-1` — Ensure AIDE is installed
+- `cis-ubuntu1604-v200-1-3-2` — Ensure filesystem integrity is regularly checked
+- `cis-ubuntu1604-v200-1-4-1` — Ensure permissions on bootloader config are not overridden
+- `cis-ubuntu1604-v200-1-4-2` — Ensure bootloader password is set
+- `cis-ubuntu1604-v200-1-4-3` — Ensure permissions on bootloader config are configured
+- `cis-ubuntu1604-v200-1-4-4` — Ensure authentication required for single user mode
+- `cis-ubuntu1604-v200-1-5-1` — Ensure XD/NX support is enabled
+- `cis-ubuntu1604-v200-1-5-2` — Ensure address space layout randomization (ASLR) is enabled
+- `cis-ubuntu1604-v200-1-5-3` — Ensure prelink is disabled
+- `cis-ubuntu1604-v200-1-5-4` — Ensure core dumps are restricted
+- `cis-ubuntu1604-v200-1-6-1-1` — Ensure AppArmor is installed
+- `cis-ubuntu1604-v200-1-6-1-2` — Ensure AppArmor is enabled in the bootloader configuration
+- `cis-ubuntu1604-v200-1-6-1-3` — Ensure all AppArmor Profiles are in enforce or complain mode
+- `cis-ubuntu1604-v200-1-6-1-4` — Ensure all AppArmor Profiles are enforcing
+- `cis-ubuntu1604-v200-1-7-1` — Ensure message of the day is configured properly
+- `cis-ubuntu1604-v200-1-7-2` — Ensure local login warning banner is configured properly
+- `cis-ubuntu1604-v200-1-7-3` — Ensure remote login warning banner is configured properly
+- `cis-ubuntu1604-v200-1-7-4` — Ensure permissions on /etc/motd are configured
+- `cis-ubuntu1604-v200-1-7-5` — Ensure permissions on /etc/issue are configured
+- `cis-ubuntu1604-v200-1-7-6` — Ensure permissions on /etc/issue.net are configured
+- `cis-ubuntu1604-v200-1-8-1` — Ensure GNOME Display Manager is removed
+- `cis-ubuntu1604-v200-1-8-2` — Ensure GDM login banner is configured
+- `cis-ubuntu1604-v200-1-8-3` — Ensure disable-user-list is enabled
+- `cis-ubuntu1604-v200-1-8-4` — Ensure XDCMP is not enabled
+- `cis-ubuntu1604-v200-1-9` — Ensure updates, patches, and additional security software are installed
+- `cis-ubuntu1604-v200-3-1-1` — Disable IPv6
+- `cis-ubuntu1604-v200-3-1-2` — Ensure wireless interfaces are disabled
+- `cis-ubuntu1604-v200-3-2-1` — Ensure packet redirect sending is disabled
+- `cis-ubuntu1604-v200-3-2-2` — Ensure IP forwarding is disabled
+- `cis-ubuntu1604-v200-3-3-1` — Ensure source routed packets are not accepted
+- `cis-ubuntu1604-v200-3-3-2` — Ensure ICMP redirects are not accepted
+- `cis-ubuntu1604-v200-3-3-3` — Ensure secure ICMP redirects are not accepted
+- `cis-ubuntu1604-v200-3-3-4` — Ensure suspicious packets are logged
+- `cis-ubuntu1604-v200-3-3-5` — Ensure broadcast ICMP requests are ignored
+- `cis-ubuntu1604-v200-3-3-6` — Ensure bogus ICMP responses are ignored
+- `cis-ubuntu1604-v200-3-3-7` — Ensure Reverse Path Filtering is enabled
+- `cis-ubuntu1604-v200-3-3-8` — Ensure TCP SYN Cookies is enabled
+- `cis-ubuntu1604-v200-3-3-9` — Ensure IPv6 router advertisements are not accepted
+- `cis-ubuntu1604-v200-3-4-1` — Ensure DCCP is disabled
+- `cis-ubuntu1604-v200-3-4-2` — Ensure SCTP is disabled
+- `cis-ubuntu1604-v200-3-4-3` — Ensure RDS is disabled
+- `cis-ubuntu1604-v200-3-4-4` — Ensure TIPC is disabled
+- `cis-ubuntu1604-v200-3-5-1-1` — Ensure ufw is installed
+- `cis-ubuntu1604-v200-3-5-1-2` — Ensure iptables-persistent is not installed with ufw
+- `cis-ubuntu1604-v200-3-5-1-3` — Ensure ufw service is enabled
+- `cis-ubuntu1604-v200-3-5-1-4` — Ensure ufw loopback traffic is configured
+- `cis-ubuntu1604-v200-3-5-1-5` — Ensure ufw outbound connections are configured
+- `cis-ubuntu1604-v200-3-5-1-6` — Ensure ufw firewall rules exist for all open ports
+- `cis-ubuntu1604-v200-3-5-1-7` — Ensure ufw default deny firewall policy
+- `cis-ubuntu1604-v200-3-5-2-1` — Ensure nftables is installed
+- `cis-ubuntu1604-v200-3-5-2-10` — Ensure nftables rules are permanent
+- `cis-ubuntu1604-v200-3-5-2-2` — Ensure ufw is uninstalled or disabled with nftables
+- `cis-ubuntu1604-v200-3-5-2-3` — Ensure iptables are flushed with nftables
+- `cis-ubuntu1604-v200-3-5-2-4` — Ensure a nftables table exists
+- `cis-ubuntu1604-v200-3-5-2-5` — Ensure nftables base chains exist
+- `cis-ubuntu1604-v200-3-5-2-6` — Ensure nftables loopback traffic is configured
+- `cis-ubuntu1604-v200-3-5-2-7` — Ensure nftables outbound and established connections are configured
+- `cis-ubuntu1604-v200-3-5-2-8` — Ensure nftables default deny firewall policy
+- `cis-ubuntu1604-v200-3-5-2-9` — Ensure nftables service is enabled
+- `cis-ubuntu1604-v200-3-5-3-1-1` — Ensure iptables packages are installed
+- `cis-ubuntu1604-v200-3-5-3-1-2` — Ensure nftables is not installed with iptables
+- `cis-ubuntu1604-v200-3-5-3-1-3` — Ensure ufw is uninstalled or disabled with iptables
+- `cis-ubuntu1604-v200-3-5-3-2-1` — Ensure iptables default deny firewall policy
+- `cis-ubuntu1604-v200-3-5-3-2-2` — Ensure iptables loopback traffic is configured
+- `cis-ubuntu1604-v200-3-5-3-2-3` — Ensure iptables outbound and established connections are configured
+- `cis-ubuntu1604-v200-3-5-3-2-4` — Ensure iptables firewall rules exist for all open ports
+- `cis-ubuntu1604-v200-3-5-3-3-1` — Ensure ip6tables default deny firewall policy
+- `cis-ubuntu1604-v200-3-5-3-3-2` — Ensure ip6tables loopback traffic is configured
+- `cis-ubuntu1604-v200-3-5-3-3-3` — Ensure ip6tables outbound and established connections are configured
+- `cis-ubuntu1604-v200-3-5-3-3-4` — Ensure ip6tables firewall rules exist for all open ports
+- `cis-ubuntu1604-v200-4-1-1-1` — Ensure auditd is installed
+- `cis-ubuntu1604-v200-4-1-1-2` — Ensure auditd service is enabled
+- `cis-ubuntu1604-v200-4-1-1-3` — Ensure auditing for processes that start prior to auditd is enabled
+- `cis-ubuntu1604-v200-4-1-1-4` — Ensure audit_backlog_limit is sufficient
+- `cis-ubuntu1604-v200-4-1-10` — Ensure unsuccessful unauthorized file access attempts are collected
+- `cis-ubuntu1604-v200-4-1-11` — Ensure use of privileged commands is collected
+- `cis-ubuntu1604-v200-4-1-12` — Ensure successful file system mounts are collected
+- `cis-ubuntu1604-v200-4-1-13` — Ensure file deletion events by users are collected
+- `cis-ubuntu1604-v200-4-1-14` — Ensure changes to system administration scope (sudoers) is collected
+- `cis-ubuntu1604-v200-4-1-15` — Ensure system administrator command executions (sudo) are collected
+- `cis-ubuntu1604-v200-4-1-16` — Ensure kernel module loading and unloading is collected
+- `cis-ubuntu1604-v200-4-1-17` — Ensure the audit configuration is immutable
+- `cis-ubuntu1604-v200-4-1-2-1` — Ensure audit log storage size is configured
+- `cis-ubuntu1604-v200-4-1-2-2` — Ensure audit logs are not automatically deleted
+- `cis-ubuntu1604-v200-4-1-2-3` — Ensure system is disabled when audit logs are full
+- `cis-ubuntu1604-v200-4-1-3` — Ensure events that modify date and time information are collected
+- `cis-ubuntu1604-v200-4-1-4` — Ensure events that modify user/group information are collected
+- `cis-ubuntu1604-v200-4-1-5` — Ensure events that modify the system's network environment are collected
+- `cis-ubuntu1604-v200-4-1-6` — Ensure events that modify the system's Mandatory Access Controls are collected
+- `cis-ubuntu1604-v200-4-1-7` — Ensure login and logout events are collected
+- `cis-ubuntu1604-v200-4-1-8` — Ensure session initiation information is collected
+- `cis-ubuntu1604-v200-4-1-9` — Ensure discretionary access control permission modification events are collected
+- `cis-ubuntu1604-v200-4-2-1-1` — Ensure rsyslog is installed
+- `cis-ubuntu1604-v200-4-2-1-2` — Ensure rsyslog Service is enabled
+- `cis-ubuntu1604-v200-4-2-1-3` — Ensure logging is configured
+- `cis-ubuntu1604-v200-4-2-1-4` — Ensure rsyslog default file permissions configured
+- `cis-ubuntu1604-v200-4-2-1-5` — Ensure rsyslog is configured to send logs to a remote log host
+- `cis-ubuntu1604-v200-4-2-1-6` — Ensure remote rsyslog messages are only accepted on designated log hosts
+- `cis-ubuntu1604-v200-4-2-2-1` — Ensure journald is configured to send logs to rsyslog
+- `cis-ubuntu1604-v200-4-2-2-2` — Ensure journald is configured to compress large log files
+- `cis-ubuntu1604-v200-4-2-2-3` — Ensure journald is configured to write logfiles to persistent disk
+- `cis-ubuntu1604-v200-4-2-3` — Ensure permissions on all logfiles are configured
+- `cis-ubuntu1604-v200-4-3` — Ensure logrotate is configured
+- `cis-ubuntu1604-v200-4-4` — Ensure logrotate assigns appropriate permissions
+- `cis-ubuntu1604-v200-5-1-1` — Ensure cron daemon is enabled and running
+- `cis-ubuntu1604-v200-5-1-2` — Ensure permissions on /etc/crontab are configured
+- `cis-ubuntu1604-v200-5-1-3` — Ensure permissions on /etc/cron.hourly are configured
+- `cis-ubuntu1604-v200-5-1-4` — Ensure permissions on /etc/cron.daily are configured
+- `cis-ubuntu1604-v200-5-1-5` — Ensure permissions on /etc/cron.weekly are configured
+- `cis-ubuntu1604-v200-5-1-6` — Ensure permissions on /etc/cron.monthly are configured
+- `cis-ubuntu1604-v200-5-1-7` — Ensure permissions on /etc/cron.d are configured
+- `cis-ubuntu1604-v200-5-1-8` — Ensure cron is restricted to authorized users
+- `cis-ubuntu1604-v200-5-1-9` — Ensure at is restricted to authorized users
+- `cis-ubuntu1604-v200-5-2-1` — Ensure sudo is installed
+- `cis-ubuntu1604-v200-5-2-2` — Ensure sudo commands use pty
+- `cis-ubuntu1604-v200-5-2-3` — Ensure sudo log file exists
+- `cis-ubuntu1604-v200-5-3-1` — Ensure permissions on /etc/ssh/sshd_config are configured
+- `cis-ubuntu1604-v200-5-3-10` — Ensure SSH HostbasedAuthentication is disabled
+- `cis-ubuntu1604-v200-5-3-11` — Ensure SSH root login is disabled
+- `cis-ubuntu1604-v200-5-3-12` — Ensure SSH PermitEmptyPasswords is disabled
+- `cis-ubuntu1604-v200-5-3-13` — Ensure SSH PermitUserEnvironment is disabled
+- `cis-ubuntu1604-v200-5-3-14` — Ensure only strong Ciphers are used
+- `cis-ubuntu1604-v200-5-3-15` — Ensure only strong MAC algorithms are used
+- `cis-ubuntu1604-v200-5-3-16` — Ensure only strong Key Exchange algorithms are used
+- `cis-ubuntu1604-v200-5-3-17` — Ensure SSH Idle Timeout Interval is configured
+- `cis-ubuntu1604-v200-5-3-18` — Ensure SSH LoginGraceTime is set to one minute or less
+- `cis-ubuntu1604-v200-5-3-19` — Ensure SSH warning banner is configured
+- `cis-ubuntu1604-v200-5-3-2` — Ensure permissions on SSH private host key files are configured
+- `cis-ubuntu1604-v200-5-3-20` — Ensure SSH PAM is enabled
+- `cis-ubuntu1604-v200-5-3-21` — Ensure SSH AllowTcpForwarding is disabled
+- `cis-ubuntu1604-v200-5-3-22` — Ensure SSH MaxStartups is configured
+- `cis-ubuntu1604-v200-5-3-23` — Ensure SSH MaxSessions is limited
+- `cis-ubuntu1604-v200-5-3-3` — Ensure permissions on SSH public host key files are configured
+- `cis-ubuntu1604-v200-5-3-4` — Ensure SSH Protocol is set to 2
+- `cis-ubuntu1604-v200-5-3-5` — Ensure SSH access is limited
+- `cis-ubuntu1604-v200-5-3-6` — Ensure SSH LogLevel is appropriate
+- `cis-ubuntu1604-v200-5-3-7` — Ensure SSH X11 forwarding is disabled
+- `cis-ubuntu1604-v200-5-3-8` — Ensure SSH MaxAuthTries is set to 4 or less
+- `cis-ubuntu1604-v200-5-3-9` — Ensure SSH IgnoreRhosts is enabled
+- `cis-ubuntu1604-v200-5-4-1` — Ensure password creation requirements are configured
+- `cis-ubuntu1604-v200-5-4-2` — Ensure lockout for failed password attempts is configured
+- `cis-ubuntu1604-v200-5-4-3` — Ensure password reuse is limited
+- `cis-ubuntu1604-v200-5-4-4` — Ensure password hashing algorithm is SHA-512
+- `cis-ubuntu1604-v200-5-5-1-1` — Ensure minimum days between password changes is configured
+- `cis-ubuntu1604-v200-5-5-1-2` — Ensure password expiration is 365 days or less
+- `cis-ubuntu1604-v200-5-5-1-3` — Ensure password expiration warning days is 7 or more
+- `cis-ubuntu1604-v200-5-5-1-4` — Ensure inactive password lock is 30 days or less
+- `cis-ubuntu1604-v200-5-5-1-5` — Ensure all users last password change date is in the past
+- `cis-ubuntu1604-v200-5-5-2` — Ensure system accounts are secured
+- `cis-ubuntu1604-v200-5-5-3` — Ensure default group for the root account is GID 0
+- `cis-ubuntu1604-v200-5-5-4` — Ensure default user umask is 027 or more restrictive
+- `cis-ubuntu1604-v200-5-5-5` — Ensure default user shell timeout is 900 seconds or less
+- `cis-ubuntu1604-v200-5-6` — Ensure root login is restricted to system console
+- `cis-ubuntu1604-v200-5-7` — Ensure access to the su command is restricted
+- `cis-ubuntu1604-v200-6-1-1` — Audit system file permissions
+- `cis-ubuntu1604-v200-6-1-10` — Ensure no world writable files exist
+- `cis-ubuntu1604-v200-6-1-11` — Ensure no unowned files or directories exist
+- `cis-ubuntu1604-v200-6-1-12` — Ensure no ungrouped files or directories exist
+- `cis-ubuntu1604-v200-6-1-13` — Audit SUID executables
+- `cis-ubuntu1604-v200-6-1-14` — Audit SGID executables
+- `cis-ubuntu1604-v200-6-1-2` — Ensure permissions on /etc/passwd are configured
+- `cis-ubuntu1604-v200-6-1-3` — Ensure permissions on /etc/passwd- are configured
+- `cis-ubuntu1604-v200-6-1-4` — Ensure permissions on /etc/group are configured
+- `cis-ubuntu1604-v200-6-1-5` — Ensure permissions on /etc/group- are configured
+- `cis-ubuntu1604-v200-6-1-6` — Ensure permissions on /etc/shadow are configured
+- `cis-ubuntu1604-v200-6-1-7` — Ensure permissions on /etc/shadow- are configured
+- `cis-ubuntu1604-v200-6-1-8` — Ensure permissions on /etc/gshadow are configured
+- `cis-ubuntu1604-v200-6-1-9` — Ensure permissions on /etc/gshadow- are configured
+- `cis-ubuntu1604-v200-6-2-1` — Ensure accounts in /etc/passwd use shadowed passwords
+- `cis-ubuntu1604-v200-6-2-10` — Ensure no users have .rhosts files
+- `cis-ubuntu1604-v200-6-2-11` — Ensure root is the only UID 0 account
+- `cis-ubuntu1604-v200-6-2-12` — Ensure root PATH Integrity
+- `cis-ubuntu1604-v200-6-2-13` — Ensure no duplicate UIDs exist
+- `cis-ubuntu1604-v200-6-2-14` — Ensure no duplicate GIDs exist
+- `cis-ubuntu1604-v200-6-2-15` — Ensure no duplicate user names exist
+- `cis-ubuntu1604-v200-6-2-16` — Ensure no duplicate group names exist
+- `cis-ubuntu1604-v200-6-2-17` — Ensure shadow group is empty
+- `cis-ubuntu1604-v200-6-2-2` — Ensure password fields are not empty
+- `cis-ubuntu1604-v200-6-2-3` — Ensure all groups in /etc/passwd exist in /etc/group
+- `cis-ubuntu1604-v200-6-2-4` — Ensure all users' home directories exist
+- `cis-ubuntu1604-v200-6-2-5` — Ensure users own their home directories
+- `cis-ubuntu1604-v200-6-2-6` — Ensure users' home directories permissions are 750 or more restrictive
+- `cis-ubuntu1604-v200-6-2-7` — Ensure users' dot files are not group or world writable
+- `cis-ubuntu1604-v200-6-2-8` — Ensure no users have .netrc files
+- `cis-ubuntu1604-v200-6-2-9` — Ensure no users have .forward files
+- `cis-ubuntu1804-v220-1-1-1-1` — Ensure mounting of cramfs filesystems is disabled
+- `cis-ubuntu1804-v220-1-1-1-2` — Ensure mounting of freevxfs filesystems is disabled
+- `cis-ubuntu1804-v220-1-1-1-3` — Ensure mounting of jffs2 filesystems is disabled
+- `cis-ubuntu1804-v220-1-1-1-4` — Ensure mounting of hfs filesystems is disabled
+- `cis-ubuntu1804-v220-1-1-1-5` — Ensure mounting of hfsplus filesystems is disabled
+- `cis-ubuntu1804-v220-1-1-1-6` — Ensure mounting of squashfs filesystems is disabled
+- `cis-ubuntu1804-v220-1-1-1-7` — Ensure mounting of udf filesystems is disabled
+- `cis-ubuntu1804-v220-1-1-10` — Disable USB Storage
+- `cis-ubuntu1804-v220-1-1-2-1` — Ensure /tmp is a separate partition
+- `cis-ubuntu1804-v220-1-1-2-2` — Ensure nodev option set on /tmp partition
+- `cis-ubuntu1804-v220-1-1-2-3` — Ensure noexec option set on /tmp partition
+- `cis-ubuntu1804-v220-1-1-2-4` — Ensure nosuid option set on /tmp partition
+- `cis-ubuntu1804-v220-1-1-3-1` — Ensure separate partition exists for /var
+- `cis-ubuntu1804-v220-1-1-3-2` — Ensure nodev option set on /var partition
+- `cis-ubuntu1804-v220-1-1-3-3` — Ensure nosuid option set on /var partition
+- `cis-ubuntu1804-v220-1-1-4-1` — Ensure separate partition exists for /var/tmp
+- `cis-ubuntu1804-v220-1-1-4-2` — Ensure nodev option set on /var/tmp partition
+- `cis-ubuntu1804-v220-1-1-4-3` — Ensure noexec option set on /var/tmp partition
+- `cis-ubuntu1804-v220-1-1-4-4` — Ensure nosuid option set on /var/tmp partition
+- `cis-ubuntu1804-v220-1-1-5-1` — Ensure separate partition exists for /var/log
+- `cis-ubuntu1804-v220-1-1-5-2` — Ensure nodev option set on /var/log partition
+- `cis-ubuntu1804-v220-1-1-5-3` — Ensure noexec option set on /var/log partition
+- `cis-ubuntu1804-v220-1-1-5-4` — Ensure nosuid option set on /var/log partition
+- `cis-ubuntu1804-v220-1-1-6-1` — Ensure separate partition exists for /var/log/audit
+- `cis-ubuntu1804-v220-1-1-6-2` — Ensure nodev option set on /var/log/audit partition
+- `cis-ubuntu1804-v220-1-1-6-3` — Ensure noexec option set on /var/log/audit partition
+- `cis-ubuntu1804-v220-1-1-6-4` — Ensure nosuid option set on /var/log/audit partition
+- `cis-ubuntu1804-v220-1-1-7-1` — Ensure separate partition exists for /home
+- `cis-ubuntu1804-v220-1-1-7-2` — Ensure nodev option set on /home partition
+- `cis-ubuntu1804-v220-1-1-7-3` — Ensure nosuid option set on /home partition
+- `cis-ubuntu1804-v220-1-1-8-1` — Ensure nodev option set on /dev/shm partition
+- `cis-ubuntu1804-v220-1-1-8-2` — Ensure noexec option set on /dev/shm partition
+- `cis-ubuntu1804-v220-1-1-8-3` — Ensure nosuid option set on /dev/shm partition
+- `cis-ubuntu1804-v220-1-1-9` — Disable Automounting
+- `cis-ubuntu1804-v220-1-2-1` — Ensure AIDE is installed
+- `cis-ubuntu1804-v220-1-2-2` — Ensure filesystem integrity is regularly checked
+- `cis-ubuntu1804-v220-1-3-1` — Ensure updates, patches, and additional security software are installed
+- `cis-ubuntu1804-v220-1-3-2` — Ensure package manager repositories are configured
+- `cis-ubuntu1804-v220-1-3-3` — Ensure GPG keys are configured
+- `cis-ubuntu1804-v220-1-4-1` — Ensure bootloader password is set
+- `cis-ubuntu1804-v220-1-4-2` — Ensure permissions on bootloader config are configured
+- `cis-ubuntu1804-v220-1-4-3` — Ensure authentication required for single user mode
+- `cis-ubuntu1804-v220-1-5-1` — Ensure ptrace_scope is restricted
+- `cis-ubuntu1804-v220-1-5-2` — Ensure core dumps are restricted
+- `cis-ubuntu1804-v220-1-5-3` — Ensure address space layout randomization (ASLR) is enabled
+- `cis-ubuntu1804-v220-1-5-4` — Ensure prelink is not installed
+- `cis-ubuntu1804-v220-1-5-5` — Ensure Automatic Error Reporting is not enabled
+- `cis-ubuntu1804-v220-1-6-1-1` — Ensure AppArmor is installed
+- `cis-ubuntu1804-v220-1-6-1-2` — Ensure AppArmor is enabled in the bootloader configuration
+- `cis-ubuntu1804-v220-1-6-1-3` — Ensure all AppArmor Profiles are in enforce or complain mode
+- `cis-ubuntu1804-v220-1-6-1-4` — Ensure all AppArmor Profiles are enforcing
+- `cis-ubuntu1804-v220-1-7-1` — Ensure message of the day is configured properly
+- `cis-ubuntu1804-v220-1-7-2` — Ensure local login warning banner is configured properly
+- `cis-ubuntu1804-v220-1-7-3` — Ensure remote login warning banner is configured properly
+- `cis-ubuntu1804-v220-1-7-4` — Ensure permissions on /etc/motd are configured
+- `cis-ubuntu1804-v220-1-7-5` — Ensure permissions on /etc/issue are configured
+- `cis-ubuntu1804-v220-1-7-6` — Ensure permissions on /etc/issue.net are configured
+- `cis-ubuntu1804-v220-1-8-1` — Ensure GNOME Display Manager is removed
+- `cis-ubuntu1804-v220-1-8-10` — Ensure XDCMP is not enabled
+- `cis-ubuntu1804-v220-1-8-2` — Ensure GDM login banner is configured
+- `cis-ubuntu1804-v220-1-8-3` — Ensure GDM disable-user-list option is enabled
+- `cis-ubuntu1804-v220-1-8-4` — Ensure GDM screen locks when the user is idle
+- `cis-ubuntu1804-v220-1-8-5` — Ensure GDM screen locks cannot be overridden
+- `cis-ubuntu1804-v220-1-8-6` — Ensure GDM automatic mounting of removable media is disabled
+- `cis-ubuntu1804-v220-1-8-7` — Ensure GDM disabling automatic mounting of removable media is not overridden
+- `cis-ubuntu1804-v220-1-8-8` — Ensure GDM autorun-never is enabled
+- `cis-ubuntu1804-v220-1-8-9` — Ensure GDM autorun-never is not overridden
+- `cis-ubuntu1804-v220-2-1-1-1` — Ensure a single time synchronization daemon is in use
+- `cis-ubuntu1804-v220-2-1-2-1` — Ensure chrony is configured with authorized timeserver
+- `cis-ubuntu1804-v220-2-1-2-2` — Ensure chrony is running as user _chrony
+- `cis-ubuntu1804-v220-2-1-2-3` — Ensure chrony is enabled and running
+- `cis-ubuntu1804-v220-2-1-3-1` — Ensure systemd-timesyncd configured with authorized timeserver
+- `cis-ubuntu1804-v220-2-1-3-2` — Ensure systemd-timesyncd is enabled and running
+- `cis-ubuntu1804-v220-2-1-4-1` — Ensure ntp access control is configured
+- `cis-ubuntu1804-v220-2-1-4-2` — Ensure ntp is configured with authorized timeserver
+- `cis-ubuntu1804-v220-2-1-4-3` — Ensure ntp is running as user ntp
+- `cis-ubuntu1804-v220-2-1-4-4` — Ensure ntp is enabled and running
+- `cis-ubuntu1804-v220-2-2-1` — Ensure X Window System is not installed
+- `cis-ubuntu1804-v220-2-2-10` — Ensure IMAP and POP3 server are not installed
+- `cis-ubuntu1804-v220-2-2-11` — Ensure Samba is not installed
+- `cis-ubuntu1804-v220-2-2-12` — Ensure HTTP Proxy Server is not installed
+- `cis-ubuntu1804-v220-2-2-13` — Ensure SNMP Server is not installed
+- `cis-ubuntu1804-v220-2-2-14` — Ensure NIS Server is not installed
+- `cis-ubuntu1804-v220-2-2-15` — Ensure dnsmasq is not installed
+- `cis-ubuntu1804-v220-2-2-16` — Ensure mail transfer agent is configured for local-only mode
+- `cis-ubuntu1804-v220-2-2-17` — Ensure rsync service is either not installed or is masked
+- `cis-ubuntu1804-v220-2-2-2` — Ensure Avahi Server is not installed
+- `cis-ubuntu1804-v220-2-2-3` — Ensure CUPS is not installed
+- `cis-ubuntu1804-v220-2-2-4` — Ensure DHCP Server is not installed
+- `cis-ubuntu1804-v220-2-2-5` — Ensure LDAP server is not installed
+- `cis-ubuntu1804-v220-2-2-6` — Ensure NFS is not installed
+- `cis-ubuntu1804-v220-2-2-7` — Ensure DNS Server is not installed
+- `cis-ubuntu1804-v220-2-2-8` — Ensure FTP Server is not installed
+- `cis-ubuntu1804-v220-2-2-9` — Ensure HTTP server is not installed
+- `cis-ubuntu1804-v220-2-3-1` — Ensure NIS Client is not installed
+- `cis-ubuntu1804-v220-2-3-2` — Ensure rsh client is not installed
+- `cis-ubuntu1804-v220-2-3-3` — Ensure talk client is not installed
+- `cis-ubuntu1804-v220-2-3-4` — Ensure telnet client is not installed
+- `cis-ubuntu1804-v220-2-3-5` — Ensure LDAP client is not installed
+- `cis-ubuntu1804-v220-2-3-6` — Ensure RPC is not installed
+- `cis-ubuntu1804-v220-2-4` — Ensure nonessential services are removed or masked
+- `cis-ubuntu1804-v220-3-1-1` — Ensure IPv6 status is identified
+- `cis-ubuntu1804-v220-3-1-2` — Ensure wireless interfaces are disabled
+- `cis-ubuntu1804-v220-3-1-3` — Ensure bluetooth services are not in use
+- `cis-ubuntu1804-v220-3-2-1` — Ensure dccp kernel module is not available
+- `cis-ubuntu1804-v220-3-2-2` — Ensure tipc kernel module is not available
+- `cis-ubuntu1804-v220-3-2-3` — Ensure rds kernel module is not available
+- `cis-ubuntu1804-v220-3-2-4` — Ensure sctp kernel module is not available
+- `cis-ubuntu1804-v220-3-3-1` — Ensure ip forwarding is disabled
+- `cis-ubuntu1804-v220-3-3-10` — Ensure TCP SYN Cookies is enabled
+- `cis-ubuntu1804-v220-3-3-11` — Ensure IPv6 router advertisements are not accepted
+- `cis-ubuntu1804-v220-3-3-2` — Ensure packet redirect sending is disabled
+- `cis-ubuntu1804-v220-3-3-3` — Ensure bogus ICMP responses are ignored
+- `cis-ubuntu1804-v220-3-3-4` — Ensure broadcast ICMP requests are ignored
+- `cis-ubuntu1804-v220-3-3-5` — Ensure ICMP redirects are not accepted
+- `cis-ubuntu1804-v220-3-3-6` — Ensure secure ICMP redirects are not accepted
+- `cis-ubuntu1804-v220-3-3-7` — Ensure reverse path filtering is enabled
+- `cis-ubuntu1804-v220-3-3-8` — Ensure source routed packets are not accepted
+- `cis-ubuntu1804-v220-3-3-9` — Ensure suspicious packets are logged
+- `cis-ubuntu1804-v220-3-4-1-1` — Ensure ufw is installed
+- `cis-ubuntu1804-v220-3-4-1-2` — Ensure iptables-persistent is not installed with ufw
+- `cis-ubuntu1804-v220-3-4-1-3` — Ensure ufw service is enabled
+- `cis-ubuntu1804-v220-3-4-1-4` — Ensure ufw loopback traffic is configured
+- `cis-ubuntu1804-v220-3-4-1-5` — Ensure ufw outbound connections are configured
+- `cis-ubuntu1804-v220-3-4-1-6` — Ensure ufw firewall rules exist for all open ports
+- `cis-ubuntu1804-v220-3-4-1-7` — Ensure ufw default deny firewall policy
+- `cis-ubuntu1804-v220-3-4-2-1` — Ensure nftables is installed
+- `cis-ubuntu1804-v220-3-4-2-10` — Ensure nftables rules are permanent
+- `cis-ubuntu1804-v220-3-4-2-2` — Ensure ufw is uninstalled or disabled with nftables
+- `cis-ubuntu1804-v220-3-4-2-3` — Ensure iptables are flushed with nftables
+- `cis-ubuntu1804-v220-3-4-2-4` — Ensure a nftables table exists
+- `cis-ubuntu1804-v220-3-4-2-5` — Ensure nftables base chains exist
+- `cis-ubuntu1804-v220-3-4-2-6` — Ensure nftables loopback traffic is configured
+- `cis-ubuntu1804-v220-3-4-2-7` — Ensure nftables outbound and established connections are configured
+- `cis-ubuntu1804-v220-3-4-2-8` — Ensure nftables default deny firewall policy
+- `cis-ubuntu1804-v220-3-4-2-9` — Ensure nftables service is enabled
+- `cis-ubuntu1804-v220-3-4-3-1-1` — Ensure iptables packages are installed
+- `cis-ubuntu1804-v220-3-4-3-1-2` — Ensure nftables is not installed with iptables
+- `cis-ubuntu1804-v220-3-4-3-1-3` — Ensure ufw is uninstalled or disabled with iptables
+- `cis-ubuntu1804-v220-3-4-3-2-1` — Ensure iptables default deny firewall policy
+- `cis-ubuntu1804-v220-3-4-3-2-2` — Ensure iptables loopback traffic is configured
+- `cis-ubuntu1804-v220-3-4-3-2-3` — Ensure iptables outbound and established connections are configured
+- `cis-ubuntu1804-v220-3-4-3-2-4` — Ensure iptables firewall rules exist for all open ports
+- `cis-ubuntu1804-v220-3-4-3-3-1` — Ensure ip6tables default deny firewall policy
+- `cis-ubuntu1804-v220-3-4-3-3-2` — Ensure ip6tables loopback traffic is configured
+- `cis-ubuntu1804-v220-3-4-3-3-3` — Ensure ip6tables outbound and established connections are configured
+- `cis-ubuntu1804-v220-3-4-3-3-4` — Ensure ip6tables firewall rules exist for all open ports
+- `cis-ubuntu1804-v220-4-1-1` — Ensure cron daemon is enabled and active
+- `cis-ubuntu1804-v220-4-1-2` — Ensure permissions on /etc/crontab are configured
+- `cis-ubuntu1804-v220-4-1-3` — Ensure permissions on /etc/cron.hourly are configured
+- `cis-ubuntu1804-v220-4-1-4` — Ensure permissions on /etc/cron.daily are configured
+- `cis-ubuntu1804-v220-4-1-5` — Ensure permissions on /etc/cron.weekly are configured
+- `cis-ubuntu1804-v220-4-1-6` — Ensure permissions on /etc/cron.monthly are configured
+- `cis-ubuntu1804-v220-4-1-7` — Ensure permissions on /etc/cron.d are configured
+- `cis-ubuntu1804-v220-4-1-8` — Ensure cron is restricted to authorized users
+- `cis-ubuntu1804-v220-4-1-9` — Ensure at is restricted to authorized users
+- `cis-ubuntu1804-v220-4-2-1` — Ensure permissions on /etc/ssh/sshd_config are configured
+- `cis-ubuntu1804-v220-4-2-10` — Ensure sshd IgnoreRhosts is enabled
+- `cis-ubuntu1804-v220-4-2-11` — Ensure sshd KexAlgorithms is configured
+- `cis-ubuntu1804-v220-4-2-12` — Ensure sshd LoginGraceTime is configured
+- `cis-ubuntu1804-v220-4-2-13` — Ensure sshd LogLevel is configured
+- `cis-ubuntu1804-v220-4-2-14` — Ensure sshd MACs are configured
+- `cis-ubuntu1804-v220-4-2-15` — Ensure sshd MaxAuthTries is configured
+- `cis-ubuntu1804-v220-4-2-16` — Ensure sshd MaxSessions is configured
+- `cis-ubuntu1804-v220-4-2-17` — Ensure sshd MaxStartups is configured
+- `cis-ubuntu1804-v220-4-2-18` — Ensure sshd PermitEmptyPasswords is disabled
+- `cis-ubuntu1804-v220-4-2-19` — Ensure sshd PermitRootLogin is disabled
+- `cis-ubuntu1804-v220-4-2-2` — Ensure access to SSH private host key files is configured
+- `cis-ubuntu1804-v220-4-2-20` — Ensure sshd PermitUserEnvironment is disabled
+- `cis-ubuntu1804-v220-4-2-21` — Ensure sshd UsePAM is enabled
+- `cis-ubuntu1804-v220-4-2-3` — Ensure sshd access is configured
+- `cis-ubuntu1804-v220-4-2-4` — Ensure sshd Banner is configured
+- `cis-ubuntu1804-v220-4-2-5` — Ensure sshd Ciphers are configured
+- `cis-ubuntu1804-v220-4-2-6` — Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured
+- `cis-ubuntu1804-v220-4-2-7` — Ensure sshd DisableForwarding is enabled
+- `cis-ubuntu1804-v220-4-2-8` — Ensure sshd GSSAPIAuthentication is disabled
+- `cis-ubuntu1804-v220-4-2-9` — Ensure sshd HostbasedAuthentication is disabled
+- `cis-ubuntu1804-v220-4-3-1` — Ensure sudo is installed
+- `cis-ubuntu1804-v220-4-3-2` — Ensure sudo commands use pty
+- `cis-ubuntu1804-v220-4-3-3` — Ensure sudo log file exists
+- `cis-ubuntu1804-v220-4-3-4` — Ensure users must provide password for privilege escalation
+- `cis-ubuntu1804-v220-4-3-5` — Ensure re-authentication for privilege escalation is not disabled globally
+- `cis-ubuntu1804-v220-4-3-6` — Ensure sudo authentication timeout is configured correctly
+- `cis-ubuntu1804-v220-4-3-7` — Ensure access to the su command is restricted
+- `cis-ubuntu1804-v220-4-4-1` — Ensure password creation requirements are configured
+- `cis-ubuntu1804-v220-4-4-2` — Ensure lockout for failed password attempts is configured
+- `cis-ubuntu1804-v220-4-4-3` — Ensure password reuse is limited
+- `cis-ubuntu1804-v220-4-4-4` — Ensure strong password hashing algorithm is configured
+- `cis-ubuntu1804-v220-4-4-5` — Ensure all current passwords uses the configured hashing algorithm
+- `cis-ubuntu1804-v220-4-5-1-1` — Ensure minimum days between password changes is configured
+- `cis-ubuntu1804-v220-4-5-1-2` — Ensure password expiration is 365 days or less
+- `cis-ubuntu1804-v220-4-5-1-3` — Ensure password expiration warning days is 7 or more
+- `cis-ubuntu1804-v220-4-5-1-4` — Ensure inactive password lock is 30 days or less
+- `cis-ubuntu1804-v220-4-5-1-5` — Ensure all users last password change date is in the past
+- `cis-ubuntu1804-v220-4-5-1-6` — Ensure the number of changed characters in a new password is configured
+- `cis-ubuntu1804-v220-4-5-1-7` — Ensure password dictionary check is enabled
+- `cis-ubuntu1804-v220-4-5-2` — Ensure system accounts are secured
+- `cis-ubuntu1804-v220-4-5-3` — Ensure default group for the root account is GID 0
+- `cis-ubuntu1804-v220-4-5-4` — Ensure default user umask is 027 or more restrictive
+- `cis-ubuntu1804-v220-4-5-5` — Ensure default user shell timeout is configured
+- `cis-ubuntu1804-v220-4-5-6` — Ensure nologin is not listed in /etc/shells
+- `cis-ubuntu1804-v220-4-5-7` — Ensure maximum number of same consecutive characters in a password is configured
+- `cis-ubuntu1804-v220-5-1-1-1-1` — Ensure systemd-journal-remote is installed
+- `cis-ubuntu1804-v220-5-1-1-1-2` — Ensure systemd-journal-remote is configured
+- `cis-ubuntu1804-v220-5-1-1-1-3` — Ensure systemd-journal-remote is enabled
+- `cis-ubuntu1804-v220-5-1-1-1-4` — Ensure journald is not configured to receive logs from a remote client
+- `cis-ubuntu1804-v220-5-1-1-2` — Ensure journald service is enabled
+- `cis-ubuntu1804-v220-5-1-1-3` — Ensure journald is configured to compress large log files
+- `cis-ubuntu1804-v220-5-1-1-4` — Ensure journald is configured to write logfiles to persistent disk
+- `cis-ubuntu1804-v220-5-1-1-5` — Ensure journald is not configured to send logs to rsyslog
+- `cis-ubuntu1804-v220-5-1-1-6` — Ensure journald log rotation is configured per site policy
+- `cis-ubuntu1804-v220-5-1-1-7` — Ensure journald default file permissions configured
+- `cis-ubuntu1804-v220-5-1-2-1` — Ensure rsyslog is installed
+- `cis-ubuntu1804-v220-5-1-2-2` — Ensure rsyslog service is enabled
+- `cis-ubuntu1804-v220-5-1-2-3` — Ensure journald is configured to send logs to rsyslog
+- `cis-ubuntu1804-v220-5-1-2-4` — Ensure rsyslog default file permissions are configured
+- `cis-ubuntu1804-v220-5-1-2-5` — Ensure logging is configured
+- `cis-ubuntu1804-v220-5-1-2-6` — Ensure rsyslog is configured to send logs to a remote log host
+- `cis-ubuntu1804-v220-5-1-2-7` — Ensure rsyslog is not configured to receive logs from a remote client
+- `cis-ubuntu1804-v220-5-1-3` — Ensure all logfiles have appropriate access configured
+- `cis-ubuntu1804-v220-5-2-1-1` — Verify that auditd and audispd-plugins packages are installed
+- `cis-ubuntu1804-v220-5-2-1-2` — Verify that the auditd daemon is enabled and running to record system events
+- `cis-ubuntu1804-v220-5-2-1-3` — Configure grub2 to enable auditing for processes that start prior to auditd daemon startup
+- `cis-ubuntu1804-v220-5-2-1-4` — Configure the audit_backlog_limit kernel parameter to prevent audit event loss
+- `cis-ubuntu1804-v220-5-2-2-1` — Configure the maximum size of audit log files to prevent system impact and audit data loss
+- `cis-ubuntu1804-v220-5-2-2-2` — Configure auditd to keep audit logs and never delete them automatically
+- `cis-ubuntu1804-v220-5-2-2-3` — Configure the system to halt when audit logs are full to prevent data loss
+- `cis-ubuntu1804-v220-5-2-3-1` — Ensure changes to system administration scope (sudoers) is collected
+- `cis-ubuntu1804-v220-5-2-3-10` — Ensure unsuccessful unauthorized file access attempts are collected
+- `cis-ubuntu1804-v220-5-2-3-11` — Ensure successful file system mounts are collected
+- `cis-ubuntu1804-v220-5-2-3-12` — Ensure login and logout events are collected
+- `cis-ubuntu1804-v220-5-2-3-13` — Ensure file deletion events by users are collected
+- `cis-ubuntu1804-v220-5-2-3-14` — Ensure events that modify the system's Mandatory Access Controls are collected
+- `cis-ubuntu1804-v220-5-2-3-15` — Ensure successful and unsuccessful attempts to use the chcon command are recorded
+- `cis-ubuntu1804-v220-5-2-3-16` — Ensure successful and unsuccessful attempts to use the setfacl command are recorded
+- `cis-ubuntu1804-v220-5-2-3-17` — Ensure successful and unsuccessful attempts to use the chacl command are recorded
+- `cis-ubuntu1804-v220-5-2-3-18` — Ensure successful and unsuccessful attempts to use the usermod command are recorded
+- `cis-ubuntu1804-v220-5-2-3-19` — Ensure kernel module loading and unloading is collected
+- `cis-ubuntu1804-v220-5-2-3-2` — Ensure actions as another user are always logged
+- `cis-ubuntu1804-v220-5-2-3-20` — Ensure the audit configuration is immutable
+- `cis-ubuntu1804-v220-5-2-3-21` — Ensure the running and on disk configuration is the same
+- `cis-ubuntu1804-v220-5-2-3-3` — Ensure events that modify the sudo log file are collected
+- `cis-ubuntu1804-v220-5-2-3-4` — Ensure events that modify date and time information are collected
+- `cis-ubuntu1804-v220-5-2-3-5` — Ensure events that modify the system's network environment are collected
+- `cis-ubuntu1804-v220-5-2-3-6` — Ensure use of privileged commands are collected
+- `cis-ubuntu1804-v220-5-2-3-7` — Ensure unsuccessful file access attempts are collected
+- `cis-ubuntu1804-v220-5-2-3-8` — Ensure events that modify user/group information are collected
+- `cis-ubuntu1804-v220-5-2-3-9` — Ensure discretionary access control permission modification events are collected
+- `cis-ubuntu1804-v220-5-2-4-1` — 5.2.4.1 Ensure audit log files are mode 0640 or less permissive
+- `cis-ubuntu1804-v220-5-2-4-10` — 5.2.4.10 Ensure audit tools belong to group root
+- `cis-ubuntu1804-v220-5-2-4-11` — 5.2.4.11 Ensure cryptographic mechanisms are used to protect the integrity of audit tools
+- `cis-ubuntu1804-v220-5-2-4-2` — 5.2.4.2 Ensure only authorized users own audit log files
+- `cis-ubuntu1804-v220-5-2-4-3` — 5.2.4.3 Ensure only authorized groups are assigned ownership of audit log files
+- `cis-ubuntu1804-v220-5-2-4-4` — 5.2.4.4 Ensure the audit log directory is 0750 or more restrictive
+- `cis-ubuntu1804-v220-5-2-4-5` — 5.2.4.5 Ensure audit configuration files are 640 or more restrictive
+- `cis-ubuntu1804-v220-5-2-4-6` — 5.2.4.6 Ensure audit configuration files are owned by root
+- `cis-ubuntu1804-v220-5-2-4-7` — 5.2.4.7 Ensure audit configuration files belong to group root
+- `cis-ubuntu1804-v220-5-2-4-8` — 5.2.4.8 Ensure audit tools are 755 or more restrictive
+- `cis-ubuntu1804-v220-5-2-4-9` — 5.2.4.9 Ensure audit tools are owned by root
+- `cis-ubuntu1804-v220-6-1-1` — Ensure permissions on /etc/passwd are configured
+- `cis-ubuntu1804-v220-6-1-10` — Ensure world writable files and directories are secured
+- `cis-ubuntu1804-v220-6-1-11` — Ensure no files or directories without an owner and a group exist
+- `cis-ubuntu1804-v220-6-1-12` — Ensure SUID and SGID files are reviewed
+- `cis-ubuntu1804-v220-6-1-13` — Ensure permissions on /etc/shells are configured
+- `cis-ubuntu1804-v220-6-1-2` — Ensure permissions on /etc/passwd- are configured
+- `cis-ubuntu1804-v220-6-1-3` — Ensure permissions on /etc/group are configured
+- `cis-ubuntu1804-v220-6-1-4` — Ensure permissions on /etc/group- are configured
+- `cis-ubuntu1804-v220-6-1-5` — Ensure permissions on /etc/shadow are configured
+- `cis-ubuntu1804-v220-6-1-6` — Ensure permissions on /etc/shadow- are configured
+- `cis-ubuntu1804-v220-6-1-7` — Ensure permissions on /etc/gshadow are configured
+- `cis-ubuntu1804-v220-6-1-8` — Ensure permissions on /etc/gshadow- are configured
+- `cis-ubuntu1804-v220-6-1-9` — Ensure permissions on /etc/security/opasswd are configured
+- `cis-ubuntu1804-v220-6-2-1` — Ensure accounts in /etc/passwd use shadowed passwords
+- `cis-ubuntu1804-v220-6-2-10` — Ensure local interactive user dot files access is configured
+- `cis-ubuntu1804-v220-6-2-2` — Ensure /etc/shadow password fields are not empty
+- `cis-ubuntu1804-v220-6-2-3` — Ensure all groups in /etc/passwd exist in /etc/group
+- `cis-ubuntu1804-v220-6-2-4` — Ensure shadow group is empty
+- `cis-ubuntu1804-v220-6-2-5` — Ensure no duplicate UIDs exist
+- `cis-ubuntu1804-v220-6-2-6` — Ensure no duplicate GIDs exist
+- `cis-ubuntu1804-v220-6-2-7` — Ensure no duplicate user names exist
+- `cis-ubuntu1804-v220-6-2-8` — Ensure no duplicate group names exist
+- `cis-ubuntu1804-v220-6-2-9` — Ensure local interactive user home directories are configured
+- `cis-ubuntu2004-v300-1-1-1-1` — Ensure cramfs kernel module is not available
+- `cis-ubuntu2004-v300-1-1-1-10` — Ensure unused filesystems kernel modules are not available
+- `cis-ubuntu2004-v300-1-1-1-2` — Ensure freevxfs kernel module is not available
+- `cis-ubuntu2004-v300-1-1-1-3` — Ensure hfs kernel module is not available
+- `cis-ubuntu2004-v300-1-1-1-4` — Ensure hfsplus kernel module is not available
+- `cis-ubuntu2004-v300-1-1-1-5` — Ensure jffs2 kernel module is not available
+- `cis-ubuntu2004-v300-1-1-1-6` — Ensure overlay kernel module is not available
+- `cis-ubuntu2004-v300-1-1-1-7` — Ensure squashfs kernel module is not available
+- `cis-ubuntu2004-v300-1-1-1-8` — Ensure udf kernel module is not available
+- `cis-ubuntu2004-v300-1-1-1-9` — Ensure usb-storage kernel module is not available
+- `cis-ubuntu2004-v300-1-1-2-1-1` — Ensure /tmp is a separate partition
+- `cis-ubuntu2004-v300-1-1-2-1-2` — Ensure nodev option set on /tmp partition
+- `cis-ubuntu2004-v300-1-1-2-1-3` — Ensure nosuid option set on /tmp partition
+- `cis-ubuntu2004-v300-1-1-2-1-4` — Ensure noexec option set on /tmp partition
+- `cis-ubuntu2004-v300-1-1-2-2-1` — Ensure /dev/shm is a separate partition
+- `cis-ubuntu2004-v300-1-1-2-2-2` — Ensure nodev option set on /dev/shm partition
+- `cis-ubuntu2004-v300-1-1-2-2-3` — Ensure nosuid option set on /dev/shm partition
+- `cis-ubuntu2004-v300-1-1-2-2-4` — Ensure noexec option set on /dev/shm partition
+- `cis-ubuntu2004-v300-1-1-2-3-1` — Ensure separate partition exists for /home
+- `cis-ubuntu2004-v300-1-1-2-3-2` — Ensure nodev option set on /home partition
+- `cis-ubuntu2004-v300-1-1-2-3-3` — Ensure nosuid option set on /home partition
+- `cis-ubuntu2004-v300-1-1-2-4-1` — Ensure separate partition exists for /var
+- `cis-ubuntu2004-v300-1-1-2-4-2` — Ensure nodev option set on /var partition
+- `cis-ubuntu2004-v300-1-1-2-4-3` — Ensure nosuid option set on /var partition
+- `cis-ubuntu2004-v300-1-1-2-5-1` — Ensure separate partition exists for /var/tmp
+- `cis-ubuntu2004-v300-1-1-2-5-2` — Ensure nodev option set on /var/tmp partition
+- `cis-ubuntu2004-v300-1-1-2-5-3` — Ensure nosuid option set on /var/tmp partition
+- `cis-ubuntu2004-v300-1-1-2-5-4` — Ensure noexec option set on /var/tmp partition
+- `cis-ubuntu2004-v300-1-1-2-6-1` — Ensure separate partition exists for /var/log
+- `cis-ubuntu2004-v300-1-1-2-6-2` — Ensure nodev option set on /var/log partition
+- `cis-ubuntu2004-v300-1-1-2-6-3` — Ensure nosuid option set on /var/log partition
+- `cis-ubuntu2004-v300-1-1-2-6-4` — Ensure noexec option set on /var/log partition
+- `cis-ubuntu2004-v300-1-1-2-7-1` — Ensure separate partition exists for /var/log/audit
+- `cis-ubuntu2004-v300-1-1-2-7-2` — Ensure nodev option set on /var/log/audit partition
+- `cis-ubuntu2004-v300-1-1-2-7-3` — Ensure nosuid option set on /var/log/audit partition
+- `cis-ubuntu2004-v300-1-1-2-7-4` — Ensure noexec option set on /var/log/audit partition
+- `cis-ubuntu2004-v300-1-2-1-1` — Ensure GPG keys are configured
+- `cis-ubuntu2004-v300-1-2-1-2` — Ensure package manager repositories are configured
+- `cis-ubuntu2004-v300-1-2-2-1` — Ensure updates, patches, and additional security software are installed
+- `cis-ubuntu2004-v300-1-3-1-1` — Ensure latest versions of the apparmor packages are installed
+- `cis-ubuntu2004-v300-1-3-1-2` — Ensure AppArmor is enabled in the bootloader configuration
+- `cis-ubuntu2004-v300-1-3-1-3` — Ensure all AppArmor Profiles are not disabled
+- `cis-ubuntu2004-v300-1-3-1-4` — Ensure all AppArmor Profiles are enforcing
+- `cis-ubuntu2004-v300-1-4-1` — Ensure bootloader password is set
+- `cis-ubuntu2004-v300-1-4-2` — Ensure access to bootloader config is configured
+- `cis-ubuntu2004-v300-1-5-1` — Ensure address space layout randomization is enabled
+- `cis-ubuntu2004-v300-1-5-2` — Ensure ptrace_scope is restricted
+- `cis-ubuntu2004-v300-1-5-3` — Ensure core dumps are restricted
+- `cis-ubuntu2004-v300-1-5-4` — Ensure prelink is not installed
+- `cis-ubuntu2004-v300-1-5-5` — Ensure Automatic Error Reporting is not enabled
+- `cis-ubuntu2004-v300-1-6-1` — Ensure /etc/motd is configured
+- `cis-ubuntu2004-v300-1-6-2` — Ensure /etc/issue is configured
+- `cis-ubuntu2004-v300-1-6-3` — Ensure /etc/issue.net is configured
+- `cis-ubuntu2004-v300-1-6-4` — Ensure access to /etc/motd is configured
+- `cis-ubuntu2004-v300-1-6-5` — Ensure access to /etc/issue is configured
+- `cis-ubuntu2004-v300-1-6-6` — Ensure access to /etc/issue.net is configured
+- `cis-ubuntu2004-v300-1-7-1` — Ensure GDM is removed
+- `cis-ubuntu2004-v300-1-7-10` — Ensure XDMCP is not enabled
+- `cis-ubuntu2004-v300-1-7-2` — Ensure GDM login banner is configured
+- `cis-ubuntu2004-v300-1-7-3` — Ensure GDM disable-user-list option is enabled
+- `cis-ubuntu2004-v300-1-7-4` — Ensure GDM screen locks when the user is idle
+- `cis-ubuntu2004-v300-1-7-5` — Ensure GDM screen locks cannot be overridden
+- `cis-ubuntu2004-v300-1-7-6` — Ensure GDM automatic mounting of removable media is disabled
+- `cis-ubuntu2004-v300-1-7-7` — Ensure GDM disabling automatic mounting of removable media is not overridden
+- `cis-ubuntu2004-v300-1-7-8` — Ensure GDM autorun-never is enabled
+- `cis-ubuntu2004-v300-1-7-9` — Ensure GDM autorun-never is not overridden
+- `cis-ubuntu2004-v300-2-1-1` — Ensure autofs services are not in use
+- `cis-ubuntu2004-v300-2-1-10` — Ensure nis server services are not in use
+- `cis-ubuntu2004-v300-2-1-11` — Ensure print server services are not in use
+- `cis-ubuntu2004-v300-2-1-12` — Ensure rpcbind services are not in use
+- `cis-ubuntu2004-v300-2-1-13` — Ensure rsync services are not in use
+- `cis-ubuntu2004-v300-2-1-14` — Ensure samba file server services are not in use
+- `cis-ubuntu2004-v300-2-1-15` — Ensure snmp services are not in use
+- `cis-ubuntu2004-v300-2-1-16` — Ensure tftp server services are not in use
+- `cis-ubuntu2004-v300-2-1-17` — Ensure web proxy server services are not in use
+- `cis-ubuntu2004-v300-2-1-18` — Ensure web server services are not in use
+- `cis-ubuntu2004-v300-2-1-19` — Ensure xinetd services are not in use
+- `cis-ubuntu2004-v300-2-1-2` — Ensure avahi daemon services are not in use
+- `cis-ubuntu2004-v300-2-1-20` — Ensure X window server services are not in use
+- `cis-ubuntu2004-v300-2-1-21` — Ensure mail transfer agents are configured for local-only mode
+- `cis-ubuntu2004-v300-2-1-22` — Ensure only approved services are listening on a network interface
+- `cis-ubuntu2004-v300-2-1-3` — Ensure dhcp server services are not in use
+- `cis-ubuntu2004-v300-2-1-4` — Ensure dns server services are not in use
+- `cis-ubuntu2004-v300-2-1-5` — Ensure dnsmasq services are not in use
+- `cis-ubuntu2004-v300-2-1-6` — Ensure ftp server services are not in use
+- `cis-ubuntu2004-v300-2-1-7` — Ensure ldap server services are not in use
+- `cis-ubuntu2004-v300-2-1-8` — Ensure message access server services are not in use
+- `cis-ubuntu2004-v300-2-1-9` — Ensure network file system services are not in use
+- `cis-ubuntu2004-v300-2-2-1` — Ensure NIS client is not installed
+- `cis-ubuntu2004-v300-2-2-2` — Ensure rsh client is not installed
+- `cis-ubuntu2004-v300-2-2-3` — Ensure talk client is not installed
+- `cis-ubuntu2004-v300-2-2-4` — Ensure telnet client is not installed
+- `cis-ubuntu2004-v300-2-2-5` — Ensure ldap client is not installed
+- `cis-ubuntu2004-v300-2-2-6` — Ensure ftp client is not installed
+- `cis-ubuntu2004-v300-2-3-1-1` — Ensure a single time synchronization daemon is in use
+- `cis-ubuntu2004-v300-2-3-2-1` — Ensure systemd-timesyncd configured with authorized timeserver
+- `cis-ubuntu2004-v300-2-3-2-2` — Ensure systemd-timesyncd is enabled and running
+- `cis-ubuntu2004-v300-2-3-3-1` — Ensure chrony is configured with authorized timeserver
+- `cis-ubuntu2004-v300-2-3-3-2` — Ensure chrony is running as user _chrony
+- `cis-ubuntu2004-v300-2-3-3-3` — Ensure chrony is enabled and running
+- `cis-ubuntu2004-v300-2-4-1-1` — Ensure cron daemon is enabled and active
+- `cis-ubuntu2004-v300-2-4-1-2` — Ensure access to /etc/crontab is configured
+- `cis-ubuntu2004-v300-2-4-1-3` — Ensure access to /etc/cron.hourly is configured
+- `cis-ubuntu2004-v300-2-4-1-4` — Ensure access to /etc/cron.daily is configured
+- `cis-ubuntu2004-v300-2-4-1-5` — Ensure access to /etc/cron.weekly is configured
+- `cis-ubuntu2004-v300-2-4-1-6` — Ensure access to /etc/cron.monthly is configured
+- `cis-ubuntu2004-v300-2-4-1-7` — Ensure access to /etc/cron.yearly is configured
+- `cis-ubuntu2004-v300-2-4-1-8` — Ensure access to /etc/cron.d is configured
+- `cis-ubuntu2004-v300-2-4-1-9` — Ensure access to crontab is configured
+- `cis-ubuntu2004-v300-2-4-2-1` — Ensure access to at is configured
+- `cis-ubuntu2004-v300-3-1-1` — Ensure IPv6 status is identified
+- `cis-ubuntu2004-v300-3-1-2` — Ensure wireless interfaces are not available
+- `cis-ubuntu2004-v300-3-1-3` — Ensure bluetooth services are not in use
+- `cis-ubuntu2004-v300-3-2-1` — Ensure dccp kernel module is not available
+- `cis-ubuntu2004-v300-3-2-2` — Ensure tipc kernel module is not available
+- `cis-ubuntu2004-v300-3-2-3` — Ensure rds kernel module is not available
+- `cis-ubuntu2004-v300-3-2-4` — Ensure sctp kernel module is not available
+- `cis-ubuntu2004-v300-3-3-1` — Ensure ip forwarding is disabled
+- `cis-ubuntu2004-v300-3-3-10` — Ensure tcp syn cookies is enabled
+- `cis-ubuntu2004-v300-3-3-11` — Ensure ipv6 router advertisements are not accepted
+- `cis-ubuntu2004-v300-3-3-2` — Ensure packet redirect sending is disabled
+- `cis-ubuntu2004-v300-3-3-3` — Ensure bogus icmp responses are ignored
+- `cis-ubuntu2004-v300-3-3-4` — Ensure broadcast icmp requests are ignored
+- `cis-ubuntu2004-v300-3-3-5` — Ensure icmp redirects are not accepted
+- `cis-ubuntu2004-v300-3-3-6` — Ensure secure icmp redirects are not accepted
+- `cis-ubuntu2004-v300-3-3-7` — Ensure reverse path filtering is enabled
+- `cis-ubuntu2004-v300-3-3-8` — Ensure source routed packets are not accepted
+- `cis-ubuntu2004-v300-3-3-9` — Ensure suspicious packets are logged
+- `cis-ubuntu2004-v300-4-1-1` — Ensure a single firewall configuration utility is in use
+- `cis-ubuntu2004-v300-4-2-1` — Ensure ufw is installed
+- `cis-ubuntu2004-v300-4-2-2` — Ensure nftables is not in use with ufw
+- `cis-ubuntu2004-v300-4-2-3` — Ensure iptables-persistent is not installed with ufw
+- `cis-ubuntu2004-v300-4-2-4` — Ensure ufw service is enabled
+- `cis-ubuntu2004-v300-4-2-5` — Ensure ufw loopback traffic is configured
+- `cis-ubuntu2004-v300-4-2-6` — Ensure ufw outbound connections are configured
+- `cis-ubuntu2004-v300-4-2-7` — Ensure ufw firewall rules exist for all open ports
+- `cis-ubuntu2004-v300-4-2-8` — Ensure ufw default deny firewall policy
+- `cis-ubuntu2004-v300-4-3-1` — Ensure nftables is installed
+- `cis-ubuntu2004-v300-4-3-10` — Ensure nftables rules are permanent
+- `cis-ubuntu2004-v300-4-3-2` — Ensure ufw is uninstalled or disabled with nftables
+- `cis-ubuntu2004-v300-4-3-3` — Ensure iptables are flushed with nftables
+- `cis-ubuntu2004-v300-4-3-4` — Ensure a nftables table exists
+- `cis-ubuntu2004-v300-4-3-5` — Ensure nftables base chains exist
+- `cis-ubuntu2004-v300-4-3-6` — Ensure nftables loopback traffic is configured
+- `cis-ubuntu2004-v300-4-3-7` — Ensure nftables outbound and established connections are configured
+- `cis-ubuntu2004-v300-4-3-8` — Ensure nftables default deny firewall policy
+- `cis-ubuntu2004-v300-4-3-9` — Ensure nftables service is enabled
+- `cis-ubuntu2004-v300-4-4-1-1` — Ensure iptables packages are installed
+- `cis-ubuntu2004-v300-4-4-1-2` — Ensure nftables is not in use with iptables
+- `cis-ubuntu2004-v300-4-4-1-3` — Ensure ufw is not in use with iptables
+- `cis-ubuntu2004-v300-4-4-2-1` — Ensure iptables default deny firewall policy
+- `cis-ubuntu2004-v300-4-4-2-2` — Ensure iptables loopback traffic is configured
+- `cis-ubuntu2004-v300-4-4-2-3` — Ensure iptables outbound and established connections are configured
+- `cis-ubuntu2004-v300-4-4-2-4` — Ensure iptables firewall rules exist for all open ports
+- `cis-ubuntu2004-v300-4-4-3-1` — Ensure ip6tables default deny firewall policy
+- `cis-ubuntu2004-v300-4-4-3-2` — Ensure ip6tables loopback traffic is configured
+- `cis-ubuntu2004-v300-4-4-3-3` — Ensure ip6tables outbound and established connections are configured
+- `cis-ubuntu2004-v300-4-4-3-4` — Ensure ip6tables firewall rules exist for all open ports
+- `cis-ubuntu2004-v300-5-1-1` — Ensure access to /etc/ssh/sshd_config is configured
+- `cis-ubuntu2004-v300-5-1-10` — Ensure sshd HostbasedAuthentication is disabled
+- `cis-ubuntu2004-v300-5-1-11` — Ensure sshd IgnoreRhosts is enabled
+- `cis-ubuntu2004-v300-5-1-12` — Ensure sshd KexAlgorithms is configured
+- `cis-ubuntu2004-v300-5-1-13` — Ensure sshd LoginGraceTime is configured
+- `cis-ubuntu2004-v300-5-1-14` — Ensure sshd LogLevel is configured
+- `cis-ubuntu2004-v300-5-1-15` — Ensure sshd MACs are configured
+- `cis-ubuntu2004-v300-5-1-16` — Ensure sshd MaxAuthTries is configured
+- `cis-ubuntu2004-v300-5-1-17` — Ensure sshd MaxSessions is configured
+- `cis-ubuntu2004-v300-5-1-18` — Ensure sshd MaxStartups is configured
+- `cis-ubuntu2004-v300-5-1-19` — Ensure sshd PermitEmptyPasswords is disabled
+- `cis-ubuntu2004-v300-5-1-2` — Ensure access to SSH private host key files is configured
+- `cis-ubuntu2004-v300-5-1-20` — Ensure sshd PermitRootLogin is disabled
+- `cis-ubuntu2004-v300-5-1-21` — Ensure sshd PermitUserEnvironment is disabled
+- `cis-ubuntu2004-v300-5-1-22` — Ensure sshd UsePAM is enabled
+- `cis-ubuntu2004-v300-5-1-3` — Ensure access to SSH public host key files is configured
+- `cis-ubuntu2004-v300-5-1-4` — Ensure sshd access is configured
+- `cis-ubuntu2004-v300-5-1-5` — Ensure sshd Banner is configured
+- `cis-ubuntu2004-v300-5-1-6` — Ensure sshd Ciphers are configured
+- `cis-ubuntu2004-v300-5-1-7` — Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured
+- `cis-ubuntu2004-v300-5-1-8` — Ensure sshd DisableForwarding is enabled
+- `cis-ubuntu2004-v300-5-1-9` — Ensure sshd GSSAPIAuthentication is disabled
+- `cis-ubuntu2004-v300-5-2-1` — Ensure sudo is installed
+- `cis-ubuntu2004-v300-5-2-2` — Ensure sudo commands use pty
+- `cis-ubuntu2004-v300-5-2-3` — Ensure sudo log file exists
+- `cis-ubuntu2004-v300-5-2-4` — Ensure users must provide password for privilege escalation
+- `cis-ubuntu2004-v300-5-2-5` — Ensure re-authentication for privilege escalation is not disabled globally
+- `cis-ubuntu2004-v300-5-2-6` — Ensure sudo authentication timeout is configured
+- `cis-ubuntu2004-v300-5-2-7` — Ensure access to the su command is restricted
+- `cis-ubuntu2004-v300-5-3-1-1` — Ensure latest version of pam is installed
+- `cis-ubuntu2004-v300-5-3-1-2` — Ensure latest version of libpam-modules is installed
+- `cis-ubuntu2004-v300-5-3-1-3` — Ensure latest version of libpam-pwquality is installed
+- `cis-ubuntu2004-v300-5-3-2-1` — Ensure pam_unix module is enabled
+- `cis-ubuntu2004-v300-5-3-2-2` — Ensure pam_faillock module is enabled
+- `cis-ubuntu2004-v300-5-3-2-3` — Ensure pam_pwquality module is enabled
+- `cis-ubuntu2004-v300-5-3-2-4` — Ensure pam_pwhistory module is enabled
+- `cis-ubuntu2004-v300-5-3-3-1-1` — Ensure password failed attempts lockout is configured
+- `cis-ubuntu2004-v300-5-3-3-1-2` — Ensure password unlock time is configured
+- `cis-ubuntu2004-v300-5-3-3-1-3` — Ensure password failed attempts lockout includes root account
+- `cis-ubuntu2004-v300-5-3-3-2-1` — Ensure password number of changed characters is configured
+- `cis-ubuntu2004-v300-5-3-3-2-2` — Ensure minimum password length is configured
+- `cis-ubuntu2004-v300-5-3-3-2-3` — Ensure password complexity is configured
+- `cis-ubuntu2004-v300-5-3-3-2-4` — Ensure password same consecutive characters is configured
+- `cis-ubuntu2004-v300-5-3-3-2-5` — Ensure password maximum sequential characters is configured
+- `cis-ubuntu2004-v300-5-3-3-2-6` — Ensure password dictionary check is enabled
+- `cis-ubuntu2004-v300-5-3-3-2-7` — Ensure password quality checking is enforced
+- `cis-ubuntu2004-v300-5-3-3-2-8` — Ensure password quality is enforced for the root user
+- `cis-ubuntu2004-v300-5-3-3-3-1` — Ensure password history remember is configured
+- `cis-ubuntu2004-v300-5-3-3-3-2` — Ensure password history is enforced for the root user
+- `cis-ubuntu2004-v300-5-3-3-3-3` — Ensure pam_pwhistory includes use_authtok
+- `cis-ubuntu2004-v300-5-3-3-4-1` — Ensure pam_unix does not include nullok
+- `cis-ubuntu2004-v300-5-3-3-4-2` — Ensure pam_unix does not include remember
+- `cis-ubuntu2004-v300-5-3-3-4-3` — Ensure pam_unix includes a strong password hashing algorithm
+- `cis-ubuntu2004-v300-5-3-3-4-4` — Ensure pam_unix includes use_authtok
+- `cis-ubuntu2004-v300-5-4-1-1` — Ensure password expiration is configured
+- `cis-ubuntu2004-v300-5-4-1-2` — Ensure minimum password days is configured
+- `cis-ubuntu2004-v300-5-4-1-3` — Ensure password expiration warning days is configured
+- `cis-ubuntu2004-v300-5-4-1-4` — Ensure strong password hashing algorithm is configured
+- `cis-ubuntu2004-v300-5-4-1-5` — Ensure inactive password lock is configured
+- `cis-ubuntu2004-v300-5-4-1-6` — Ensure all users last password change date is in the past
+- `cis-ubuntu2004-v300-5-4-2-1` — Ensure root is the only UID 0 account
+- `cis-ubuntu2004-v300-5-4-2-2` — Ensure root is the only GID 0 account
+- `cis-ubuntu2004-v300-5-4-2-3` — Ensure group root is the only GID 0 group
+- `cis-ubuntu2004-v300-5-4-2-4` — Ensure root account access is controlled
+- `cis-ubuntu2004-v300-5-4-2-5` — Ensure root path integrity
+- `cis-ubuntu2004-v300-5-4-2-6` — Ensure root user umask is configured
+- `cis-ubuntu2004-v300-5-4-2-7` — Ensure system accounts do not have a valid login shell
+- `cis-ubuntu2004-v300-5-4-2-8` — Ensure accounts without a valid login shell are locked
+- `cis-ubuntu2004-v300-5-4-3-1` — Ensure nologin is not listed in /etc/shells
+- `cis-ubuntu2004-v300-5-4-3-2` — Ensure default user shell timeout is configured
+- `cis-ubuntu2004-v300-5-4-3-3` — Ensure default user umask is configured
+- `cis-ubuntu2004-v300-6-1-1` — Ensure AIDE is installed
+- `cis-ubuntu2004-v300-6-1-2` — Ensure filesystem integrity is regularly checked
+- `cis-ubuntu2004-v300-6-1-3` — Ensure cryptographic mechanisms are used to protect the integrity of audit tools
+- `cis-ubuntu2004-v300-6-2-1-1` — Ensure journald service is enabled and active
+- `cis-ubuntu2004-v300-6-2-1-2` — Ensure journald log file access is configured
+- `cis-ubuntu2004-v300-6-2-1-3` — Ensure journald log file rotation is configured
+- `cis-ubuntu2004-v300-6-2-2-1-1` — Ensure systemd-journal-remote is installed
+- `cis-ubuntu2004-v300-6-2-2-1-2` — Ensure systemd-journal-upload authentication is configured
+- `cis-ubuntu2004-v300-6-2-2-1-3` — Ensure systemd-journal-upload is enabled and active
+- `cis-ubuntu2004-v300-6-2-2-1-4` — Ensure systemd-journal-remote service is not in use
+- `cis-ubuntu2004-v300-6-2-2-2` — Ensure journald ForwardToSyslog is disabled
+- `cis-ubuntu2004-v300-6-2-2-3` — Ensure journald Compress is configured
+- `cis-ubuntu2004-v300-6-2-2-4` — Ensure journald Storage is configured
+- `cis-ubuntu2004-v300-6-2-3-1` — Ensure rsyslog service is enabled and active
+- `cis-ubuntu2004-v300-6-2-3-2` — Ensure rsyslog is installed
+- `cis-ubuntu2004-v300-6-2-3-3` — Ensure journald is configured to send logs to rsyslog
+- `cis-ubuntu2004-v300-6-2-3-4` — Ensure rsyslog log file creation mode is configured
+- `cis-ubuntu2004-v300-6-2-3-5` — Ensure rsyslog logging is configured
+- `cis-ubuntu2004-v300-6-2-3-6` — Ensure rsyslog is configured to send logs to a remote log host
+- `cis-ubuntu2004-v300-6-2-3-7` — Ensure rsyslog is not configured to receive logs from a remote client
+- `cis-ubuntu2004-v300-6-2-3-8` — Ensure logrotate is configured
+- `cis-ubuntu2004-v300-6-2-4-1` — Ensure access to all logfiles has been configured
+- `cis-ubuntu2004-v300-6-3-1-1` — Ensure auditd packages are installed
+- `cis-ubuntu2004-v300-6-3-1-2` — Ensure auditd service is enabled and active
+- `cis-ubuntu2004-v300-6-3-1-3` — Ensure auditing for processes that start prior to auditd is enabled
+- `cis-ubuntu2004-v300-6-3-1-4` — Ensure audit_backlog_limit is configured
+- `cis-ubuntu2004-v300-6-3-2-1` — Ensure audit log storage size is configured
+- `cis-ubuntu2004-v300-6-3-2-2` — Ensure audit logs are not automatically deleted
+- `cis-ubuntu2004-v300-6-3-2-3` — Ensure system is disabled when audit logs are full
+- `cis-ubuntu2004-v300-6-3-2-4` — Ensure system warns when audit logs are low on space
+- `cis-ubuntu2004-v300-6-3-3-1` — Ensure changes to system administration scope (sudoers) is collected
+- `cis-ubuntu2004-v300-6-3-3-10` — Ensure successful file system mounts are collected
+- `cis-ubuntu2004-v300-6-3-3-11` — Ensure session initiation information is collected
+- `cis-ubuntu2004-v300-6-3-3-12` — Ensure login and logout events are collected
+- `cis-ubuntu2004-v300-6-3-3-13` — Ensure file deletion events by users are collected
+- `cis-ubuntu2004-v300-6-3-3-14` — Ensure events that modify the system's Mandatory Access Controls are collected
+- `cis-ubuntu2004-v300-6-3-3-15` — Ensure successful and unsuccessful attempts to use the chcon command are collected
+- `cis-ubuntu2004-v300-6-3-3-16` — Ensure successful and unsuccessful attempts to use the setfacl command are collected
+- `cis-ubuntu2004-v300-6-3-3-17` — CIS Ubuntu 20.04 LTS Benchmark v3.0.0 - 6.3.3.17
+- `cis-ubuntu2004-v300-6-3-3-18` — CIS Ubuntu 20.04 LTS Benchmark v3.0.0 - 6.3.3.18
+- `cis-ubuntu2004-v300-6-3-3-19` — CIS Ubuntu 20.04 LTS Benchmark v3.0.0 - 6.3.3.19
+- `cis-ubuntu2004-v300-6-3-3-2` — Ensure actions as another user are always logged
+- `cis-ubuntu2004-v300-6-3-3-20` — CIS Ubuntu 20.04 LTS Benchmark v3.0.0 - 6.3.3.20
+- `cis-ubuntu2004-v300-6-3-3-21` — CIS Ubuntu 20.04 LTS Benchmark v3.0.0 - 6.3.3.21
+- `cis-ubuntu2004-v300-6-3-3-3` — Ensure events that modify the sudo log file are collected
+- `cis-ubuntu2004-v300-6-3-3-4` — Ensure events that modify date and time information are collected
+- `cis-ubuntu2004-v300-6-3-3-5` — Ensure events that modify the system's network environment are collected
+- `cis-ubuntu2004-v300-6-3-3-6` — Ensure use of privileged commands are collected
+- `cis-ubuntu2004-v300-6-3-3-7` — Ensure unsuccessful file access attempts are collected
+- `cis-ubuntu2004-v300-6-3-3-8` — Ensure events that modify user/group information are collected
+- `cis-ubuntu2004-v300-6-3-3-9` — Ensure discretionary access control permission modification events are collected
+- `cis-ubuntu2004-v300-6-3-4-1` — 6.3.4.1 Ensure audit log files mode is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-10` — 6.3.4.10 Ensure audit tools group owner is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-2` — 6.3.4.2 Ensure audit log files owner is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-3` — 6.3.4.3 Ensure audit log files group owner is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-4` — 6.3.4.4 Ensure the audit log file directory mode is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-5` — 6.3.4.5 Ensure audit configuration files mode is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-6` — 6.3.4.6 Ensure audit configuration files owner is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-7` — 6.3.4.7 Ensure audit configuration files group owner is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-8` — 6.3.4.8 Ensure audit tools mode is configured (Automated)
+- `cis-ubuntu2004-v300-6-3-4-9` — 6.3.4.9 Ensure audit tools owner is configured (Automated)
+- `cis-ubuntu2004-v300-7-1-1` — Ensure access to /etc/passwd is configured
+- `cis-ubuntu2004-v300-7-1-10` — Ensure access to /etc/security/opasswd is configured
+- `cis-ubuntu2004-v300-7-1-11` — Ensure world writable files and directories are secured
+- `cis-ubuntu2004-v300-7-1-12` — Ensure no files or directories without an owner and a group exist
+- `cis-ubuntu2004-v300-7-1-13` — Ensure SUID and SGID files are reviewed
+- `cis-ubuntu2004-v300-7-1-2` — Ensure access to /etc/passwd- is configured
+- `cis-ubuntu2004-v300-7-1-3` — Ensure access to /etc/group is configured
+- `cis-ubuntu2004-v300-7-1-4` — Ensure access to /etc/group- is configured
+- `cis-ubuntu2004-v300-7-1-5` — Ensure access to /etc/shadow is configured
+- `cis-ubuntu2004-v300-7-1-6` — Ensure access to /etc/shadow- is configured
+- `cis-ubuntu2004-v300-7-1-7` — Ensure access to /etc/gshadow is configured
+- `cis-ubuntu2004-v300-7-1-8` — Ensure access to /etc/gshadow- is configured
+- `cis-ubuntu2004-v300-7-1-9` — Ensure access to /etc/shells is configured
+- `cis-ubuntu2004-v300-7-2-1` — Ensure accounts in /etc/passwd use shadowed passwords
+- `cis-ubuntu2004-v300-7-2-10` — Ensure local interactive user dot files access is configured
+- `cis-ubuntu2004-v300-7-2-2` — Ensure /etc/shadow password fields are not empty
+- `cis-ubuntu2004-v300-7-2-3` — Ensure all groups in /etc/passwd exist in /etc/group
+- `cis-ubuntu2004-v300-7-2-4` — Ensure shadow group is empty
+- `cis-ubuntu2004-v300-7-2-5` — Ensure no duplicate UIDs exist
+- `cis-ubuntu2004-v300-7-2-6` — Ensure no duplicate GIDs exist
+- `cis-ubuntu2004-v300-7-2-7` — Ensure no duplicate user names exist
+- `cis-ubuntu2004-v300-7-2-8` — Ensure no duplicate group names exist
+- `cis-ubuntu2004-v300-7-2-9` — Ensure local interactive user home directories are configured

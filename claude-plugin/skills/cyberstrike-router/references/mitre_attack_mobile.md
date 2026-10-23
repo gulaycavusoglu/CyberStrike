@@ -1,0 +1,128 @@
+# mitre_attack_mobile
+
+124 skills.
+
+- `t1398-boot-or-logon-initialization-scripts` — Adversaries may use scripts automatically executed at boot or logon initialization to establish persistence.
+- `t1404-exploitation-for-privilege-escalation` — Adversaries may exploit software vulnerabilities in order to elevate privileges.
+- `t1406-001-steganography` — Adversaries may use steganography techniques in order to prevent the detection of hidden information.
+- `t1406-002-software-packing` — Adversaries may perform software packing to conceal their code.
+- `t1406-obfuscated-files-or-information` — Adversaries may attempt to make a payload or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the device or in transit.
+- `t1407-download-new-code-at-runtime` — Adversaries may download and execute dynamic code not included in the original application package after installation.
+- `t1409-stored-application-data` — Adversaries may try to access and collect application data resident on the device.
+- `t1414-clipboard-data` — Adversaries may abuse clipboard manager APIs to obtain sensitive information copied to the device clipboard.
+- `t1417-001-keylogging` — Adversaries may log user keystrokes to intercept credentials or other information from the user as the user types them.
+- `t1417-002-gui-input-capture` — Adversaries may mimic common operating system GUI components to prompt users for sensitive information with a seemingly legitimate prompt.
+- `t1417-input-capture` — Adversaries may use methods of capturing user input to obtain credentials or collect information.
+- `t1418-001-security-software-discovery` — Adversaries may attempt to get a listing of security applications and configurations that are installed on a device.
+- `t1418-software-discovery` — Adversaries may attempt to get a listing of applications that are installed on a device.
+- `t1420-file-and-directory-discovery` — Adversaries may enumerate files and directories or search in specific device locations for desired information within a filesystem.
+- `t1421-system-network-connections-discovery` — Adversaries may attempt to get a listing of network connections to or from the compromised device they are currently accessing or from remote systems by querying for information over the network.
+- `t1422-001-internet-connection-discovery` — Adversaries may check for Internet connectivity on compromised systems.
+- `t1422-002-wi-fi-discovery` — Adversaries may search for information about Wi-Fi networks, such as network names and passwords, on compromised systems.
+- `t1422-system-network-configuration-discovery` — Adversaries may look for details about the network configuration and settings, such as IP and/or MAC addresses, of devices they access or through information discovery of remote systems.
+- `t1423-network-service-scanning` — Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation.
+- `t1424-process-discovery` — Adversaries may attempt to get information about running processes on a device.
+- `t1426-system-information-discovery` — Adversaries may attempt to get detailed information about a device’s operating system and hardware, including versions, patches, and architecture.
+- `t1428-exploitation-of-remote-services` — Adversaries may exploit remote services of enterprise servers, workstations, or other resources to gain unauthorized access to internal systems once inside of a network.
+- `t1429-audio-capture` — Adversaries may capture audio to collect information by leveraging standard operating system APIs of a mobile device.
+- `t1430-001-remote-device-management-services` — An adversary may use access to cloud services (e.g.
+- `t1430-002-impersonate-ss7-nodes` — Adversaries may exploit the lack of authentication in signaling system network nodes to track the location of mobile devices by impersonating a node.
+- `t1430-location-tracking` — Adversaries may track a device’s physical location through use of standard operating system APIs via malicious or exploited applications on the compromised device.
+- `t1437-001-web-protocols` — Adversaries may communicate using application layer protocols associated with web protocols traffic to avoid detection/network filtering by blending in with existing traffic.
+- `t1437-application-layer-protocol` — Adversaries may communicate using application layer protocols to avoid detection/network filtering by blending in with existing traffic.
+- `t1451-sim-card-swap` — Adversaries may gain access to mobile devices through transfers or swaps from victims’ phone numbers to adversary-controlled SIM cards and mobile devices.
+- `t1453-abuse-accessibility-features` — Adversaries may abuse accessibility features in Android devices to steal sensitive data and to spread malware to other devices.
+- `t1456-drive-by-compromise` — Adversaries may gain access to a system through a user visiting a website over the normal course of browsing.
+- `t1458-replication-through-removable-media` — Adversaries may move onto devices by exploiting or copying malware to devices connected via USB.
+- `t1461-lockscreen-bypass` — An adversary with physical access to a mobile device may seek to bypass the device’s lockscreen.
+- `t1464-network-denial-of-service` — Adversaries may perform Network Denial of Service (DoS) attacks to degrade or block the availability of targeted resources to users.
+- `t1471-data-encrypted-for-impact` — An adversary may encrypt files stored on a mobile device to prevent the user from accessing them.
+- `t1474-001-compromise-software-dependencies-and-development-tools` — Adversaries may manipulate products or product delivery mechanisms prior to receipt by a final consumer for the purpose of data or system compromise.
+- `t1474-002-compromise-hardware-supply-chain` — Adversaries may manipulate hardware components in products prior to receipt by a final consumer for the purpose of data or system compromise.
+- `t1474-003-compromise-software-supply-chain` — Adversaries may manipulate application software prior to receipt by a final consumer for the purpose of data or system compromise.
+- `t1474-supply-chain-compromise` — Adversaries may manipulate products or product delivery mechanisms prior to receipt by a final consumer for the purpose of data or system compromise.
+- `t1481-001-dead-drop-resolver` — Adversaries may use an existing, legitimate external Web service to host information that points to additional command and control (C2) infrastructure.
+- `t1481-002-bidirectional-communication` — Adversaries may use an existing, legitimate external Web service channel as a means for sending commands to and receiving output from a compromised system.
+- `t1481-003-one-way-communication` — Adversaries may use an existing, legitimate external Web service channel as a means for sending commands to a compromised system without receiving return output.
+- `t1481-web-service` — Adversaries may use an existing, legitimate external Web service as a means for relaying data to/from a compromised system.
+- `t1509-non-standard-port` — Adversaries may generate network traffic using a protocol and port pairing that are typically not associated.
+- `t1512-video-capture` — An adversary can leverage a device’s cameras to gather information by capturing video recordings.
+- `t1513-screen-capture` — Adversaries may use screen capture to collect additional information about a target device, such as applications running in the foreground, user data, credentials, or other sensitive information.
+- `t1516-input-injection` — A malicious application can inject input to the user interface to mimic user interaction through the abuse of Android's accessibility APIs.
+- `t1517-access-notifications` — Adversaries may collect data within notifications sent by the operating system or other applications.
+- `t1521-001-symmetric-cryptography` — Adversaries may employ a known symmetric encryption algorithm to conceal command and control traffic, rather than relying on any inherent protections provided by a communication protocol.
+- `t1521-002-asymmetric-cryptography` — Adversaries may employ a known asymmetric encryption algorithm to conceal command and control traffic, rather than relying on any inherent protections provided by a communication protocol.
+- `t1521-003-ssl-pinning` — Adversaries may use SSL Pinning to protect the C2 traffic from being intercepted and analyzed.
+- `t1521-encrypted-channel` — Adversaries may explicitly employ a known encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol.
+- `t1532-archive-collected-data` — Adversaries may compress and/or encrypt data that is collected prior to exfiltration.
+- `t1533-data-from-local-system` — Adversaries may search local system sources, such as file systems or local databases, to find files of interest and sensitive data prior to exfiltration.
+- `t1541-foreground-persistence` — Adversaries may abuse Android's `startForeground()` API method to maintain continuous sensor access.
+- `t1544-ingress-tool-transfer` — Adversaries may transfer tools or other files from an external system onto a compromised device to facilitate follow-on actions.
+- `t1575-native-api` — Adversaries may use Android’s Native Development Kit (NDK) to write native functions that can achieve execution of binaries or functions.
+- `t1577-compromise-application-executable` — Adversaries may modify applications installed on a device to establish persistent access to a victim.
+- `t1582-sms-control` — Adversaries may delete, alter, or send SMS messages without user authorization.
+- `t1603-scheduled-taskjob` — Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code.
+- `t1604-proxy-through-victim` — Adversaries may use a compromised device as a proxy server to the Internet.
+- `t1616-call-control` — Adversaries may make, forward, or block phone calls without user authorization.
+- `t1617-hooking` — Adversaries may utilize hooking to hide the presence of artifacts associated with their behaviors to evade detection.
+- `t1623-001-unix-shell` — Adversaries may abuse Unix shell commands and scripts for execution.
+- `t1623-command-and-scripting-interpreter` — Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries.
+- `t1624-001-broadcast-receivers` — Adversaries may establish persistence using system mechanisms that trigger execution based on specific events.
+- `t1624-event-triggered-execution` — Adversaries may establish persistence using system mechanisms that trigger execution based on specific events.
+- `t1625-001-system-runtime-api-hijacking` — Adversaries may execute their own malicious payloads by hijacking the way an operating system runs applications.
+- `t1625-hijack-execution-flow` — Adversaries may execute their own malicious payloads by hijacking the way operating systems run applications.
+- `t1626-001-device-administrator-permissions` — Adversaries may abuse Android’s device administration API to obtain a higher degree of control over the device.
+- `t1626-abuse-elevation-control-mechanism` — Adversaries may circumvent mechanisms designed to control elevated privileges to gain higher-level permissions.
+- `t1627-001-geofencing` — Adversaries may use a device’s geographical location to limit certain malicious behaviors.
+- `t1627-execution-guardrails` — Adversaries may use execution guardrails to constrain execution or actions based on adversary supplied and environment specific conditions that are expected to be present on the target.
+- `t1628-001-suppress-application-icon` — A malicious application could suppress its icon from being displayed to the user in the application launcher.
+- `t1628-002-user-evasion` — Adversaries may attempt to avoid detection by hiding malicious behavior from the user.
+- `t1628-003-conceal-multimedia-files` — Adversaries may attempt to hide multimedia files from the user.
+- `t1628-hide-artifacts` — Adversaries may attempt to hide artifacts associated with their behaviors to evade detection.
+- `t1629-001-prevent-application-removal` — Adversaries may abuse the Android device administration API to prevent the user from uninstalling a target application.
+- `t1629-002-device-lockout` — An adversary may seek to inhibit user interaction by locking the legitimate user out of the device.
+- `t1629-003-disable-or-modify-tools` — Adversaries may disable security tools to avoid potential detection of their tools and activities.
+- `t1629-impair-defenses` — Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms.
+- `t1630-001-uninstall-malicious-application` — Adversaries may include functionality in malware that uninstalls the malicious application from the device.
+- `t1630-002-file-deletion` — Adversaries may wipe a device or delete individual files in order to manipulate external outcomes or hide activity.
+- `t1630-003-disguise-rootjailbreak-indicators` — An adversary could use knowledge of the techniques used by security software to evade detection.
+- `t1630-indicator-removal-on-host` — Adversaries may delete, alter, or hide generated artifacts on a device, including files, jailbreak status, or the malicious application itself.
+- `t1631-001-ptrace-system-calls` — Adversaries may inject malicious code into processes via ptrace (process trace) system calls in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1631-process-injection` — Adversaries may inject code into processes in order to evade process-based defenses or even elevate privileges.
+- `t1632-001-code-signing-policy-modification` — Adversaries may modify code signing policies to enable execution of applications signed with unofficial or unknown keys.
+- `t1632-subvert-trust-controls` — Adversaries may undermine security controls that will either warn users of untrusted activity or prevent execution of untrusted applications.
+- `t1633-001-system-checks` — Adversaries may employ various system checks to detect and avoid virtualization and analysis environments.
+- `t1633-virtualizationsandbox-evasion` — Adversaries may employ various means to detect and avoid virtualization and analysis environments.
+- `t1634-001-keychain` — Adversaries may collect keychain data from an iOS device to acquire credentials.
+- `t1634-credentials-from-password-store` — Adversaries may search common password storage locations to obtain user credentials.
+- `t1635-001-uri-hijacking` — Adversaries may register Uniform Resource Identifiers (URIs) to intercept sensitive data.
+- `t1635-steal-application-access-token` — Adversaries can steal user application access tokens as a means of acquiring credentials to access remote systems and resources.
+- `t1636-001-calendar-entries` — Adversaries may utilize standard operating system APIs to gather calendar entry data.
+- `t1636-002-call-log` — Adversaries may utilize standard operating system APIs to gather call log data.
+- `t1636-003-contact-list` — Adversaries may utilize standard operating system APIs to gather contact list data.
+- `t1636-004-sms-messages` — Adversaries may utilize standard operating system APIs to gather SMS messages.
+- `t1636-005-accounts` — Adversaries may utilize standard operating system APIs to gather account data.
+- `t1636-protected-user-data` — Adversaries may utilize standard operating system APIs to collect data from permission-backed data stores on a device, such as the calendar or contact list.
+- `t1637-001-domain-generation-algorithms` — Adversaries may use Domain Generation Algorithms (DGAs) to procedurally generate domain names for uses such as command and control communication or malicious application distribution.
+- `t1637-dynamic-resolution` — Adversaries may dynamically establish connections to command and control infrastructure to evade common detections and remediations.
+- `t1638-adversary-in-the-middle` — Adversaries may attempt to position themselves between two or more networked devices to support follow-on behaviors such as Transmitted Data Manipulation or Endpoint Denial of Service.
+- `t1639-001-exfiltration-over-unencrypted-non-c2-protocol` — Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.
+- `t1639-exfiltration-over-alternative-protocol` — Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel.
+- `t1640-account-access-removal` — Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users.
+- `t1641-001-transmitted-data-manipulation` — Adversaries may alter data en route to storage or other systems in order to manipulate external outcomes or hide activity.
+- `t1641-data-manipulation` — Adversaries may insert, delete, or alter data in order to manipulate external outcomes or hide activity.
+- `t1642-endpoint-denial-of-service` — Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users.
+- `t1643-generate-traffic-from-victim` — Adversaries may generate outbound traffic from devices.
+- `t1644-out-of-band-data` — Adversaries may communicate with compromised devices using out of band data streams.
+- `t1645-compromise-client-software-binary` — Adversaries may modify system software binaries to establish persistent access to devices.
+- `t1646-exfiltration-over-c2-channel` — Adversaries may steal data by exfiltrating it over an existing command and control channel.
+- `t1655-001-match-legitimate-name-or-location` — Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them.
+- `t1655-masquerading` — Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools.
+- `t1658-exploitation-for-client-execution` — Adversaries may exploit software vulnerabilities in client applications to execute code.
+- `t1660-phishing` — Adversaries may send malicious content to users in order to gain access to their mobile devices.
+- `t1661-application-versioning` — An adversary may push an update to a previously benign application to add malicious code.
+- `t1662-data-destruction` — Adversaries may destroy data and files on specific devices or in large numbers to interrupt availability to systems, services, and network resources.
+- `t1663-remote-access-software` — Adversaries may use legitimate remote access software, such as `VNC`, `TeamViewer`, `AirDroid`, `AirMirror`, etc., to establish an interactive command and control channel to target mobile devices.
+- `t1664-exploitation-for-initial-access` — Adversaries may exploit software vulnerabilities to gain initial access to a mobile device.
+- `t1670-virtualization-solution` — Adversaries may carry out malicious operations using virtualization solutions to escape from Android sandboxes and to avoid detection.
+- `t1676-linked-devices` — Adversaries may abuse the “linked devices” feature on messaging applications, such as Signal and WhatsApp, to register the user’s account to an adversary-controlled device.

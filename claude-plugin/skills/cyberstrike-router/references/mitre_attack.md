@@ -1,0 +1,695 @@
+# mitre_attack
+
+691 skills.
+
+- `t1001-001-junk-data` — Adversaries may add junk data to protocols used for command and control to make detection more difficult.
+- `t1001-002-steganography` — Adversaries may use steganographic techniques to hide command and control traffic to make detection efforts more difficult.
+- `t1001-003-protocol-or-service-impersonation` — Adversaries may impersonate legitimate protocols or web service traffic to disguise command and control activity and thwart analysis efforts.
+- `t1001-data-obfuscation` — Adversaries may obfuscate command and control traffic to make it more difficult to detect.
+- `t1003-001-lsass-memory` — Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS).
+- `t1003-002-security-account-manager` — Adversaries may attempt to extract credential material from the Security Account Manager (SAM) database either through in-memory techniques or through the Windows Registry where the SAM database is...
+- `t1003-003-ntds` — Adversaries may attempt to access or create a copy of the Active Directory domain database in order to steal credential information, as well as obtain other information about domain members such as...
+- `t1003-004-lsa-secrets` — Adversaries with SYSTEM access to a host may attempt to access Local Security Authority (LSA) secrets, which can contain a variety of different credential materials, such as credentials for service...
+- `t1003-005-cached-domain-credentials` — Adversaries may attempt to access cached domain credentials used to allow authentication to occur in the event a domain controller is unavailable.
+- `t1003-006-dcsync` — Adversaries may attempt to access credentials and other sensitive information by abusing a Windows Domain Controller's application programming interface (API) to simulate the replication process fr...
+- `t1003-007-proc-filesystem` — Adversaries may gather credentials from the proc filesystem or `/proc`.
+- `t1003-008-etcpasswd-and-etcshadow` — Adversaries may attempt to dump the contents of <code>/etc/passwd</code> and <code>/etc/shadow</code> to enable offline password cracking.
+- `t1003-os-credential-dumping` — Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password.
+- `t1005-data-from-local-system` — Adversaries may search local system sources, such as file systems, configuration files, local databases, virtual machine files, or process memory, to find files of interest and sensitive data prior...
+- `t1006-direct-volume-access` — Adversaries may directly access a volume to bypass file access controls and file system monitoring.
+- `t1007-system-service-discovery` — Adversaries may try to gather information about registered local system services.
+- `t1008-fallback-channels` — Adversaries may use fallback or alternate communication channels if the primary channel is compromised or inaccessible in order to maintain reliable command and control and to avoid data transfer thre
+- `t1010-application-window-discovery` — Adversaries may attempt to get a listing of open application windows.
+- `t1011-001-exfiltration-over-bluetooth` — Adversaries may attempt to exfiltrate data over Bluetooth rather than the command and control channel.
+- `t1011-exfiltration-over-other-network-medium` — Adversaries may attempt to exfiltrate data over a different network medium than the command and control channel.
+- `t1012-query-registry` — Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software.
+- `t1014-rootkit` — Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components.
+- `t1016-001-internet-connection-discovery` — Adversaries may check for Internet connectivity on compromised systems.
+- `t1016-002-wi-fi-discovery` — Adversaries may search for information about Wi-Fi networks, such as network names and passwords, on compromised systems.
+- `t1016-system-network-configuration-discovery` — Adversaries may look for details about the network configuration and settings, such as IP and/or MAC addresses, of systems they access or through information discovery of remote systems.
+- `t1018-remote-system-discovery` — Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system.
+- `t1020-001-traffic-duplication` — Adversaries may leverage traffic mirroring in order to automate data exfiltration over compromised infrastructure.
+- `t1020-automated-exfiltration` — Adversaries may exfiltrate data, such as sensitive documents, through the use of automated processing after being gathered during Collection.
+- `t1021-001-remote-desktop-protocol` — Adversaries may use Valid Accounts to log into a computer using the Remote Desktop Protocol (RDP).
+- `t1021-002-smbwindows-admin-shares` — Adversaries may use Valid Accounts to interact with a remote network share using Server Message Block (SMB).
+- `t1021-003-distributed-component-object-model` — Adversaries may use Valid Accounts to interact with remote machines by taking advantage of Distributed Component Object Model (DCOM).
+- `t1021-004-ssh` — Adversaries may use Valid Accounts to log into remote machines using Secure Shell (SSH).
+- `t1021-005-vnc` — Adversaries may use Valid Accounts to remotely control machines using Virtual Network Computing (VNC).
+- `t1021-006-windows-remote-management` — Adversaries may use Valid Accounts to interact with remote systems using Windows Remote Management (WinRM).
+- `t1021-007-cloud-services` — Adversaries may log into accessible cloud services within a compromised environment using Valid Accounts that are synchronized with or federated to on-premises user identities.
+- `t1021-008-direct-cloud-vm-connections` — Adversaries may leverage Valid Accounts to log directly into accessible cloud hosted compute infrastructure through cloud native methods.
+- `t1021-remote-services` — Adversaries may use Valid Accounts to log into a service that accepts remote connections, such as telnet, SSH, and VNC.
+- `t1025-data-from-removable-media` — Adversaries may search connected removable media on computers they have compromised to find files of interest.
+- `t1027-001-binary-padding` — Adversaries may use binary padding to add junk data and change the on-disk representation of malware.
+- `t1027-002-software-packing` — Adversaries may perform software packing or virtual machine software protection to conceal their code.
+- `t1027-003-steganography` — Adversaries may use steganography techniques in order to prevent the detection of hidden information.
+- `t1027-004-compile-after-delivery` — Adversaries may attempt to make payloads difficult to discover and analyze by delivering files to victims as uncompiled code.
+- `t1027-005-indicator-removal-from-tools` — Adversaries may remove indicators from tools if they believe their malicious tool was detected, quarantined, or otherwise curtailed.
+- `t1027-006-html-smuggling` — Adversaries may smuggle data and files past content filters by hiding malicious payloads inside of seemingly benign HTML files.
+- `t1027-007-dynamic-api-resolution` — Adversaries may obfuscate then dynamically resolve API functions called by their malware in order to conceal malicious functionalities and impair defensive analysis.
+- `t1027-008-stripped-payloads` — Adversaries may attempt to make a payload difficult to analyze by removing symbols, strings, and other human readable information.
+- `t1027-009-embedded-payloads` — Adversaries may embed payloads within other files to conceal malicious content from defenses.
+- `t1027-010-command-obfuscation` — Adversaries may obfuscate content during command execution to impede detection.
+- `t1027-011-fileless-storage` — Adversaries may store data in 'fileless' formats to conceal malicious activity from defenses.
+- `t1027-012-lnk-icon-smuggling` — Adversaries may smuggle commands to download malicious payloads past content filters by hiding them within otherwise seemingly benign windows shortcut files.
+- `t1027-013-encryptedencoded-file` — Adversaries may encrypt or encode files to obfuscate strings, bytes, and other specific patterns to impede detection.
+- `t1027-014-polymorphic-code` — Adversaries may utilize polymorphic code (also known as metamorphic or mutating code) to evade detection.
+- `t1027-015-compression` — Adversaries may use compression to obfuscate their payloads or files.
+- `t1027-016-junk-code-insertion` — Adversaries may use junk code / dead code to obfuscate a malware’s functionality.
+- `t1027-017-svg-smuggling` — Adversaries may smuggle data and files past content filters by hiding malicious payloads inside of seemingly benign SVG files.
+- `t1027-obfuscated-files-or-information` — Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit.
+- `t1029-scheduled-transfer` — Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals.
+- `t1030-data-transfer-size-limits` — An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds.
+- `t1033-system-owneruser-discovery` — Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system.
+- `t1036-001-invalid-code-signature` — Adversaries may attempt to mimic features of valid code signatures to increase the chance of deceiving a user, analyst, or tool.
+- `t1036-002-right-to-left-override` — Adversaries may abuse the right-to-left override (RTLO or RLO) character (U+202E) to disguise a string and/or file name to make it appear benign.
+- `t1036-003-rename-legitimate-utilities` — Adversaries may rename legitimate / system utilities to try to evade security mechanisms concerning the usage of those utilities.
+- `t1036-004-masquerade-task-or-service` — Adversaries may attempt to manipulate the name of a task or service to make it appear legitimate or benign.
+- `t1036-005-match-legitimate-resource-name-or-location` — Adversaries may match or approximate the name or location of legitimate files, Registry keys, or other resources when naming/placing them.
+- `t1036-006-space-after-filename` — Adversaries can hide a program's true filetype by changing the extension of a file.
+- `t1036-007-double-file-extension` — Adversaries may abuse a double extension in the filename as a means of masquerading the true file type.
+- `t1036-008-masquerade-file-type` — Adversaries may masquerade malicious payloads as legitimate files through changes to the payload's formatting, including the file’s signature, extension, icon, and contents.
+- `t1036-009-break-process-trees` — An adversary may attempt to evade process tree-based analysis by modifying executed malware's parent process ID (PPID).
+- `t1036-010-masquerade-account-name` — Adversaries may match or approximate the names of legitimate accounts to make newly created ones appear benign.
+- `t1036-011-overwrite-process-arguments` — Adversaries may modify a process's in-memory arguments to change its name in order to appear as a legitimate or benign process.
+- `t1036-012-browser-fingerprint` — Adversaries may attempt to blend in with legitimate traffic by spoofing browser and system attributes like operating system, system language, platform, user-agent string, resolution, time zone, etc.
+- `t1036-masquerading` — Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools.
+- `t1037-001-logon-script-windows` — Adversaries may use Windows logon scripts automatically executed at logon initialization to establish persistence.
+- `t1037-002-login-hook` — Adversaries may use a Login Hook to establish persistence executed upon user logon.
+- `t1037-003-network-logon-script` — Adversaries may use network logon scripts automatically executed at logon initialization to establish persistence.
+- `t1037-004-rc-scripts` — Adversaries may establish persistence by modifying RC scripts, which are executed during a Unix-like system’s startup.
+- `t1037-005-startup-items` — Adversaries may use startup items automatically executed at boot initialization to establish persistence.
+- `t1037-boot-or-logon-initialization-scripts` — Adversaries may use scripts automatically executed at boot or logon initialization to establish persistence.
+- `t1039-data-from-network-shared-drive` — Adversaries may search network shares on computers they have compromised to find files of interest.
+- `t1040-network-sniffing` — Adversaries may passively sniff network traffic to capture information about an environment, including authentication material passed over the network.
+- `t1041-exfiltration-over-c2-channel` — Adversaries may steal data by exfiltrating it over an existing command and control channel.
+- `t1046-network-service-discovery` — Adversaries may attempt to get a listing of services running on remote hosts and local network infrastructure devices, including those that may be vulnerable to remote software exploitation.
+- `t1047-windows-management-instrumentation` — Adversaries may abuse Windows Management Instrumentation (WMI) to execute malicious commands and payloads.
+- `t1048-001-exfiltration-over-symmetric-encrypted-non-c2-protocol` — Adversaries may steal data by exfiltrating it over a symmetrically encrypted network protocol other than that of the existing command and control channel.
+- `t1048-002-exfiltration-over-asymmetric-encrypted-non-c2-protocol` — Adversaries may steal data by exfiltrating it over an asymmetrically encrypted network protocol other than that of the existing command and control channel.
+- `t1048-003-exfiltration-over-unencrypted-non-c2-protocol` — Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.
+- `t1048-exfiltration-over-alternative-protocol` — Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel.
+- `t1049-system-network-connections-discovery` — Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network.
+- `t1052-001-exfiltration-over-usb` — Adversaries may attempt to exfiltrate data over a USB connected physical device.
+- `t1052-exfiltration-over-physical-medium` — Adversaries may attempt to exfiltrate data via a physical medium, such as a removable drive.
+- `t1053-002-at` — Adversaries may abuse the at utility to perform task scheduling for initial or recurring execution of malicious code.
+- `t1053-003-cron` — Adversaries may abuse the <code>cron</code> utility to perform task scheduling for initial or recurring execution of malicious code.
+- `t1053-005-scheduled-task` — Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code.
+- `t1053-006-systemd-timers` — Adversaries may abuse systemd timers to perform task scheduling for initial or recurring execution of malicious code.
+- `t1053-007-container-orchestration-job` — Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code.
+- `t1053-scheduled-taskjob` — Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code.
+- `t1055-001-dynamic-link-library-injection` — Adversaries may inject dynamic-link libraries (DLLs) into processes in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-002-portable-executable-injection` — Adversaries may inject portable executables (PE) into processes in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-003-thread-execution-hijacking` — Adversaries may inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-004-asynchronous-procedure-call` — Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-005-thread-local-storage` — Adversaries may inject malicious code into processes via thread local storage (TLS) callbacks in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-008-ptrace-system-calls` — Adversaries may inject malicious code into processes via ptrace (process trace) system calls in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-009-proc-memory` — Adversaries may inject malicious code into processes via the /proc filesystem in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-011-extra-window-memory-injection` — Adversaries may inject malicious code into process via Extra Window Memory (EWM) in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-012-process-hollowing` — Adversaries may inject malicious code into suspended and hollowed processes in order to evade process-based defenses.
+- `t1055-013-process-doppelgnging` — Adversaries may inject malicious code into process via process doppelgänging in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-014-vdso-hijacking` — Adversaries may inject malicious code into processes via VDSO hijacking in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-015-listplanting` — Adversaries may abuse list-view controls to inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1055-process-injection` — Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges.
+- `t1056-001-keylogging` — Adversaries may log user keystrokes to intercept credentials as the user types them.
+- `t1056-002-gui-input-capture` — Adversaries may mimic common operating system GUI components to prompt users for credentials with a seemingly legitimate prompt.
+- `t1056-003-web-portal-capture` — Adversaries may install code on externally facing portals, such as a VPN login page, to capture and transmit credentials of users who attempt to log into the service.
+- `t1056-004-credential-api-hooking` — Adversaries may hook into Windows application programming interface (API) functions and Linux system functions to collect user credentials.
+- `t1056-input-capture` — Adversaries may use methods of capturing user input to obtain credentials or collect information.
+- `t1057-process-discovery` — Adversaries may attempt to get information about running processes on a system.
+- `t1059-001-powershell` — Adversaries may abuse PowerShell commands and scripts for execution.
+- `t1059-002-applescript` — Adversaries may abuse AppleScript for execution.
+- `t1059-003-windows-command-shell` — Adversaries may abuse the Windows command shell for execution.
+- `t1059-004-unix-shell` — Adversaries may abuse Unix shell commands and scripts for execution.
+- `t1059-005-visual-basic` — Adversaries may abuse Visual Basic (VB) for execution.
+- `t1059-006-python` — Adversaries may abuse Python commands and scripts for execution.
+- `t1059-007-javascript` — Adversaries may abuse various implementations of JavaScript for execution.
+- `t1059-008-network-device-cli` — Adversaries may abuse scripting or built-in command line interpreters (CLI) on network devices to execute malicious command and payloads.
+- `t1059-009-cloud-api` — Adversaries may abuse cloud APIs to execute malicious commands.
+- `t1059-010-autohotkey-autoit` — Adversaries may execute commands and perform malicious tasks using AutoIT and AutoHotKey automation scripts.
+- `t1059-011-lua` — Adversaries may abuse Lua commands and scripts for execution.
+- `t1059-012-hypervisor-cli` — Adversaries may abuse hypervisor command line interpreters (CLIs) to execute malicious commands.
+- `t1059-013-container-cliapi` — Adversaries may abuse built-in CLI tools or API calls to execute malicious commands in containerized environments.
+- `t1059-command-and-scripting-interpreter` — Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries.
+- `t1068-exploitation-for-privilege-escalation` — Adversaries may exploit software vulnerabilities in an attempt to elevate privileges.
+- `t1069-001-local-groups` — Adversaries may attempt to find local system groups and permission settings.
+- `t1069-002-domain-groups` — Adversaries may attempt to find domain-level groups and permission settings.
+- `t1069-003-cloud-groups` — Adversaries may attempt to find cloud groups and permission settings.
+- `t1069-permission-groups-discovery` — Adversaries may attempt to discover group and permission settings.
+- `t1070-001-clear-windows-event-logs` — Adversaries may clear Windows Event Logs to hide the activity of an intrusion.
+- `t1070-002-clear-linux-or-mac-system-logs` — Adversaries may clear system logs to hide evidence of an intrusion.
+- `t1070-003-clear-command-history` — In addition to clearing system logs, an adversary may clear the command history of a compromised account to conceal the actions undertaken during an intrusion.
+- `t1070-004-file-deletion` — Adversaries may delete files left behind by the actions of their intrusion activity.
+- `t1070-005-network-share-connection-removal` — Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation.
+- `t1070-006-timestomp` — Adversaries may modify file time attributes to hide new files or changes to existing files.
+- `t1070-007-clear-network-connection-history-and-configurations` — Adversaries may clear or remove evidence of malicious network connections in order to clean up traces of their operations.
+- `t1070-008-clear-mailbox-data` — Adversaries may modify mail and mail application data to remove evidence of their activity.
+- `t1070-009-clear-persistence` — Adversaries may clear artifacts associated with previously established persistence on a host system to remove evidence of their activity.
+- `t1070-010-relocate-malware` — Once a payload is delivered, adversaries may reproduce copies of the same malware on the victim system to remove evidence of their presence and/or avoid defenses.
+- `t1070-indicator-removal` — Adversaries may delete or modify artifacts generated within systems to remove evidence of their presence or hinder defenses.
+- `t1071-001-web-protocols` — Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic.
+- `t1071-002-file-transfer-protocols` — Adversaries may communicate using application layer protocols associated with transferring files to avoid detection/network filtering by blending in with existing traffic.
+- `t1071-003-mail-protocols` — Adversaries may communicate using application layer protocols associated with electronic mail delivery to avoid detection/network filtering by blending in with existing traffic.
+- `t1071-004-dns` — Adversaries may communicate using the Domain Name System (DNS) application layer protocol to avoid detection/network filtering by blending in with existing traffic.
+- `t1071-005-publishsubscribe-protocols` — Adversaries may communicate using publish/subscribe (pub/sub) application layer protocols to avoid detection/network filtering by blending in with existing traffic.
+- `t1071-application-layer-protocol` — Adversaries may communicate using OSI application layer protocols to avoid detection/network filtering by blending in with existing traffic.
+- `t1072-software-deployment-tools` — Adversaries may gain access to and use centralized software suites installed within an enterprise to execute commands and move laterally through the network.
+- `t1074-001-local-data-staging` — Adversaries may stage collected data in a central location or directory on the local system prior to Exfiltration.
+- `t1074-002-remote-data-staging` — Adversaries may stage data collected from multiple systems in a central location or directory on one system prior to Exfiltration.
+- `t1074-data-staged` — Adversaries may stage collected data in a central location or directory prior to Exfiltration.
+- `t1078-001-default-accounts` — Adversaries may obtain and abuse credentials of a default account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion.
+- `t1078-002-domain-accounts` — Adversaries may obtain and abuse credentials of a domain account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion.
+- `t1078-003-local-accounts` — Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion.
+- `t1078-004-cloud-accounts` — Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion.
+- `t1078-valid-accounts` — Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion.
+- `t1080-taint-shared-content` — Adversaries may deliver payloads to remote systems by adding content to shared storage locations, such as network drives or internal code repositories.
+- `t1082-system-information-discovery` — An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture.
+- `t1083-file-and-directory-discovery` — Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system.
+- `t1087-001-local-account` — Adversaries may attempt to get a listing of local system accounts.
+- `t1087-002-domain-account` — Adversaries may attempt to get a listing of domain accounts.
+- `t1087-003-email-account` — Adversaries may attempt to get a listing of email addresses and accounts.
+- `t1087-004-cloud-account` — Adversaries may attempt to get a listing of cloud accounts.
+- `t1087-account-discovery` — Adversaries may attempt to get a listing of valid accounts, usernames, or email addresses on a system or within a compromised environment.
+- `t1090-001-internal-proxy` — Adversaries may use an internal proxy to direct command and control traffic between two or more systems in a compromised environment.
+- `t1090-002-external-proxy` — Adversaries may use an external proxy to act as an intermediary for network communications to a command and control server to avoid direct connections to their infrastructure.
+- `t1090-003-multi-hop-proxy` — Adversaries may chain together multiple proxies to disguise the source of malicious traffic.
+- `t1090-004-domain-fronting` — Adversaries may take advantage of routing schemes in Content Delivery Networks (CDNs) and other services which host multiple domains to obfuscate the intended destination of HTTPS traffic or traffi...
+- `t1090-proxy` — Adversaries may use a connection proxy to direct network traffic between systems or act as an intermediary for network communications to a command and control server to avoid direct connections to ...
+- `t1091-replication-through-removable-media` — Adversaries may move onto systems, possibly those on disconnected or air-gapped networks, by copying malware to removable media and taking advantage of Autorun features when the media is inserted i...
+- `t1092-communication-through-removable-media` — Adversaries can perform command and control between compromised hosts on potentially disconnected networks using removable media to transfer commands from system to system.
+- `t1095-non-application-layer-protocol` — Adversaries may use an OSI non-application layer protocol for communication between host and C2 server or among infected hosts within a network.
+- `t1098-001-additional-cloud-credentials` — Adversaries may add adversary-controlled credentials to a cloud account to maintain persistent access to victim accounts and instances within the environment.
+- `t1098-002-additional-email-delegate-permissions` — Adversaries may grant additional permission levels to maintain persistent access to an adversary-controlled email account.
+- `t1098-003-additional-cloud-roles` — An adversary may add additional roles or permissions to an adversary-controlled cloud account to maintain persistent access to a tenant.
+- `t1098-004-ssh-authorized-keys` — Adversaries may modify the SSH <code>authorized_keys</code> file to maintain persistence on a victim host.
+- `t1098-005-device-registration` — Adversaries may register a device to an adversary-controlled account.
+- `t1098-006-additional-container-cluster-roles` — An adversary may add additional roles or permissions to an adversary-controlled user or service account to maintain persistent access to a container orchestration system.
+- `t1098-007-additional-local-or-domain-groups` — An adversary may add additional local or domain groups to an adversary-controlled account to maintain persistent access to a system or domain.
+- `t1098-account-manipulation` — Adversaries may manipulate accounts to maintain and/or elevate access to victim systems.
+- `t1102-001-dead-drop-resolver` — Adversaries may use an existing, legitimate external Web service to host information that points to additional command and control (C2) infrastructure.
+- `t1102-002-bidirectional-communication` — Adversaries may use an existing, legitimate external Web service as a means for sending commands to and receiving output from a compromised system over the Web service channel.
+- `t1102-003-one-way-communication` — Adversaries may use an existing, legitimate external Web service as a means for sending commands to a compromised system without receiving return output over the Web service channel.
+- `t1102-web-service` — Adversaries may use an existing, legitimate external Web service as a means for relaying data to/from a compromised system.
+- `t1104-multi-stage-channels` — Adversaries may create multiple stages for command and control that are employed under different conditions or for certain functions.
+- `t1105-ingress-tool-transfer` — Adversaries may transfer tools or other files from an external system into a compromised environment.
+- `t1106-native-api` — Adversaries may interact with the native OS application programming interface (API) to execute behaviors.
+- `t1110-001-password-guessing` — Adversaries with no prior knowledge of legitimate credentials within the system or environment may guess passwords to attempt access to accounts.
+- `t1110-002-password-cracking` — Adversaries may use password cracking to attempt to recover usable credentials, such as plaintext passwords, when credential material such as password hashes are obtained.
+- `t1110-003-password-spraying` — Adversaries may use a single or small list of commonly used passwords against many different accounts to attempt to acquire valid account credentials.
+- `t1110-004-credential-stuffing` — Adversaries may use credentials obtained from breach dumps of unrelated accounts to gain access to target accounts through credential overlap.
+- `t1110-brute-force` — Adversaries may use brute force techniques to gain access to accounts when passwords are unknown or when password hashes are obtained.
+- `t1111-multi-factor-authentication-interception` — Adversaries may target multi-factor authentication (MFA) mechanisms, (i.e., smart cards, token generators, etc.) to gain access to credentials that can be used to access systems, services, and netw...
+- `t1112-modify-registry` — Adversaries may interact with the Windows Registry as part of a variety of other techniques to aid in defense evasion, persistence, and execution.
+- `t1113-screen-capture` — Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation.
+- `t1114-001-local-email-collection` — Adversaries may target user email on local systems to collect sensitive information.
+- `t1114-002-remote-email-collection` — Adversaries may target an Exchange server, Office 365, or Google Workspace to collect sensitive information.
+- `t1114-003-email-forwarding-rule` — Adversaries may setup email forwarding rules to collect sensitive information.
+- `t1114-email-collection` — Adversaries may target user email to collect sensitive information.
+- `t1115-clipboard-data` — Adversaries may collect data stored in the clipboard from users copying information within or between applications.
+- `t1119-automated-collection` — Once established within a system or network, an adversary may use automated techniques for collecting internal data.
+- `t1120-peripheral-device-discovery` — Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system.
+- `t1123-audio-capture` — An adversary can leverage a computer's peripheral devices (e.g., microphones and webcams) or applications (e.g., voice and video call services) to capture audio recordings for the purpose of listen...
+- `t1124-system-time-discovery` — An adversary may gather the system time and/or time zone settings from a local or remote system.
+- `t1125-video-capture` — An adversary can leverage a computer's peripheral devices (e.g., integrated cameras or webcams) or applications (e.g., video call services) to capture video recordings for the purpose of gathering ...
+- `t1127-001-msbuild` — Adversaries may use MSBuild to proxy execution of code through a trusted Windows utility.
+- `t1127-002-clickonce` — Adversaries may use ClickOnce applications (.appref-ms and .application files) to proxy execution of code through a trusted Windows utility.
+- `t1127-003-jamplus` — Adversaries may use `JamPlus` to proxy the execution of a malicious script.
+- `t1127-trusted-developer-utilities-proxy-execution` — Adversaries may take advantage of trusted developer utilities to proxy execution of malicious payloads.
+- `t1129-shared-modules` — Adversaries may execute malicious payloads via loading shared modules.
+- `t1132-001-standard-encoding` — Adversaries may encode data with a standard data encoding system to make the content of command and control traffic more difficult to detect.
+- `t1132-002-non-standard-encoding` — Adversaries may encode data with a non-standard data encoding system to make the content of command and control traffic more difficult to detect.
+- `t1132-data-encoding` — Adversaries may encode data to make the content of command and control traffic more difficult to detect.
+- `t1133-external-remote-services` — Adversaries may leverage external-facing remote services to initially access and/or persist within a network.
+- `t1134-001-token-impersonationtheft` — Adversaries may duplicate then impersonate another user's existing token to escalate privileges and bypass access controls.
+- `t1134-002-create-process-with-token` — Adversaries may create a new process with an existing token to escalate privileges and bypass access controls.
+- `t1134-003-make-and-impersonate-token` — Adversaries may make new tokens and impersonate users to escalate privileges and bypass access controls.
+- `t1134-004-parent-pid-spoofing` — Adversaries may spoof the parent process identifier (PPID) of a new process to evade process-monitoring defenses or to elevate privileges.
+- `t1134-005-sid-history-injection` — Adversaries may use SID-History Injection to escalate privileges and bypass access controls.
+- `t1134-access-token-manipulation` — Adversaries may modify access tokens to operate under a different user or system security context to perform actions and bypass access controls.
+- `t1135-network-share-discovery` — Adversaries may look for folders and drives shared on remote systems as a means of identifying sources of information to gather as a precursor for Collection and to identify potential systems of in...
+- `t1136-001-local-account` — Adversaries may create a local account to maintain access to victim systems.
+- `t1136-002-domain-account` — Adversaries may create a domain account to maintain access to victim systems.
+- `t1136-003-cloud-account` — Adversaries may create a cloud account to maintain access to victim systems.
+- `t1136-create-account` — Adversaries may create an account to maintain access to victim systems.
+- `t1137-001-office-template-macros` — Adversaries may abuse Microsoft Office templates to obtain persistence on a compromised system.
+- `t1137-002-office-test` — Adversaries may abuse the Microsoft Office 'Office Test' Registry key to obtain persistence on a compromised system.
+- `t1137-003-outlook-forms` — Adversaries may abuse Microsoft Outlook forms to obtain persistence on a compromised system.
+- `t1137-004-outlook-home-page` — Adversaries may abuse Microsoft Outlook's Home Page feature to obtain persistence on a compromised system.
+- `t1137-005-outlook-rules` — Adversaries may abuse Microsoft Outlook rules to obtain persistence on a compromised system.
+- `t1137-006-add-ins` — Adversaries may abuse Microsoft Office add-ins to obtain persistence on a compromised system.
+- `t1137-office-application-startup` — Adversaries may leverage Microsoft Office-based applications for persistence between startups.
+- `t1140-deobfuscatedecode-files-or-information` — Adversaries may use Obfuscated Files or Information to hide artifacts of an intrusion from analysis.
+- `t1176-001-browser-extensions` — Adversaries may abuse internet browser extensions to establish persistent access to victim systems.
+- `t1176-002-ide-extensions` — Adversaries may abuse an integrated development environment (IDE) extension to establish persistent access to victim systems.
+- `t1176-software-extensions` — Adversaries may abuse software extensions to establish persistent access to victim systems.
+- `t1185-browser-session-hijacking` — Adversaries may take advantage of security vulnerabilities and inherent functionality in browser software to change content, modify user-behaviors, and intercept information as part of various brow...
+- `t1187-forced-authentication` — Adversaries may gather credential material by invoking or forcing a user to automatically provide authentication information through a mechanism in which they can intercept.
+- `t1189-drive-by-compromise` — Adversaries may gain access to a system through a user visiting a website over the normal course of browsing.
+- `t1190-exploit-public-facing-application` — Adversaries may attempt to exploit a weakness in an Internet-facing host or system to initially access a network.
+- `t1195-001-compromise-software-dependencies-and-development-tools` — Adversaries may manipulate software dependencies and development tools prior to receipt by a final consumer for the purpose of data or system compromise.
+- `t1195-002-compromise-software-supply-chain` — Adversaries may manipulate application software prior to receipt by a final consumer for the purpose of data or system compromise.
+- `t1195-003-compromise-hardware-supply-chain` — Adversaries may manipulate hardware components in products prior to receipt by a final consumer for the purpose of data or system compromise.
+- `t1195-supply-chain-compromise` — Adversaries may manipulate products or product delivery mechanisms prior to receipt by a final consumer for the purpose of data or system compromise.
+- `t1197-bits-jobs` — Adversaries may abuse BITS jobs to persistently execute code and perform various background tasks.
+- `t1199-trusted-relationship` — Adversaries may breach or otherwise leverage organizations who have access to intended victims.
+- `t1200-hardware-additions` — Adversaries may physically introduce computer accessories, networking hardware, or other computing devices into a system or network that can be used as a vector to gain access.
+- `t1201-password-policy-discovery` — Adversaries may attempt to access detailed information about the password policy used within an enterprise network or cloud environment.
+- `t1202-indirect-command-execution` — Adversaries may abuse utilities that allow for command execution to bypass security restrictions that limit the use of command-line interpreters.
+- `t1203-exploitation-for-client-execution` — Adversaries may exploit software vulnerabilities in client applications to execute code.
+- `t1204-001-malicious-link` — An adversary may rely upon a user clicking a malicious link in order to gain execution.
+- `t1204-002-malicious-file` — An adversary may rely upon a user opening a malicious file in order to gain execution.
+- `t1204-003-malicious-image` — Adversaries may rely on a user running a malicious image to facilitate execution.
+- `t1204-004-malicious-copy-and-paste` — An adversary may rely upon a user copying and pasting code in order to gain execution.
+- `t1204-005-malicious-library` — Adversaries may rely on a user installing a malicious library to facilitate execution.
+- `t1204-user-execution` — An adversary may rely upon specific actions by a user in order to gain execution.
+- `t1205-001-port-knocking` — Adversaries may use port knocking to hide open ports used for persistence or command and control.
+- `t1205-002-socket-filters` — Adversaries may attach filters to a network socket to monitor then activate backdoors used for persistence or command and control.
+- `t1205-traffic-signaling` — Adversaries may use traffic signaling to hide open ports or other malicious functionality used for persistence or command and control.
+- `t1207-rogue-domain-controller` — Adversaries may register a rogue Domain Controller to enable manipulation of Active Directory data.
+- `t1210-exploitation-of-remote-services` — Adversaries may exploit remote services to gain unauthorized access to internal systems once inside of a network.
+- `t1211-exploitation-for-defense-evasion` — Adversaries may exploit a system or application vulnerability to bypass security features.
+- `t1212-exploitation-for-credential-access` — Adversaries may exploit software vulnerabilities in an attempt to collect credentials.
+- `t1213-001-confluence` — Adversaries may leverage Confluence repositories to mine valuable information.
+- `t1213-002-sharepoint` — Adversaries may leverage the SharePoint repository as a source to mine valuable information.
+- `t1213-003-code-repositories` — Adversaries may leverage code repositories to collect valuable information.
+- `t1213-004-customer-relationship-management-software` — Adversaries may leverage Customer Relationship Management (CRM) software to mine valuable information.
+- `t1213-005-messaging-applications` — Adversaries may leverage chat and messaging applications, such as Microsoft Teams, Google Chat, and Slack, to mine valuable information.
+- `t1213-006-databases` — Adversaries may leverage databases to mine valuable information.
+- `t1213-data-from-information-repositories` — Adversaries may leverage information repositories to mine valuable information.
+- `t1216-001-pubprn` — Adversaries may use PubPrn to proxy execution of malicious remote files.
+- `t1216-002-syncappvpublishingserver` — Adversaries may abuse SyncAppvPublishingServer.vbs to proxy execution of malicious PowerShell commands.
+- `t1216-system-script-proxy-execution` — Adversaries may use trusted scripts, often signed with certificates, to proxy the execution of malicious files.
+- `t1217-browser-information-discovery` — Adversaries may enumerate information about browsers to learn more about compromised environments.
+- `t1218-001-compiled-html-file` — Adversaries may abuse Compiled HTML files (.chm) to conceal malicious code.
+- `t1218-002-control-panel` — Adversaries may abuse control.exe to proxy execution of malicious payloads.
+- `t1218-003-cmstp` — Adversaries may abuse CMSTP to proxy execution of malicious code.
+- `t1218-004-installutil` — Adversaries may use InstallUtil to proxy execution of code through a trusted Windows utility.
+- `t1218-005-mshta` — Adversaries may abuse mshta.exe to proxy execution of malicious .hta files and Javascript or VBScript through a trusted Windows utility.
+- `t1218-007-msiexec` — Adversaries may abuse msiexec.exe to proxy execution of malicious payloads.
+- `t1218-008-odbcconf` — Adversaries may abuse odbcconf.exe to proxy execution of malicious payloads.
+- `t1218-009-regsvcsregasm` — Adversaries may abuse Regsvcs and Regasm to proxy execution of code through a trusted Windows utility.
+- `t1218-010-regsvr32` — Adversaries may abuse Regsvr32.exe to proxy execution of malicious code.
+- `t1218-011-rundll32` — Adversaries may abuse rundll32.exe to proxy execution of malicious code.
+- `t1218-012-verclsid` — Adversaries may abuse verclsid.exe to proxy execution of malicious code.
+- `t1218-013-mavinject` — Adversaries may abuse mavinject.exe to proxy execution of malicious code.
+- `t1218-014-mmc` — Adversaries may abuse mmc.exe to proxy execution of malicious .msc files.
+- `t1218-015-electron-applications` — Adversaries may abuse components of the Electron framework to execute malicious code.
+- `t1218-system-binary-proxy-execution` — Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries.
+- `t1219-001-ide-tunneling` — Adversaries may abuse Integrated Development Environment (IDE) software with remote development features to establish an interactive command and control channel on target systems within a network.
+- `t1219-002-remote-desktop-software` — An adversary may use legitimate desktop support software to establish an interactive command and control channel to target systems within networks.
+- `t1219-003-remote-access-hardware` — An adversary may use legitimate remote access hardware to establish an interactive command and control channel to target systems within networks.
+- `t1219-remote-access-tools` — An adversary may use legitimate remote access tools to establish an interactive command and control channel within a network.
+- `t1220-xsl-script-processing` — Adversaries may bypass application control and obscure execution of code by embedding scripts inside XSL files.
+- `t1221-template-injection` — Adversaries may create or modify references in user document templates to conceal malicious code or force authentication attempts.
+- `t1222-001-windows-file-and-directory-permissions-modification` — Adversaries may modify file or directory permissions/attributes to evade access control lists (ACLs) and access protected files.
+- `t1222-002-linux-and-mac-file-and-directory-permissions-modificat` — Adversaries may modify file or directory permissions/attributes to evade access control lists (ACLs) and access protected files.
+- `t1222-file-and-directory-permissions-modification` — Adversaries may modify file or directory permissions/attributes to evade access control lists (ACLs) and access protected files.
+- `t1480-001-environmental-keying` — Adversaries may environmentally key payloads or other features of malware to evade defenses and constraint execution to a specific target environment.
+- `t1480-002-mutual-exclusion` — Adversaries may constrain execution or actions based on the presence of a mutex associated with malware.
+- `t1480-execution-guardrails` — Adversaries may use execution guardrails to constrain execution or actions based on adversary supplied and environment specific conditions that are expected to be present on the target.
+- `t1482-domain-trust-discovery` — Adversaries may attempt to gather information on domain trust relationships that may be used to identify lateral movement opportunities in Windows multi-domain/forest environments.
+- `t1484-001-group-policy-modification` — Adversaries may modify Group Policy Objects (GPOs) to subvert the intended discretionary access controls for a domain, usually with the intention of escalating privileges on the domain.
+- `t1484-002-trust-modification` — Adversaries may add new domain trusts, modify the properties of existing domain trusts, or otherwise change the configuration of trust relationships between domains and tenants to evade defenses an...
+- `t1484-domain-or-tenant-policy-modification` — Adversaries may modify the configuration settings of a domain or identity tenant to evade defenses and/or escalate privileges in centrally managed environments.
+- `t1485-001-lifecycle-triggered-deletion` — Adversaries may modify the lifecycle policies of a cloud storage bucket to destroy all objects stored within.
+- `t1485-data-destruction` — Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources.
+- `t1486-data-encrypted-for-impact` — Adversaries may encrypt data on target systems or on large numbers of systems in a network to interrupt availability to system and network resources.
+- `t1489-service-stop` — Adversaries may stop or disable services on a system to render those services unavailable to legitimate users.
+- `t1490-inhibit-system-recovery` — Adversaries may delete or remove built-in data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery.
+- `t1491-001-internal-defacement` — An adversary may deface systems internal to an organization in an attempt to intimidate or mislead users, thus discrediting the integrity of the systems.
+- `t1491-002-external-defacement` — An adversary may deface systems external to an organization in an attempt to deliver messaging, intimidate, or otherwise mislead an organization or users.
+- `t1491-defacement` — Adversaries may modify visual content available internally or externally to an enterprise network, thus affecting the integrity of the original content.
+- `t1495-firmware-corruption` — Adversaries may overwrite or corrupt the flash memory contents of system BIOS or other firmware in devices attached to a system in order to render them inoperable or unable to boot, thus denying th...
+- `t1496-001-compute-hijacking` — Adversaries may leverage the compute resources of co-opted systems to complete resource-intensive tasks, which may impact system and/or hosted service availability.
+- `t1496-002-bandwidth-hijacking` — Adversaries may leverage the network bandwidth resources of co-opted systems to complete resource-intensive tasks, which may impact system and/or hosted service availability.
+- `t1496-003-sms-pumping` — Adversaries may leverage messaging services for SMS pumping, which may impact system and/or hosted service availability.
+- `t1496-004-cloud-service-hijacking` — Adversaries may leverage compromised software-as-a-service (SaaS) applications to complete resource-intensive tasks, which may impact hosted service availability.
+- `t1496-resource-hijacking` — Adversaries may leverage the resources of co-opted systems to complete resource-intensive tasks, which may impact system and/or hosted service availability.
+- `t1497-001-system-checks` — Adversaries may employ various system checks to detect and avoid virtualization and analysis environments.
+- `t1497-002-user-activity-based-checks` — Adversaries may employ various user activity checks to detect and avoid virtualization and analysis environments.
+- `t1497-003-time-based-checks` — Adversaries may employ various time-based methods to detect virtualization and analysis environments, particularly those that attempt to manipulate time mechanisms to simulate longer elapses of time.
+- `t1497-virtualizationsandbox-evasion` — Adversaries may employ various means to detect and avoid virtualization and analysis environments.
+- `t1498-001-direct-network-flood` — Adversaries may attempt to cause a denial of service (DoS) by directly sending a high-volume of network traffic to a target.
+- `t1498-002-reflection-amplification` — Adversaries may attempt to cause a denial of service (DoS) by reflecting a high-volume of network traffic to a target.
+- `t1498-network-denial-of-service` — Adversaries may perform Network Denial of Service (DoS) attacks to degrade or block the availability of targeted resources to users.
+- `t1499-001-os-exhaustion-flood` — Adversaries may launch a denial of service (DoS) attack targeting an endpoint's operating system (OS).
+- `t1499-002-service-exhaustion-flood` — Adversaries may target the different network services provided by systems to conduct a denial of service (DoS).
+- `t1499-003-application-exhaustion-flood` — Adversaries may target resource intensive features of applications to cause a denial of service (DoS), denying availability to those applications.
+- `t1499-004-application-or-system-exploitation` — Adversaries may exploit software vulnerabilities that can cause an application or system to crash and deny availability to users.
+- `t1499-endpoint-denial-of-service` — Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users.
+- `t1505-001-sql-stored-procedures` — Adversaries may abuse SQL stored procedures to establish persistent access to systems.
+- `t1505-002-transport-agent` — Adversaries may abuse Microsoft transport agents to establish persistent access to systems.
+- `t1505-003-web-shell` — Adversaries may backdoor web servers with web shells to establish persistent access to systems.
+- `t1505-004-iis-components` — Adversaries may install malicious components that run on Internet Information Services (IIS) web servers to establish persistence.
+- `t1505-005-terminal-services-dll` — Adversaries may abuse components of Terminal Services to enable persistent access to systems.
+- `t1505-006-vsphere-installation-bundles` — Adversaries may abuse vSphere Installation Bundles (VIBs) to establish persistent access to ESXi hypervisors.
+- `t1505-server-software-component` — Adversaries may abuse legitimate extensible development features of servers to establish persistent access to systems.
+- `t1518-001-security-software-discovery` — Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on a system or in a cloud environment.
+- `t1518-002-backup-software-discovery` — Adversaries may attempt to get a listing of backup software or configurations that are installed on a system.
+- `t1518-software-discovery` — Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment.
+- `t1525-implant-internal-image` — Adversaries may implant cloud or container images with malicious code to establish persistence after gaining access to an environment.
+- `t1526-cloud-service-discovery` — An adversary may attempt to enumerate the cloud services running on a system after gaining access.
+- `t1528-steal-application-access-token` — Adversaries can steal application access tokens as a means of acquiring credentials to access remote systems and resources.
+- `t1529-system-shutdownreboot` — Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems.
+- `t1530-data-from-cloud-storage` — Adversaries may access data from cloud storage.
+- `t1531-account-access-removal` — Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users.
+- `t1534-internal-spearphishing` — After they already have access to accounts or systems within the environment, adversaries may use internal spearphishing to gain access to additional information or compromise other users within th...
+- `t1535-unusedunsupported-cloud-regions` — Adversaries may create cloud instances in unused geographic service regions in order to evade detection.
+- `t1537-transfer-data-to-cloud-account` — Adversaries may exfiltrate data by transferring the data, including through sharing/syncing and creating backups of cloud environments, to another cloud account they control on the same service.
+- `t1538-cloud-service-dashboard` — An adversary may use a cloud service dashboard GUI with stolen credentials to gain useful information from an operational cloud environment, such as specific services, resources, and features.
+- `t1539-steal-web-session-cookie` — An adversary may steal web application or service session cookies and use them to gain access to web applications or Internet services as an authenticated user without needing credentials.
+- `t1542-001-system-firmware` — Adversaries may modify system firmware to persist on systems.The BIOS (Basic Input/Output System) and The Unified Extensible Firmware Interface (UEFI) or Extensible Firmware Interface (EFI) are exa...
+- `t1542-002-component-firmware` — Adversaries may modify component firmware to persist on systems.
+- `t1542-003-bootkit` — Adversaries may use bootkits to persist on systems.
+- `t1542-004-rommonkit` — Adversaries may abuse the ROM Monitor (ROMMON) by loading an unauthorized firmware with adversary code to provide persistent access and manipulate device behavior that is difficult to detect.
+- `t1542-005-tftp-boot` — Adversaries may abuse netbooting to load an unauthorized network device operating system from a Trivial File Transfer Protocol (TFTP) server.
+- `t1542-pre-os-boot` — Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system.
+- `t1543-001-launch-agent` — Adversaries may create or modify launch agents to repeatedly execute malicious payloads as part of persistence.
+- `t1543-002-systemd-service` — Adversaries may create or modify systemd services to repeatedly execute malicious payloads as part of persistence.
+- `t1543-003-windows-service` — Adversaries may create or modify Windows services to repeatedly execute malicious payloads as part of persistence.
+- `t1543-004-launch-daemon` — Adversaries may create or modify Launch Daemons to execute malicious payloads as part of persistence.
+- `t1543-005-container-service` — Adversaries may create or modify container or container cluster management tools that run as daemons, agents, or services on individual hosts.
+- `t1543-create-or-modify-system-process` — Adversaries may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence.
+- `t1546-001-change-default-file-association` — Adversaries may establish persistence by executing malicious content triggered by a file type association.
+- `t1546-002-screensaver` — Adversaries may establish persistence by executing malicious content triggered by user inactivity.
+- `t1546-003-windows-management-instrumentation-event-subscription` — Adversaries may establish persistence and elevate privileges by executing malicious content triggered by a Windows Management Instrumentation (WMI) event subscription.
+- `t1546-004-unix-shell-configuration-modification` — Adversaries may establish persistence through executing malicious commands triggered by a user’s shell.
+- `t1546-005-trap` — Adversaries may establish persistence by executing malicious content triggered by an interrupt signal.
+- `t1546-006-lcloaddylib-addition` — Adversaries may establish persistence by executing malicious content triggered by the execution of tainted binaries.
+- `t1546-007-netsh-helper-dll` — Adversaries may establish persistence by executing malicious content triggered by Netsh Helper DLLs.
+- `t1546-008-accessibility-features` — Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by accessibility features.
+- `t1546-009-appcert-dlls` — Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by AppCert DLLs loaded into processes.
+- `t1546-010-appinit-dlls` — Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by AppInit DLLs loaded into processes.
+- `t1546-011-application-shimming` — Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by application shims.
+- `t1546-012-image-file-execution-options-injection` — Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by Image File Execution Options (IFEO) debuggers.
+- `t1546-013-powershell-profile` — Adversaries may gain persistence and elevate privileges by executing malicious content triggered by PowerShell profiles.
+- `t1546-014-emond` — Adversaries may gain persistence and elevate privileges by executing malicious content triggered by the Event Monitor Daemon (emond).
+- `t1546-015-component-object-model-hijacking` — Adversaries may establish persistence by executing malicious content triggered by hijacked references to Component Object Model (COM) objects.
+- `t1546-016-installer-packages` — Adversaries may establish persistence and elevate privileges by using an installer to trigger the execution of malicious content.
+- `t1546-017-udev-rules` — Adversaries may maintain persistence through executing malicious content triggered using udev rules.
+- `t1546-018-python-startup-hooks` — Adversaries may achieve persistence by leveraging Python’s startup mechanisms, including path configuration (`.pth`) files and the `sitecustomize.py` or `usercustomize.py` modules.
+- `t1546-event-triggered-execution` — Adversaries may establish persistence and/or elevate privileges using system mechanisms that trigger execution based on specific events.
+- `t1547-001-registry-run-keys-startup-folder` — Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key.
+- `t1547-002-authentication-package` — Adversaries may abuse authentication packages to execute DLLs when the system boots.
+- `t1547-003-time-providers` — Adversaries may abuse time providers to execute DLLs when the system boots.
+- `t1547-004-winlogon-helper-dll` — Adversaries may abuse features of Winlogon to execute DLLs and/or executables when a user logs in.
+- `t1547-005-security-support-provider` — Adversaries may abuse security support providers (SSPs) to execute DLLs when the system boots.
+- `t1547-006-kernel-modules-and-extensions` — Adversaries may modify the kernel to automatically execute programs on system boot.
+- `t1547-007-re-opened-applications` — Adversaries may modify plist files to automatically run an application when a user logs in.
+- `t1547-008-lsass-driver` — Adversaries may modify or add LSASS drivers to obtain persistence on compromised systems.
+- `t1547-009-shortcut-modification` — Adversaries may create or modify shortcuts that can execute a program during system boot or user login.
+- `t1547-010-port-monitors` — Adversaries may use port monitors to run an adversary supplied DLL during system boot for persistence or privilege escalation.
+- `t1547-012-print-processors` — Adversaries may abuse print processors to run malicious DLLs during system boot for persistence and/or privilege escalation.
+- `t1547-013-xdg-autostart-entries` — Adversaries may add or modify XDG Autostart Entries to execute malicious programs or commands when a user’s desktop environment is loaded at login.
+- `t1547-014-active-setup` — Adversaries may achieve persistence by adding a Registry key to the Active Setup of the local machine.
+- `t1547-015-login-items` — Adversaries may add login items to execute upon user login to gain persistence or escalate privileges.
+- `t1547-boot-or-logon-autostart-execution` — Adversaries may configure system settings to automatically execute a program during system boot or logon to maintain persistence or gain higher-level privileges on compromised systems.
+- `t1548-001-setuid-and-setgid` — An adversary may abuse configurations where an application has the setuid or setgid bits set in order to get code running in a different (and possibly more privileged) user’s context.
+- `t1548-002-bypass-user-account-control` — Adversaries may bypass UAC mechanisms to elevate process privileges on system.
+- `t1548-003-sudo-and-sudo-caching` — Adversaries may perform sudo caching and/or use the sudoers file to elevate privileges.
+- `t1548-004-elevated-execution-with-prompt` — Adversaries may leverage the <code>AuthorizationExecuteWithPrivileges</code> API to escalate privileges by prompting the user for credentials.
+- `t1548-005-temporary-elevated-cloud-access` — Adversaries may abuse permission configurations that allow them to gain temporarily elevated access to cloud resources.
+- `t1548-006-tcc-manipulation` — Adversaries can manipulate or abuse the Transparency, Consent, & Control (TCC) service or database to grant malicious executables elevated permissions.
+- `t1548-abuse-elevation-control-mechanism` — Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions.
+- `t1550-001-application-access-token` — Adversaries may use stolen application access tokens to bypass the typical authentication process and access restricted accounts, information, or services on remote systems.
+- `t1550-002-pass-the-hash` — Adversaries may “pass the hash” using stolen password hashes to move laterally within an environment, bypassing normal system access controls.
+- `t1550-003-pass-the-ticket` — Adversaries may “pass the ticket” using stolen Kerberos tickets to move laterally within an environment, bypassing normal system access controls.
+- `t1550-004-web-session-cookie` — Adversaries can use stolen session cookies to authenticate to web applications and services.
+- `t1550-use-alternate-authentication-material` — Adversaries may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal s...
+- `t1552-001-credentials-in-files` — Adversaries may search local file systems and remote file shares for files containing insecurely stored credentials.
+- `t1552-002-credentials-in-registry` — Adversaries may search the Registry on compromised systems for insecurely stored credentials.
+- `t1552-003-shell-history` — Adversaries may search the command history on compromised systems for insecurely stored credentials.
+- `t1552-004-private-keys` — Adversaries may search for private key certificate files on compromised systems for insecurely stored credentials.
+- `t1552-005-cloud-instance-metadata-api` — Adversaries may attempt to access the Cloud Instance Metadata API to collect credentials and other sensitive data.
+- `t1552-006-group-policy-preferences` — Adversaries may attempt to find unsecured credentials in Group Policy Preferences (GPP).
+- `t1552-007-container-api` — Adversaries may gather credentials via APIs within a containers environment.
+- `t1552-008-chat-messages` — Adversaries may directly collect unsecured credentials stored or passed through user communication services.
+- `t1552-unsecured-credentials` — Adversaries may search compromised systems to find and obtain insecurely stored credentials.
+- `t1553-001-gatekeeper-bypass` — Adversaries may modify file attributes and subvert Gatekeeper functionality to evade user prompts and execute untrusted programs.
+- `t1553-002-code-signing` — Adversaries may create, acquire, or steal code signing materials to sign their malware or tools.
+- `t1553-003-sip-and-trust-provider-hijacking` — Adversaries may tamper with SIP and trust provider components to mislead the operating system and application control tools when conducting signature validation checks.
+- `t1553-004-install-root-certificate` — Adversaries may install a root certificate on a compromised system to avoid warnings when connecting to adversary controlled web servers.
+- `t1553-005-mark-of-the-web-bypass` — Adversaries may abuse specific file formats to subvert Mark-of-the-Web (MOTW) controls.
+- `t1553-006-code-signing-policy-modification` — Adversaries may modify code signing policies to enable execution of unsigned or self-signed code.
+- `t1553-subvert-trust-controls` — Adversaries may undermine security controls that will either warn users of untrusted activity or prevent execution of untrusted programs.
+- `t1554-compromise-host-software-binary` — Adversaries may modify host software binaries to establish persistent access to systems.
+- `t1555-001-keychain` — Adversaries may acquire credentials from Keychain.
+- `t1555-002-securityd-memory` — An adversary with root access may gather credentials by reading `securityd`’s memory.
+- `t1555-003-credentials-from-web-browsers` — Adversaries may acquire credentials from web browsers by reading files specific to the target browser.
+- `t1555-004-windows-credential-manager` — Adversaries may acquire credentials from the Windows Credential Manager.
+- `t1555-005-password-managers` — Adversaries may acquire user credentials from third-party password managers.
+- `t1555-006-cloud-secrets-management-stores` — Adversaries may acquire credentials from cloud-native secret management solutions such as AWS Secrets Manager, GCP Secret Manager, Azure Key Vault, and Terraform Vault.
+- `t1555-credentials-from-password-stores` — Adversaries may search for common password storage locations to obtain user credentials.
+- `t1556-001-domain-controller-authentication` — Adversaries may patch the authentication process on a domain controller to bypass the typical authentication mechanisms and enable access to accounts.
+- `t1556-002-password-filter-dll` — Adversaries may register malicious password filter dynamic link libraries (DLLs) into the authentication process to acquire user credentials as they are validated.
+- `t1556-003-pluggable-authentication-modules` — Adversaries may modify pluggable authentication modules (PAM) to access user credentials or enable otherwise unwarranted access to accounts.
+- `t1556-004-network-device-authentication` — Adversaries may use Patch System Image to hard code a password in the operating system, thus bypassing of native authentication mechanisms for local accounts on network devices.
+- `t1556-005-reversible-encryption` — An adversary may abuse Active Directory authentication encryption properties to gain access to credentials on Windows systems.
+- `t1556-006-multi-factor-authentication` — Adversaries may disable or modify multi-factor authentication (MFA) mechanisms to enable persistent access to compromised accounts.
+- `t1556-007-hybrid-identity` — Adversaries may patch, modify, or otherwise backdoor cloud authentication processes that are tied to on-premises user identities in order to bypass typical authentication mechanisms, access credent...
+- `t1556-008-network-provider-dll` — Adversaries may register malicious network provider dynamic link libraries (DLLs) to capture cleartext user credentials during the authentication process.
+- `t1556-009-conditional-access-policies` — Adversaries may disable or modify conditional access policies to enable persistent access to compromised accounts.
+- `t1556-modify-authentication-process` — Adversaries may modify authentication mechanisms and processes to access user credentials or enable otherwise unwarranted access to accounts.
+- `t1557-001-llmnrnbt-ns-poisoning-and-smb-relay` — By responding to LLMNR/NBT-NS network traffic, adversaries may spoof an authoritative source for name resolution to force communication with an adversary controlled system.
+- `t1557-002-arp-cache-poisoning` — Adversaries may poison Address Resolution Protocol (ARP) caches to position themselves between the communication of two or more networked devices.
+- `t1557-003-dhcp-spoofing` — Adversaries may redirect network traffic to adversary-owned systems by spoofing Dynamic Host Configuration Protocol (DHCP) traffic and acting as a malicious DHCP server on the victim network.
+- `t1557-004-evil-twin` — Adversaries may host seemingly genuine Wi-Fi access points to deceive users into connecting to malicious networks as a way of supporting follow-on behaviors such as Network Sniffing, Transmitted Da...
+- `t1557-adversary-in-the-middle` — Adversaries may attempt to position themselves between two or more networked devices using an adversary-in-the-middle (AiTM) technique to support follow-on behaviors such as Network Sniffing, Trans...
+- `t1558-001-golden-ticket` — Adversaries who have the KRBTGT account password hash may forge Kerberos ticket-granting tickets (TGT), also known as a golden ticket.
+- `t1558-002-silver-ticket` — Adversaries who have the password hash of a target service account (e.g.
+- `t1558-003-kerberoasting` — Adversaries may abuse a valid Kerberos ticket-granting ticket (TGT) or sniff network traffic to obtain a ticket-granting service (TGS) ticket that may be vulnerable to Brute Force.
+- `t1558-004-as-rep-roasting` — Adversaries may reveal credentials of accounts that have disabled Kerberos preauthentication by Password Cracking Kerberos messages.
+- `t1558-005-ccache-files` — Adversaries may attempt to steal Kerberos tickets stored in credential cache files (or ccache).
+- `t1558-steal-or-forge-kerberos-tickets` — Adversaries may attempt to subvert Kerberos authentication by stealing or forging Kerberos tickets to enable Pass the Ticket.
+- `t1559-001-component-object-model` — Adversaries may use the Windows Component Object Model (COM) for local code execution.
+- `t1559-002-dynamic-data-exchange` — Adversaries may use Windows Dynamic Data Exchange (DDE) to execute arbitrary commands.
+- `t1559-003-xpc-services` — Adversaries can provide malicious content to an XPC service daemon for local code execution.
+- `t1559-inter-process-communication` — Adversaries may abuse inter-process communication (IPC) mechanisms for local code or command execution.
+- `t1560-001-archive-via-utility` — Adversaries may use utilities to compress and/or encrypt collected data prior to exfiltration.
+- `t1560-002-archive-via-library` — An adversary may compress or encrypt data that is collected prior to exfiltration using 3rd party libraries.
+- `t1560-003-archive-via-custom-method` — An adversary may compress or encrypt data that is collected prior to exfiltration using a custom method.
+- `t1560-archive-collected-data` — An adversary may compress and/or encrypt data that is collected prior to exfiltration.
+- `t1561-001-disk-content-wipe` — Adversaries may erase the contents of storage devices on specific systems or in large numbers in a network to interrupt availability to system and network resources.
+- `t1561-002-disk-structure-wipe` — Adversaries may corrupt or wipe the disk data structures on a hard drive necessary to boot a system; targeting specific critical systems or in large numbers in a network to interrupt availability t...
+- `t1561-disk-wipe` — Adversaries may wipe or corrupt raw disk data on specific systems or in large numbers in a network to interrupt availability to system and network resources.
+- `t1562-001-disable-or-modify-tools` — Adversaries may modify and/or disable security tools to avoid possible detection of their malware/tools and activities.
+- `t1562-002-disable-windows-event-logging` — Adversaries may disable Windows event logging to limit data that can be leveraged for detections and audits.
+- `t1562-003-impair-command-history-logging` — Adversaries may impair command history logging to hide commands they run on a compromised system.
+- `t1562-004-disable-or-modify-system-firewall` — Adversaries may disable or modify system firewalls in order to bypass controls limiting network usage.
+- `t1562-006-indicator-blocking` — An adversary may attempt to block indicators or events typically captured by sensors from being gathered and analyzed.
+- `t1562-007-disable-or-modify-cloud-firewall` — Adversaries may disable or modify a firewall within a cloud environment to bypass controls that limit access to cloud resources.
+- `t1562-008-disable-or-modify-cloud-logs` — An adversary may disable or modify cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection.
+- `t1562-009-safe-mode-boot` — Adversaries may abuse Windows safe mode to disable endpoint defenses.
+- `t1562-010-downgrade-attack` — Adversaries may downgrade or use a version of system features that may be outdated, vulnerable, and/or does not support updated security controls.
+- `t1562-011-spoof-security-alerting` — Adversaries may spoof security alerting from tools, presenting false evidence to impair defenders’ awareness of malicious activity.
+- `t1562-012-disable-or-modify-linux-audit-system` — Adversaries may disable or modify the Linux audit system to hide malicious activity and avoid detection.
+- `t1562-013-disable-or-modify-network-device-firewall` — Adversaries may disable network device-based firewall mechanisms entirely or add, delete, or modify particular rules in order to bypass controls limiting network usage.
+- `t1562-impair-defenses` — Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms.
+- `t1563-001-ssh-hijacking` — Adversaries may hijack a legitimate user's SSH session to move laterally within an environment.
+- `t1563-002-rdp-hijacking` — Adversaries may hijack a legitimate user’s remote desktop session to move laterally within an environment.
+- `t1563-remote-service-session-hijacking` — Adversaries may take control of preexisting sessions with remote services to move laterally in an environment.
+- `t1564-001-hidden-files-and-directories` — Adversaries may set files and directories to be hidden to evade detection mechanisms.
+- `t1564-002-hidden-users` — Adversaries may use hidden users to hide the presence of user accounts they create or modify.
+- `t1564-003-hidden-window` — Adversaries may use hidden windows to conceal malicious activity from the plain sight of users.
+- `t1564-004-ntfs-file-attributes` — Adversaries may use NTFS file attributes to hide their malicious data in order to evade detection.
+- `t1564-005-hidden-file-system` — Adversaries may use a hidden file system to conceal malicious activity from users and security tools.
+- `t1564-006-run-virtual-instance` — Adversaries may carry out malicious operations using a virtual instance to avoid detection.
+- `t1564-007-vba-stomping` — Adversaries may hide malicious Visual Basic for Applications (VBA) payloads embedded within MS Office documents by replacing the VBA source code with benign data.
+- `t1564-008-email-hiding-rules` — Adversaries may use email rules to hide inbound emails in a compromised user's mailbox.
+- `t1564-009-resource-forking` — Adversaries may abuse resource forks to hide malicious code or executables to evade detection and bypass security applications.
+- `t1564-010-process-argument-spoofing` — Adversaries may attempt to hide process command-line arguments by overwriting process memory.
+- `t1564-011-ignore-process-interrupts` — Adversaries may evade defensive mechanisms by executing commands that hide from process interrupt signals.
+- `t1564-012-filepath-exclusions` — Adversaries may attempt to hide their file-based artifacts by writing them to specific folders or file names excluded from antivirus (AV) scanning and other defensive capabilities.
+- `t1564-013-bind-mounts` — Adversaries may abuse bind mounts on file structures to hide their activity and artifacts from native utilities.
+- `t1564-014-extended-attributes` — Adversaries may abuse extended attributes (xattrs) on macOS and Linux to hide their malicious data in order to evade detection.
+- `t1564-hide-artifacts` — Adversaries may attempt to hide artifacts associated with their behaviors to evade detection.
+- `t1565-001-stored-data-manipulation` — Adversaries may insert, delete, or manipulate data at rest in order to influence external outcomes or hide activity, thus threatening the integrity of the data.
+- `t1565-002-transmitted-data-manipulation` — Adversaries may alter data en route to storage or other systems in order to manipulate external outcomes or hide activity, thus threatening the integrity of the data.
+- `t1565-003-runtime-data-manipulation` — Adversaries may modify systems in order to manipulate the data as it is accessed and displayed to an end user, thus threatening the integrity of the data.
+- `t1565-data-manipulation` — Adversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data.
+- `t1566-001-spearphishing-attachment` — Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems.
+- `t1566-002-spearphishing-link` — Adversaries may send spearphishing emails with a malicious link in an attempt to gain access to victim systems.
+- `t1566-003-spearphishing-via-service` — Adversaries may send spearphishing messages via third-party services in an attempt to gain access to victim systems.
+- `t1566-004-spearphishing-voice` — Adversaries may use voice communications to ultimately gain access to victim systems.
+- `t1566-phishing` — Adversaries may send phishing messages to gain access to victim systems.
+- `t1567-001-exfiltration-to-code-repository` — Adversaries may exfiltrate data to a code repository rather than over their primary command and control channel.
+- `t1567-002-exfiltration-to-cloud-storage` — Adversaries may exfiltrate data to a cloud storage service rather than over their primary command and control channel.
+- `t1567-003-exfiltration-to-text-storage-sites` — Adversaries may exfiltrate data to text storage sites instead of their primary command and control channel.
+- `t1567-004-exfiltration-over-webhook` — Adversaries may exfiltrate data to a webhook endpoint rather than over their primary command and control channel.
+- `t1567-exfiltration-over-web-service` — Adversaries may use an existing, legitimate external Web service to exfiltrate data rather than their primary command and control channel.
+- `t1568-001-fast-flux-dns` — Adversaries may use Fast Flux DNS to hide a command and control channel behind an array of rapidly changing IP addresses linked to a single domain resolution.
+- `t1568-002-domain-generation-algorithms` — Adversaries may make use of Domain Generation Algorithms (DGAs) to dynamically identify a destination domain for command and control traffic rather than relying on a list of static IP addresses or ...
+- `t1568-003-dns-calculation` — Adversaries may perform calculations on addresses returned in DNS results to determine which port and IP address to use for command and control, rather than relying on a predetermined port number o...
+- `t1568-dynamic-resolution` — Adversaries may dynamically establish connections to command and control infrastructure to evade common detections and remediations.
+- `t1569-001-launchctl` — Adversaries may abuse launchctl to execute commands or programs.
+- `t1569-002-service-execution` — Adversaries may abuse the Windows service control manager to execute malicious commands or payloads.
+- `t1569-003-systemctl` — Adversaries may abuse systemctl to execute commands or programs.
+- `t1569-system-services` — Adversaries may abuse system services or daemons to execute commands or programs.
+- `t1570-lateral-tool-transfer` — Adversaries may transfer tools or other files between systems in a compromised environment.
+- `t1571-non-standard-port` — Adversaries may communicate using a protocol and port pairing that are typically not associated.
+- `t1572-protocol-tunneling` — Adversaries may tunnel network communications to and from a victim system within a separate protocol to avoid detection/network filtering and/or enable access to otherwise unreachable systems.
+- `t1573-001-symmetric-cryptography` — Adversaries may employ a known symmetric encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol.
+- `t1573-002-asymmetric-cryptography` — Adversaries may employ a known asymmetric encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol.
+- `t1573-encrypted-channel` — Adversaries may employ an encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol.
+- `t1574-001-dll` — Adversaries may abuse dynamic-link library files (DLLs) in order to achieve persistence, escalate privileges, and evade defenses.
+- `t1574-004-dylib-hijacking` — Adversaries may execute their own payloads by placing a malicious dynamic library (dylib) with an expected name in a path a victim application searches at runtime.
+- `t1574-005-executable-installer-file-permissions-weakness` — Adversaries may execute their own malicious payloads by hijacking the binaries used by an installer.
+- `t1574-006-dynamic-linker-hijacking` — Adversaries may execute their own malicious payloads by hijacking environment variables the dynamic linker uses to load shared libraries.
+- `t1574-007-path-interception-by-path-environment-variable` — Adversaries may execute their own malicious payloads by hijacking environment variables used to load libraries.
+- `t1574-008-path-interception-by-search-order-hijacking` — Adversaries may execute their own malicious payloads by hijacking the search order used to load other programs.
+- `t1574-009-path-interception-by-unquoted-path` — Adversaries may execute their own malicious payloads by hijacking vulnerable file path references.
+- `t1574-010-services-file-permissions-weakness` — Adversaries may execute their own malicious payloads by hijacking the binaries used by services.
+- `t1574-011-services-registry-permissions-weakness` — Adversaries may execute their own malicious payloads by hijacking the Registry entries used by services.
+- `t1574-012-corprofiler` — Adversaries may leverage the COR_PROFILER environment variable to hijack the execution flow of programs that load the .NET CLR.
+- `t1574-013-kernelcallbacktable` — Adversaries may abuse the <code>KernelCallbackTable</code> of a process to hijack its execution flow in order to run their own payloads.
+- `t1574-014-appdomainmanager` — Adversaries may execute their own malicious payloads by hijacking how the .NET `AppDomainManager` loads assemblies.
+- `t1574-hijack-execution-flow` — Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs.
+- `t1578-001-create-snapshot` — An adversary may create a snapshot or data backup within a cloud account to evade defenses.
+- `t1578-002-create-cloud-instance` — An adversary may create a new instance or virtual machine (VM) within the compute service of a cloud account to evade defenses.
+- `t1578-003-delete-cloud-instance` — An adversary may delete a cloud instance after they have performed malicious activities in an attempt to evade detection and remove evidence of their presence.
+- `t1578-004-revert-cloud-instance` — An adversary may revert changes made to a cloud instance after they have performed malicious activities in attempt to evade detection and remove evidence of their presence.
+- `t1578-005-modify-cloud-compute-configurations` — Adversaries may modify settings that directly affect the size, locations, and resources available to cloud compute infrastructure in order to evade defenses.
+- `t1578-modify-cloud-compute-infrastructure` — An adversary may attempt to modify a cloud account's compute service infrastructure to evade defenses.
+- `t1580-cloud-infrastructure-discovery` — An adversary may attempt to discover infrastructure and resources that are available within an infrastructure-as-a-service (IaaS) environment.
+- `t1583-001-domains` — Adversaries may acquire domains that can be used during targeting.
+- `t1583-002-dns-server` — Adversaries may set up their own Domain Name System (DNS) servers that can be used during targeting.
+- `t1583-003-virtual-private-server` — Adversaries may rent Virtual Private Servers (VPSs) that can be used during targeting.
+- `t1583-004-server` — Adversaries may buy, lease, rent, or obtain physical servers that can be used during targeting.
+- `t1583-005-botnet` — Adversaries may buy, lease, or rent a network of compromised systems that can be used during targeting.
+- `t1583-006-web-services` — Adversaries may register for web services that can be used during targeting.
+- `t1583-007-serverless` — Adversaries may purchase and configure serverless cloud infrastructure, such as Cloudflare Workers, AWS Lambda functions, or Google Apps Scripts, that can be used during targeting.
+- `t1583-008-malvertising` — Adversaries may purchase online advertisements that can be abused to distribute malware to victims.
+- `t1583-acquire-infrastructure` — Adversaries may buy, lease, rent, or obtain infrastructure that can be used during targeting.
+- `t1584-001-domains` — Adversaries may hijack domains and/or subdomains that can be used during targeting.
+- `t1584-002-dns-server` — Adversaries may compromise third-party DNS servers that can be used during targeting.
+- `t1584-003-virtual-private-server` — Adversaries may compromise third-party Virtual Private Servers (VPSs) that can be used during targeting.
+- `t1584-004-server` — Adversaries may compromise third-party servers that can be used during targeting.
+- `t1584-005-botnet` — Adversaries may compromise numerous third-party systems to form a botnet that can be used during targeting.
+- `t1584-006-web-services` — Adversaries may compromise access to third-party web services that can be used during targeting.
+- `t1584-007-serverless` — Adversaries may compromise serverless cloud infrastructure, such as Cloudflare Workers, AWS Lambda functions, or Google Apps Scripts, that can be used during targeting.
+- `t1584-008-network-devices` — Adversaries may compromise third-party network devices that can be used during targeting.
+- `t1584-compromise-infrastructure` — Adversaries may compromise third-party infrastructure that can be used during targeting.
+- `t1585-001-social-media-accounts` — Adversaries may create and cultivate social media accounts that can be used during targeting.
+- `t1585-002-email-accounts` — Adversaries may create email accounts that can be used during targeting.
+- `t1585-003-cloud-accounts` — Adversaries may create accounts with cloud providers that can be used during targeting.
+- `t1585-establish-accounts` — Adversaries may create and cultivate accounts with services that can be used during targeting.
+- `t1586-001-social-media-accounts` — Adversaries may compromise social media accounts that can be used during targeting.
+- `t1586-002-email-accounts` — Adversaries may compromise email accounts that can be used during targeting.
+- `t1586-003-cloud-accounts` — Adversaries may compromise cloud accounts that can be used during targeting.
+- `t1586-compromise-accounts` — Adversaries may compromise accounts with services that can be used during targeting.
+- `t1587-001-malware` — Adversaries may develop malware and malware components that can be used during targeting.
+- `t1587-002-code-signing-certificates` — Adversaries may create self-signed code signing certificates that can be used during targeting.
+- `t1587-003-digital-certificates` — Adversaries may create self-signed SSL/TLS certificates that can be used during targeting.
+- `t1587-004-exploits` — Adversaries may develop exploits that can be used during targeting.
+- `t1587-develop-capabilities` — Adversaries may build capabilities that can be used during targeting.
+- `t1588-001-malware` — Adversaries may buy, steal, or download malware that can be used during targeting.
+- `t1588-002-tool` — Adversaries may buy, steal, or download software tools that can be used during targeting.
+- `t1588-003-code-signing-certificates` — Adversaries may buy and/or steal code signing certificates that can be used during targeting.
+- `t1588-004-digital-certificates` — Adversaries may buy and/or steal SSL/TLS certificates that can be used during targeting.
+- `t1588-005-exploits` — Adversaries may buy, steal, or download exploits that can be used during targeting.
+- `t1588-006-vulnerabilities` — Adversaries may acquire information about vulnerabilities that can be used during targeting.
+- `t1588-007-artificial-intelligence` — Adversaries may obtain access to generative artificial intelligence tools, such as large language models (LLMs), to aid various techniques during targeting.
+- `t1588-obtain-capabilities` — Adversaries may buy and/or steal capabilities that can be used during targeting.
+- `t1589-001-credentials` — Adversaries may gather credentials that can be used during targeting.
+- `t1589-002-email-addresses` — Adversaries may gather email addresses that can be used during targeting.
+- `t1589-003-employee-names` — Adversaries may gather employee names that can be used during targeting.
+- `t1589-gather-victim-identity-information` — Adversaries may gather information about the victim's identity that can be used during targeting.
+- `t1590-001-domain-properties` — Adversaries may gather information about the victim's network domain(s) that can be used during targeting.
+- `t1590-002-dns` — Adversaries may gather information about the victim's DNS that can be used during targeting.
+- `t1590-003-network-trust-dependencies` — Adversaries may gather information about the victim's network trust dependencies that can be used during targeting.
+- `t1590-004-network-topology` — Adversaries may gather information about the victim's network topology that can be used during targeting.
+- `t1590-005-ip-addresses` — Adversaries may gather the victim's IP addresses that can be used during targeting.
+- `t1590-006-network-security-appliances` — Adversaries may gather information about the victim's network security appliances that can be used during targeting.
+- `t1590-gather-victim-network-information` — Adversaries may gather information about the victim's networks that can be used during targeting.
+- `t1591-001-determine-physical-locations` — Adversaries may gather the victim's physical location(s) that can be used during targeting.
+- `t1591-002-business-relationships` — Adversaries may gather information about the victim's business relationships that can be used during targeting.
+- `t1591-003-identify-business-tempo` — Adversaries may gather information about the victim's business tempo that can be used during targeting.
+- `t1591-004-identify-roles` — Adversaries may gather information about identities and roles within the victim organization that can be used during targeting.
+- `t1591-gather-victim-org-information` — Adversaries may gather information about the victim's organization that can be used during targeting.
+- `t1592-001-hardware` — Adversaries may gather information about the victim's host hardware that can be used during targeting.
+- `t1592-002-software` — Adversaries may gather information about the victim's host software that can be used during targeting.
+- `t1592-003-firmware` — Adversaries may gather information about the victim's host firmware that can be used during targeting.
+- `t1592-004-client-configurations` — Adversaries may gather information about the victim's client configurations that can be used during targeting.
+- `t1592-gather-victim-host-information` — Adversaries may gather information about the victim's hosts that can be used during targeting.
+- `t1593-001-social-media` — Adversaries may search social media for information about victims that can be used during targeting.
+- `t1593-002-search-engines` — Adversaries may use search engines to collect information about victims that can be used during targeting.
+- `t1593-003-code-repositories` — Adversaries may search public code repositories for information about victims that can be used during targeting.
+- `t1593-search-open-websitesdomains` — Adversaries may search freely available websites and/or domains for information about victims that can be used during targeting.
+- `t1594-search-victim-owned-websites` — Adversaries may search websites owned by the victim for information that can be used during targeting.
+- `t1595-001-scanning-ip-blocks` — Adversaries may scan victim IP blocks to gather information that can be used during targeting.
+- `t1595-002-vulnerability-scanning` — Adversaries may scan victims for vulnerabilities that can be used during targeting.
+- `t1595-003-wordlist-scanning` — Adversaries may iteratively probe infrastructure using brute-forcing and crawling techniques.
+- `t1595-active-scanning` — Adversaries may execute active reconnaissance scans to gather information that can be used during targeting.
+- `t1596-001-dnspassive-dns` — Adversaries may search DNS data for information about victims that can be used during targeting.
+- `t1596-002-whois` — Adversaries may search public WHOIS data for information about victims that can be used during targeting.
+- `t1596-003-digital-certificates` — Adversaries may search public digital certificate data for information about victims that can be used during targeting.
+- `t1596-004-cdns` — Adversaries may search content delivery network (CDN) data about victims that can be used during targeting.
+- `t1596-005-scan-databases` — Adversaries may search within public scan databases for information about victims that can be used during targeting.
+- `t1596-search-open-technical-databases` — Adversaries may search freely available technical databases for information about victims that can be used during targeting.
+- `t1597-001-threat-intel-vendors` — Adversaries may search private data from threat intelligence vendors for information that can be used during targeting.
+- `t1597-002-purchase-technical-data` — Adversaries may purchase technical information about victims that can be used during targeting.
+- `t1597-search-closed-sources` — Adversaries may search and gather information about victims from closed (e.g., paid, private, or otherwise not freely available) sources that can be used during targeting.
+- `t1598-001-spearphishing-service` — Adversaries may send spearphishing messages via third-party services to elicit sensitive information that can be used during targeting.
+- `t1598-002-spearphishing-attachment` — Adversaries may send spearphishing messages with a malicious attachment to elicit sensitive information that can be used during targeting.
+- `t1598-003-spearphishing-link` — Adversaries may send spearphishing messages with a malicious link to elicit sensitive information that can be used during targeting.
+- `t1598-004-spearphishing-voice` — Adversaries may use voice communications to elicit sensitive information that can be used during targeting.
+- `t1598-phishing-for-information` — Adversaries may send phishing messages to elicit sensitive information that can be used during targeting.
+- `t1599-001-network-address-translation-traversal` — Adversaries may bridge network boundaries by modifying a network device’s Network Address Translation (NAT) configuration.
+- `t1599-network-boundary-bridging` — Adversaries may bridge network boundaries by compromising perimeter network devices or internal devices responsible for network segmentation.
+- `t1600-001-reduce-key-space` — Adversaries may reduce the level of effort required to decrypt data transmitted over the network by reducing the cipher strength of encrypted communications.
+- `t1600-002-disable-crypto-hardware` — Adversaries disable a network device’s dedicated hardware encryption, which may enable them to leverage weaknesses in software encryption in order to reduce the effort involved in collecting, manip...
+- `t1600-weaken-encryption` — Adversaries may compromise a network device’s encryption capability in order to bypass encryption that would otherwise protect data communications.
+- `t1601-001-patch-system-image` — Adversaries may modify the operating system of a network device to introduce new capabilities or weaken existing defenses.
+- `t1601-002-downgrade-system-image` — Adversaries may install an older version of the operating system of a network device to weaken security.
+- `t1601-modify-system-image` — Adversaries may make changes to the operating system of embedded network devices to weaken defenses and provide new capabilities for themselves.
+- `t1602-001-snmp-mib-dump` — Adversaries may target the Management Information Base (MIB) to collect and/or mine valuable information in a network managed using Simple Network Management Protocol (SNMP).
+- `t1602-002-network-device-configuration-dump` — Adversaries may access network configuration files to collect sensitive data about the device and the network.
+- `t1602-data-from-configuration-repository` — Adversaries may collect data related to managed devices from configuration repositories.
+- `t1606-001-web-cookies` — Adversaries may forge web cookies that can be used to gain access to web applications or Internet services.
+- `t1606-002-saml-tokens` — An adversary may forge SAML tokens with any permissions claims and lifetimes if they possess a valid SAML token-signing certificate.
+- `t1606-forge-web-credentials` — Adversaries may forge credential materials that can be used to gain access to web applications or Internet services.
+- `t1608-001-upload-malware` — Adversaries may upload malware to third-party or adversary controlled infrastructure to make it accessible during targeting.
+- `t1608-002-upload-tool` — Adversaries may upload tools to third-party or adversary controlled infrastructure to make it accessible during targeting.
+- `t1608-003-install-digital-certificate` — Adversaries may install SSL/TLS certificates that can be used during targeting.
+- `t1608-004-drive-by-target` — Adversaries may prepare an operational environment to infect systems that visit a website over the normal course of browsing.
+- `t1608-005-link-target` — Adversaries may put in place resources that are referenced by a link that can be used during targeting.
+- `t1608-006-seo-poisoning` — Adversaries may poison mechanisms that influence search engine optimization (SEO) to further lure staged capabilities towards potential victims.
+- `t1608-stage-capabilities` — Adversaries may upload, install, or otherwise set up capabilities that can be used during targeting.
+- `t1609-container-administration-command` — Adversaries may abuse a container administration service to execute commands within a container.
+- `t1610-deploy-container` — Adversaries may deploy a container into an environment to facilitate execution or evade defenses.
+- `t1611-escape-to-host` — Adversaries may break out of a container or virtualized environment to gain access to the underlying host.
+- `t1612-build-image-on-host` — Adversaries may build a container image directly on a host to bypass defenses that monitor for the retrieval of malicious images from a public registry.
+- `t1613-container-and-resource-discovery` — Adversaries may attempt to discover containers and other resources that are available within a containers environment.
+- `t1614-001-system-language-discovery` — Adversaries may attempt to gather information about the system language of a victim in order to infer the geographical location of that host.
+- `t1614-system-location-discovery` — Adversaries may gather information in an attempt to calculate the geographical location of a victim host.
+- `t1615-group-policy-discovery` — Adversaries may gather information on Group Policy settings to identify paths for privilege escalation, security measures applied within a domain, and to discover patterns in domain objects that ca...
+- `t1619-cloud-storage-object-discovery` — Adversaries may enumerate objects in cloud storage infrastructure.
+- `t1620-reflective-code-loading` — Adversaries may reflectively load code into a process in order to conceal the execution of malicious payloads.
+- `t1621-multi-factor-authentication-request-generation` — Adversaries may attempt to bypass multi-factor authentication (MFA) mechanisms and gain access to accounts by generating MFA requests sent to users.
+- `t1622-debugger-evasion` — Adversaries may employ various means to detect and avoid debuggers.
+- `t1647-plist-file-modification` — Adversaries may modify property list files (plist files) to enable other malicious activity, while also potentially evading and bypassing system defenses.
+- `t1648-serverless-execution` — Adversaries may abuse serverless computing, integration, and automation services to execute arbitrary code in cloud environments.
+- `t1649-steal-or-forge-authentication-certificates` — Adversaries may steal or forge certificates used for authentication to access remote systems or resources.
+- `t1650-acquire-access` — Adversaries may purchase or otherwise acquire an existing access to a target system or network.
+- `t1651-cloud-administration-command` — Adversaries may abuse cloud management services to execute commands within virtual machines.
+- `t1652-device-driver-discovery` — Adversaries may attempt to enumerate local device drivers on a victim host.
+- `t1653-power-settings` — Adversaries may impair a system's ability to hibernate, reboot, or shut down in order to extend access to infected machines.
+- `t1654-log-enumeration` — Adversaries may enumerate system and service logs to find useful data.
+- `t1656-impersonation` — Adversaries may impersonate a trusted person or organization in order to persuade and trick a target into performing some action on their behalf.
+- `t1657-financial-theft` — Adversaries may steal monetary resources from targets through extortion, social engineering, technical theft, or other methods aimed at their own financial gain at the expense of the availability o...
+- `t1659-content-injection` — Adversaries may gain access and continuously communicate with victims by injecting malicious content into systems through online network traffic.
+- `t1665-hide-infrastructure` — Adversaries may manipulate network traffic in order to hide and evade detection of their C2 infrastructure.
+- `t1666-modify-cloud-resource-hierarchy` — Adversaries may attempt to modify hierarchical structures in infrastructure-as-a-service (IaaS) environments in order to evade defenses.
+- `t1667-email-bombing` — Adversaries may flood targeted email addresses with an overwhelming volume of messages.
+- `t1668-exclusive-control` — Adversaries who successfully compromise a system may attempt to maintain persistence by “closing the door” behind them – in other words, by preventing other threat actors from initially accessing o...
+- `t1669-wi-fi-networks` — Adversaries may gain initial access to target systems by connecting to wireless networks.
+- `t1671-cloud-application-integration` — Adversaries may achieve persistence by leveraging OAuth application integrations in a software-as-a-service environment.
+- `t1672-email-spoofing` — Adversaries may fake, or spoof, a sender’s identity by modifying the value of relevant email headers in order to establish contact with victims under false pretenses.
+- `t1673-virtual-machine-discovery` — An adversary may attempt to enumerate running virtual machines (VMs) after gaining access to a host or hypervisor.
+- `t1674-input-injection` — Adversaries may simulate keystrokes on a victim’s computer by various means to perform any type of action on behalf of the user, such as launching the command interpreter using keyboard shortcuts, ...
+- `t1675-esxi-administration-command` — Adversaries may abuse ESXi administration services to execute commands on guest machines hosted within an ESXi virtual environment.
+- `t1677-poisoned-pipeline-execution` — Adversaries may manipulate continuous integration / continuous development (CI/CD) processes by injecting malicious code into the build process.
+- `t1678-delay-execution` — Adversaries may employ various time-based methods to evade detection and analysis.
+- `t1679-selective-exclusion` — Adversaries may intentionally exclude certain files, folders, directories, file types, or system components from encryption or tampering during a ransomware or malicious payload execution.
+- `t1680-local-storage-discovery` — Adversaries may enumerate local drives, disks, and/or volumes and their attributes like total or free space and volume serial number.
+- `t1681-search-threat-vendor-data` — Threat actors may seek information/indicators from closed or open threat intelligence sources gathered about their own campaigns, as well as those conducted by other adversaries that may align with...

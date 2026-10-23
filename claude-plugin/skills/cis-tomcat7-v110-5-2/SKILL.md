@@ -1,0 +1,62 @@
+---
+name: cis-tomcat7-v110-5-2
+description: "Use LockOut Realms"
+metadata:
+  cyberstrike_name: "cis-tomcat7-v110-5.2"
+  source: ".cyberstrike/skill/CIS_benchmarks/Server_Software/Apache_Tomcat/CIS_Apache_Tomcat_7_Benchmark_v1.1.0/cis-tomcat7-v110-5.2/SKILL.md"
+  category: cis-tomcat
+  version: "1.1.0"
+  author: cyberstrike-official
+  tags: [cis, tomcat, tomcat-7, authentication, brute-force, account-lockout]
+  cis_id: "5.2"
+  cis_benchmark: "CIS Apache Tomcat 7 Benchmark v1.1.0"
+  tech_stack: [tomcat, java]
+  cwe_ids: []
+  chains_with: []
+  prerequisites: []
+  severity_boost: {}
+---
+
+# CIS Apache Tomcat 7 Benchmark v1.1.0 - Control 5.2
+
+## Profile Applicability
+
+- Level 2
+
+## Description
+
+Use LockOut Realms
+
+**Note**: This is an auto-generated skeleton. Please refer to the CIS Apache Tomcat 7 Benchmark v1.1.0 PDF (pages 9-90) for complete details including:
+
+- Full description and rationale
+- Detailed audit procedures with exact commands
+- Step-by-step remediation instructions
+- Impact analysis
+- Default values
+- References
+
+## Audit Procedure
+
+Refer to CIS Apache Tomcat 7 Benchmark v1.1.0 - Section 5.2
+
+## Remediation
+
+Refer to CIS Apache Tomcat 7 Benchmark v1.1.0 - Section 5.2
+
+## References
+
+- CIS Apache Tomcat 7 Benchmark v1.1.0
+- https://www.cisecurity.org/
+
+## CIS Controls
+
+| CIS Control | Description                 |
+| ----------- | --------------------------- |
+| Version 7   | Refer to benchmark document |
+| Version 8   | Refer to benchmark document |
+
+## Assessment Status
+
+- **Scored**: Scored
+- **Profile**: Level 2

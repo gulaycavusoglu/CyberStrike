@@ -1,0 +1,129 @@
+# WEB
+
+125 skills.
+
+- `wstg-apit-00` — API Testing Overview
+- `wstg-apit-01` — API Reconnaissance
+- `wstg-apit-02` — Testing for Broken Object Level Authorization (BOLA)
+- `wstg-apit-99` — Testing GraphQL
+- `wstg-athn-01` — Testing for Credentials Transported over an Encrypted Channel
+- `wstg-athn-02` — Testing for Default Credentials
+- `wstg-athn-03` — Testing for Weak Lock Out Mechanism
+- `wstg-athn-04` — Testing for Bypassing Authentication Schema
+- `wstg-athn-05` — Testing for Vulnerable Remember Password
+- `wstg-athn-06` — Testing for Browser Cache Weaknesses
+- `wstg-athn-07` — Testing for Weak Password Policy
+- `wstg-athn-08` — Testing for Weak Security Question Answer
+- `wstg-athn-09` — Testing for Weak Password Change or Reset Functionalities
+- `wstg-athn-10` — Testing for Weaker Authentication in Alternative Channel
+- `wstg-athn-11` — Testing Multi-Factor Authentication (MFA)
+- `wstg-auth-session` — WSTG identity, authentication, authorization, and session management testing
+- `wstg-authz-01` — Testing Directory Traversal File Include
+- `wstg-authz-02` — Testing for Bypassing Authorization Schema
+- `wstg-authz-03` — Testing for Privilege Escalation
+- `wstg-authz-04` — Testing for Insecure Direct Object References (IDOR)
+- `wstg-authz-05` — Testing for OAuth Weaknesses
+- `wstg-authz-05-1` — Testing OAuth Authorization Server Weaknesses
+- `wstg-authz-05-2` — Testing OAuth Client Weaknesses
+- `wstg-busl-01` — Test Business Logic Data Validation
+- `wstg-busl-02` — Test Ability to Forge Requests
+- `wstg-busl-03` — Test Integrity Checks
+- `wstg-busl-04` — Test for Process Timing
+- `wstg-busl-05` — Test Number of Times a Function Can Be Used Limits
+- `wstg-busl-06` — Test Circumvention of Work Flows
+- `wstg-busl-07` — Test Defenses Against Application Misuse
+- `wstg-busl-08` — Test Upload of Unexpected File Types
+- `wstg-busl-09` — Test Upload of Malicious Files
+- `wstg-busl-10` — Test Payment Functionality
+- `wstg-clnt-01` — Testing for DOM-Based Cross Site Scripting
+- `wstg-clnt-01-1` — Testing for Self DOM-Based XSS
+- `wstg-clnt-02` — Testing for JavaScript Execution
+- `wstg-clnt-03` — Testing for HTML Injection
+- `wstg-clnt-04` — Testing for Client-Side URL Redirect
+- `wstg-clnt-05` — Testing for CSS Injection
+- `wstg-clnt-06` — Testing for Client-Side Resource Manipulation
+- `wstg-clnt-07` — Testing for Cross-Origin Resource Sharing (CORS)
+- `wstg-clnt-08` — Testing for Cross-Site Flashing
+- `wstg-clnt-09` — Testing for Clickjacking
+- `wstg-clnt-10` — Testing WebSockets
+- `wstg-clnt-11` — Testing Web Messaging
+- `wstg-clnt-12` — Testing Browser Storage
+- `wstg-clnt-13` — Testing for Cross-Site Script Inclusion (XSSI)
+- `wstg-clnt-14` — Testing for Reverse Tabnabbing
+- `wstg-conf-01` — Test Network Infrastructure Configuration
+- `wstg-conf-02` — Test Application Platform Configuration
+- `wstg-conf-03` — Test File Extensions Handling for Sensitive Information
+- `wstg-conf-04` — Review Old Backup and Unreferenced Files for Sensitive Information
+- `wstg-conf-05` — Enumerate Infrastructure and Application Admin Interfaces
+- `wstg-conf-06` — Test HTTP Methods
+- `wstg-conf-07` — Test HTTP Strict Transport Security
+- `wstg-conf-08` — Test RIA Cross Domain Policy
+- `wstg-conf-09` — Test File Permission
+- `wstg-conf-10` — Test for Subdomain Takeover
+- `wstg-conf-11` — Test Cloud Storage
+- `wstg-conf-12` — Test for Content Security Policy
+- `wstg-conf-13` — Test for Path Confusion
+- `wstg-cryp-01` — Testing for Weak Transport Layer Security
+- `wstg-cryp-02` — Testing for Padding Oracle
+- `wstg-cryp-03` — Testing for Sensitive Information Sent via Unencrypted Channels
+- `wstg-cryp-04` — Testing for Weak Encryption
+- `wstg-errh-01` — Testing for Improper Error Handling
+- `wstg-errh-02` — Testing for Stack Traces
+- `wstg-idnt-01` — Test Role Definitions
+- `wstg-idnt-02` — Test User Registration Process
+- `wstg-idnt-03` — Test Account Provisioning Process
+- `wstg-idnt-04` — Test Account Enumeration
+- `wstg-idnt-05` — Test Username Policy
+- `wstg-info-01` — Conduct Search Engine Discovery Reconnaissance for Information Leakage
+- `wstg-info-02` — Fingerprint Web Server
+- `wstg-info-03` — Review Webserver Metafiles for Information Leakage
+- `wstg-info-04` — Enumerate Applications on Webserver
+- `wstg-info-05` — Review Web Page Content for Information Leakage
+- `wstg-info-06` — Identify Application Entry Points
+- `wstg-info-07` — Map Execution Paths Through Application
+- `wstg-info-08` — Fingerprint Web Application Framework
+- `wstg-info-09` — Fingerprint Web Application
+- `wstg-info-10` — Map Application Architecture
+- `wstg-injection` — WSTG input validation and injection testing - SQLi, XSS, SSTI, SSRF, command injection, XXE
+- `wstg-inpv-01` — Testing for Reflected Cross-Site Scripting (XSS)
+- `wstg-inpv-02` — Testing for Stored Cross-Site Scripting (XSS)
+- `wstg-inpv-03` — Testing for HTTP Verb Tampering
+- `wstg-inpv-04` — Testing for HTTP Parameter Pollution (HPP)
+- `wstg-inpv-05` — Testing for SQL Injection
+- `wstg-inpv-05-1` — Testing for SQL Injection - Oracle
+- `wstg-inpv-05-2` — Testing for SQL Injection - MySQL
+- `wstg-inpv-05-3` — Testing for SQL Injection - SQL Server
+- `wstg-inpv-05-4` — Testing for SQL Injection - PostgreSQL
+- `wstg-inpv-05-5` — Testing for SQL Injection - MS Access
+- `wstg-inpv-05-6` — Testing for NoSQL Injection
+- `wstg-inpv-05-7` — Testing for ORM Injection
+- `wstg-inpv-05-8` — Testing for Client-Side SQL Injection
+- `wstg-inpv-06` — Testing for LDAP Injection
+- `wstg-inpv-07` — Testing for XML Injection
+- `wstg-inpv-08` — Testing for SSI Injection
+- `wstg-inpv-09` — Testing for XPath Injection
+- `wstg-inpv-10` — Testing for IMAP/SMTP Injection
+- `wstg-inpv-11` — Testing for Code Injection
+- `wstg-inpv-11-1` — Testing for File Inclusion (LFI/RFI)
+- `wstg-inpv-12` — Testing for Command Injection
+- `wstg-inpv-13` — Testing for Format String Injection
+- `wstg-inpv-14` — Testing for Incubated Vulnerabilities
+- `wstg-inpv-15` — Testing for HTTP Splitting/Smuggling
+- `wstg-inpv-16` — Testing for HTTP Incoming Requests
+- `wstg-inpv-17` — Testing for Host Header Injection
+- `wstg-inpv-18` — Testing for Server-Side Template Injection (SSTI)
+- `wstg-inpv-19` — Testing for Server-Side Request Forgery (SSRF)
+- `wstg-inpv-20` — Testing for Mass Assignment
+- `wstg-logic-client-api` — WSTG business logic, client-side, and API security testing
+- `wstg-recon-config` — WSTG reconnaissance, configuration, error handling, and cryptography testing techniques
+- `wstg-sess-01` — Testing for Session Management Schema
+- `wstg-sess-02` — Testing for Cookies Attributes
+- `wstg-sess-03` — Testing for Session Fixation
+- `wstg-sess-04` — Testing for Exposed Session Variables
+- `wstg-sess-05` — Testing for Cross Site Request Forgery (CSRF)
+- `wstg-sess-06` — Testing for Logout Functionality
+- `wstg-sess-07` — Testing for Session Timeout
+- `wstg-sess-08` — Testing for Session Puzzling
+- `wstg-sess-09` — Testing for Session Hijacking
+- `wstg-sess-10` — Testing JSON Web Tokens (JWT)
+- `wstg-sess-11` — Testing for Concurrent Sessions
